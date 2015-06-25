@@ -84,7 +84,7 @@ If the speaker does not begin to answer a question within a minute, it is consid
 As a question, the opponent can:
 
 * demand that any part of the report is repeated;
-* ask for a clarification of any of the speaker’s statements, including: 
+* ask for  clarification of any of the speaker’s statements, including: 
   1. asking for a definition of any term ("What do you mean by ..."); 
   2. reformulating the speaker’s statement in his own words and asking for confirmation ("Do I understand correctly that you are stating the following: ...");
 * ask the speaker to prove the statement posed by him, if it is not obvious or well-known (in the case of a dispute, the jury is to decide whether the question is known or apparent; in any case, as known is considering the facts, included in the general educational program in mathematics);
