@@ -9,5 +9,5 @@ Maths Skirmish - competition between two teams in solving mathematical problems.
 It is a series of competitions between the schools organized by We Solve Problems foundation.
 [Detailed Maths Skirmish rules](/rules.html)
 
-##[Resources](/resource.html)
+##[Resources](/resources.html)
 Good books and online resources for those who find school math too easy and want to study more advanced topics.
