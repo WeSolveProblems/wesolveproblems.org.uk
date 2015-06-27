@@ -21,18 +21,29 @@ If, at the end of battle, the results of the teams do not differ by more than th
 
 ##The General Scheme of the Battle
 
-The battle consists of several rounds. At the beginning of each round (if there is no rejection of the challenge - see para. “The End of the Battle”), one of the teams challenges the other on one of the problems, the solution of which has not yet been presented (for example: “We challenge the opposing team on problem number 8”). Then, the challenged team announces whether it accepts the challenge, i.e. whether it agrees to present the solution to this problem (it is given no more than one minute to make a decision on the challenge). If a team accepts the challenge, it nominates a ‘speaker’, who explains the solution. The team that made the challenge nominates an ‘opponent’, whose duty is to look for errors in the presented solution. If the challenge is not accepted, then the team that made it is obliged to nominate a speaker, and the team that rejected the challenge has to nominate an opponent. In this way, one can consider that the reasonableness of the challenge is being assessed.
+The battle consists of several rounds. 
+
+At the beginning of each round (if there is no rejection of the challenge - see para. “The End of the Battle”), one of the teams challenges the other on one of the problems, the solution of which has not yet been presented (for example: “We challenge the opposing team on problem number 8”). Then, the challenged team announces whether it accepts the challenge, i.e. whether it agrees to present the solution to this problem (it is given no more than one minute to make a decision on the challenge).If a team accepts the challenge, it nominates a ‘speaker’, who explains the solution. The team that made the challenge nominates an ‘opponent’, whose duty is to look for errors in the presented solution. If the challenge is not accepted, then the team that made it is obliged to nominate a speaker, and the team that rejected the challenge has to nominate an opponent. In this way, one can consider that the reasonableness of the challenge is being assessed.
 
 ##The Captain’s Competition
 
-The ‘captain’s competition’ is held at the beginning of the battle. The team that wins the captain’s competition determines which team makes a challenge first. The captains are given a problem. The first captain to inform the jury that he knows the answer to the problem gets the right to explain it. If he presents the correct solution, he wins, but if it is incorrect – his rival wins. This is what is meant by “the correct solution”: simply the correct answer, the answer with an explanation, and so on - the jury specifies the nature of the correct answer before the competition of the captains begins.
-The jury assigns a specific period of time for the solution of the problem for the captain’s competition. If, during this time, none of the captains express their desire to answer, the jury may replace the problem or determine the winner by draw. Instead of the problem the jury can offer to the captains to play in any game. There are other methods of carrying out the captain’s competition. The jury determines the way the captain’s competition will be held in advance and informs the teams before the beginning of the battle.
+The ‘captain’s competition’ is held at the beginning of the battle. 
+
+The team that wins the captain’s competition determines which team makes a challenge first. 
+
+The captains are given a problem. The first captain to inform the jury that he knows the answer to the problem gets the right to explain it. If he presents the correct solution, he wins, but if it is incorrect – his rival wins. This is what is meant by “the correct solution”: simply the correct answer, the answer with an explanation, and so on - the jury specifies the nature of the correct answer before the competition of the captains begins.
+
+The jury assigns a specific period of time for the solution of the problem for the captain’s competition. If, during this time, none of the captains express their desire to answer, the jury may replace the problem or determine the winner by draw. Instead of the problem the jury can offer to the captains to play in any game. There are other methods of carrying out the captain’s competition.
+
+The jury determines the way the captain’s competition will be held in advance and informs the teams before the beginning of the battle.
+
 Each team has the right to nominate any member of their team for the captain’s contest.
 
 
 ##The Progress of the Round
 
 ###Report
+
 At the beginning of the round, the speaker explains the solution on the whiteboard. The presentation should contain answers to all the questions in the problem and proof of the accuracy and completeness of the received solutions. In particular, the speaker must prove each formulated interim statement or refer to it as already known. The speaker should try to ensure that his presentation is clear. In particular, he must repeat any part of his report at the request of the opponent or the jury. The report time is limited to 15 minutes, after which the report can be continued only with the permission of the jury.
 The speaker can use a paper with drawings during his presentation and (with special permission of the jury) calculations, but is not permitted to bring any text with him.
 
