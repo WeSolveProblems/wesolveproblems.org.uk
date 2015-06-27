@@ -86,80 +86,40 @@ If the challenge is not accepted, then there are two possibilities:
 
 ##Number of Appearances at the Blackboard
 
-Each member of the team has the right to go to the blackboard as a speaker or an opponent no more than two times per battle. 
-The team is entitled to replace the speaker or an opponent no more than three times per battle, and in each case, the 
-appearances are counted for both team members. At each replacement, the time allotted to the team breaks reduces by one 
-minute (this minute can be used directly before the replacement, or it can be not used. In the latter case, the 
-opponent’s team is also not allowed to use it).
+Each member of the team has the right to go to the whiteboard as a speaker or an opponent no more than two times per battle. The team is entitled to replace the speaker or an opponent no more than three times per battle. In each case, the appearances are counted for both team members. At each replacement, the time allotted to that team for breaks reduces by one minute (this minute can be used directly before the replacement, or it can be not used. In the latter case, the opponent’s team is also not allowed to use it).
 
 ##The Challenge Procedure. End of the Battle
-If the challenge has been recognized as invalid, the team has to repeat the challenge in the next round. In all other 
-cases, the teams challenge each other in turn.
-At any time during the battle the team that should make a challenge may refuse to do so (it usually happens when the team 
-has no more solved problems, and it is risky to make a challenge, which may be flawed). Then, the other team gets the right 
-(but not the obligation) to present the solution to the remaining problems. In this case the team which refused to make a 
-challenge can nominate the opponents and earn points just for opposing, but has no right to present the solutions (i.e., 
-after the rejection of the challenge neither full, nor partial change of roles can occur). The battle ends when all the 
-problems are discussed, or when one of the teams refuses the challenge and the other team refuses to present the solution 
-of the remaining problems.
+
+If the challenge has been recognised as invalid, the team has to repeat the challenge in the next round. In all other cases, the teams challenge each other in turn. At any time during the battle the team whose turn it is to make a challenge may refuse to do so (it usually happens when the team has no more solved problems, and it is risky to make a challenge, which may be flawed). Then, the other team gets the right (but not the obligation) to present the solution to the remaining problems. In this case the team which refused to make a challenge can nominate the opponents and earn points just for opposing, but has no right to present the solutions (i.e., after the rejection of the challenge, neither full, nor partial change of roles can occur). The battle ends when all the problems are discussed, or when one of the teams refuses the challenge and the other team refuses to present the solution of the remaining problems.
 
 ##Earning Points 
-Each problem is worth 12 points, which are distributed between the speaker, the opponent and the jury by the end of the round. 
-If the speaker presents the correct and complete solution, he gets all 12 points. If the opponent was able to find significant 
-errors in the solution, the jury primarily decides the question of whether the opponent was able to prove that the speaker does 
-not solve the problem. If the opponent has failed to do so, he can nevertheless get the points for opposing, depending on the 
-seriousness of the defects and how the speaker (or an opponent if there was a partial change of roles) managed to fix them. 
-Generally, the opponent receives the half of the "cost" of the "holes" that were not "patched" by the speaker in the solution 
-(the principle of "half"), but if the speaker was able to present a complete solution only after a considerable probing questions 
-from the opponent and/or the jury ("mud" in solution), the jury can take away no more than two points from the speaker and 
-transfer it to the opponent, or leave it for themselves. If there was a partial change of roles, the former opponent gets extra 
-points for proving the statements that were formulated prior, and the former speaker - for their opposition (at that the "cost" 
-of the concerned statements is defining by the jury, and the distribution of the points is happening the same way, as when 
-opposing a complete solution - taking into account the principle of "half" and "dirt" in the debates). The remaining points 
-are distributed between the speaker and the jury, and the round ends. If the opponent failed to prove that the speaker has no 
-solution, he gets points for opposing (taking into account the principle of "half") and, if the challenge was received, the 
-right to present his solution (see para. "Role reversal"). If this is accompanied by a complete or partial change of roles, 
-then scoring occurs according to the method described above.
 
-If the errors or gaps in the report are pointed out by the speaker himself and are not disposed of by his team, the opponent 
-gets points for them as if he had found these drawbacks himself. In particular, if, having been refused a challenge, the 
-captain of the challenging team immediately recognizes that his team does not have a solution, the opponent’s team gets 6 
-points for opposing (which in this case consists of a single sentence: "You have no solution"), and the challenge accepted 
-as incorrect. In this case, the speaker and the opponent are not nominated and the appearances at the blackboard are not counted.
+Each problem is worth 12 points, which are distributed between the speaker, the opponent and the jury by the end of the round. If the speaker presents a correct and complete solution, he gets all 12 points. If the opponent was able to find significant errors in the solution, the jury decides whether the opponent was able to prove that the speaker does not solve the problem. If the opponent fails to do so, he can nevertheless get the points for opposing, depending on the gravity of the defects of the presentation and how the speaker (or an opponent if there was a partial change of roles) managed to fix them. Generally, the opponent receives half of the “cost” of the “holes” that were not “patched up” by the speaker in the solution (the principle of “half”). However, if the speaker was able to present a complete solution only after considerable errors in the solution are found by the opponent and/or the jury (“mud” in solution), then the jury can take away up to two points from the speaker and transfer it to the opponent, or leave it for themselves. If there was a change of roles, the former opponent gets extra points for proving the statements that were formulated prior, as does the former speaker - for his/her opposition (the “cost” of the concerned statements is defined by the jury, and the distribution of the points happens in the same way, as when opposing a complete solution - taking into account the principle of “half” and “dirt” in the debates). The remaining points are distributed between the speaker and the jury, and the round ends. If the opponent fails to prove that the speaker has no solution, he gets points for opposing it (taking into account the principle of “half”). If the challenge was accepted, the opponent gains the opportunity to present his solution (see para. “Role reversal”). If this is accompanied by a complete or partial change of roles, then the scoring process proceeds according to the method described above.
+If the errors or gaps in the report are pointed out by the speaker himself and are not taken care of by his team, the opponent receives points for them, as if he had found these drawbacks himself. 
+If the captain of the challenging team immediately admits that his team does not have a solution after his challenge had been refused by the other team, the opponent’s team receives 6 points for opposing (which in this case consists of a single sentence: “You have no solution”), and the challenge is accepted as incorrect. In this case, the speaker and the opponent are not nominated and the appearances at the whiteboard are not counted.
+
+
 
 ##The Captain
-During the battle, only the captain can speak to the jury and contestants on behalf of the team: to report of a challenge or 
-refusal, to request a break, and so on. He has the right to stop the presentation or the opposing of the representative of 
-his team at any time. If the captain is at the blackboard, he nominates the deputy, who performs the duties of the captain 
-at this time. The names of the captain and the deputy are reported to the jury before the beginning of the battle.
 
-The primary responsibility of the captain during the solution of the problems is to coordinate the actions of the team members 
-to solve as many problems as possible. To do so, the captain distributes the problems to solve according to the wishes of the 
-members of the team, ensuring that every problem has been solved by someone and organizes the checking of the solutions. The 
-captain determines in advance, who will be the speaker or the opponent on a given problem and determines the tactics of the 
-team for the upcoming battle.
+During the battle, only the captain can speak to the jury and contestants on behalf of his/her team: to challenge the other team, to refuse or accept a challenge, to request a break, and so on. He has the right to stop the presentation or the opposition of a representative of his team at any time. If the captain is at the whiteboard, he nominates a deputy, who performs the duties of the captain at this time. The names of the captain and the deputy are reported to the jury before the beginning of the battle.
 
-The captains of the teams have the right to ask the jury to provide 5-10 minutes breaks during the battle (approximately every 
-half hour). The break may be provided only between rounds. The team, which is to make a challenge, does so in writing (without 
-an announcement) immediately before the break and hands it to the jury, which announces the challenge immediately after the break.
+The primary responsibility of the captain during the solving of the problems is to coordinate the actions of the team members to solve as many problems as possible. To do so, the captain distributes the problems amongst the team members, taking their wishes into account and ensuring that every problem is being solved by someone. The captain also organises the checking of solutions, to make sure they are correct. The captain determines who the speaker and the opponent in the upcoming battle will be and determines the team tactics.
+
+The captains of the teams have the right to ask the jury to provide 5-10 minutes breaks during the battle (approximately every half hour). The break may be provided only between rounds. The team, which is to make a challenge, does so in writing (without an announcement) immediately before the break and hands it to the jury, which announces the challenge immediately after the break.
 
 ##The Jury
-The jury is the supreme interpreter of the rules of the battle. In situations, which are not covered by the rules, it shall 
-decide at its own discretion. The teams are bound by the jury's decisions.
 
-While the teams are solving the problems, every significant clarification of the problem that was given by one of the teams 
-should be reported as soon as possible to all other teams.
+The jury is the supreme interpreter of the rules of the battle. In situations, which are not covered by the rules, it shall decide at its own discretion. The teams are bound by the jury’s decisions.
 
-The jury may withdraw the question of the opponent (for example, if it has no merit), or stop the report or opposition if they 
-are taking too long. If the jury cannot gain an understanding of the solution quickly, it may, with the approval of both captains, 
-allocate its representative, who will continue to discuss the problem in cooperation with the speaker and the opponent in another 
-room. The battle continues on other problems, and the points for this problem are awarded later.
+While the teams are solving the problems, every significant clarification of the problem that was given by the jury to one of the teams should be reported as soon as possible to all of the other teams.
 
-The jury writes the battle protocol on the blackboard. If one of the teams does not agree with the decision made by the jury 
-regarding the problem, it has the right to immediately demand a break for a few minutes to discuss the situation with the 
-participation of the chairman of the jury. After the beginning of the next round, the score of the previous round cannot be changed.
+The jury may withdraw the question of the opponent (for example, if it has no merit), or stop the presentation or the opposition if they are taking too long. If the jury cannot gain an understanding of the solution quickly, it may, with the approval of both captains, allocate its representative, who will continue to discuss the problem in cooperation with the speaker and the opponent in another room. During this time, the battle continues with other problems, and the points for these problems are awarded later.
 
-The jury keeps order. It can fine the team for noise, inappropriate behavior, or communication with their representative who 
-is located at the blackboard.
+The jury writes the battle protocol on the whiteboard. If one of the teams does not agree with the decision made by the jury regarding the problem, it has the right to immediately demand a break for a few minutes to discuss the situation with the participation of the chairman of the jury. After the beginning of the next round, the score of the previous round cannot be changed.
+
+The jury keeps order. It can penalise the team for noisiness, inappropriate behaviour, or communication with their representative who is located at the whiteboard.
 
 The jury is obliged to give reasons for all of its decisions that do not follow directly from the rules of the battle.
+
+
