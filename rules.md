@@ -65,38 +65,27 @@ Similarly, if the solution requires an executive search, the opponent has the ri
 
 
 ###Participation of the jury in the discussion
-After the end of the dialogue of the speaker and the opponent, the jury asks its questions. If necessary, it has the 
-right to intervene before, and during the dialogue of the speaker and the opponent.
+
+After the end of the dialogue between the speaker and the opponent, the jury asks its questions. If necessary, it has the right to intervene before, and during the dialogue of the speaker and the opponent.
 
 ###Speakers and the team
-The speaker and the opponent can go to their captains with a request for a replacement or for 
-a break for consultation. Other communication between the team and the speaker (opponent) shall be permitted only 
-during a half a minute break, which can be taken by any team at any time (in this case the rivals can also use this time). 
-Each team is allowed to take no more than six half a minute breaks during each battle (see para. "Number of the Appearances at the Blackboard").
+
+The speaker and the opponent can go to their captains with a request for a replacement or for a break for consultation. Other communication between the team and the speaker (opponent) is permitted only during a half a minute break, which can be taken by any team at any time (in this case the rivals can also use this time). Each team is allowed to take no more than six half a minute breaks during each battle (see para. “Number of Appearances at the whiteboard”).
 
 ###Role reversal
-The role reversal in the round can only happen if the challenge in this round was accepted. If the opponent has proven 
-that the speaker has no solution (the jury decides if it is so, see para. "Scoring") the opponent is entitled (but not obliged) 
-to present his solution. If the opponent made the decision to present his solution, then there is a complete change of roles, 
-that is, the former speaker becomes an opponent. If the opponent did not prove that the speaker has no solution, but found in 
-the proposed solution some specific drawbacks, he is entitled (but not obliged) to dispose of all (or some) of these 
-drawbacks ("patch holes"). The same right the opponent gets if he proved that the speaker has no solution, but refused 
-to present his own solution. If the opponent decides to "patch holes", then a partial change of roles appears: the opponent 
-states exactly what he is going to do (for example, analyze the case, which was not inquired into by the speaker; prove the 
-statement unproven by the speaker and so on), and the former speaker opposes him.
 
+The role reversal in the round can only happen if the challenge in this round was accepted. If the opponent has proven that the speaker has no solution (the jury decides if it is so, see para. “Scoring”) the opponent is entitled (but not obliged) to present his solution. If the opponent made the decision to present his solution, then there is a complete change of roles, that is, the former speaker becomes an opponent. If the opponent did not prove that the speaker has no solution, but found in the proposed solution some specific drawbacks, he is entitled (but not obliged) to dispose of all (or some) of these drawbacks (“patch holes”). The opponent gets the same right if he proves that the speaker has no solution, but refuses to present his own solution. If the opponent decides to “patch holes”, then a partial change of roles appears: the opponent states exactly what he is going to do (for example, analyse the case, which was not inquired into by the speaker; prove the statement unproven by the speaker and so on), and the former speaker opposes him.
 The inverse reversal of roles does not happen in any case!
 
 ###The correctness of the challenge
-If the challenge is accepted, then the question of its correctness is not considered, 
-that is, the received challenge is always considered to be correct!
 
+If the challenge is accepted by one team, then the question of its correctness is not considered.
 If the challenge is not accepted, then there are two possibilities:
+1.	if the team that made the challenge also refuses to answer, then the challenge is automatically deemed invalid;
+2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round. The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
 
-1. if the team that made the challenge also refuse to answer, then the challenge is "automatically" deemed invalid;
-2. if the team that made the challenge nominated the speaker, then the correctness of the challenge depends on the further course of the round, namely, the challenge deemed incorrect if the opponent managed to prove that the problem is not solved. In case the opponent declares the problem solved, the challenge is "automatically" accepted as correct!
+##Number of Appearances at the Blackboard
 
-##Number of the Appearances at the Blackboard
 Each member of the team has the right to go to the blackboard as a speaker or an opponent no more than two times per battle. 
 The team is entitled to replace the speaker or an opponent no more than three times per battle, and in each case, the 
 appearances are counted for both team members. At each replacement, the time allotted to the team breaks reduces by one 
