@@ -1,23 +1,14 @@
 ---
 layout: default
-title: Maths Skirmish Rules
-shortsummary: Maths Skirmish - competition between two teams in solving mathematical problems and presenting their solutions. 
+title: Maths Battle Rules
+shortsummary: Maths Battle - a competition between two teams in solving mathematical problems and presenting their solutions.
 ---
 
 ##General Provisions
-Maths Skirmish - competition between two teams in solving mathematical problems. First, the teams get the 
-conditions of the problems and a particular time for their solution. While solving the problems the team 
-may use any literature, but is not permitted to talk about the solution of these problems with anyone except 
-for the members of the jury. At the end of the allotted time begins the actual battle, when teams tell each 
-other the solutions of the problems in accordance with the given rules.
 
-If one of the teams presents the solution, the other acts as an opponent, i.e. looking for mistakes (defects). 
-The jury in points rates the speeches of the opponent and the speaker. If the teams have not solved the 
-problem by the end and have not found any mistakes while discussing the proposed solution, the jury of the 
-battle can take part of the score (or even all). The winner of the battle is the team that gets the most 
-points in total. If, at the end of battle, team results do not differ by more than three points, it is 
-considered that the battle ended in a draw. If, for some reason, the battle cannot end in a draw, the jury 
-is to declare this to the teams before the battle and announce the procedure for determining the winner.
+Maths Combat is a competition between two teams in solving mathematical problems. First of all, the teams are presented with the problems and given a certain time limit to solve them. While solving the problems, the team may use any literature, but is not permitted to talk about the solution to these problems with anyone except with the members of the jury. At the end of the allotted time, the actual battle begins, when the teams present the solutions of the problems in accordance with the given rules.
+One of the teams presents the solution, the other acts as an opponent and looks for mistakes (defects) in the presentation. The jury rates the speeches of the speaker (the team member presenting the solution) and the opponent (the team member opposing the speaker) by allocating points to each of them in accordance with the rules. If the teams have neither solved any problems by the end of the given time nor found any mistakes while discussing the proposed solution, the jury of the battle can take some of the points available in the round (or even all of them). The winner of the battle is the team that gets the most points in total. If, at the end of battle, the results of the teams do not differ by more than three points, the battle is considered to have ended in a draw. If, for some reason, the battle cannot end in a draw, the jury is to declare this to the teams before the battle and announce the procedure for determining the winner.
+
 
 ##The General Scheme of the Battle
 The battle consists of several rounds. At the beginning of each round (if there is no rejection of the 
