@@ -16,6 +16,6 @@ shortsummary: These resources are useful for those who find school math too easy
 * [Extended Gelfand Correspondence Program in Mathematics](http://www.egcpm.com/what-is-egcpm/)
 * [Russian School of Mathematics](http://www.russianschool.com/)
 * [Art of Problem Solving's Online School](http://www.artofproblemsolving.com/school)
-* 
+
 ##Circles
 * [US National Association of Math Circles](http://www.mathcircles.org/)
