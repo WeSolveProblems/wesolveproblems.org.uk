@@ -19,4 +19,9 @@ shortsummary: These resources are useful for those who find school math too easy
 ##Circles
 * [US National Association of Math Circles](http://www.mathcircles.org/)
 * [Toronto University resources for High School Maths, including Math Circles](http://www.math.toronto.edu/cms/school-math/)
-* [University of Cambridge Maths Circles](http://www.maths.cam.ac.uk/about/community/mathscircle/)
+* [University of Cambridge Maths CircleUnis](http://www.maths.cam.ac.uk/about/community/mathscircle/)
+
+##Outreach Programs UK
+* [Kings College London](http://www.kcl.ac.uk/study/ug/wp/Our-Activities/KPlus/KPlus.aspx)
+* [University College London](https://www.ucl.ac.uk/phys/news/physics-events-publications/science_centre)
+* [Imperial College](http://www3.imperial.ac.uk/outreach/activities/stem) 
