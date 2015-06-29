@@ -14,9 +14,9 @@ shortsummary: These resources are useful for those who find school math too easy
 ##Mentoring 
 * [UKMT Mentoring Schemes](http://www.ukmt.org.uk/mentoring/)
 * [Extended Gelfand Correspondence Program in Mathematics](http://www.egcpm.com/what-is-egcpm/)
-%* [Russian School of Mathematics](http://www.russianschool.com/)
 * [Art of Problem Solving's Online School](http://www.artofproblemsolving.com/school)
 
 ##Circles
 * [US National Association of Math Circles](http://www.mathcircles.org/)
 * [Toronto University resources for High School Maths, including Math Circles](http://www.math.toronto.edu/cms/school-math/)
+* [University of Cambridge Maths Circles](http://www.maths.cam.ac.uk/about/community/mathscircle/)
