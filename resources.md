@@ -29,3 +29,6 @@ shortsummary: These resources are useful for those who find school math too easy
 * [Kings College London](http://www.kcl.ac.uk/study/ug/wp/Our-Activities/KPlus/KPlus.aspx)
 * [University College London](https://www.ucl.ac.uk/phys/news/physics-events-publications/science_centre)
 * [Imperial College](http://www3.imperial.ac.uk/outreach/activities/stem) 
+
+##Mathematical puzzles
+*[Interactive Mathematics Miscellany and Puzzles](http://www.cut-the-knot.org/)
