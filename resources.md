@@ -40,4 +40,4 @@ shortsummary: These resources are useful for those who find school math too easy
 
 ##Museums
 * [Mathematics gallery at Science Museum, London](http://www.sciencemuseum.org.uk/visitmuseum/new_galleries/mathematics_gallery.aspx)
-*[MoMath - Museum of Mathematics, New York](http://momath.org/)
+* [MoMath - Museum of Mathematics, New York](http://momath.org/)
