@@ -32,3 +32,8 @@ shortsummary: These resources are useful for those who find school math too easy
 
 ##Mathematical puzzles
 * [Interactive Mathematics Miscellany and Puzzles](http://www.cut-the-knot.org/)
+
+
+##Magazines
+* [Plus](https://plus.maths.org/content/)
+* [Quanta](https://www.quantamagazine.org/)
