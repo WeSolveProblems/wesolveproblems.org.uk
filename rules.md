@@ -52,9 +52,9 @@ The speaker has the right to:
 *	not answer any questions raised by the opponent before the beginning of the discussion;
 *	ask the opponent to clarify his question (in particular, the speaker may propose his own version of the question: “Do I understand correctly, that you asked me about something and something?”);
 *	refuse to answer the question, by saying that:
-  *1.	he has no answer to this question;
-  *2.	he has already answered this question (explaining when and how);
-  *3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
+    1.	he has no answer to this question;
+    2.	he has already answered this question (explaining when and how);
+    3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
 
 The speaker is not obliged to:
 *	explain how he/she worked out the solution if he/she can prove that it is correct and complete;
@@ -67,8 +67,8 @@ While the report is in progress, the opponent can ask questions only with the co
 As a question, the opponent can:
 *	demand that any part of the report is repeated;
 *	ask for a clarification of any of the speaker’s statements, including:
-   *1.	asking for a definition of any term (“What do you mean by …”);
-   *2.	reformulate the speaker’s statement in his own words and ask for confirmation (“Do I understand correctly that you         are stating the following: …”);
+     1.	 asking for a definition of any term (“What do you mean by …”);
+     2.	 reformulate the speaker’s statement in his own words and ask for confirmation (“Do I understand correctly that you         are stating the following: …”);
 *	ask the speaker to prove the statement posed by him, if it is not obvious or well-known (in the case of a dispute, the jury is to decide whether the question is known or apparent; in any case, as known is considering the facts, included in the general educational program in mathematics);
 *	express satisfaction or explain his motivated dissatisfaction with it after receiving the answer to the question.
 If the opponent thinks that the speaker is stalling for time, coming up with a solution at the whiteboard, or that a significant part of the report does not contain the solution of the problem under discussion, she/he has the right to ask the speaker to submit a solution or an outline of the remaining argument (but no earlier than 10 minutes after the beginning of the report).
@@ -104,8 +104,8 @@ The inverse reversal of roles does not happen in any case!
 
 If the challenge is accepted by one team, then the question of its correctness is not considered.
 If the challenge is not accepted, then there are two possibilities:
-1.	if the team that made the challenge also refuses to answer, then the challenge is automatically deemed invalid;
-2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round. The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
+   1.	if the team that made the challenge also refuses to answer, then the challenge is automatically deemed invalid;
+   2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round. The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
 
 ##Number of Appearances at the Blackboard
 
@@ -117,8 +117,14 @@ If the challenge has been recognised as invalid, the team has to repeat the chal
 
 ##Earning Points 
 
-Each problem is worth 12 points, which are distributed between the speaker, the opponent and the jury by the end of the round. If the speaker presents a correct and complete solution, she/he gets all 12 points. If the opponent was able to find significant errors in the solution, the jury decides whether the opponent was able to prove that the speaker does not solve the problem. If the opponent fails to do so, he/she can nevertheless get the points for opposing, depending on the gravity of the defects of the presentation and how the speaker (or an opponent if there was a partial change of roles) managed to fix them. Generally, the opponent receives half of the “cost” of the “holes” that were not “patched up” by the speaker in the solution (the principle of “half”). However, if the speaker was able to present a complete solution only after considerable errors in the solution are found by the opponent and/or the jury (“mud” in solution), then the jury can take away up to two points from the speaker and transfer it to the opponent, or leave it for themselves. If there was a change of roles, the former opponent gets extra points for proving the statements that were formulated prior, as does the former speaker - for his/her opposition (the “cost” of the concerned statements is defined by the jury, and the distribution of the points happens in the same way, as when opposing a complete solution - taking into account the principle of “half” and “dirt” in the debates). The remaining points are distributed between the speaker and the jury, and the round ends. If the opponent fails to prove that the speaker has no solution, she/he gets points for opposing it (taking into account the principle of “half”). If the challenge was accepted, the opponent gains the opportunity to present his solution (see para. “Role reversal”). If this is accompanied by a complete or partial change of roles, then the scoring process proceeds according to the method described above.
-If the errors or gaps in the report are pointed out by the speaker himself and are not taken care of by his team, the opponent receives points for them, as if he/she had found these drawbacks himself. 
+Each problem is worth 12 points, which are distributed between the speaker, the opponent and the jury by the end of the round. If the speaker presents a correct and complete solution, she/he gets all 12 points. 
+
+If the opponent was able to find significant errors in the solution, the jury decides whether the opponent was able to prove that the speaker does not solve the problem. If the opponent fails to do so, she/he can nevertheless get the points for opposing, depending on the gravity of the defects of the presentation and how the speaker (or an opponent if there was a partial change of roles) managed to fix them. Generally, the opponent receives half of the “cost” of the “holes” that were not “patched up” by the speaker in the solution (the principle of “half”). However, if the speaker was able to present a complete solution only after considerable errors in the solution are found by the opponent and/or the jury (“mud” in solution), then the jury can take away up to two points from the speaker and transfer it to the opponent, or leave it for themselves. If there was a change of roles, the former opponent gets extra points for proving the statements that were formulated prior, as does the former speaker - for her/his opposition (the “cost” of the concerned statements is defined by the jury, and the distribution of the points happens in the same way, as when opposing a complete solution - taking into account the principle of “half” and “dirt” in the debates). The remaining points are distributed between the speaker and the jury, and the round ends. If the opponent fails to prove that the speaker has no solution, she/he gets points for opposing it (taking into account the principle of “half”). If the challenge was accepted, the opponent gains the opportunity to present his solution (see para. “Role reversal”).
+
+If this is accompanied by a complete or partial change of roles, then the scoring process proceeds according to the method described above.
+
+If the errors or gaps in the report are pointed out by the speaker himself and are not taken care of by his team, the opponent receives points for them, as if she/he had found these drawbacks himself. 
+
 If the captain of the challenging team immediately admits that his team does not have a solution after his challenge had been refused by the other team, the opponent’s team receives 6 points for opposing (which in this case consists of a single sentence: “You have no solution”), and the challenge is accepted as incorrect. In this case, the speaker and the opponent are not nominated and the appearances at the whiteboard are not counted.
 
 
