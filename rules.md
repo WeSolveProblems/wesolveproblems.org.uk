@@ -47,11 +47,11 @@ Each team has the right to nominate any member of their team for the captain’s
 At the beginning of the round, the speaker explains the solution on the whiteboard. The presentation should contain answers to all the questions in the problem and proof of the accuracy and completeness of the received solutions. In particular, the speaker must prove each formulated interim statement or refer to it as already known. The speaker should try to ensure that his presentation is clear. In particular, she/he must repeat any part of her/his report at the request of the opponent or the jury. The report time is limited to 15 minutes, after which the report can be continued only with the permission of the jury.
 The speaker can use a paper with drawings during her/his presentation and (with special permission of the jury) calculations, but is not permitted to bring any text with him.
 
-The speaker has the right to:
-*	write/draw any necessary information on the whiteboard before the presentation;
+The speaker has the right to
+* write/draw any necessary information on the whiteboard before the presentation;
 *	not answer any questions raised by the opponent before the beginning of the discussion;
 *	ask the opponent to clarify his question (in particular, the speaker may propose his own version of the question: “Do I understand correctly, that you asked me about something and something?”);
-*	refuse to answer the question, by saying that:
+*	refuse to answer the question, by saying that
     1.	he has no answer to this question;
     2.	he has already answered this question (explaining when and how);
     3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
