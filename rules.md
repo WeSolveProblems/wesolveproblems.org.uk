@@ -23,7 +23,7 @@ If, at the end of battle, the results of the teams do not differ by more than th
 
 The battle consists of several rounds. 
 
-At the beginning of each round (if there is no rejection of the challenge - see para. “The End of the Battle”), one of the teams challenges the other on one of the problems, the solution of which has not yet been presented (for example: “We challenge the opposing team on problem number 8”). Then, the challenged team announces whether it accepts the challenge, i.e. whether it agrees to present the solution to this problem (it is given no more than one minute to make a decision on the challenge).If a team accepts the challenge, it nominates a ‘speaker’, who explains the solution. The team that made the challenge nominates an ‘opponent’, whose duty is to look for errors in the presented solution. If the challenge is not accepted, then the team that made it is obliged to nominate a speaker, and the team that rejected the challenge has to nominate an opponent. In this way, one can consider that the reasonableness of the challenge is being assessed.
+At the beginning of each round (if there is no rejection of the challenge - see para. “The End of the Battle”), one of the teams challenges the other on one of the problems, the solution of which has not yet been presented (for example: “We challenge the opposing team on problem number 8”). Then, the challenged team announces whether it accepts the challenge, i.e. whether it agrees to present the solution to this problem (it is given no more than one minute to make a decision on the challenge). If a team accepts the challenge, it nominates a ‘speaker’, who explains the solution. The team that made the challenge nominates an ‘opponent’, whose duty is to look for errors in the presented solution. If the challenge is not accepted, then the team that made it is obliged to nominate a speaker, and the team that rejected the challenge has to nominate an opponent. In this way, one can consider that the reasonableness of the challenge is being assessed.
 
 ##The Captain’s Competition
 
@@ -44,17 +44,17 @@ Each team has the right to nominate any member of their team for the captain’s
 
 ###Report
 
-At the beginning of the round, the speaker explains the solution on the whiteboard. The presentation should contain answers to all the questions in the problem and proof of the accuracy and completeness of the received solutions. In particular, the speaker must prove each formulated interim statement or refer to it as already known. The speaker should try to ensure that his presentation is clear. In particular, she/he must repeat any part of his report at the request of the opponent or the jury. The report time is limited to 15 minutes, after which the report can be continued only with the permission of the jury.
-The speaker can use a paper with drawings during his presentation and (with special permission of the jury) calculations, but is not permitted to bring any text with him.
+At the beginning of the round, the speaker explains the solution on the whiteboard. The presentation should contain answers to all the questions in the problem and proof of the accuracy and completeness of the received solutions. In particular, the speaker must prove each formulated interim statement or refer to it as already known. The speaker should try to ensure that his presentation is clear. In particular, she/he must repeat any part of her/his report at the request of the opponent or the jury. The report time is limited to 15 minutes, after which the report can be continued only with the permission of the jury.
+The speaker can use a paper with drawings during her/his presentation and (with special permission of the jury) calculations, but is not permitted to bring any text with him.
 
 The speaker has the right to:
 *	write/draw any necessary information on the whiteboard before the presentation;
 *	not answer any questions raised by the opponent before the beginning of the discussion;
 *	ask the opponent to clarify his question (in particular, the speaker may propose his own version of the question: “Do I understand correctly, that you asked me about something and something?”);
 *	refuse to answer the question, by saying that:
-1.	he has no answer to this question;
-2.	he has already answered this question (explaining when and how);
-3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
+  *1.	he has no answer to this question;
+  *2.	he has already answered this question (explaining when and how);
+  *3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
 
 The speaker is not obliged to:
 *	explain how he/she worked out the solution if he/she can prove that it is correct and complete;
@@ -67,8 +67,8 @@ While the report is in progress, the opponent can ask questions only with the co
 As a question, the opponent can:
 *	demand that any part of the report is repeated;
 *	ask for a clarification of any of the speaker’s statements, including:
-1.	asking for a definition of any term (“What do you mean by …”);
-2.	reformulate the speaker’s statement in his own words and ask for confirmation (“Do I understand correctly that you are stating the following: …”);
+   *1.	asking for a definition of any term (“What do you mean by …”);
+   *2.	reformulate the speaker’s statement in his own words and ask for confirmation (“Do I understand correctly that you         are stating the following: …”);
 *	ask the speaker to prove the statement posed by him, if it is not obvious or well-known (in the case of a dispute, the jury is to decide whether the question is known or apparent; in any case, as known is considering the facts, included in the general educational program in mathematics);
 *	express satisfaction or explain his motivated dissatisfaction with it after receiving the answer to the question.
 If the opponent thinks that the speaker is stalling for time, coming up with a solution at the whiteboard, or that a significant part of the report does not contain the solution of the problem under discussion, she/he has the right to ask the speaker to submit a solution or an outline of the remaining argument (but no earlier than 10 minutes after the beginning of the report).
@@ -77,10 +77,13 @@ The speaker and the opponent must:
 *	not ‘get personal’ while criticizing each other’s statements;
 *	repeat and refine their questions and answers at the request of each other or of the jury.
 According to the results of the report and responses to the questions, the opponent has the right to give his assessment of the report and the discussion in one of the following ways:
-1.	recognise that the solution is correct;
-2.	recognise the solution (response) as basically correct, but having drawbacks and/or gaps which he/she has to identify;
-3.	recognise the solution (response) as incorrect, pointing out the mistakes in the proven key assertions of the report, or by providing a contrary example, or by specifying the significant gaps in the argument’s or solution’s construction. If the opponent has agreed with the solution, she/he and his team are no longer involved in this round.
+      1.	recognise that the solution is correct;
+      2.	recognise the solution (response) as basically correct, but having drawbacks and/or gaps which he/she has to                identify;
+      3.	recognise the solution (response) as incorrect, pointing out the mistakes in the proven key assertions of the                report, or by providing a contrary example, or by specifying the significant gaps in the argument’s or solution’s            construction.
+	
+If the opponent has agreed with the solution, she/he and his team are no longer involved in this round.
 If the opponent has a contrary example, refuting the solution of the speaker in general, and this contrary example is a solution to the problem itself (this happens, for example, in cases where the question of the problem sounds like “Can you …?”, “Is it true that …?” and so on), the opponent has the right to declare: “I do not agree with the solution, I have a contrary example”, but not to show the contrary example to the speaker yet (the jury is entitled to require submission of a contrary example in writing to ensure the correctness of the opponent’s statement). In this case, if the speaker does not change his solution within a minute, or after the break that was taken by the team, the opponent is entitled to present the contrary example mentioned to the speaker; in which case the speaker and his team no longer have the authority to change the solution or response.
+
 Similarly, if the solution requires an executive search, the opponent has the right to say, “I do not agree with the decision, not all cases were considered”, without specifying to the speaker exactly what case was not considered. The further actions of the speaker, the jury and the opponent are the same as in the situation with a contrary example.
 
 
