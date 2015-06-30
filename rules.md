@@ -49,10 +49,10 @@ The speaker can use a paper with drawings during her/his presentation and (with 
 
 The speaker has the right to
 * write/draw any necessary information on the whiteboard before the presentation;
-*	not answer any questions raised by the opponent before the beginning of the discussion;
-*	ask the opponent to clarify his question (in particular, the speaker may propose his own version of the question: “Do I understand correctly, that you asked me about something and something?”);
-*	refuse to answer the question, by saying that
-    1.	he has no answer to this question;
+* not answer any questions raised by the opponent before the beginning of the discussion;
+* ask the opponent to clarify his question (in particular, the speaker may propose his own version of the question: “Do I understand correctly, that you asked me about something and something?”);
+* refuse to answer the question, by saying that
+    1. he has no answer to this question;
     2.	he has already answered this question (explaining when and how);
     3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
 
