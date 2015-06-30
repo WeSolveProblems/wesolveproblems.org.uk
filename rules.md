@@ -131,7 +131,7 @@ If the captain of the challenging team immediately admits that his team does not
 
 
 
-##The Captain
+##The Captain  
 
 During the battle, only the captain can speak to the jury and contestants on behalf of his/her team: to challenge the other team, to refuse or accept a challenge, to request a break, and so on. He/she has the right to stop the presentation or the opposition of a representative of his team at any time. If the captain is at the whiteboard, she/he nominates a deputy, who performs the duties of the captain at this time. The names of the captain and the deputy are reported to the jury before the beginning of the battle.
 
