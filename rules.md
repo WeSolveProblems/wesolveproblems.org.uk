@@ -105,7 +105,9 @@ The inverse reversal of roles does not happen in any case!
 If the challenge is accepted by one team, then the question of its correctness is not considered.
 If the challenge is not accepted, then there are two possibilities:
    1.	if the team that made the challenge also refuses to answer, then the challenge is automatically deemed invalid;
-   2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round. The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
+   2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round.
+   	
+   The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
 
 ##Number of Appearances at the Blackboard
 
