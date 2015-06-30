@@ -31,4 +31,4 @@ shortsummary: These resources are useful for those who find school math too easy
 * [Imperial College](http://www3.imperial.ac.uk/outreach/activities/stem) 
 
 ##Mathematical puzzles
-*[Interactive Mathematics Miscellany and Puzzles](http://www.cut-the-knot.org/)
+* [Interactive Mathematics Miscellany and Puzzles](http://www.cut-the-knot.org/)
