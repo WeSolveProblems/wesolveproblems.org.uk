@@ -21,6 +21,7 @@ shortsummary: These resources are useful for those who find school math too easy
 
 ##Circles
 * [US National Association of Math Circles](http://www.mathcircles.org/)
+* [King's College London Mathematics School programme of GCSE enrichment for students in years 10 and 11](http://www.kcl.ac.uk/mathsschool/Outreach/For-Students/Enrichment-for-pupils.aspx)
 * [Toronto University resources for High School Maths, including Math Circles](http://www.math.toronto.edu/cms/school-math/)
 * [University of Cambridge Maths Circle](http://www.maths.cam.ac.uk/about/community/mathscircle/)
 
