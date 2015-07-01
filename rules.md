@@ -48,15 +48,18 @@ At the beginning of the round, the speaker explains the solution on the whiteboa
 The speaker can use a paper with drawings during her/his presentation and (with special permission of the jury) calculations, but is not permitted to bring any text with him.
 
 The speaker has the right to
+
 * write/draw any necessary information on the whiteboard before the presentation;
 * not answer any questions raised by the opponent before the beginning of the discussion;
 * ask the opponent to clarify his question (in particular, the speaker may propose his own version of the question: “Do I understand correctly, that you asked me about something and something?”);
 * refuse to answer the question, by saying that
+* 
     1. he has no answer to this question;
     2.	he has already answered this question (explaining when and how);
     3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
 
 The speaker is not obliged to:
+
 *	explain how he/she worked out the solution if he/she can prove that it is correct and complete;
 *	compare his way of solving the problem with other possible methods, including in terms of brevity, beauty and aptitude for solving other problems.*
 
@@ -65,18 +68,22 @@ The speaker is not obliged to:
 
 While the report is in progress, the opponent can ask questions only with the consent of the speaker, but she/he has the right to ask for any part of the solution to be repeated. He/she can allow the speaker not to prove any obvious (from his perspective) facts. After the end of the report, the opponent has the right to ask the speaker questions. If the opponent does not ask a single question within a minute, it is considered that he/she has no questions. If the speaker does not begin to answer a question within a minute, it is considered that he/she has no answer.
 As a question, the opponent can:
+
 *	demand that any part of the report is repeated;
 *	ask for a clarification of any of the speaker’s statements, including:
+*	
      1.	 asking for a definition of any term (“What do you mean by …”);
      2.	 reformulate the speaker’s statement in his own words and ask for confirmation (“Do I understand correctly that you         are stating the following: …”);
 *	ask the speaker to prove the statement posed by him, if it is not obvious or well-known (in the case of a dispute, the jury is to decide whether the question is known or apparent; in any case, as known is considering the facts, included in the general educational program in mathematics);
 *	express satisfaction or explain his motivated dissatisfaction with it after receiving the answer to the question.
 If the opponent thinks that the speaker is stalling for time, coming up with a solution at the whiteboard, or that a significant part of the report does not contain the solution of the problem under discussion, she/he has the right to ask the speaker to submit a solution or an outline of the remaining argument (but no earlier than 10 minutes after the beginning of the report).
 The speaker and the opponent must:
+
 *	express themselves in a polite and proper manner,
 *	not ‘get personal’ while criticizing each other’s statements;
 *	repeat and refine their questions and answers at the request of each other or of the jury.
 According to the results of the report and responses to the questions, the opponent has the right to give his assessment of the report and the discussion in one of the following ways:
+
       1.	recognise that the solution is correct;
       2.	recognise the solution (response) as basically correct, but having drawbacks and/or gaps which he/she has to                identify;
       3.	recognise the solution (response) as incorrect, pointing out the mistakes in the proven key assertions of the                report, or by providing a contrary example, or by specifying the significant gaps in the argument’s or solution’s            construction.
@@ -104,6 +111,7 @@ The inverse reversal of roles does not happen in any case!
 
 If the challenge is accepted by one team, then the question of its correctness is not considered.
 If the challenge is not accepted, then there are two possibilities:
+
    1.	if the team that made the challenge also refuses to answer, then the challenge is automatically deemed invalid;
    2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round.
    	
