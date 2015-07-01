@@ -55,13 +55,13 @@ The speaker has the right to
 * refuse to answer the question, by saying that
 * 
     1. he has no answer to this question;
-    2.	he has already answered this question (explaining when and how);
-    3.	the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
+    2. he has already answered this question (explaining when and how);
+    3. the question is incorrect or beyond the scope of scientific discussion for the stated problem. In case the opponent disagrees with the basis of 2) and 3) the jury arbitrates the dispute.
 
 The speaker is not obliged to:
 
-*	explain how he/she worked out the solution if he/she can prove that it is correct and complete;
-*	compare his way of solving the problem with other possible methods, including in terms of brevity, beauty and aptitude for solving other problems.*
+* explain how he/she worked out the solution if he/she can prove that it is correct and complete;
+* compare his way of solving the problem with other possible methods, including in terms of brevity, beauty and aptitude for solving other problems.*
 
 
 ###Opposing
@@ -69,24 +69,26 @@ The speaker is not obliged to:
 While the report is in progress, the opponent can ask questions only with the consent of the speaker, but she/he has the right to ask for any part of the solution to be repeated. He/she can allow the speaker not to prove any obvious (from his perspective) facts. After the end of the report, the opponent has the right to ask the speaker questions. If the opponent does not ask a single question within a minute, it is considered that he/she has no questions. If the speaker does not begin to answer a question within a minute, it is considered that he/she has no answer.
 As a question, the opponent can:
 
-*	demand that any part of the report is repeated;
-*	ask for a clarification of any of the speaker’s statements, including:
+* demand that any part of the report is repeated;
+* ask for a clarification of any of the speaker’s statements, including:
 *	
-     1.	 asking for a definition of any term (“What do you mean by …”);
-     2.	 reformulate the speaker’s statement in his own words and ask for confirmation (“Do I understand correctly that you         are stating the following: …”);
-*	ask the speaker to prove the statement posed by him, if it is not obvious or well-known (in the case of a dispute, the jury is to decide whether the question is known or apparent; in any case, as known is considering the facts, included in the general educational program in mathematics);
-*	express satisfaction or explain his motivated dissatisfaction with it after receiving the answer to the question.
+     1. asking for a definition of any term (“What do you mean by …”);
+     2.	 reformulate the speaker’s statement in his own words and ask for confirmation (“Do I understand correctly that you are stating the following: …”);
+* ask the speaker to prove the statement posed by him, if it is not obvious or well-known (in the case of a dispute, the jury is to decide whether the question is known or apparent; in any case, as known is considering the facts, included in the general educational program in mathematics);
+* express satisfaction or explain his motivated dissatisfaction with it after receiving the answer to the question.
+
 If the opponent thinks that the speaker is stalling for time, coming up with a solution at the whiteboard, or that a significant part of the report does not contain the solution of the problem under discussion, she/he has the right to ask the speaker to submit a solution or an outline of the remaining argument (but no earlier than 10 minutes after the beginning of the report).
 The speaker and the opponent must:
 
-*	express themselves in a polite and proper manner,
-*	not ‘get personal’ while criticizing each other’s statements;
-*	repeat and refine their questions and answers at the request of each other or of the jury.
+* express themselves in a polite and proper manner,
+* not ‘get personal’ while criticizing each other’s statements;
+* repeat and refine their questions and answers at the request of each other or of the jury.
+
 According to the results of the report and responses to the questions, the opponent has the right to give his assessment of the report and the discussion in one of the following ways:
 
-      1.	recognise that the solution is correct;
-      2.	recognise the solution (response) as basically correct, but having drawbacks and/or gaps which he/she has to                identify;
-      3.	recognise the solution (response) as incorrect, pointing out the mistakes in the proven key assertions of the                report, or by providing a contrary example, or by specifying the significant gaps in the argument’s or solution’s            construction.
+1. recognise that the solution is correct;
+2. recognise the solution (response) as basically correct, but having drawbacks and/or gaps which he/she has to identify;
+3. recognise the solution (response) as incorrect, pointing out the mistakes in the proven key assertions of the report, or by providing a contrary example, or by specifying the significant gaps in the argument’s or solution’s construction.
 	
 If the opponent has agreed with the solution, she/he and his team are no longer involved in this round.
 If the opponent has a contrary example, refuting the solution of the speaker in general, and this contrary example is a solution to the problem itself (this happens, for example, in cases where the question of the problem sounds like “Can you …?”, “Is it true that …?” and so on), the opponent has the right to declare: “I do not agree with the solution, I have a contrary example”, but not to show the contrary example to the speaker yet (the jury is entitled to require submission of a contrary example in writing to ensure the correctness of the opponent’s statement). In this case, if the speaker does not change his solution within a minute, or after the break that was taken by the team, the opponent is entitled to present the contrary example mentioned to the speaker; in which case the speaker and his team no longer have the authority to change the solution or response.
@@ -112,10 +114,10 @@ The inverse reversal of roles does not happen in any case!
 If the challenge is accepted by one team, then the question of its correctness is not considered.
 If the challenge is not accepted, then there are two possibilities:
 
-   1.	if the team that made the challenge also refuses to answer, then the challenge is automatically deemed invalid;
-   2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round.
+1.	if the team that made the challenge also refuses to answer, then the challenge is automatically deemed invalid;
+2.	if the team that made the challenge nominates the speaker, then the correctness of the challenge depends on the consequent progression of the round.
    	
-   The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
+The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
 
 ##Number of Appearances at the Blackboard
 
