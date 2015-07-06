@@ -52,5 +52,5 @@ shortsummary: These resources are useful for those who find school math too easy
 
 ##Mathematical Imagery
 
-*[Mathematical Imagery bt Jos Leys, includes incredible videos](http://www.josleys.com/index.php)
-*[Collection of American Mathematical Society](http://www.josleys.com/index.php)
+* [Mathematical Imagery bt Jos Leys, includes incredible videos](http://www.josleys.com/index.php)
+* [Collection of American Mathematical Society](http://www.josleys.com/index.php)
