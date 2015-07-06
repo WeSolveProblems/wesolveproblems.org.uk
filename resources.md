@@ -49,3 +49,8 @@ shortsummary: These resources are useful for those who find school math too easy
 * [Mathematics gallery at Science Museum, London](http://www.sciencemuseum.org.uk/visitmuseum/new_galleries/mathematics_gallery.aspx)
 * [MoMath - Museum of Mathematics, New York](http://momath.org/)
 * [Explora, the museum of 3d, Frankfurt Science centre](http://www.exploramuseum.de/)
+
+##Mathematical Imagery
+
+*[Mathematical Imagery bt Jos Leys, includes incredible videos](http://www.josleys.com/index.php)
+*[Collection of American Mathematical Society](http://www.josleys.com/index.php)
