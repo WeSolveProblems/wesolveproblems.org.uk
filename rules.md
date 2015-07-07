@@ -14,6 +14,8 @@ One of the teams presents the solution, the other acts as an opponent and looks 
 
 If the teams have neither solved any problems by the end of the given time nor found any mistakes while discussing the proposed solution, the jury of the battle can take some of the points available in the round (or even all of them).
 
+![](/images/mathbattlephoto01.jpg)
+
 The winner of the battle is the team that gets the most points in total. 
 
 If, at the end of battle, the results of the teams do not differ by more than three points, the battle is considered to have ended in a draw. If, for some reason, the battle cannot end in a draw, the jury is to declare this to the teams before the battle and announce the procedure for determining the winner.
@@ -24,6 +26,8 @@ If, at the end of battle, the results of the teams do not differ by more than th
 The battle consists of several rounds. 
 
 At the beginning of each round (if there is no rejection of the challenge - see para. “The End of the Battle”), one of the teams challenges the other on one of the problems, the solution of which has not yet been presented (for example: “We challenge the opposing team on problem number 8”). Then, the challenged team announces whether it accepts the challenge, i.e. whether it agrees to present the solution to this problem (it is given no more than one minute to make a decision on the challenge). If a team accepts the challenge, it nominates a ‘speaker’, who explains the solution. The team that made the challenge nominates an ‘opponent’, whose duty is to look for errors in the presented solution. If the challenge is not accepted, then the team that made it is obliged to nominate a speaker, and the team that rejected the challenge has to nominate an opponent. In this way, one can consider that the reasonableness of the challenge is being assessed.
+
+![](/images/mathbattlephoto02.jpg)
 
 ##The Captain’s Competition
 
