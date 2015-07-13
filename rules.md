@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Maths Battle Rules
+title: Maths Battle Original Rules
 shortsummary: Maths Battle is a competition between two teams in solving mathematical problems and presenting their solutions.
 ---
 
