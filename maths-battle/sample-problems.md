@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Maths Battle Sample Problems
-shortsummary: These problems were used during a maths battle organized in Lutterworth College July 4, 2013. The problems were kindly provided by Alexander Veselov.
+shortsummary: These problems were used in a maths battle at Lutterworth College on July 4, 2013. The problems were kindly provided by Prof. Alexander Veselov.
 ---
 
 ##Problem 1
