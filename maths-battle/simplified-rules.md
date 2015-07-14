@@ -16,7 +16,7 @@ While solving the problems, the team may want to discuss the solutions and strat
 They may use any books or internet resources, but it is not permitted to talk about the solution to these problems with anyone except with the members of the jury. At the end of the allotted time, the actual battle begins, when the teams present the 
 solutions of the problems in accordance with the given rules.
 
-##Duel between the captains
+##The duel of the Captains
 
 The battle starts with a duel between the captains. The two captains are presented with a short problem to solve; 
 the first captain to find the correct solution decides who challenges first.
