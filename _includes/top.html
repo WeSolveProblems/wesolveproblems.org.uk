@@ -7,15 +7,11 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>{{ page.title }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,7 +39,7 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li {% if page.url == "/index.html" %}class="active"{% endif %}><a href="/">Home</a></li>
-              <li {% if page.url == "/rules.html" %}class="active"{% endif %}><a href="/rules.html">Maths Battle Rules</a></li>
+              <li {% if page.url == "/maths-battle" %}class="active"{% endif %}><a href="/rules.html">Maths Battle</a></li>
               <li {% if page.url == "/resources.html" %}class="active"{% endif %}><a href="/resources.html">Resources</a></li>
             </ul>
           </div><!--/.nav-collapse -->
