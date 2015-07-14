@@ -11,7 +11,7 @@ shortsummary: These resources are useful for those who find school math too easy
 * [The Method of Coordinates](http://www.amazon.co.uk/The-Method-Coordinates-I-Gelfand/dp/0817635335/ref=pd_sim_14_3?ie=UTF8&refRID=0003622T8SRR1EQEZ8MG)
 * [Algebra by I. Gelfand and Alexander Shen](http://www.amazon.co.uk/Algebra-I-Gelfand/dp/0817636773/ref=la_B004LRN7PI_1_1?s=books&ie=UTF8&qid=1435145292&sr=1-1)
 * [Sequences Combinations Limits by I. Gelfand and S.I. Gelfand](http://www.amazon.co.uk/Sequences-Combinations-Limits-Dover-Mathematics/dp/0486425665/ref=pd_sim_14_4?ie=UTF8&refRID=0003622T8SRR1EQEZ8MG)
-*[Lines and Curves: A Practical Geometry Handbook by V. Gutenmacher and others](http://www.amazon.co.uk/Lines-Curves-Practical-Geometry-Handbook/dp/0817641610/ref=pd_sim_14_17?ie=UTF8&refRID=1Y9BE7WH1P6NM4Z82B76)
+* [Lines and Curves: A Practical Geometry Handbook by V. Gutenmacher and others](http://www.amazon.co.uk/Lines-Curves-Practical-Geometry-Handbook/dp/0817641610/ref=pd_sim_14_17?ie=UTF8&refRID=1Y9BE7WH1P6NM4Z82B76)
 
 ##Mentoring 
 
