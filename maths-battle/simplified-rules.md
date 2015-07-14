@@ -13,8 +13,7 @@ Maths Battle is a competition between two teams in solving mathematical problems
 
 First of all, the teams are presented with the problems and given a certain time limit to solve them. 
 While solving the problems, the team may want to discuss the solutions and strategy for the battle within the team. 
-They may use any literature, but it is not permitted to talk about the solution to these problems with anyone except 
-with the members of the jury. At the end of the allotted time, the actual battle begins, when the teams present the 
+They may use any books or internet resources, but it is not permitted to talk about the solution to these problems with anyone except with the members of the jury. At the end of the allotted time, the actual battle begins, when the teams present the 
 solutions of the problems in accordance with the given rules.
 
 ##Duel between the captains
@@ -33,11 +32,12 @@ correct reasoning. The final decision is at the discretion of the principal coor
 If the challenge is declined, then the challenging team must present their solution and the opponents are to criticise 
 and to spot any possible mistakes. Independently of whether the presented solution is correct or not, the same team is set to challenge next time.
 
-If one of the teams chooses not to challenge any more, then the other team may choose to show the solution to any of the remaining questions. The full marks are to be awarded if the answer is correct.
+If one of the teams chooses not to challenge any more, then the other team may choose to show the solution to any of the remaining questions. The full marks  are to be awarded if the answer is correct.
 
 If the answer is wrong, the team scores zero marks; if the declining team spots a mistake, it scores 2 marks.
 
 ##Maths battle rules in a diagram
 
+For more details see the diagram  (full marks = 6 marks)
 
 ![](/images/mathsbattlediagram1.png)
