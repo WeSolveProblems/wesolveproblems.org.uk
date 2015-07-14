@@ -16,7 +16,7 @@ What fraction of the rectangle PQRS is shaded?
 
 ##Problem 3
 
-A number of consecutive pages are missing from a book. If you add the page numbers of all missing pages, you get 112. Which pages are missing?
+A number of consecutive pages is missing from a book. If you add the page numbers of all the missing pages, you get 112. Which pages are missing?
 
 ##Problem 4
 
