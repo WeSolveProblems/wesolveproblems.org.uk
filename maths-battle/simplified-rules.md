@@ -36,8 +36,8 @@ If one of the teams chooses not to challenge any more, then the other team may c
 
 If the answer is wrong, the team scores zero marks; if the declining team spots a mistake, it scores 2 marks.
 
-##Maths battle rules in a diagram
+##Maths battle rules as a diagram
 
-For more details see the diagram  (full marks = 6 marks)
+For more details on the rules see the diagram  (full marks = 6 marks)
 
 ![](/images/mathsbattlediagram1.png)
