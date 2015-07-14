@@ -18,6 +18,7 @@ shortsummary: These resources are useful for those who find school math too easy
 * [UKMT Mentoring Schemes](http://www.ukmt.org.uk/mentoring/)
 * [Extended Gelfand Correspondence Program in Mathematics](http://www.egcpm.com/what-is-egcpm/)
 * [Art of Problem Solving's Online School](http://www.artofproblemsolving.com/school)
+* [Gentle Knowledge Online School](http://gentleknowledge.com/onlineclasses/)
 * [John Hopkins University - Center for Talented Youth](http://cty.jhu.edu/ctyonline/)
 * [Stanford University on-line courses for gifted and talented children](https://giftedandtalented.com/)
 * [Khan Academy](https://www.khanacademy.org/)
