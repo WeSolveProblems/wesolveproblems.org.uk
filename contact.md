@@ -40,8 +40,9 @@ function handleSendEmail(event) {
   var fromemail = $("#inputYourEmail").val();
   var subject = $("#inputSubject").val();
   var body = $("#inputBody").val();
-  sendEmail(fromemail, fromname, subject, body, "vassiliphilippov@gmail.com", "Vassili Philippov");
-  sendEmail(fromemail, fromname, subject, body, "elena.boguslavskaya@brunel.ac.uk", "Elena Boguslavskaya");
+  var atsymbol = "@";
+  sendEmail(fromemail, fromname, subject, body, "vassiliphilippov" + atsymbol + "gmail.com", "Vassili Philippov");
+  sendEmail(fromemail, fromname, subject, body, "elena.boguslavskaya" + atsymbol + "brunel.ac.uk", "Elena Boguslavskaya");
   alert("Your message is sent. Thank you! We will contact you soon.");
   event.preventDefault();
 }
