@@ -42,7 +42,7 @@ function handleSendEmail(event) {
   var body = $("#inputBody").val();
   var atsymbol = "@";
   sendEmail(fromemail, fromname, subject, body, "vassiliphilippov" + atsymbol + "gmail.com", "Vassili Philippov");
-  sendEmail(fromemail, fromname, subject, body, "elena.boguslavskaya" + atsymbol + "brunel.ac.uk", "Elena Boguslavskaya");
+  sendEmail(fromemail, fromname, subject, body, "elena" + atsymbol + "boguslavsky.net", "Elena Boguslavskaya");
   alert("Your message is sent. Thank you! We will contact you soon.");
   event.preventDefault();
 }
