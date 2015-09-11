@@ -63,7 +63,7 @@ function handleSendEmail(event) {
   </div>
   <div class="form-group">
     <label for="inputBody">Message</label>
-    <textarea class="form-control" rows="3" id="inputBody"></textarea>
+    <textarea class="form-control" rows="12" id="inputBody"></textarea>
   </div>
   <div class="form-group">
     <button type="submit" class="btn btn-primary btn-large" id="button-send">Send</button>
