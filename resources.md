@@ -32,7 +32,7 @@ shortsummary: These resources are useful for those who find school math too easy
 
 ##Outreach Programs UK
 
-* [Kings College London](http://www.kcl.ac.uk/study/ug/wp/Our-Activities/KPlus/KPlus.aspx)
+* [Kings College London](http://www.kcl.ac.uk/mathsschool/Outreach/outreach.aspx)
 * [University College London](https://www.ucl.ac.uk/phys/news/physics-events-publications/science_centre)
 * [Imperial College](http://www3.imperial.ac.uk/outreach/activities/stem) 
 
