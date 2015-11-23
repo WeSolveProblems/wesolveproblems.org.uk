@@ -17,4 +17,4 @@ Elena is a big enthusiast of extra-curriculum mathematical education, such as ma
 
 ##[Vassili Philipov](https://uk.linkedin.com/in/vassiliphilippov)
 
-Vassili Philipov is a founder and CEO of science educational company [MEL Science](https://melscience.com). Vassili attended a maths school #45 in Saint-Petersburg. He was a bronze medalist at the International Physics Olympiad in 1994. Later he did PhD in Mathematics and founded two IT startup companies in the mobile industry which both grew more than hundred employees. Vassili lives in Buckinghamshire with his wife and four children.
+Vassili Philipov is the founder and CEO of an educational science company, [MEL Science](https://melscience.com). Vassili attended a math school in Saint-Petersburg. He was a bronze medalist at the International Physics Olympiad in 1994. Later he completed his PhD in Mathematics and founded two IT startup companies in the mobile industry. Both of which grew to more than one hundred employees. Vassili lives in Buckinghamshire with his wife and four children.
