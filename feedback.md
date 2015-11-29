@@ -45,6 +45,6 @@ The Royal Grammar School, High Wycombe
 Cameron Stephenson, Year 9 Student
 The Royal Grammar School, High Wycombe
 
-> The face to face conversation helped me understand better an dI like the idea of extending your knowledge by relating to the targets of the session. Also I think it would be useful to see the solutions after solving. 
+> The face to face conversation helped me understand better and I like the idea of extending your knowledge by relating to the targets of the session. Also I think it would be useful to see the solutions after solving. 
 Angus, Student
 The Royal Grammar School, High Wycombe
