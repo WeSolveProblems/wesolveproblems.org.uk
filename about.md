@@ -8,7 +8,7 @@ shortsummary: WeSolveProblems is founded by three enthusiasts of extra-curriculu
 
 Amir Aliev is a graduate of Moscow State University, majoring in Mathematics and later defending his PhD in Probability Theory. He is a partner at a high-frequency trading firm, where he heads the research in developing statistical models of the financial markets, and algorithms that trade automatically using those models. 
 
-As a student at a renowned Moscow 57th School he experienced first-hand various innovative approaches to mathematical education, including math battles. He was a multiple times winner of Moscow Mathematical Olympiad and represented Moscow in All-Russian Mathematical Competition. 
+As a student at a renowned  [School 57](http://sch57.ru/index.en.html) in Moscow he experienced first-hand various innovative approaches to mathematical education, including math battles. He was a multiple times winner of Moscow Mathematical Olympiad and represented Moscow in All-Russian Mathematical Competition. 
 
 ##[Elena Boguslavskaya](https://uk.linkedin.com/in/elena-boguslavskaya-8108403b) 
 Elena Boguslavskaya is a professional mathematician. She was exposed to mathematical education in Russia since her teens, initially as a student of a specialized maths school in Moscow ( [School 57](http://sch57.ru/index.en.html)), and later at the department of mathematics in Moscow State University. Elena did her PhD in Mathematics at the University of Amsterdam. At present she is a Research Fellow at [Brunel University London](http://www.brunel.ac.uk/people/elena-boguslavskaya). 
