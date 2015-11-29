@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About Us
-shortsummary: WeSolveProblems is founded by three enthusiasts of extra-curriculum mathematical education.
+title: Feedback
+shortsummary: What teachers and students say about the Maths Battles.
 ---
 
 ##Amir Aliev
