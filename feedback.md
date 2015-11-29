@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Feedback
 shortsummary: What teachers and students say about the Maths Battles.
@@ -30,7 +30,7 @@ Student
 The Royal Grammar School, High Wycombe
 
 > I think that with more people, conversations are longer and more detailed, and more time to do work and focus individually [would improve the experience]. I love it, the best maths fun ever. So lucky to be here, challenging but fun.
-�Bhargar Rentala, Student
+–Bhargar Rentala, Student
 The Royal Grammar School, High Wycombe
 
 > I thoroughly enjoyed the Maths Battles. It was quite challenging and i found it very fun. I loved this opportunity and would gladly participate again. 
