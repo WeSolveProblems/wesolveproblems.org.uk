@@ -1,3 +1,9 @@
+---
+layout: default
+title: Feedback
+shortsummary: What teachers and students say about the Maths Battles.
+---
+
 > Pupils at the RGS have really enjoyed maths battles and numbers grow week on week. 
 > The problems are fun and open questions give the boys further opportunity to work 
 > collaboratively outside of the classroom as well as potentially considering mathematics 
