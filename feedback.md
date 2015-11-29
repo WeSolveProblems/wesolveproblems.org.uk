@@ -12,6 +12,7 @@ shortsummary: What teachers and students say about the Maths Battles.
 Mr. Jamie A. Rizk, Maths Teacher
 The Royal Grammar School, High Wycombe
 
+
 > It is fun to discuss, but many of the problems are very difficult.
 Student
 The Royal Grammar School, High Wycombe
