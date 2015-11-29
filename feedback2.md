@@ -4,7 +4,17 @@ title: Feedback
 shortsummary: What teachers and students say about the Maths Battles.
 ---
 
-##Amir Aliev
+##Teachers
+
+> Pupils at the RGS have really enjoyed maths battles and numbers grow week on week. 
+> The problems are fun and open questions give the boys further opportunity to work 
+> collaboratively outside of the classroom as well as potentially considering mathematics 
+> from a different perspective. It is defiantly something the boys look forward 
+> to on a Monday evening, the battles even more so.
+
+Mr. Jamie A. Rizk, Maths Teacher
+The Royal Grammar School, High Wycombe
+
 
 Amir Aliev is a graduate of Moscow State University, majoring in Mathematics and later defending his PhD in Probability Theory. He is a partner at a high-frequency trading firm, where he heads the research in developing statistical models of the financial markets, and algorithms that trade automatically using those models. 
 
