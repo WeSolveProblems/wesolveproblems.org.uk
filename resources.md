@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Advanced Maths Resources
-shortsummary: These resources are useful for those who find school math too easy
+shortsummary: These resources are useful for those who find school maths too easy
 ---
 
 ##Books

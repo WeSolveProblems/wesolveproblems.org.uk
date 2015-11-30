@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Maths Battle Simplified Rules
-shortsummary: This simplified version of maths battle rules is better optimized for new teams that do not have experince presenting math problems.
+shortsummary: This simplified version of maths battle rules is better optimized for new teams that do not have experince presenting maths problems.
 ---
 
 ##About
