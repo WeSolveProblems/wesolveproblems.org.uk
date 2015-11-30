@@ -1,5 +1,6 @@
 function getSolutionFileName() {
   return "{{ page.url | replace:'_solution.js','_solutions_'}}{{ page.key }}.pdf";
+  return "{{ page.path }}";
 }
 
 function downloadSolutions() {
