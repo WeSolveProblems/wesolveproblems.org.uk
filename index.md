@@ -10,7 +10,7 @@ Maths Battle is a competition between two teams in solving mathematical problems
 * [Simplified Maths Battle rules (optimized for new teams)](/maths-battle/simplified-rules.html)
 * [The original Maths Battle rules (for experienced teams)](/maths-battle/original-rules.html)
 * [Sample problems](/maths-battle/sample-problems.html)
-* [The First Maths Battle Report](/reports/2015_11_06.html)
+* [The First Maths Battle Report](/reports/2015_11_06.html) (NEW!)
 
 ##[Resources](/resources.html)
 Good books and online resources for those who find school maths too easy and want to study more advanced topics.
