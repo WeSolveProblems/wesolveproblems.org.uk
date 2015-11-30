@@ -1,8 +1,10 @@
 function getSolutionFileName() {
-  return "{{ page.url | replace:'_solution.js','_solutions_'}}{{ page.key }}.pdf";
+  return "{{ page.url | replace:'_solutions.js','_solutions_'}}{{ page.key }}.pdf";
   return "{{ page.path }}";
 }
 
 function downloadSolutions() {
-  alert(getSolutionFileName());
+  var strFileURL = getSolutionFileName();
+  alert(strFileURL);
+  window.open(strFileURL);
 }
