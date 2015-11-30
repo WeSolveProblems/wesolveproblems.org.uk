@@ -1,10 +1,17 @@
 function getSolutionFileName() {
-  return "{{ page.url | replace:'_solutions.js','_solutions_'}}{{ page.key }}.pdf";
-  return "{{ page.path }}";
+  var strJUsuydjsad = "{{ page.url | replace:'_solutions.js','_solutions_'}}";
+  var strJsdjijsa = "{{ page.key }}";
+  var strMsijjahd = ".pdf";
+  return strJUsuydjsad + strJsdjijsa + strMsijjahd;
 }
 
 function downloadSolutions() {
-  var strFileURL = getSolutionFileName();
-  alert(strFileURL);
-  window.open(strFileURL);
+  var strPassword = prompt("Please enter password to download solution");
+  if (strPassword=="MathsRulez42") {
+    var strFileURL = getSolutionFileName();
+    alert(strFileURL);
+    window.open(strFileURL);
+  } else {
+    alert("Wrong password");
+  }
 }
