@@ -1,5 +1,7 @@
 {% include top.html %}
       <script src="{{ page.url | replace:'.html','_solutions.js'}}"></script>
   {{ content }}
-<button onclick="downloadSolutions();">Download solutions</button>
+
+<button type="button" class="btn btn-primary btn-lg" onclick="downloadSolutions();">Download solutions</button>
+
 {% include bottom.html %}

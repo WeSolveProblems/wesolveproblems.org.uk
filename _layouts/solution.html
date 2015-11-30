@@ -9,7 +9,6 @@ function downloadSolutions() {
   var strPassword = prompt("Please enter password to download solution");
   if (strPassword=="MathsRulez42") {
     var strFileURL = getSolutionFileName();
-    alert(strFileURL);
     window.open(strFileURL);
   } else {
     alert("Wrong password");
