@@ -10,6 +10,6 @@ shortsummary: Maths problems from the maths battles.
 
 ##Maths Circle
 
-* [November 20, 2015 -  Match Circle #2 in The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2015_11_27_circlehw.html)
-* [November 26, 2015 -  Match Circle #3 in The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2015_11_26_circlehw.html)
+* [November 23, 2015 -  Maths Circle #2, The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2015_11_27_circlehw.html)
+* [November 30, 2015 -  Maths Circle #3, The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2015_11_26_circlehw.html)
 
