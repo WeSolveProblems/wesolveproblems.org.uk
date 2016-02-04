@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Maths Problems
-shortsummary: Maths problems from the maths battles.
+shortsummary: Problems from maths battles and maths circles.
 ---
 
 ##Maths Battles
