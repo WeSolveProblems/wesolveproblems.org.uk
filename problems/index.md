@@ -8,7 +8,7 @@ shortsummary: Problems from maths battles and maths circles.
 
 * [November 06, 2015 -  The Royal Grammar School for Boys in High Wycombe](/problems/mathsbattles/2015_11_06_hw.html)
 * [December 07, 2015 -  The Royal Grammar School for Boys in High Wycombe](/problems/mathsbattles/2015_12_07_hw.html)
-* [february 08, 2016 -  The Royal Grammar School for Boys in High Wycombe](/problems/mathsbattles/2016_02_08_hw.html)
+* [February 08, 2016 -  The Royal Grammar School for Boys in High Wycombe](/problems/mathsbattles/2016_02_08_hw.html)
 
 ##Maths Circles
 
