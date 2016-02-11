@@ -4,7 +4,8 @@ title: Maths Battle Original Rules
 shortsummary: Maths Battle is a competition between two teams in solving mathematical problems and presenting their solutions.
 ---
 
-##General Provisions
+General Provisions
+------------------
 
 Maths Combat is a competition between two teams in solving mathematical problems. First of all, the teams are presented with the problems and given a certain time limit to solve them. 
 
@@ -21,7 +22,8 @@ The winner of the battle is the team that gets the most points in total.
 If, at the end of battle, the results of the teams do not differ by more than three points, the battle is considered to have ended in a draw. If, for some reason, the battle cannot end in a draw, the jury is to declare this to the teams before the battle and announce the procedure for determining the winner.
 
 
-##The General Scheme of the Battle
+The General Scheme of the Battle
+--------------------------------
 
 The battle consists of several rounds. 
 
@@ -29,7 +31,8 @@ At the beginning of each round (if there is no rejection of the challenge - see 
 
 ![](/images/mathbattlephoto02.jpg)
 
-##The Captain’s Competition
+The Captain’s Competition
+-------------------------
 
 The ‘captain’s competition’ is held at the beginning of the battle. 
 
@@ -44,9 +47,10 @@ The jury determines the way the captain’s competition will be held in advance 
 Each team has the right to nominate any member of their team for the captain’s contest.
 
 
-##The Progress of the Round
+The Progress of the Round
+-------------------------
 
-###Report
+**Report**
 
 At the beginning of the round, the speaker explains the solution on the whiteboard. The presentation should contain answers to all the questions in the problem and proof of the accuracy and completeness of the received solutions. In particular, the speaker must prove each formulated interim statement or refer to it as already known. The speaker should try to ensure that his presentation is clear. In particular, she/he must repeat any part of her/his report at the request of the opponent or the jury. The report time is limited to 15 minutes, after which the report can be continued only with the permission of the jury.
 The speaker can use a paper with drawings during her/his presentation and (with special permission of the jury) calculations, but is not permitted to bring any text with him.
@@ -68,7 +72,7 @@ The speaker is not obliged to:
 * compare his way of solving the problem with other possible methods, including in terms of brevity, beauty and aptitude for solving other problems.*
 
 
-###Opposing
+**Opposing**
 
 While the report is in progress, the opponent can ask questions only with the consent of the speaker, but she/he has the right to ask for any part of the solution to be repeated. He/she can allow the speaker not to prove any obvious (from his perspective) facts. After the end of the report, the opponent has the right to ask the speaker questions. If the opponent does not ask a single question within a minute, it is considered that he/she has no questions. If the speaker does not begin to answer a question within a minute, it is considered that he/she has no answer.
 As a question, the opponent can:
@@ -100,20 +104,20 @@ If the opponent has a contrary example, refuting the solution of the speaker in 
 Similarly, if the solution requires an executive search, the opponent has the right to say, “I do not agree with the decision, not all cases were considered”, without specifying to the speaker exactly what case was not considered. The further actions of the speaker, the jury and the opponent are the same as in the situation with a contrary example.
 
 
-###Participation of the jury in the discussion
+**Participation of the jury in the discussion**
 
 After the end of the dialogue between the speaker and the opponent, the jury asks its questions. If necessary, it has the right to intervene before, and during the dialogue of the speaker and the opponent.
 
-###Speakers and the team
+**Speakers and the team**
 
 The speaker and the opponent can go to their captains with a request for a replacement or for a break for consultation. Other communication between the team and the speaker (opponent) is permitted only during a half a minute break, which can be taken by any team at any time (in this case the rivals can also use this time). Each team is allowed to take no more than six half a minute breaks during each battle (see para. “Number of Appearances at the whiteboard”).
 
-###Role reversal
+**Role reversal**
 
 The role reversal in the round can only happen if the challenge in this round was accepted. If the opponent has proven that the speaker has no solution (the jury decides if it is so, see para. “Scoring”) the opponent is entitled (but not obliged) to present his solution. If the opponent made the decision to present his solution, then there is a complete change of roles, that is, the former speaker becomes an opponent. If the opponent did not prove that the speaker has no solution, but found in the proposed solution some specific drawbacks, he/she is entitled (but not obliged) to dispose of all (or some) of these drawbacks (“patch holes”). The opponent gets the same right if she/he proves that the speaker has no solution, but refuses to present his own solution. If the opponent decides to “patch holes”, then a partial change of roles appears: the opponent states exactly what he/she is going to do (for example, analyse the case, which was not inquired into by the speaker; prove the statement unproven by the speaker and so on), and the former speaker opposes him.
 The inverse reversal of roles does not happen in any case!
 
-###The correctness of the challenge
+**The correctness of the challenge**
 
 If the challenge is accepted by one team, then the question of its correctness is not considered.
 If the challenge is not accepted, then there are two possibilities:
@@ -123,15 +127,15 @@ If the challenge is not accepted, then there are two possibilities:
    	
 The challenge is deemed incorrect if the opponent manages to prove that the problem is not solved. In the case of the opponent declaring the problem solved, the challenge is “automatically” accepted as correct!
 
-##Number of Appearances at the Blackboard
+**Number of Appearances at the Blackboard**
 
 Each member of the team has the right to go to the whiteboard as a speaker or an opponent no more than two times per battle. The team is entitled to replace the speaker or an opponent no more than three times per battle. In each case, the appearances are counted for both team members. At each replacement, the time allotted to that team for breaks reduces by one minute (this minute can be used directly before the replacement, or it can be not used. In the latter case, the opponent’s team is also not allowed to use it).
 
-##The Challenge Procedure. End of the Battle
+**The Challenge Procedure. End of the Battle**
 
 If the challenge has been recognised as invalid, the team has to repeat the challenge in the next round. In all other cases, the teams challenge each other in turn. At any time during the battle the team whose turn it is to make a challenge may refuse to do so (it usually happens when the team has no more solved problems, and it is risky to make a challenge, which may be flawed). Then, the other team gets the right (but not the obligation) to present the solution to the remaining problems. In this case the team which refused to make a challenge can nominate the opponents and earn points just for opposing, but has no right to present the solutions (i.e., after the rejection of the challenge, neither full, nor partial change of roles can occur). The battle ends when all the problems are discussed, or when one of the teams refuses the challenge and the other team refuses to present the solution of the remaining problems.
 
-##Earning Points 
+**Earning Points**
 
 Each problem is worth 12 points, which are distributed between the speaker, the opponent and the jury by the end of the round. If the speaker presents a correct and complete solution, she/he gets all 12 points. 
 
@@ -145,7 +149,7 @@ If the captain of the challenging team immediately admits that his team does not
 
 
 
-##The Captain  
+**The Captain**
 
 During the battle, only the captain can speak to the jury and contestants on behalf of his/her team: to challenge the other team, to refuse or accept a challenge, to request a break, and so on. He/she has the right to stop the presentation or the opposition of a representative of his team at any time. If the captain is at the whiteboard, she/he nominates a deputy, who performs the duties of the captain at this time. The names of the captain and the deputy are reported to the jury before the beginning of the battle.
 
@@ -153,7 +157,7 @@ The primary responsibility of the captain during the solving of the problems is 
 
 The captains of the teams have the right to ask the jury to provide 5-10 minutes breaks during the battle (approximately every half hour). The break may be provided only between rounds. The team, which is to make a challenge, does so in writing (without an announcement) immediately before the break and hands it to the jury, which announces the challenge immediately after the break.
 
-##The Jury
+**The Jury**
 
 The jury is the supreme interpreter of the rules of the battle. In situations, which are not covered by the rules, it shall decide at its own discretion. The teams are bound by the jury’s decisions.
 
