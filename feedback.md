@@ -4,7 +4,8 @@ title: Feedback
 shortsummary: What teachers and students say about the Maths Battles.
 ---
 
-##Teachers
+Teachers
+--------
 
 > Pupils at the RGS have really enjoyed maths battles and numbers grow week on week.
 > The problems are fun and open questions give the boys further opportunity to work
@@ -14,7 +15,8 @@ shortsummary: What teachers and students say about the Maths Battles.
 
 Mr. Jamie A. Rizk, Maths Teacher, The Royal Grammar School, High Wycombe
 
-##Students
+Students
+--------
 
 > I like the Maths Battles concept, and the challenging problems. The Maths Circles are a little repetitive; maybe two ideas per session would be more interesting. Maths Battles however are perfectly fine, and offer a great opportunity to us to give Maths Problems complex solutions.
 
