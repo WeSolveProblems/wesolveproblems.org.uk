@@ -20,4 +20,6 @@ Maths Circles
 * [January 18, 2016 -  Maths Circle #5, ``Fundamental Theorem of Arithmetic'',  The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2016_01_18_circlehw.html)
 * [January 25, 2016 - Maths Circle #6,  ``Divisibility Rules'', The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2016_01_25_circlehw.html)
 * [February 01, 2016 -  Maths Circle #7, ``Modulo Operation'', The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2016_02_01_circlehw.html)
+* [February 22, 2016 -  Maths Circle #8, The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2016_02_22_circlehw.html)
+* [February 29, 2016 -  Maths Circle #9, The Royal Grammar School for Boys in High Wycombe](/problems/circlehw/2016_02_29_circlehw.html)
 
