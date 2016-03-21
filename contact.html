@@ -1,0 +1,115 @@
+---
+layout: default
+title: Contact Us - We Solve Problems
+---
+
+<script>
+function sendEmail(fromemail, fromname, subject, body, toemail, toname) {
+  console.log("Sending email. from:" + fromemail + " to:" + toemail + "(" + toname + ") subject:" + subject + " body:" + body);
+  $.ajax({
+    type: 'POST',
+    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+    data: {
+      'key': 'yivmuojtNKW7KLSb2NeHhg',
+      'message': {
+        'from_email': fromemail,
+        'to': [
+            {
+              'email': toemail,
+              'name': toname,
+              'type': 'to'
+            }
+          ],
+        'autotext': 'true',
+        'subject': "WeSolveProblems Message: " + subject,
+        'html': "New message on the WeSolveProblems website" + 
+                "<br>From: " + fromname + " (" + fromemail + ")" +   
+                "<br>Subject: " + subject +  
+                "<br>=====================================" + 
+                "<br><pre>" + body + "</pre>"
+      }
+    }
+   }).done(function(response) {
+     console.log(response); // if you're into that sorta thing
+ });
+}
+
+function handleSendEmail(event) {
+  var fromname = $("#inputYourName").val();
+  var fromemail = $("#inputYourEmail").val();
+  var subject = $("#inputSubject").val();
+  var body = $("#inputBody").val();
+  var atsymbol = "@";
+  sendEmail(fromemail, fromname, subject, body, "vassiliphilippov" + atsymbol + "gmail.com", "Vassili Philippov");
+  sendEmail(fromemail, fromname, subject, body, "elena" + atsymbol + "boguslavsky.net", "Elena Boguslavskaya");
+  alert("Your message is sent. Thank you! We will contact you soon.");
+  event.preventDefault();
+}
+</script>
+
+<!---->
+<div class="resourcebannerbg">
+    <div class="contactbanner">
+        <div class="container clearfix">
+            <div class="resourcebanner-text col-sm-12">
+                <h2><span class="bctext">Contact Us</span></h2>
+                <span><p>We are <span class="clr">open</span> to new opportunities and will be glad to answer your questions. Please cotact us.</p></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<!---->
+<div class="cntnt">
+	<div class="container clearfix">
+		<div class="maincontent">
+			<form action="#" id="contact-form">
+        
+                    	<div class="contactname col-sm-12 col-XS-6">
+                        	<label>Name</label>
+                            <input name="" class="form-control" type="text" placeholder="Name" id="inputYourName"/>
+                        </div>
+                        
+                        <div class="contactname col-sm-12 col-XS-6">
+                        	<label>Email Address</label>
+                            <input name="" class="form-control" type="text" placeholder="Email Address" id="inputYourEmail" />
+                        </div>
+            		
+                        <div class="contactname col-sm-12 col-XS-6">
+                        	<label>Subject</label>
+                            <input name="" class="form-control" type="text" placeholder="Subject" id="inputSubject"/>
+                        </div>
+                    
+                    
+                    
+                    <div class="contact">
+                    	<div class="contactname col-sm-12 COL-XS-12">
+                        	<label>Message</label>
+                           <textarea name="" cols="" rows="6" class="form-control" placeholder="" id="inputBody"></textarea>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="col-sm-12 col-xs-12 ">
+                                <button type="submit" class="btn btn-primary btn-large" id="button-send">Send</button>
+                    </div>
+           	<div class="cl"></div>
+		</form>
+			
+        </div>
+	</div>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+
+<script>
+//$(document).ready(function () {
+  $("#contact-form").one('submit', function(event) {
+    handleSendEmail(event);
+  });
+//  $("#button-send").click(sendEmail);
+//});
+</script>

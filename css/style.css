@@ -47,7 +47,7 @@
 }
 .logo { padding:20px 0px 0px 36px; position:relative;}
 .logobottum{ }
-.logo:before { content: ""; left:0px; top:86px; position:absolute; z-index:99; background:url(../images/logobottum.png) no-repeat; width:256px; height:20px;}
+.logo:before { content: ""; left:0px; top:86px; position:absolute; z-index:99; background:url(/images/logobottum.png) no-repeat; width:256px; height:20px;}
 /* top menu style start */
 .nav ul {
     list-style: none;
@@ -77,7 +77,7 @@
 /* Home page banner section */
 .bannerbg{ background:#170c06; position:relative; min-height:560px;}
 .banner {
-    background: url(../images/banner.jpg) no-repeat center;
+    background: url(/images/banner.jpg) no-repeat center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
@@ -115,7 +115,7 @@
 .cntntwidth{ max-width:680px; margin:0 auto;}
 /* Home page cntnt section */
 
-.cntntbg{ background:url(../images/whoarewe.png) no-repeat right top;}
+.cntntbg{ background:url(/images/whoarewe.png) no-repeat right top;}
 .cntnt h2 {
     font-size: 34px;
     color: #555555;
@@ -181,7 +181,7 @@
 	position:relative;
 
 }
-.problembg{ background:url(../images/promlembg.jpg) no-repeat center center; background-size:cover;
+.problembg{ background:url(/images/promlembg.jpg) no-repeat center center; background-size:cover;
 	width:100%;
 	height:100%;
 }
@@ -232,7 +232,7 @@
 
 
 /****.....***/
-.reviewsbg{background:url(../images/reviewsbg.jpg) no-repeat; background-size:cover;}
+.reviewsbg{background:url(/images/reviewsbg.jpg) no-repeat; background-size:cover;}
 .reviewscntnr{ text-align:center; padding:100px 0px;}
 .reviews{  color:#fff; font-size:34px; text-transform:uppercase;}
 .morereviews{ background:#FFF; border-radius:15px; color:#666666; text-align:center;  font-size:16px; min-height:305px; margin:60px 0px;
@@ -280,7 +280,7 @@
 
 /* Footer bottom style */
 .footerbottom {
-    background:url(../images/footerbg.jpg) no-repeat;
+    background:url(/images/footerbg.jpg) no-repeat;
 	background-size:cover;
     padding: 60px 0;
     color: #fff;
@@ -372,7 +372,7 @@
     right: 0;
     top: 0;
     border: none;
-    background: url(../images/emailfooter.png) 50% 50% no-repeat #ff741f;
+    background: url(/images/emailfooter.png) 50% 50% no-repeat #ff741f;
 	margin-right:0px;
 }
 .subscriptionform .btn:hover {
@@ -390,7 +390,7 @@
 .resourcebanner:after {
 	content: "";
 	top:0px;
-    background: url(../images/resizable/resourcesbg.jpg) center;
+    background: url(/images/resizable/resourcesbg.jpg) center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
@@ -430,7 +430,7 @@
 .booklist ul li{  position:relative; list-style:none; padding:2px 0px 2px 32px; }
 .booklist ul li a{ border-bottom:1px solid #c6c6c6;   font-size:15px; font-weight:400; color:#808080; }
 .booklist ul li a:hover{ color:#ff741f; text-decoration:none; border-bottom:1px solid #ff741f;}
-.booklist ul li:before{ background:url(../images/arrow.png) no-repeat; content: "";  z-index:99; background-color:#808080; position:absolute; 
+.booklist ul li:before{ background:url(/images/arrow.png) no-repeat; content: "";  z-index:99; background-color:#808080; position:absolute; 
 width:15px; height:15px; left:10px; top:6px;}
 .booklist ul li:hover:before{ background-color:#ff741f; content: ""; width:15px; height:15px;}
 .resourcesimg{ margin:0 auto; max-width:366px;}
@@ -443,7 +443,7 @@ width:15px; height:15px; left:10px; top:6px;}
 .mathsbanner:after {
 	content: "";
 	top:0px;
-    background:url(../images/resoursbannerbg.jpg) center center;
+    background:url(/images/resoursbannerbg.jpg) center center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
@@ -476,7 +476,7 @@ width:15px; height:15px; left:10px; top:6px;}
 .booklist2 ul li{  position:relative; list-style:none; padding:8px 0px 8px 32px; }
 .booklist2 ul li a{ border-bottom:1px solid #c6c6c6;   font-size:15px; font-weight:400; color:#808080; }
 .booklist2 ul li a:hover{ color:#ff741f; text-decoration:none; border-bottom:1px solid #ff741f;}
-.booklist2 ul li:before{ background:url(../images/arrow.png) no-repeat; content: "";  z-index:99; background-color:#808080; position:absolute; 
+.booklist2 ul li:before{ background:url(/images/arrow.png) no-repeat; content: "";  z-index:99; background-color:#808080; position:absolute; 
 width:15px; height:15px; left:10px; top:10px;}
 .booklist2 ul li:hover:before{ background-color:#ff741f; content: ""; width:15px; height:15px;}
 /*****problems****/
@@ -489,7 +489,7 @@ width:15px; height:15px; left:10px; top:10px;}
 .problemsbanner:after {
 	content: "";
 	top:0px;
-    background:url(../images/resizable/problemsbg.jpg) center;
+    background:url(/images/resizable/problemsbg.jpg) center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
@@ -537,7 +537,7 @@ width:15px; height:15px; left:10px; top:10px;}
 .aboutbanner:after {
 	content: "";
 	top:0px;
-    background:url(../images/resizable/aboutbg.jpg) center;
+    background:url(/images/resizable/aboutbg.jpg) center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
@@ -587,7 +587,7 @@ width:15px; height:15px; left:10px; top:10px;}
 .feedbackbanner:after {
 	content: "";
 	top:0px;
-    background:url(../images/resizable/feedbackbg.jpg) center;
+    background:url(/images/resizable/feedbackbg.jpg) center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
@@ -625,7 +625,7 @@ width:15px; height:15px; left:10px; top:10px;}
 .contactbanner:after {
 	content: "";
 	top:0px;
-    background:url(../images/resizable/contactbg.jpg) center;
+    background:url(/images/resizable/contactbg.jpg) center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
@@ -705,7 +705,7 @@ width:15px; height:15px; left:10px; top:10px;}
 .list{ padding:0px 0 10px 7px;}
 .list ul { padding:0px;}
 .list ul li{  position:relative; list-style:none; padding-left:25px;}
-.list ul li:before{ background:url(../images/arrow.png) no-repeat; content: "";  z-index:99; background-color:#808080; position:absolute; 
+.list ul li:before{ background:url(/images/arrow.png) no-repeat; content: "";  z-index:99; background-color:#808080; position:absolute; 
 width:15px; height:15px; left:0px; top:4px;}
 
 .originalrules h2{ text-align:center; padding-bottom: 20px;}
