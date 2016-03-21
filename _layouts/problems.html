@@ -1,7 +1,63 @@
 {% include top.html %}
+
+<!---->
+<div class="resourcebannerbg">
+    <div class="resourcebanner">
+        <div class="container clearfix">
+            <div class="resourcebanner-text col-sm-12">
+                <h2><span class="bctext">Maths Problems</span></h2>
+                <span><p>{{ page.shortsummary}}</p></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<!---->
+
       <script src="{{ page.url | replace:'.html','_solutions.js'}}"></script>
+
+
+<div class="simplifiedrules">
+	<div class="cntnt1">
+		<div class="container clearfix">
+    		<div class="col-sm-12">
+				<div class="row">
+                	<div class="cntntbtn">
+
   {{ content }}
 
+                    </div>
+				</div>
+   		 	</div>
+            
+            <div class="col-sm-12">
+				<div class="row">
+                	<div class="cntntbtn">
 <button type="button" class="btn btn-primary btn-lg" onclick="downloadSolutions();">Download the solutions</button>
+
+<div class="modal fade" id="mysmall" >
+	<div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        
+            <div class="modal-header">
+            	<button class="close" data-dismiss="modal"><span>x</span></button>
+            </div>
+            
+            <div class="modal-body"><input name="" type="text" class="form-control"/></div>
+            
+        </div>
+	</div>
+</div>
+
+<!---->
+
+                    </div>
+				</div>
+   		 	</div>
+		</div>
+	</div>
+</div>
+
 
 {% include bottom.html %}
