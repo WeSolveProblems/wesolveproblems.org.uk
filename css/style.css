@@ -443,7 +443,7 @@ width:15px; height:15px; left:10px; top:6px;}
 .mathsbanner:after {
 	content: "";
 	top:0px;
-    background:url(/images/resoursbannerbg.jpg) center center;
+    background:url(/images/resizable/problemsbg.jpg) center center;
 	background-size:cover;
 	position:absolute;
 	width:100%;
