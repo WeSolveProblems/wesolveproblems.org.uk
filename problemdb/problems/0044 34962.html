@@ -1,0 +1,17 @@
+---
+problem_id: 34962
+category_ids: 355 571
+difficulty: 2+
+classes: 7 8 9
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+Is it possible to arrange 1000 line segments in a plane so that both ends of each line segment rest strictly inside another line segment?
+
+<h1>Solution</h1>
+Consider the 1000 line segments arranged in the plane. Consider a straight line that is not parallel to any of the line segments (Such a line must exist, as the number of line segments is finite, but the number of directions is infinite). Then project the line segments onto the straight line. It is clear that the right-most projection cannot touch the middle of another line segment, as that line segment would then be the rightmost. Therefore we have a contradiction, so no, it is not possible.
+<h1>Answer</h1>
+No.

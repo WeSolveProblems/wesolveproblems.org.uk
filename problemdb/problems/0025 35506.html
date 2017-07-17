@@ -1,0 +1,20 @@
+---
+problem_id: 35506
+category_ids: 355 1255
+difficulty: 2+
+classes: 7 8
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+Is it possible to fill an nxn table with the numbers $-1, 0, 1$ such that the sums of all the rows, columns and diagonals are unique?
+<h1>Hint</h1>
+How many sums are there? How many possible values for the sum are there?
+
+<h1>Solution</h1>
+The question requires that the value of $2n+2$ sums ($n$ rows, $n$ columns and two diagonals) are different from one another. Each of these sums consists of $n$ terms, with the values $-1, 0, 1$ . Therefore each of the sums has an integer value between $-n$ and $n$ . Therefore the total number of possible values for the sum is $2n+1$ Since $2n+1 < 2n+2$ at least two sums will have tha same value.
+
+<h1>Answer</h1>
+No.
