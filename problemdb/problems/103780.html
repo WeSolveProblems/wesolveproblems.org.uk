@@ -1,0 +1,24 @@
+---
+problem_id: 103780
+category_ids: 355 682 679
+difficulty: 3
+classes: 6 7 8
+source_id: 198948
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+In any group of 10 children out of a total of 60 pupils, there will be three in the same class. Will it always be the case that amongst the 60 pupils there will be:
+1) 15 classmates?
+2) 16 classmates?
+
+<h1>Solution</h1>
+a) Divide the 60 pupils into groups of classmates. If no class of 15 or more pupils exists, then each group contains no more than 14 pupils. Let $k$ equal the number of groups, containing two or more pupils. We shall call these groups 'big' groups.
+The first condition of the problem means than $ k \leq 4$ (otherwise, by taking two pupils from 5 big groups we could get a group of 10 pupils that doesn't contain 3 classmates). Then we consider two cases:
+1.  $ k \leq 3$ This means the total number of schoolchildren in 'big' groups does not exceed $14 \times 3 = 42$ Therefore, there are 18 children that do not belong to a 'big' group, so do not have a single classmate. This is a contradiction.
+2. k=4 In this case, the total number of schoolchildren in 'big' groups does not exceed 56. Therefore, there are 4 children that do not have a single classmate. By taking these 4, and two from each of the 'big' groups, we can form a group of 12 schoolchildren that does not contain 3 classmates. This is a contradiction.
+Therefore yes, there will always be 15 classmates amongst the 60 schoolchildren.
+b) No, for example 4 classes, each containing 15 schoolchildren.
+<h1>Answer</h1>
+a) yes b) no

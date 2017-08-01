@@ -1,0 +1,15 @@
+---
+problem_id: 111770
+category_ids: 355
+difficulty: 3
+classes: 8 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+In 25 boxes there are spheres of different colours. It is known that for any $k$ where $ 1 \leq k \leq 25$ in any $k$ of the boxes there are spheres of exactly $k+1$ different colours. Prove that a sphere of one particular colour lies in every single box.
+
+<h1>Solution</h1>
+Let us call the boxes $B_1,..., B_25$ From the information given we know that there are a total of 26 different colours of spheres in the boxes. If we consider every box, apart from a box $B_i$, then the total number of different colours is 25. Hence there is a colour which is present only in box $B_i$ - let this colour be called $C_i$. Since the total number of colours is 26, there will be exactly one coloue $C$, which is different from all the colours $C_i$. If an arbitrary box $B_k$ does not contain any spheres of colour $C$, then it must only contain spheres of colour $C_k$ which contradicts the conditions given ( box $B_k$ must contain speheres of exactly two different colours). Therefore there must be a sphere of colour $C$ in every box. 

@@ -1,0 +1,16 @@
+---
+problem_id: 98260
+category_ids: 353 857
+difficulty: 3
+classes: 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+4 points $a, b, c, d$ lie on the segment $[0, 1]$ of the number line. Prove that there will be a point $x$, lying in the segment $[0, 1]$ that satisfies
+$$\frac{1}{\left | x-a\right |}+\frac{1}{\left | x-b\right |}+\frac{1}{\left | x-c\right |}+\frac{1}{\left | x-d\right |} < 40 $$
+
+<h1>Solution</h1>
+The points $a, b, c, d$ divide the segment $[0, 1]$ into no more than 5 interval ranges. At least one of these interval ranges has a length of no less than 0.2. Let $x$ lie at the centre of this interval range. The distance between $x$ and the end of the interval are no less than 0.1 and the distance to the other points $a, b, c, d$ is greater than 0.1. Therefore two of the numbers $\left | x-a \right |, \left | x-b \right |, \left | x-c \right |, \left | x-d \right |$ are no less than 0.1, and the other two are greater than 0.1. Hence their reciprocals are no greater than 10, and two of them are less than 10. Therefore the sum of the reciprocals is less than 40.
