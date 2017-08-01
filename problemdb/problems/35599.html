@@ -1,0 +1,20 @@
+---
+problem_id: 35599
+category_ids: 355 228 693
+difficulty: 3
+classes: 9 10
+source_id: 120605
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+Upon the installation of a keypad lock, each of the 26 letters located on the lock's keypad is assigned an arbitrary natural number, known only to the owner of the lock. Different letters do not necessarily have different numbers assigned to them. After a combination of different letters (each letter is typed at most once) is entered into the lock. A summation is carried out of the corresponding numbers to the letters typed in. The lock opens, only if the result of the summation is divisible by 26. Prove that for any set of numbers assigned to the 26 letters, there exists a combination that will open the lock.
+<h1>Hint</h1>
+Prove that the searched for combination can be found as a combination of consecutive letters of the alphabet.
+
+<h1>Solution</h1>
+Let $S(n)$ equal the remainder when divided by 26, of the sum of the corresponding natural numbers assigned to the first $n$ letters of the alphabet $(n=1, 2, 3, ..., 26)$. If amongst the numbers $S(1), S(2),..., S(26)$ there is a zero $( S(t)=0)$, then there is a working combination which consists of the first $t$ letters of the alphabet. If amongst the numbers $S(1), S(2),..., S(26)$ there is no such value, then there will be two values which are equal $S(k) = S(m)$ (assume that $k < m$ without loss of generality). Then the working combinatio being searched for will be the section of the alphabet starting with the $(k+1)$th letter and ending with the $m$th letter.
+
+<h1>Note</h1>
+Comparable to problem 103964

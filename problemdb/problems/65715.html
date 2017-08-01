@@ -1,0 +1,18 @@
+---
+problem_id: 65715
+category_ids: 355
+difficulty: 3
+classes: 7 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+Some boys and girls (both are present) are standing in a circle. There are 20 children in total. It is known that each boy's neighbour in the clockwise direction is a child wearing a blue T-shirt, and that each girl's neighbour in the anticlockwise direction is a child wearing a red T-shirt. Is it possible to uniquely determine how many boys there are in the circle?
+
+<h1>Solution</h1>
+Let $B$ represent a boy and $G$ represent a girl. The arrangement $BXG$ is not possible, due to the conflicting colours of the T-shirt belonging to X. Therefore, the second child next to a boy (his neighbour's neighbour) in the clockwise direction must be a boy - and the second child next to that boy must in the clockwise direction must also be a boy, and so on all the way around the circle. This means that boys make up at least half of the total number of children in the circle. Using analogous reasoning for girls, we can show that they also make up at least half the number of children in the circle. It follows, since both boys and girls are present, that there are 10 of each.
+
+<h1>Answer</h1>
+Yes, it is possible.
