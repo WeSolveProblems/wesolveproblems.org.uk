@@ -1,0 +1,16 @@
+---
+problem_id: 98646
+category_ids: 355
+difficulty: 3-
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+20 birds fly into a photographer's studio - 8 starlings, 7 wagtails and 5 woodpeckers. Each time the photographer presses the shutter to take a photograph, one of the birds flies away (forever). How many photographs can the photographer take, to be sure that at the end there will be no fewer than 4 birds of one species and no less than 3 of another remaining in the studio.
+
+<h1>Solution</h1>
+Taking 8 photographs would be dangerous - in this time 3 woodpeckers and 5 wagtails could fly away, leaving just 2 of each species.
+We can show that it is possible to take 7 photographs. Then there will be $20 - 7 = 13$ birds left in the studio. Therefore there will be no less than $13 \div 3$ birds of at least one of the species, that is no fewer than 5 birds. From the other side, there are no more than 8, therefore the total number of birds of the other two species is no less than 5. It follows that the number of birds of one of these two species is no less than 3. 
