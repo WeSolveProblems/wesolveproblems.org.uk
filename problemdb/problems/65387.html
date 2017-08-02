@@ -1,0 +1,27 @@
+---
+problem_id: 65387
+category_ids: 352 366 590
+difficulty: 3+
+classes: 8 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  What is the minimum number of 1x1 squares that need to be drawn, in order to get an image of a 25x25 square divided into 625 smaller 1x1 squares?
+</p>
+
+<h1>Solution</h1>
+<p>
+  To draw the perimeter of the 25x25 square we have no choice but to draw all 96 edge and corner squares. Divide the inner remaining 23x23 square into 264 'dominoes' of size 2x1 and one 1x1 square. We need to draw one of the 1x1 squares in each 'domino' (otherwise the line dividing the 2x1 square into two 1x1 squares will not be visible). Therefore in total we need to draw $96 + 264 = 360$ 1x1 squares.
+</p>
+<p>
+  From another perspective - 350 squares is sufficient. Consider a 'chessboard' shading of the 25x25 square, in which all of the corner 1x1 squares are black. Each line segment in the 'grid' we are trying to create is an edge of either a 'border' square (edge or corner squares) or a white square. Therefore it is sufficient to draw all of the border squares (of which there are 96) and all of the inside white squares (of which there are 264).
+</p>
+
+<h1>Answer</h1>
+<p>
+  360 squares.
+</p>

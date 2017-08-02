@@ -1,0 +1,27 @@
+---
+problem_id: 65552
+category_ids: 355 590
+difficulty: 3+
+classes: 8 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  A box contains 100 red, blue, and white marbles. It is known that if we remove 26 marbles from the box without looking, we will always have removed at least 10 marbles of one colour. What is the minimum number of marbles we need to remove, to guarantee that we have removed 30 marbles of the same colour?
+</p>
+
+<h1>Solution</h1>
+<p>
+  We will prove that 66 marbles is sufficient. Let there be no more than 29 marbles of each colour in the 66 marbles drawn. Then there must be no less than $66 - 2 \times 29 = 8$ marbles of each colour and no fewer than $66 - 29 = 17$ marbles of any two colours. But then there must be a group of marbles of the form $8, 9, 9$ among them, which contradicts the first condition.
+</p>
+<p>
+  65 is insufficien, for example if the marbles are distributed 7, 46, 47.
+</p>
+
+<h1>Answer</h1>
+<p>
+  66 marbles.
+</p>
