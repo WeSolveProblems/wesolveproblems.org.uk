@@ -9,12 +9,14 @@ use_math: true
 ---
 
 <h1>Problem</h1>
-A road of length 1km is lit with streetlights. Each streetlight illuminates a stretch of road of length 1m. What is the maximum number of streetlights that there could be along the road, if it is known that if any single streetlight is extinguished, the street will no longer be fully illuminated?
+<p>A road of length 1km is lit with streetlights. Each streetlight illuminates a stretch of road of length 1m. What is the maximum number of streetlights that there could be along the road, if it is known that if any single streetlight is extinguished, the street will no longer be fully illuminated?</p>
 <h1>Hint</h1>
-If the stretch of road illuminated by the $n$th and the $(n+2)$th streetlight overlap, then the $(n=1)$th streetlight can be extinguished.
+<p>If the stretch of road illuminated by the $n$th and the $(n+2)$th streetlight overlap, then the $(n=1)$th streetlight can be extinguished.</p>
 
 <h1>Solution</h1>
-Number the streetlights with natural numbers in order along the road. If the stretch of road illuminated by the $n$th and the $(n+2)$th streetlight overlap, then the $(n=1)$th streetlight can be extinguished. Therefore the stretches of road illuminated by streetlights with odd numbers do not overlap. On a road of length 1000m we cannot place more than 999 streetlights without their illuminated stretches of road overlapping. Therefore there are no more than 1998 streetlights. If we place the streetlights such that the centre of the stretch of road they illuminate form an arithmetic progression - the first term of which would be 0.5m and the 1998th term of which would be 999.5m. Between the $n$th and $(n+2)$th streetlight we leave a gap of $ \frac{1}{1997}$m. This gap will only be illuminated be the $(n+1)$th streetlight. Therefore no streetlight can be extinguished without leaving an unlit stretch of road.
+<p>
+  Number the streetlights with natural numbers in order along the road. If the stretch of road illuminated by the $n$th and the $(n+2)$th streetlight overlap, then the $(n=1)$th streetlight can be extinguished. Therefore the stretches of road illuminated by streetlights with odd numbers do not overlap. On a road of length 1000m we cannot place more than 999 streetlights without their illuminated stretches of road overlapping. Therefore there are no more than 1998 streetlights. If we place the streetlights such that the centre of the stretch of road they illuminate form an arithmetic progression - the first term of which would be 0.5m and the 1998th term of which would be 999.5m. Between the $n$th and $(n+2)$th streetlight we leave a gap of $ \frac{1}{1997}$m. This gap will only be illuminated be the $(n+1)$th streetlight. Therefore no streetlight can be extinguished without leaving an unlit stretch of road.
+</p>
 
 <h1>Answer</h1>
-1998 streetlights. 
+<p>1998 streetlights. </p>
