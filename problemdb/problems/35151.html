@@ -1,0 +1,31 @@
+---
+problem_id: 35151
+category_ids: 355 202
+difficulty: 3
+classes: 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  Every point in a plane, which has whole number co-ordinates is plotted in one of $n$ colours. Prove that there will be a rectangle made out of 4 points of the same colour.
+</p>
+<h1>Hint</h1>
+<p>
+  Consider the whole-number points on an infinitely long horizontal strip in the plane. There will be two columns on the strip, where the order of colours of points is the same.
+</p>
+<h1>Solution</h1>
+<p>
+  Consider a strip consisting of $n+1$ consecutive horizontal rows of points. Consider the vertical columns of this strip, consisting of $n+1$ points. There is only a finite number of ways of plotting $n+1$ points in $n$ colours (the first point can be plotted $n$ different ways. Indepndently of this the second point can also be plotted in $n$ different ways, and so on. In total there are $n^(n+1)$ was of plotting $n+1$ points in $n$ different colours).
+</p>
+<p>
+  Amongst the vertical columns of the strip being considered (of which there are infinitely many) there will be two identically plotted columns $A$ and $B$, that is the points in these two columns located in the $i$th row, where $i=1, 2,...,n+1$ are plotted in the same colour.
+</p>
+<p>
+  Since column $A$ contains $n+1$ whole-numbered points, there will be two points in this column - $X$ and $Y$ which have the same colour. In row $B$ the points $X'$ and $Y'$ are located in the same rows as $X$ and $Y$ and plotted in the same colour as $X$ and $Y$ respectively (since $A$ and $B$ are plotted in the same colours).
+</p>
+<p>
+  Therefore the points $X, Y, X', Y'$ act as the vertices of a rectangle, and have the same colour - so are the 4 points being searched for.
+</p>

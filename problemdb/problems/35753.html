@@ -1,0 +1,26 @@
+---
+problem_id: 35753
+category_ids: 355 568
+difficulty: 3
+classes: 8 9 10
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  A convex polygon on a plane contains no fewer than $m^2+1$ points with whole number co-ordinates. Prove that within the polygon there are $m+1$ points with whole number co-ordinates that lie on a single straight line.
+</p>
+<h1>Hint</h1>
+<p>
+  Colour in the points in the plane in $m^2$ different colours. There will be two points of the same colour.
+</p>
+
+<h1>Solution</h1>
+<p>
+  By the pigeon hole principle within $m^2+1$ points with whole-number co-ordinates there will be two points $(k, l)$ and $k_1, l_1$ such that $k=k_1$ (mod $m$) and $l=l_1$ (mod $m$).
+</p>
+<p>
+  Therefore there will be $m+1$ points $ \left ( k+ \frac{k_1-k}{m}i , l+ \frac{l_1-l}{m}i \right ) , 0 \leq i \leq m, $ that have whole number co-ordinates and lie on the line segment connecting  $(k, l)$ and $k_1, l_1$.
+</p>
