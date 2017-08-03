@@ -1,0 +1,15 @@
+---
+problem_id: 98298
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+Some real numbers $a_1, a_2, a_3,...,a_1996$ are written in a row. Prove that it is possible to pick one or several adjacent numbers, so that their sum is less than 0.001 away from a whole number.
+
+<h1>Solution</h1>
+Create the numbers $b_1={a_1}, b_2={a_1+a_2}, b_3={a_1+a_2+a_3},...,b_1998={a_1, a_2, a_3,...,a_1996}. Consider only the decimal part of each $b$ number. Divide the range $[0,1]$ into 1001 line segments of length $\frac{1}{1001}$. Some two of the numbers $b_1,...,b_1996$ will end up in the same line segment (let these be $b_i$ and $b_j , i < j$). This means that $a_i_+_1+...+a_j$ differs from a whole number by no more than $\frac{1}{1001} < 0.001$.

@@ -1,0 +1,27 @@
+---
+problem_id: 65658
+category_ids: 355
+difficulty: 3+
+classes: 7 8 9
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  When 200 sweets are randomly distributed to a class of schoolchildren, there will always be at least two children who receive the same number of sweets (or even no sweets at all). What is the minimum number of children in this class?
+</p>
+
+<h1>Solution</h1>
+<p>
+  Assume that there are no more than 20 children in the class. Then we will give the first child in the class no sweets, the second - one sweet, the third - two sweets, and so on. In this case there will be no more than $0+1+2+...+19=190$ sweets handed out. If we give the remaining 10 sweets to the child with the most sweets, we will have demonstrated a distribution where no child has the same number of sweets as any other. Therefore there must be more than 20 children in the class.
+</p>
+<p>
+  If the class contains 21 children, then the minimum number of sweets necessary for each child to receive a different number of sweets is equal to $0+1+2+...+20=210$. Since we only have 200 sweets, then there will always be at least two children with the same number of sweets.
+</p>
+
+<h1>Answer</h1>
+<p>
+  21
+</p>

@@ -1,0 +1,19 @@
+---
+problem_id: 98143
+category_ids: 355
+difficulty: 3+
+classes: 7 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  A gang contains 101 bandits. The whole gang has never taken part in a raid together, but every possible pair of bandits has taken part in a raid together exactly once. Prove that one of the bandits has taken part in no less than 11 different raids.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Let there be a bandit $A$ who has taken part in no more than 10 raids. There are a total of 100 other terrorists, therefore at least one of those raids (let us call it raid $Z$) involved at least 10 other bandits (excluding $A$). Consider bandit $B$ who did not take part in $Z$. $B$ took part in raids with all 11 participants of $Z$, and with each one separately. Therfore $B$ must have taken part in 11 or more raids.
+</p>

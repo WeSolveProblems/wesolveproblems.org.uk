@@ -1,0 +1,28 @@
+---
+problem_id: 78592
+category_ids: 352
+difficulty: 3+
+classes: 9 10 11
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  What is the maximum number of draughts kings we can place on the black squares of a standard 8x8 chess/ draughts board, so that each king is attacking (can jump over) at least one other?
+</p>
+
+<h1>Solution</h1>
+<p>
+  Consider a particular arrangement of kings, that satisfies the conditions. A king standing on the edge squares of the board can never be attacked by another king, therefore all of the kings must lie in the 'inner' square of size 6x6. Notice, that in any square of size 3x3 there can be no more than 4 kings. If such a square contains 5 kings, then the centre square must definitively be a black one, and the kings must stand on all of the black squares in that 3x3 square. However in this situation, the king standing in the centre cannot be attacked by any other king. Hence, a 6x6 square can contain no more than $4 \times 4 = 16$ kings.
+</p>
+<p>
+  One such arrangement is shown in the drawing below.
+</p>
+<img src="78592.PNG">
+
+<h1>Answer</h1>
+<p>
+  16 kings.
+</p>
