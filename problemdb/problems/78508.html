@@ -1,0 +1,19 @@
+---
+problem_id: 78508
+category_ids: 355 103
+difficulty: 3+
+classes: 9 10 11
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  Prove that in a group of 11 arbitrary infinitely long decimal numbers, it is possible to choose two, whose difference contains either (in decimal form) an infinite number of zeroes, or an infinite number of nines.
+</p>
+
+<h1>Solution</h1>
+<p>
+  By the pigoeon hole principle, for any column (10ths, 100s, 1000s, etc.) in the numbers after the decimal point, there will be at least two of the 11 numbers that have the same digit in that column. There will be such a pair of the numbers for every column. Since there is only a finite number of possible pairs of these 11 numbers, at least one of the pairs will occur in an infinite number of columns. That is, there will be a pair of these 11 numbers, whose decimal representations have the same digit in the same column an infinite number of times). Consider the difference between these two numbers. If the digits in these two numbers co-incide in a given column, then the digit in that column of the difference between those two numbers will either be a zero (if during 'column subtraction' that digit isn't carried from the next one) or a nine (if it is). Therefore in decimal form, the difference between these two numbers contains either an infinite number of zeroes or an infinite number of nines.
+</p>

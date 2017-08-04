@@ -1,0 +1,30 @@
+---
+problem_id: 109808
+category_ids: 352 568 202 1259
+difficulty: 3+
+classes: 7 8 9
+source_id:
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  All of the points with whole number co-ordinates in a plane are plotted in one of three colours (all three colours are present). Prove that there will always be possible to form a right-angle triangle from these points, so that its vertices are of three different colours.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Let us call the points with integer co-ordinates 'nodes'.
+</p>
+<p>
+  If on each vertical line in the plane, all of the nodes are of one colour, then we can pick any node (say, it is of colour 1). Draw two perpendicular lines through tis node, that are angled at $45^\circ$ to the vertical and choose one node from each of the lines, one each of colours 2 and 3 (such points exist, since there are verticals of all three colours). The resultant triangle would be the one required. The situation is analogous if all of the horizontal lines in the plane are of one colour.
+</p>
+
+<p>
+  Let there be a vertical line $v$ in the plane, which contains nodes of two colours (colours 1 and 2, say). Then choose any node $C$ of colour 3, node $A$ which lies on $v$ and on the same horizontal line as $C$ (say $A$ is of colour 1) and then any node $B$ of colour 2 which lies on $v$. This will give the required triangle.
+</p>
+
+<p>
+  If there is a vertical $v$, which contains nodes of all three colours, then we can choose a horizontal $h$ which does not only contain nodes of one colour. Let point $A$ on the intersection of $h$ and $v$ be of colour 1. Then choose a point $B$ that lies on $h$ which is not of colour 1, and then pick a point $C$ that lies on $v$ that is of the third colour.
+</p>

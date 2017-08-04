@@ -1,0 +1,31 @@
+---
+problem_id: 103787
+category_ids: 355 1057 678 361
+difficulty: 3+
+classes: 7 8 9
+source_id: 198948
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  In a term, a school ran 20 sessions of an after-school Astronomy Club. Exactly five pupils attended each session. Furthermore, no two students encountered one another over all of the sessions more than once. Prove that no fewer than 20 pupils attended the Astronomy Club at some point during the term.
+</p>
+<h1>Hint</h1>
+<p>
+  Consider the most 'active' pupil.
+</p>
+
+<h1>Solution</h1>
+<h2>Solution 1</h2>
+<p>
+  In total there were $20 \times 5=100$ 'attendances' to the club. If no pupil attended more than 4 sessions, then there cannot have been fewer than $100 \div 4=25$ pupils who attended over the term.
+</p>
+<p>
+  Consider now if at least one of the pupils attended 5 sessions. In this case, in each of the 5 sessions, all 4 of the other participants must have been different each time. If we have 4 pupils who attended 5 sessions, then we have a total of $5 \times 4=20$ pupils over the 20 sessions.
+</p>
+<h2>Solution 2</h2>
+<p>
+  From 5 pupils we can create 10 different pairs. Since these pairs do not meet again in any other session, so do not repeat themselves, then in total $10 \times 20=200$ different pairs of pupils attended. However from 19 pupils we could only create $^1^9C_2 = 171$  such pairs, therefore there must have been at least 20 pupils.
+</p>
