@@ -9,20 +9,34 @@ use_math: true
 ---
 
 <h1>Problem</h1>
-It is easy to distribute a fleet of ships for the game 'Battleships' on a 10x10 board (see the diagram below). What is the smallest square board, on which this fleet can be placed? (Note that by the rules of the game, no two ships can be placed on horizontally, vertically or diagonally adjacent squares).
+<p>
+  It is easy to distribute a fleet of ships for the game 'Battleships' on a 10x10 board (see the diagram below). What is the smallest square board, on which this fleet can be placed? (Note that by the rules of the game, no two ships can be placed on horizontally, vertically or diagonally adjacent squares).
+</p>
 <img src="115384 1.gif">
 
 <h1>Solution</h1>
-An example of an arrangement of this fleet on a 7x7 board is shown below. It remains to prove that no such arrangement is possible on a 6x6 board.
+<p>
+  An example of an arrangement of this fleet on a 7x7 board is shown below. It remains to prove that no such arrangement is possible on a 6x6 board.
+</p>
 <img src="115384 2.gif">
 <h2>Solution 1</h2>
 <img src="115384 3.gif">
-Let us count not squares, but corners of squares taken up by a ship. A 1x4 ship takes up $2 \times 5=10$ corners, a 1x3 ship - 6 corners, a 1x1 ship - 4 corners. By the rules of the game, no corner of any square can be occupied by more than one ship. Therefore all of the ships take up $10+ 2 \times 8 + 3 \times 6 +4 \times 4= 60$ corners, and placing all of the ships on a board with fewer corners is impossible.
-However a 6x6 board contains just $ (6+1)^2=49 < 60$ corners.
+<p>
+  Let us count not squares, but corners of squares taken up by a ship. A 1x4 ship takes up $2 \times 5=10$ corners, a 1x3 ship - 6 corners, a 1x1 ship - 4 corners. By the rules of the game, no corner of any square can be occupied by more than one ship. Therefore all of the ships take up $10+ 2 \times 8 + 3 \times 6 +4 \times 4= 60$ corners, and placing all of the ships on a board with fewer corners is impossible.
+</p>
+<p>
+  However a 6x6 board contains just $ (6+1)^2=49 < 60$ corners.
+</p>
 <img src="115384 4.gif">
-The same idea can be expressed slightly differently. Surround each ship in a rectangle, with dimensions half a square larger than the ship itself in each direction (see diagram). These rectangles cannot touch, and occupy a total of $10+ 2 \times 8 + 3 \times 6 +4 \times 4= 60$ squares. If it is possible to place all of the ships on a 6x6 board, then it would have to be possible to place all of the corresponding rectangles on a 7x7 board which contains just $49< 60$ squares.
-Note that each square of the new board for the rectangles corresponds exactly to a corner of the original board in the first version, which is why the calculations turn out exactly the same.
+<p>
+  The same idea can be expressed slightly differently. Surround each ship in a rectangle, with dimensions half a square larger than the ship itself in each direction (see diagram). These rectangles cannot touch, and occupy a total of $10+ 2 \times 8 + 3 \times 6 +4 \times 4= 60$ squares. If it is possible to place all of the ships on a 6x6 board, then it would have to be possible to place all of the corresponding rectangles on a 7x7 board which contains just $49< 60$ squares.
+</p>
+<p>
+  Note that each square of the new board for the rectangles corresponds exactly to a corner of the original board in the first version, which is why the calculations turn out exactly the same.
+</p>
 
 <h2>Solution 2</h2>
-Divide the 6x6 board into 9 2x2 squares. Each such square upon placement of the ships can contain marked squares belonging to only one ship. However there are 10 ships in total, therefore they cannot be placed on a board this size. (note that this line of reasoning proves that all 10 ships cannot be placed on a 6x6 board even if they are all of size 1x1.)
+<p>
+  Divide the 6x6 board into 9 2x2 squares. Each such square upon placement of the ships can contain marked squares belonging to only one ship. However there are 10 ships in total, therefore they cannot be placed on a board this size. (note that this line of reasoning proves that all 10 ships cannot be placed on a 6x6 board even if they are all of size 1x1.)
+</p>
 <img src="115384 5.gif">
