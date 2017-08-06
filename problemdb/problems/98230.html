@@ -1,0 +1,25 @@
+---
+problem_id: 98230
+category_ids: 355 249
+difficulty: 4-
+classes: 7 8 9
+source_id: 111442
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  A village infant school has 20 pupils. If we pick any two pupils, they will have a shared granddad.
+</p>
+<p>
+  Prove that one of the granddads has no fewer than 14 grandchildren who are pupils at this school.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Consider any pupil $A$ and both of their granddads $X$ and $Y$. If not all of the pupils in the school are grandchildren of one of them (in which case there is nothing more to prove), then there is a pupil $B$ who is not a grandchild of $X$ (and therefore must be a grandchild of $Y$) and a pupil $C$ who is not a grandchild of $Y$ (and therefore must be a grandchild of $X$). The pupils $B$ and $C$ must have a shared granddad $Z$.
+</p>
+<p>
+  There can be no more granddads other than $X$, $Y$ and $Z$ in the class, as the grandchild of any further granddad, would not have a shared granddad with one of the pupils $A$, $B$ or $C$. So we must distribute 20 grandchildren amongst 3 granddads (bearing in mind that each grandchild has two granddads), meaning that one granddad has no fewer than $ \frac{2}{3} \times 20$ grandchildren, that is, no fewer than 14 grandchildren.
+</p>

@@ -1,0 +1,22 @@
+---
+problem_id: 79285
+category_ids: 355 679 1278
+difficulty: 4-
+classes: 7 8 9
+source_id: 151995
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  The sum of 100 natural numbers, each of which is no greater than 100 is equal to 200. Prove that it is possible to pick some of these numbers, so that their sum is equal to 100.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Notice that amongst the given numbers at least two are greater than 1 (if 99 of the numbers are 1, then the 100th number must be 101 which contradicts the conditions given in the problem). Therefore it must be possible to divide the 100 numbers in to two groups of 50, so that the sum of the numbers in each group is greater than 50.
+</p>
+<p>
+  From problem 103964, we get that it is possible to choose several numbers from each group, whose sum is a multiple of 50. However no sum from either of the groups can equal 150 or 200. Therefore the sum from one of the groups is equal to 100, or the sum from both groups is equal to 50. In both cases we will have found a group of numbers whose sum is equal to 100, as required.
+</p>

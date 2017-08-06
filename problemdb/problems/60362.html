@@ -1,0 +1,43 @@
+---
+problem_id: 60362
+category_ids: 355 679
+difficulty: 4-
+classes: 8 9 10
+source_id: 105521
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  You are given 1002 different integers, that are no greater than 2000. Prove that it is always possible to choose three of the given numbers, so that the sum of two of them is equal to the third.
+</p>
+<p>
+  Will this still always be possible if we are given 1001 integers rather than 1002?
+</p>
+
+<h1>Solution</h1>
+<p>
+  We will prove by induction, that if out of the numbers from $1$ to $2n-2$ $(n \geq 3), we choose $n+1$ different numbers, that it is always possible to choose three numbers, so that the sum of two of them is equal to the third.
+</p>
+<p>
+  Base case: for n=3, the statement is obviously true. (We have the numbers 1 to 4, of which 4 are chosen, so we can always choose $1+2=3$)
+</p>
+<p>
+  Induction step:
+</p>
+<p>
+  Assume that the statement is true for $n=k$
+</p>
+<p>
+  Consider the case $n=k+1$.
+</p>
+<p>
+  If $k+1$ of the given numbers lie between $1$ and $2k$, then the assumed case applies so is true. If this is not the case, then the numbers $2k-1$ and $2k$ will always be among the numbers given. The remaining $k$ given values lie in the range $1$ to $2k-2$. If we divide this range into pairs $ (1, 2k-2), (2, 2k-3),...,(k-1, k)$ we get that one of the pairs contains two numbers that we are given. This pair however has a sum of $2k-1$.
+</p>
+<p>
+  Therefore, if the statement is true for $n=k$, then it is true for $n=k+1$. As it is true for $n=3$, then by induction it is true for all $n \geq 3$ - including the case where $n=1001$ given in the problem.
+</p>
+<p>
+  If we replace 1002 with 1001, the statement ceases to be true. A counterexample could be the group of given integers $1000, 1001,...,2000$
+</p>

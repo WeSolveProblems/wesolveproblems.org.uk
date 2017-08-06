@@ -1,0 +1,32 @@
+---
+problem_id: 32828
+category_ids: 355 1276
+difficulty: 4-
+classes: 7 8 9 10
+source_id: 150964
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+A professional tennis player plays at least one match each day for training purposes. However, in order to ensure he does not over-exert himself, he plays no more than 12 matches a week.
+Prove that it is possible to find a group of consecutive days, during which the player plays a total of 20 matches.
+
+<h1>Solution</h1>
+
+<h2>Solution 1</h2>
+<p>
+  Consider 10 consecutive weeks. Let the player in the first $k$ days (of these 70) have played $b_k$ matches. Consider the numbers $b_0=0, b_1, ..., b_7_0, b_0 + 20,..., b_7_0$. In total there are 142 numbers, none of which can exceed $10 \times 12 + 20 = 140$. Therefore there must be at least two of these numbers that are equal.
+</p>
+<p>
+  Let $b_i + 20 = b_j$ (there cannot be two equal numbers amongst the numbers $b_k$). That is, $b_j-b_i=20$. This means that between the $(i+1)$th and the $j$th day, the tennis player played exactly 20 matches.
+</p>
+<h2>Solution 2</h2>
+<p>
+  Consider three consecutive weeks and the number of matches which the player played during these 21 days (a total of 21 numbers). From the solution to problem 103964, there must be some consecutive numbers, whose sum is divisible by 20. However in the three weeks, the tennis player cannot have played more than 36 matches. Therefore the 'sum which is divisible by 20' must be equal to 20 (it cannot be equal to zero, nor can it equal 40). This means that in the corresponding days, the player played exactly 20 matches.
+</p>
+
+<h1>Note</h1>
+<p>
+  Solution 2 requires a significantly smaller period of time, in which the tennis player satisfies the conditions outlined in the problem.
+</p>
