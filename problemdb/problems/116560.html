@@ -1,0 +1,19 @@
+---
+problem_id: 116560
+category_ids: 355 361 251
+difficulty: 4-
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+2011 numbers are written on a blackboard. It turns out that the sum of any of the written out numbers is also one of the written out numbers. What is the minimum number of zeroes within this set of 2011 numbers?
+
+<h1>Solution</h1>
+An example made up of 2009 zeroes and the numbers 1 and -1 satisfies the conditions.
+Consider a situation where the number of zeroes does not exceed 2008. Then on the board we must find either three non-negative numbers, two of which must be strictly positive, or three non-positive numbers, two of which must be strictly negative. Let the first situation be true - the numbers $a$ and $b$ are positive and the number $c$ is non-negative. Then we can say $a$ is the largest of all of the written out numbers. But then the number $a+b+c>a$ cannot be one of the written out numbers. This is a contradiction.
+
+<h1>Answer</h1>
+2009 zeroes

@@ -1,0 +1,19 @@
+---
+problem_id: 78768
+category_ids: 353 438
+difficulty: 4
+classes: 7 8 9
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  It is known, that a camera located at $O$ cannot see the objects $A$ and $B$, where  the angle $AOB$ is greater than $179^\circ$. 1000 such cameras are placed in a (Cartesian) plane. All of the cameras simultaneously take a picture. Prove that there will be a picture taken, in which no more than 998 cameras are visible.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Assume that in each picture taken by a camera, all 999 other cameras are visible. Therefore the cameras must be located on the vertices of a convex 100-sided polygon (otherwise there will be a camera, from whose picture does not show all of the other cameras). The sum of the angles in a 100-sided polygon is equal to $180^\circ \times 998 = 179640^\circ > 179^\circ \times 1000$. Therefore one of the vertices must have an angle of greater than $179^\circ$. The camera located on this vertex cannot therefore capture all of the other cameras in its picture. This is a contradiction.
+</p>

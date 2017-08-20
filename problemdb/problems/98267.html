@@ -1,0 +1,22 @@
+---
+problem_id: 98267
+category_ids: 352 251
+difficulty: 4-
+classes: 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  Some points with integer co-ordinates are marked on a Cartesian plane. It is known that no four points lie on the same circle. Prove that there will be a circle of radius 1995 in the plane, which does not contain a single marked point.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Assume that this is not true - that is, in every circle of radius 1995 will contain at least one marked point. Consider an infinitely long horizontal strip, of width 4000. Divide this strip into squares of size 4000x4000. Consider 4001 such squares that are adjacent to one another, creating a rectangle we will call $P$. Each square must contain at least one point (as a circle of radius 1995 can fit into each square). The vertical distances of all of the points from the bottom edge of the strip cannot all be different, as there are only 4000 possible values for the distance, and at least 4001 points. Hence, there must be at least two points which are the same vertical distance above the bottom edge of the $P$. The abscissae (modulus of the $x$ co-ordinates) of these two points - are some two whole numbers, so in a within $P$ there is a finite number of values they could have.
+</p>
+<p>
+  Now consider a relatively large number of these horizontal strips, which do not overlap with one another. In each of these, in the rectangles located above $P$, there will be a pair of points with the same height above the bottom edge of the rectangle (or the same $y$ co-ordinate). There will be two pairs of points, such that the abscissae of one pair corresponds to the abscissae of the other pair. These 4 points thus form a rectangle, therefore all four points lie on the same circle. This is a contradiction.
+</p>
