@@ -1,0 +1,26 @@
+---
+problem_id: 35483
+category_ids: 355 1056 1238
+difficulty: 4
+classes: 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  Prove that there exist numbers, that can be presented in no fewer than 100 ways in the form of a summation of 20001 terms, each of which is the 2000th power of a whole number
+</p>
+<h1>Hint</h1>
+<p>
+  Consider all of the possible summations consisting of 2001 2000th powers of the first $N$ natural numbers. How many such summations are there?
+</p>
+
+<h1>Solution</h1>
+<p>
+  Consider the numbers $1, 2, 3, ..., N$. Of the 2000th powers of these numbers we will consider all of the possible summations containing 2001 terms. Without taking order into account there will be no fewer than $ \frac{N^2^0^0^1}{2001!}$ such possible summations (each term can be chosen $N$ different ways and because of repetition there can be no more than $2001!$ summations).
+</p>
+<p>
+  On the other hand, each of the summations being considered can be no greater than $2001N^2^0^0^0$. Hence if $ \frac{N^2^0^0^1}{2001!}> 100 \times 2001 N^2^0^0^0$ (that is N > 100 \times 2001 \times 2001!), then no fewer than 100 of the summations must have the same value (which is what is required)
+</p>

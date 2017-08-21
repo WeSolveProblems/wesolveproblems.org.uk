@@ -1,0 +1,32 @@
+---
+problem_id: 35181
+category_ids: 355 228 1238 135
+difficulty: 4
+classes: 8 9 10
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  $2n$ diplomats sit around a round table. After a break the same $2n$ diplomats once again sit around the same table, but this time in a different order.
+</p>
+<p>
+  Prove that there will always be two diplomats with the same number of people sitting between them both before and after the break.
+</p>
+<h1>Hint</h1>
+<p>
+  Assign each diplomat a number corresponding to the number of places that diplomat has moved in a clockwise direction after the break. If the condition given is not true, then this number must be unique for each diplomat.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Number the diplomats with the numbers $1, 2, ..., 2n$ in the order (in a clockwise direction) in which they are sitting before the break. In the same way number each of the seats at the table. Let $a_i$ equal the number of places the $i$th diplomat has moved in a clockwise direction after the break. In this way each of the numbers $a_1, a_2, ..., a_2_n$ takes a value from the set ${0, 1, ..., 2n-1}$.
+</p>
+<p>
+  If two of the diplomats moved round the same number of seats after the break, then the number of diplomats sitting between them must be the same both before and after the break - i.e. the conditions given are fulfilled.
+</p>
+<p>
+  Otherwise, the numbers  $a_1, a_2, ..., a_2_n$ form a permutation of the numbers $0, 1, ..., 2n01$. The number $i+a_i$ is equal modulo $2n$ to the number of the seat in which the $i$th diplomat sits after the break. Since after the break all $2n$ seats are still occupied, the summation $(1+a_1)+(2+a_2)+...+(2n+a_2_n)$ must be equal modulo $2n$ to the sum of the numbers of each of the seats $1+2+...+2n$. From this it follows that the sum $a_1+a_2+...+a_2n$ is divisible by $2n$. However $a_1+a_2+...+a_2n=0+1+2+...+(2n-1)=n(2n-1)$ which is not divisible by $2n$. This is a contradiction.
+</p>

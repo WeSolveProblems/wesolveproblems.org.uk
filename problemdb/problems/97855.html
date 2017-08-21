@@ -1,0 +1,31 @@
+---
+problem_id: 97855
+category_ids: 355 228 1057
+difficulty: 4
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem</h1>
+<p>
+  A group of numbers $A_1, A_2, ..., A_100$ is created by somehow re-arranging the numbers $1, 2, ..., 100$.
+</p>
+<p>
+  100 numbers are created as follows:
+</p>
+<p>
+  $$B_1=A_1, B_2=A_1+A_2, B_3=A_1+A_2+A_3, ..., B_1_0_0 = A_1+A_2+A_3+...+A_1_0_0$$
+</p>
+<p>
+  Prove that there will always be at least 11 different remainders when dividing the numbers $B_1, B_2, ..., B_100$ by 100.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Let there be no more than 10 different remainders $r_1, r_2, ...r_1_0$. Consider the set $S$, consisting of all of the possible pairs of differences of remainders $r_i-r_j$ $(i \neq j)$ and 0. The number of elements in $S$ cannot exceed 91.
+</p>
+<p>
+  On the other hand for all $k$ $(2 \leq k \leq 100)$ $A_k=B_k-B_k_+_1 \equiv s$ (mod 100) for some $s \in S$, that is $S$ contains numbers comparable modulo 100 to all the numbers from 1 to 100 with the possible exception of $A_1$. Therefore $S$ must contain at least 99 numbers. This is a contradiction.
+</p>
