@@ -9,38 +9,82 @@ use_math: true
 ---
 
 <h1>Problem</h1>
-100 fare evaders want to take a train consisting of 12 coaches from the first to the 76th station. They know that at the first station, two ticket inspectors will board two coaches. After the 4th station, in the time between each station, one of the ticket inspectors will cross to a neighbouring coach. The ticket inspectors take turns to do this. A fare evader can see a ticket inspector, only if the ticket inspector is in the neighbouring coach, or the next but one coach (the neighbouring coach's neighbouring coach). At each station, each fare evader can run along the platform no more than three coaches (for example a fare evader in the 7th coach can run to any coach between the 4th and 10th inclusive and board it, at a station). What is the largest number of fare evaders that can travel their entire journey without ever ending up in the same coach as one of the ticket inspectors, no matter how the ticket inspectors choose to move? (The fare evaders have no information about the ticket inspectors beyond that given in the question. They agree their strategy before boarding.)
+<p>
+  100 fare evaders want to take a train consisting of 12 coaches from the first to the 76th station. They know that at the first station, two ticket inspectors will board two coaches. After the 4th station, in the time between each station, one of the ticket inspectors will cross to a neighbouring coach. The ticket inspectors take turns to do this. A fare evader can see a ticket inspector, only if the ticket inspector is in the neighbouring coach, or the next but one coach (the neighbouring coach's neighbouring coach). At each station, each fare evader can run along the platform no more than three coaches (for example a fare evader in the 7th coach can run to any coach between the 4th and 10th inclusive and board it, at a station). What is the largest number of fare evaders that can travel their entire journey without ever ending up in the same coach as one of the ticket inspectors, no matter how the ticket inspectors choose to move? (The fare evaders have no information about the ticket inspectors beyond that given in the question. They agree their strategy before boarding.)
+</p>
 
 <h1>Solution</h1>
-By the pigeon hole principle there must be at least two coaches, each of which contains at least 9 fare evaders. Else in total there will be $9 + 8  \times 11 = 97 < 100$ fare evaders. Therefore the ticket inspectors could immediately catch 18 fare evaders upon boarding (if they board those two coaches).
-We will now prove, that all of the fare evaders not caught immediately, will not be caught at all. After the ticket inspectors first board, the remaining fare evaders have three opportunities to run to a different coach, before the first ticket inspector crosses to the neighbouring coach. We will call a coach 'good' if at the moment when the first ticket inspector makes their first crossing, the coach and the two coaches on either side do not contain any ticket inspectors. A fare evader in a 'good' coach will not be caught even after the first ticket inspector crosses to a neighbouring coach.
-Let's say a fare evader is located in the first half of the train (for the second half the reasoning is symmetrical) in coach $k \neq 1 $. Then the fare evader can act in the following manner:
-If they can stay where they are (i.e. there is no ticket inspector in either of the adjacent coaches) they will do so. If this is not the case:
-Check if there is a ticket inspector in coach $k+2$. If there is, then using the moves $k \to k+3 \to k+4$ will result in the fare evader reaching a 'good' coach.
-If not, then the fare evader will move to the coach $k+2$ and will check if there is a ticket inspector in either of two following coaches ($k+3$ and $k+4$). If both are empty (of ticket inspectors) then $k+3$ is a 'good' coach. If there is a ticket inspector in $k+3$, run to $k+5$, otherwise run to $k+5$ and then to $k+6$ .
+<p>
+  By the pigeon hole principle there must be at least two coaches, each of which contains at least 9 fare evaders. Else in total there will be $9 + 8  \times 11 = 97 < 100$ fare evaders. Therefore the ticket inspectors could immediately catch 18 fare evaders upon boarding (if they board those two coaches).
+</p>
+<p>
+  We will now prove, that all of the fare evaders not caught immediately, will not be caught at all. After the ticket inspectors first board, the remaining fare evaders have three opportunities to run to a different coach, before the first ticket inspector crosses to the neighbouring coach. We will call a coach 'good' if at the moment when the first ticket inspector makes their first crossing, the coach and the two coaches on either side do not contain any ticket inspectors. A fare evader in a 'good' coach will not be caught even after the first ticket inspector crosses to a neighbouring coach.
+</p>
+<p>
+  Let's say a fare evader is located in the first half of the train (for the second half the reasoning is symmetrical) in coach $k \neq 1 $. Then the fare evader can act in the following manner:
+</p>
+<p>
+  If they can stay where they are (i.e. there is no ticket inspector in either of the adjacent coaches) they will do so. If this is not the case:
+</p>
+<p>
+  Check if there is a ticket inspector in coach $k+2$. If there is, then using the moves $k \to k+3 \to k+4$ will result in the fare evader reaching a 'good' coach.
+</p>
+<p>
+  If not, then the fare evader will move to the coach $k+2$ and will check if there is a ticket inspector in either of two following coaches ($k+3$ and $k+4$). If both are empty (of ticket inspectors) then $k+3$ is a 'good' coach. If there is a ticket inspector in $k+3$, run to $k+5$, otherwise run to $k+5$ and then to $k+6$ .
+</p>
 
-A fare evader in coach 1 can act act as follows:
-If there is a ticket inspector in coach 2, the fare evader can act as before for $k=1$.
-If there is no ticket inspector in coach 2, then run to coach 2. If there is no ticket inspector in coach 3, then coach 2 is a 'good' coach and will do.
-If coach 3 contains a ticket inspector, look at coach 4. If there is a ticket inspector there, then run to coach 5 and then to coach 6. If there isn't, then run to coach 4 and check the next two coaches. If even there there are no inspectors, run to coach 5. If there is one in coach 5, run to coach 7, if there is one in coach 6, then return to coach 1.
+<p>
+  A fare evader in coach 1 can act act as follows:
+</p>
+<p>
+  If there is a ticket inspector in coach 2, the fare evader can act as before for $k=1$.
+</p>
+<p>
+  If there is no ticket inspector in coach 2, then run to coach 2. If there is no ticket inspector in coach 3, then coach 2 is a 'good' coach and will do.
+</p>
+<p>
+  If coach 3 contains a ticket inspector, look at coach 4. If there is a ticket inspector there, then run to coach 5 and then to coach 6. If there isn't, then run to coach 4 and check the next two coaches. If even there there are no inspectors, run to coach 5. If there is one in coach 5, run to coach 7, if there is one in coach 6, then return to coach 1.
+</p>
 
-Notice that no more than three 'runs' are ever used. And a fare evader can end up in an 'end' coach only in the case if they are in coach 1, and the ticket inspectors are in coaches 3 and 6, or (for $k=6$) the fare evader is in coach 12 and the ticket inspectors are in coaches 10 and 7 or 10 and 5. In the latter case we will consider the symmetrical situation, where the fare evader is in coach 1, the ticket inspectors are in coaches 3 and 6 or 3 and 8. Therefore from now on we need only consider the fare evaders in coaches 1 to 6.
+<p>
+  Notice that no more than three 'runs' are ever used. And a fare evader can end up in an 'end' coach only in the case if they are in coach 1, and the ticket inspectors are in coaches 3 and 6, or (for $k=6$) the fare evader is in coach 12 and the ticket inspectors are in coaches 10 and 7 or 10 and 5. In the latter case we will consider the symmetrical situation, where the fare evader is in coach 1, the ticket inspectors are in coaches 3 and 6 or 3 and 8. Therefore from now on we need only consider the fare evaders in coaches 1 to 6.
+</p>
 
-We will show what the fare evaders need to do when the ticket inspectors start moving. The 'active' ticket inspector will be the one who will cross carriages next, and the 'passive' ticket inspector, the one who has just moved. If a fare evader sees a ticket inspector, then they know whether that ticket inspector is active or passive: if in their field of view a ticket inspector has appeared or has moved, then that inspector was active between the previous two stations, and so will be passive between the previous and the next station. If the ticket inspector has not moved between the previous two stations, then they were passive, so will now be active between the previous station and the next station.
+<p>
+  We will show what the fare evaders need to do when the ticket inspectors start moving. The 'active' ticket inspector will be the one who will cross carriages next, and the 'passive' ticket inspector, the one who has just moved. If a fare evader sees a ticket inspector, then they know whether that ticket inspector is active or passive: if in their field of view a ticket inspector has appeared or has moved, then that inspector was active between the previous two stations, and so will be passive between the previous and the next station. If the ticket inspector has not moved between the previous two stations, then they were passive, so will now be active between the previous station and the next station.
+</p>
 
-Let a fare evader be located in one of the coaches 3, 4, 5, 6.
-Consider if the fare evader is not in coach 2 or in coach 11. Then they can see five coaches, but cannot move into four of them - three because of the active ticket inspector and one because of the passive one. Then the fare evader can run to the remaining one.
-The fare evader will do this, as long as the remaining coach is not coach 1. If it is, then notice that the fare evader must be located in coach 3, and both the inspectors in the adjacent two coaches. Therefore the fare evader can run to coach 6.
+<p>
+  Let a fare evader be located in one of the coaches 3, 4, 5, 6.
+</p>
+<p>
+  Consider if the fare evader is not in coach 2 or in coach 11. Then they can see five coaches, but cannot move into four of them - three because of the active ticket inspector and one because of the passive one. Then the fare evader can run to the remaining one.
+</p>
+<p>
+  The fare evader will do this, as long as the remaining coach is not coach 1. If it is, then notice that the fare evader must be located in coach 3, and both the inspectors in the adjacent two coaches. Therefore the fare evader can run to coach 6.
+</p>
 
-Let the fare evader be located in coach 2. They can see four coaches. If there is no 'safe' coach among these, then coach 5 must be safe, which is where the fare evader will run. If there is another safe coach:
-If it is not coach 1, then the fare evader should run to the safe coach. Consider when only coach 1 is safe. If both ticket inspectors are visible, then they must be in coaches 3 and 4, so the fare evader can run to coach 5 or stay in coach 2, depending on which one is active.
+<p>
+  Let the fare evader be located in coach 2. They can see four coaches. If there is no 'safe' coach among these, then coach 5 must be safe, which is where the fare evader will run. If there is another safe coach:
+</p>
+<p>
+  If it is not coach 1, then the fare evader should run to the safe coach. Consider when only coach 1 is safe. If both ticket inspectors are visible, then they must be in coaches 3 and 4, so the fare evader can run to coach 5 or stay in coach 2, depending on which one is active.
+</p>
 
-If only one ticket inspector is visible, then that ticket inspector must be in coach 3. Then the fare evader should first run to coach 1, and then after that ticket inspector has moved (which may take several stations) the fare evader should run to where the ticket inspector was originally (coach 3). Notice that this is the only situation where a move is required that takes more than one station.
+<p>
+  If only one ticket inspector is visible, then that ticket inspector must be in coach 3. Then the fare evader should first run to coach 1, and then after that ticket inspector has moved (which may take several stations) the fare evader should run to where the ticket inspector was originally (coach 3). Notice that this is the only situation where a move is required that takes more than one station.
+</p>
 
-Notice that carrying out each of the different possible moves we will never end up in coach 1. This can occur only in the initial position where the ticket inspector are located in coaches 3 and 6 or 3 and 8. In this case the fare evader should wait until the ticket inspector in coach 3 moves, and then move to where that inspector was originally. For the situation where the fare evader is not in coach 1, the necessary moves have already been explained.
+<p>
+  Notice that carrying out each of the different possible moves we will never end up in coach 1. This can occur only in the initial position where the ticket inspector are located in coaches 3 and 6 or 3 and 8. In this case the fare evader should wait until the ticket inspector in coach 3 moves, and then move to where that inspector was originally. For the situation where the fare evader is not in coach 1, the necessary moves have already been explained.
+</p>
 
-In summary in order for no more than 18 fare evaders to be caught, they should distribute themselves so that there are 8 of them in 8 of the coaches and 9 in each of the remaining 4, and then follow the above algorithm.
+<p>
+  In summary in order for no more than 18 fare evaders to be caught, they should distribute themselves so that there are 8 of them in 8 of the coaches and 9 in each of the remaining 4, and then follow the above algorithm.
+</p>
 
 
 <h1>Answer</h1>
-82 fare evaders.
+<p>
+  82 fare evaders.
+</p>
