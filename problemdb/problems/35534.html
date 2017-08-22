@@ -8,13 +8,13 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
-<p>What is the largest number of kings that it is possible to place on a chess board such that no two check one another.</p>
+<h1>Problem ID 35534</h1>
+<p> In chess, 'check' is when the king is under threat of capture from another piece. What is the largest number of kings that it is possible to place on a standard 8x8 chess board so that no two check one another.</p>
 <h1>Hint</h1>
-<p>If any 2x2 square of the chessboard contains two kings, then they check one another.</p>
+<p>Kings can move in any direction, but only 1 square at a time, so if any 2x2 area of the chessboard contains two kings then they can check one another.</p>
 
 <h1>Solution</h1>
-<p>Divide the chessboard into 16 2x2 squares. If in even one of these squares two kings are present, then they check one another. Therefore each square can contain at most 1 king, giving a maximum of 16 kings. In other words, if we place 16 kings in the bottom left hand corner of each 2x2 square, then the 16 kings will not check one another.</p>
+<p>Divide the chessboard into 16 2x2 areas. If in even one of these areas two kings are present, then they can check each another. Therefore each area can contain at most 1 king, giving a maximum of 16 kings. In other words, if we place 16 kings in the bottom left hand corner of each 2x2 square, then the 16 kings cannot check one another.</p>
 
 <h1>Answer</h1>
-<p>16</p>
+<p>16.</p>
