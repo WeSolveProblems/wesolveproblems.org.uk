@@ -8,13 +8,13 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
-<p>Upon the installation of a keypad lock, each of the 26 letters located on the lock's keypad is assigned an arbitrary natural number, known only to the owner of the lock. Different letters do not necessarily have different numbers assigned to them. After a combination of different letters (each letter is typed at most once) is entered into the lock. A summation is carried out of the corresponding numbers to the letters typed in. The lock opens, only if the result of the summation is divisible by 26. Prove that for any set of numbers assigned to the 26 letters, there exists a combination that will open the lock.</p>
+<h1>Problem ID 35599</h1>
+<p>Upon the installation of a keypad lock, each of the 26 letters located on the lock's keypad is assigned an arbitrary natural number known only to the owner of the lock. Different letters do not necessarily have different numbers assigned to them. After a combination of different letters, where each letter is typed once at most, is entered into the lock a summation is carried out of the corresponding numbers to the letters typed in. The lock opens only if the result of the summation is divisible by 26. Prove that for any set of numbers assigned to the 26 letters, there exists a combination that will open the lock.</p>
 <h1>Hint</h1>
 <p>Prove that the searched for combination can be found as a combination of consecutive letters of the alphabet.</p>
 
 <h1>Solution</h1>
-<p>Let $S(n)$ equal the remainder when divided by 26, of the sum of the corresponding natural numbers assigned to the first $n$ letters of the alphabet $(n=1, 2, 3, ..., 26)$. If amongst the numbers $S(1), S(2),..., S(26)$ there is a zero $( S(t)=0)$, then there is a working combination which consists of the first $t$ letters of the alphabet. If amongst the numbers $S(1), S(2),..., S(26)$ there is no such value, then there will be two values which are equal $S(k) = S(m)$ (assume that $k < m$ without loss of generality). Then the working combinatio being searched for will be the section of the alphabet starting with the $(k+1)$th letter and ending with the $m$th letter.</p>
+<p>Let $S(n)$ equal the remainder, when divided by 26, of the sum of the corresponding natural numbers assigned to the first $n$ letters of the alphabet $(n=1, 2, 3, ..., 26)$. If amongst the numbers $S(1), S(2),..., S(26)$ there is a zero $( S(t)=0)$, then there is a working combination which consists of the first $t$ letters of the alphabet. If amongst the numbers $S(1), S(2),..., S(26)$ there is no such value, then there will be two values which are equal $S(k) = S(m)$ - assume that $k < m$ without loss of generality. Then the working combination being searched for will be the section of the alphabet starting with the $(k+1)$th letter and ending with the $m$th letter.</p>
 
 <h1>Note</h1>
 <p>Comparable to problem 103964. </p>
