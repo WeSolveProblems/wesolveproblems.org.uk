@@ -8,22 +8,22 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
+<h1>Problem ID 35606</h1>
 <p>
-  In an $n$ by $n$ grid $2n$ of the squares are marked. Prove that there will always be a parallelagram whose vertices are the centres of four of the squares somewhere in the grid.
+  In an $n$ by $n$ grid, $2n$ of the squares are marked. Prove that there will always be a parallelogram whose vertices are the centres of four of the squares somewhere in the grid.
 </p>
 <h1>Hint</h1>
 <p>
-  Prove that there will be a parallelagram, which has a pair of sides parallel to the rows of the grid.
+  Prove that there will be a parallelogram, which has a pair of sides parallel to the rows of the grid.
 </p>
 
 <h1>Solution</h1>
 <p>
-  We will prove that there will be a parallelagram, which has a pair of sides parallel to the rows of the grid. Consider the leftmost marked square in each row (if there is a marked square in that row). Let the leftmost marked square in a given row be the $k$th square from the left. Then translate each square in that row $k-1$ squares to the left, so that the leftmost square in that row lies in the leftmost column of the grid. Perform a similar translation on every other row which contains at least one marked square.
+  We will prove that there will be a parallelogram which has a pair of sides parallel to the rows of the grid. Consider the leftmost marked square in each row, if there is a marked square in that row. Let the leftmost marked square in a given row be the $k$th square from the left. Then translate each square in that row $k-1$ squares to the left, so that the leftmost square in that row lies in the leftmost column of the grid. Perform a similar translation on every other row which contains at least one marked square.
 </p>
 <p>
-  These translations do not change whether a parallelagram exists with a pair of sides parallel to the rows of the grid. Therefore it is sufficient to prove that the 'new' (translated) grid has this property.
+  These translations do not change whether a parallelogram exists with a pair of sides parallel to the rows of the grid. Therefore it is sufficient to prove that the 'new', translated, grid has this property.
 </p>
 <p>
-  The first column of the new grid contains at most $n$ marked squares. Therefore the remaining $n-1$ columns must contain at least $n$ marked squares. Hence by the pigeon hole principle there will be a column that contains two marked squares, that is not the leftmost column. These two squares, as well as the two squares in the same rows as these squares, but in the leftmost column can be used to form the required parallelagram.
+  The first column of the new grid contains at most $n$ marked squares. Therefore the remaining $n-1$ columns must contain at least $n$ marked squares. Hence, by the pigeon hole principle, there will be a column that contains two marked squares that is not the leftmost column. These two squares, as well as the two squares in the same rows as these squares but in the leftmost column, can be used to form the required parallelogram.
 </p>
