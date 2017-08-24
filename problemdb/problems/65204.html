@@ -15,9 +15,10 @@ use_math: true
 
 <h1>Solution</h1>
 <p>
-  For $n=24 and $n=3$ the statement made by the problem can be checked directly, see the diagrams below.
+  For $n=24$ and $n=3$ the statement made by the problem can be checked directly, see the diagrams below.
 </p>
-<img scr="65204 1.gif">
+<img src="65204 1.gif">
+
 <p>
   Let $n \geq 4$. The sum of the areas of the $n$ triangles into which the unit square is divided must equal 1, therefore amongst them there will be a triangle with area $S \geq \frac{1}{n}$.
 </p>
@@ -33,11 +34,11 @@ use_math: true
 <p>
   The opposite side of the square defines another triangle which is similar to the first one, with scale factor $h= \frac{h}{a} = \frac{h-x}{h}$ where $x$ is equal to the side length of the square. Re-arranging this gives $x= \frac{ab}{a+h}$
 </p>
-<img scr="65204 2.gif">
+<img src="65204 2.gif">
 <p>
   If $a+h \leq 2$ then by virtue of the inequality $S = \frac{ah}{2} \geq \frac{1}{n}$ we get $x \geq \frac{2}{n} \times \frac{1}{a+h} \geq \frac{1}{n}$.
 </p>
 <p>
-  If in fact $a+h > 2$ then $h > 2-a \geq 2- \sqrt{2}$ since $a \leq \sqrt{2} as the side of the triangle cannot exceed the length of the diagonal of the unit square. Furthermore, $a \geq h$. In fact if $b$ is one of the other sides of the triangle, then $ a \geq b \geq h$. Using these inequalities we get:
+  If in fact $a+h > 2$ then $h > 2-a \geq 2- \sqrt{2}$ since $a \leq \sqrt{2}$ as the side of the triangle cannot exceed the length of the diagonal of the unit square. Furthermore, $a \geq h$. In fact if $b$ is one of the other sides of the triangle, then $ a \geq b \geq h$. Using these inequalities we get:
 </p>
 $$ x= \frac{h}{\frac{h}{a}+1} \geq \frac{h}{2} \geq \frac{2-\sqrt{2}}{2} > \frac{1}{4} \geq \frac{1}{n}$$
