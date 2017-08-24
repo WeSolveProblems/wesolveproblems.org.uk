@@ -8,9 +8,9 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
+<h1>Problem ID 78661</h1>
 <p>
-  In a corridor of length 100m, 20 sections of red carpet are laid out. The combined length of the sections is 1000m. What is the largest number of distinct stretches of the corridor that are not covered by carpet that there can be, given that the sections of carpet are all the same width as the corridor?
+  In a corridor of length 100m, 20 sections of red carpet are laid out. The combined length of the sections is 1000m. What is the largest number there can be of distinct stretches of the corridor that are not covered by carpet, given that the sections of carpet are all the same width as the corridor?
 </p>
 <h1>Hint</h1>
 <p>
@@ -18,11 +18,11 @@ use_math: true
 </p>
 <h1>Solution</h1>
 <p>
-  Since the total length of the rugs is 1000m, ten times greater than the length of the corridor, either the entre length of the corridor is covered by 10 layers of carpet sections, or there is a point in the corridor where 11 sections of carpet lie on top of one another. The difference between the number of stretches of corridor covered by sections of carpet, and the number of stretches of corridor <b>not</b> covered by sections of carpet cannot be greater than 1.
+  Since the total length of the rugs is 1000m, ten times greater than the length of the corridor, either the entire length of the corridor is covered by 10 layers of carpet sections or there is a point in the corridor where 11 sections of carpet lie on top of one another. The difference between the number of stretches of corridor covered by sections of carpet, and the number of stretches of corridor <b>not</b> covered by sections of carpet, cannot be greater than 1.
 </p>
 <p>
-  If 11 sections of carpet lie on top of one another, then these represent one stretch of corridor covered by sections of carpet. Therefore there can be no more than 9 other stretches of corridor covered by a section of carpet (as there are only 9 other sections of carpet left). Therefore can be no more than 10 stretches of corridor covered by sections of carpet - and so no more than 11 sections of corridor <b>not</b> covered by sections of carpet.
+  If 11 sections of carpet lie on top of one another then these represent one stretch of corridor covered by sections of carpet. Therefore there can be no more than 9 other stretches of corridor covered by a section of carpet as there are only 9 other sections of carpet left. Therefore can be no more than 10 stretches of corridor covered by sections of carpet - and so no more than 11 sections of corridor <b>not</b> covered by sections of carpet.
 </p>
 <p>
-  One such arrangement is if we take 11 sections of carpet of length 90.5m, and then 9 sections of length 0.5m. In total these have the required length of 1000m. If we place all 11 of the 90.5m sections on top of one another, there are $100-90.5=9.5$m of corridor not yet covered by a section of carpet. However the total length of the remaining sections of carpet is just 4.5m. Therefore we can arrange the group of 90.5m sections and the nine single 0.5m sections, so that there are 11 sections of corridor not covered by any carpet (for example if we left a 0.1m gap before the first section in the corridor, and then a 0.1m gap between each of the stretches covered by sections of carpet, and then a larger gap at the end).
+  One such arrangement is if we take 11 sections of carpet of length 90.5m, and then 9 sections of length 0.5m. In total these have the required length of 1000m. If we place all 11 of the 90.5m sections on top of one another there are $100-90.5=9.5$m of corridor not yet covered by a section of carpet. However the total length of the remaining sections of carpet is just 4.5m. Therefore we can arrange the group of 90.5m sections, and the nine single 0.5m sections, so that there are 11 sections of corridor not covered by any carpet - for example if we left a 0.1m gap before the first section in the corridor, then a 0.1m gap between each of the stretches covered by sections of carpet, then a larger gap at the end.
 </p>
