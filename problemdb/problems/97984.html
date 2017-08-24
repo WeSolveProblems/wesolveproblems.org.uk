@@ -13,7 +13,7 @@ use_math: true
   a) We are given two cogs, each with 14 teeth. They are placed on top of one another, so that their teeth are in line with one another and their projection looks like a single cog. After this 4 teeth are removed from each cog, the same 4 teeth on each one. Is it always then possible to rotate one of the cogs with respect to the other so that the projection of the two partially toothless cogs appears as a single complete cog? The cogs can be rotated in the same plane, but cannot be flipped over.
 </p>
 <p>
-  b) The same question, but this time two cogs of 13 teeth each frof which again 4 are removed?
+  b) The same question, but this time two cogs of 13 teeth each from which 4 are again removed?
 </p>
 
 <h1>Solution</h1>
@@ -21,7 +21,7 @@ use_math: true
   a) In the initial position of the cogs there are 4 pairs of removed teeth present, where a pair consists of one tooth on the first cog and one tooth on the second. There are 16 such pairs possible in total, and each pair occurs at most once in all of the possible positions of the cog. There are 13 other possible positions of the cogs relative to one another, aside from the initial position. There are however only 12 pairs of removed teeth that can be present in these 13 positions as 4 have been used up from the initial position, therefore there will always be at least one position of the cogs where no pair of removed teeth is present and so the projection appears as a single complete cog.
 </p>
 <p>
-  b) Counterexample: Let us number the teeth in order and remove the teeth 1, 2, 5 and 7. It is easy to check that the differences of these number gives all 13 numbers ${0, 1, 2,...,12} mod 13$. Therefore after each rotation of one position there will be exactly one pair of removed teeth that coincide.
+  b) Counter-example: Let us number the teeth in order and remove the teeth 1, 2, 5 and 7. It is easy to check that the differences of these number gives all 13 numbers ${0, 1, 2,...,12} mod 13$. Therefore after each rotation of one position there will be exactly one pair of removed teeth that coincide.
 </p>
 <h1>Answer</h1>
 <p>
