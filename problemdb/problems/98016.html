@@ -1,0 +1,22 @@
+---
+problem_id: 98016
+category_ids: 355 83 568
+difficulty: 4+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98016</h1>
+<p>
+  We are given 101 rectangles with integer-length sides that do not exceed 100.
+</p>
+<p>
+  Prove that amongst them there will be three rectangles $A, B, C$ which will fit completely inside one another (so that $A \subset B \subset C$).
+</p>
+
+<h1>Solution</h1>
+<p>
+  Consider a 100x100 grid divided into unit squares.  Let the $m$-corner (where $1 \le m \le 50$) be the shape formed from the intersection of the $m$th column from the left and the $m$th column from the bottom, all of the squares in the $m$th column above this intersecting square and all of the squares in the $m$th row to the right of the intersecting square. Place each rectangle inside the square, with a vertex of the rectangle always at the top left hand corner of the grid, ensuring that the longer side of each rectangle is vertical. Let the 'defining square' of each rectangle be the square in the vertex diagonally opposite to the one in the top left corner. Each rectangle's 'defining square' lies inside one of the 50 $m$-corners. There will be three rectangles whose defining squares lie in the same $m$-corner. These will always fit inside one another.
+</p>

@@ -1,0 +1,41 @@
+---
+problem_id: 116873
+category_ids: 355 361 351 679
+difficulty: 4
+classes: 9 10
+source_id: 199837
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116873</h1>
+<p>
+  We are given $n+1$ different natural numbers, which are less than $2n$ $(n>1)$. Prove that among them there will always be three numbers, where the sum of two of them is equal to the third.
+</p>
+
+<h1>Solution 1</h1>
+<p>
+  We will use proof by induction.
+</p>
+<p>
+  Base step: for $n=2$ the chosen numbers must be $1, 2, 3$. In this case $1+2=3$
+</p>
+<p>
+  Induction step: Let there be $n+2$ natural numbers, smaller than $2n+2$. We will consider two cases.
+</p>
+<p>
+  1) The number $2n+1$ is not present amongst the given numbers. Then out of the numbers smaller than $2n$ at least $n+1$ numbers are chosen. From the inductive assumption, there will be three numbers, where the sum of two of them is equal to the third.
+</p>
+<p>
+  2) One of the given numbers is $2n+1$. Divide the numbers $1, 2, ..., 2n$ into $n$ pairs with a sum of $2n+1$ i.e. $ \{1, 2n \},  \{2, 2n-1 \}, ...,  \{n, n+1 \}$. Since there are still $n+1$ remaining numbers of those we have been given, at least one of these pairs will be present amongst the numbers given, thereby giving us two numbers that sum to give a third out of the numbers we have been given, as required.
+</p>
+
+<h1>Solution 2</h1>
+<p>
+  Let $a_1$ be the smallest of the numbers given. Consider the set $ \{ a_2, ..., a_n_+1, a_2+a_1, a_3+a_1, ..., a_n_+_1+a_1 \}$. It contains $2n$ numbers, however all of them lie within the range $ \[a_1+1, a_1+2n-1 \]$ which contains $2n-1$ numbers. Hence the set contains two equal numbers, that is $a_i=a_j+a_1$ as required.
+</p>
+
+<h1>Note</h1>
+<p>
+  Notice that in Solution 2 we have in fact proved an even stronger statement - one of the chosen three numbers can always be the smallest number given.
+</p>

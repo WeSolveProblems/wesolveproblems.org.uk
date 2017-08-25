@@ -1,0 +1,19 @@
+---
+problem_id: 60359
+category_ids: 355 103 679
+difficulty: 4+
+classes: 9 10 11
+source_id: 105521
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 60359</h1>
+<p>
+  We are given 51 two-digit numbers (we will count one-digit numbers as two-digit numbers with a leading 0). Prove that it is possible to choose 6 of these, so that no two of them have the same digit in the same column.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Arrange the given numbers from smallest to largest and split them into groups based on the digit in their 'tens' column. The number $m$ of such groups satisfies the inequality $6 \le m \le 10$. Among the $m$ groups there will be a group $A_6$ which contains at least 6 numbers. Analogously (using proof by contradiction) we can show that the groups $A_5, ..., A_1$ also exist. We can take the first number from $A_1$, the second from $A_2$ so that its unit digit differs from that of the number in A_1, and so on, giving us the required 6 numbers.
+</p>

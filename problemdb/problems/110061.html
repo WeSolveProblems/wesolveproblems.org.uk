@@ -1,0 +1,30 @@
+---
+problem_id: 110061
+category_ids: 355 1057
+difficulty: 4
+classes: 8 9 10 11
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 110061</h1>
+<p>
+  Prove that in any set of 117 unique three-digit numbers, it is possible to pick 4 non-overlapping subsets, so that the sum of the numbers in each subset is the same.
+</p>
+
+<h1>Solution</h1>
+<p>
+  We will show that amongst 106 unique three-digit numbers there are 4 non-overlapping pairs with the same sum.
+</p>
+<p>
+  From 106 numbers we can create $106 \times 105 \div 2=5460$ different pairs. The sum of all of these pairs lies between 200 and 2000. If there are no more than 3 pairs with the same sum, then there can be no more than $1800 \times 3=5400$ pairs in total, which is not true.
+</p>
+<p>
+  Hence, some 4 of the possible pairs have the same sum. Pairs with the same sum cannot overlap, as if $x+y=x+z$ then $y=z$ and the pairs are the same.
+</p>
+
+<h1>Note</h1>
+<p>
+  If we choose not just pairs, but triples and quartets of numbers, we can prove that there will always be 4 overlapping subsets amongst any 97 three-digit numbers.
+</p>
