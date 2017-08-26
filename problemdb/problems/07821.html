@@ -1,0 +1,22 @@
+---
+problem_id: 107821
+category_ids: 1257 352
+difficulty: 3-
+classes: 7 8 9
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 107821</h1>
+<p>
+  Some squares of a chess board contain a chess piece. It is known that each row contains at least one chess piece, but that different rows all have different numbers of pieces. Prove that it is always possible to mark 8 pieces so that each row and each column of the board contains exactly one marked piece.
+</p>
+
+<h1>Solution</h1>
+<p>
+  A row can contain between one and eight pieces. Since different rows must have different numbers of pieces, one row must contain exactly one piece, another two pieces,  ..., finally some row must contain exactly 8 pieces. Number each row based on the number of pieces standing in it.
+</p>
+<p>
+  On row 1 we will mark the only piece present. On row 2 there will be two pieces, at least one of which will not be in the same column as the piece in row 1. Row 3 will also contain at least one piece not in the same column as the marked pieces in rows 1 and 2, and so on.
+</p>

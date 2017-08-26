@@ -1,0 +1,31 @@
+---
+problem_id: 88235
+category_ids: 376 352 373 560
+difficulty: 3
+classes: 5 6 7 8
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88235</h1>
+<p>
+  A square piece of paper is cut into 6 pieces, each of which is a convex polygon. 5 of the pieces are lost, leaving only one piece, in the form of a regular octagon (see the drawing). Is it possible to reconstruct the original  square using just this information?
+</p>
+<img src="88235 1.gif">
+
+<h1>Hint</h1>
+<p>
+  Can some two polygons share more than one side?
+</p>
+
+<h1>Solution</h1>
+<p>
+  Since the remaining 5 polygons are convex, none of them can share more than one side with the octagon. This means that at least 3 sides of the octagon must belong to the square. This conclusion allows us to uniquely define the size of the square - its side length is equal to the distance between opposite sides of the octagon.
+</p>
+<img src="88235 2.gif">
+<p>
+  It is interesting to note, that although we can deduce the size of the square, we cannot say exactly what polygons it consists of. We can only reconstruct 4 of the polygons - the octagon and three corner triangles. For the remaining two polygons, we know only that together they must make up the fourth corner triangle. We cannot even definitively state how many sides each of these two polygons has - they could be a triangle and a quadrilateral, or two triangles (see the diagram).
+</p>
+<h1>Answer</h1>
+<p>Yes.</p>
