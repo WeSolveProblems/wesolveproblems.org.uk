@@ -1,0 +1,19 @@
+---
+problem_id: 109748
+category_ids: 352 202 560 443
+difficulty: 4+
+classes: 8 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109748</h1>
+<p>
+  We are given a convex 200-sided polygon, in which no three diagonals intersect at the same point. Each of the diagonals is coloured in one of 999 colours. Prove that there is some triangle inside the polygon, whose sides lie some of the diagonals, so that all 3 sides are the same colour (the vertices of the triangle do not necessarily have to be the vertices of the polygon).
+</p>
+
+<h1>Solution</h1>
+<p>
+  Remove vertex $A_{200}$ of the given polygon $A_1, A_2, ..., A_{200}$. Let the 'middle diagonal' be the line segment connecting two vertices, whose number differs by 999 or 1000. Consider all of the middle diagonals, of which there will be exactly 1999. Notice that every middle diagonal must intersect with every other. Every vertex of the polygon has two middle diagonals leaving it. Since $1999 >2 \times 999$, there will be three diagonals of the same colour. These three diagonals will intersect in pairs, at three separate points, which will be the three vertices of our triangle.
+</p>

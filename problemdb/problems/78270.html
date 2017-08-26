@@ -1,0 +1,25 @@
+---
+problem_id: 78270
+category_ids: 354 453
+difficulty: 4+
+classes: 8 9 10
+source_id:
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78270</h1>
+<p>
+  120 unit squares are placed inside a $20 \times 25$ rectangle. Prove that it will always be possible to place a circle with diameter 1 inside the rectangle, without it overlapping with any of the unit squares.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Surround each unit square with a 'border zone' of width $\frac{1}{2}$. The area of the resulting oval shape consisting of the square and its border zone is equal to $1+ 4 \times 1 \times \frac{1}{2} + 4 \times \frac{1}{4} \times \pi(\frac{1}{2})^2$, that is $3+ \frac{\pi}{4}$ meaning less than 3.79, if $\pi < 3.16$. All 120 oval shaped squares will cover an area of no greater than $120 \times 3.79 = 454.8 < 455$.
+</p>
+
+<p>
+  Furthermore all of the points less than $\frac{1}{2}$ away from the edge of the rectangle can be excluded, giving a new smaller rectangle of $19 \times 24 =456$. From this it follows that there will be some point $O$ that is neither inside, nor on the edge of any of the oval shapes. A circle of radius $\frac{1}{2}$ with centre $O$ will not overlap with any unit square, else the chosen point would be inside the  'border zone' of the square. Furthermore the circle with radius $\frac{1}{2}$ about $O$ will lie entirely within the $20 \times 25$ rectangle, thereby proving the statement given in the problem.
+</p>
+
+<h1>Answer</h1>
