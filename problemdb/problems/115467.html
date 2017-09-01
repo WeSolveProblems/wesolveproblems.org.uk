@@ -8,18 +8,18 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
+<h1>Problem ID 115467</h1>
 <p>
-  10 children (including Billy) attended Billy's birthday party. It turns out, that any two children picked from those at the party share a grandfather. Prove that 7 of the children share a grandfather.
+  10 children, including Billy, attended Billy's birthday party. It turns out that any two children picked from those at the party share a grandfather. Prove that 7 of the children share a grandfather.
 </p>
 
 <h1>Solution</h1>
 <p>
-  Consider a diagram, where the vertices of a polygon are the grandfathers, and any lines between the vertices are shared grandchildren. If there are no more than two vertices, then each grandfather has exactly 10 grandchildren.
+  Consider a diagram where the vertices of a polygon are the grandfathers, and any lines between the vertices are shared grandchildren. If there are no more than two vertices then each grandfather has exactly 10 grandchildren.
 </p>
 <p>
-  Assume that there are exactly three grandfathers. They are connected by a total of 10 lines. By the pigeon hole principle two vertices are connected by no more than three lines. Therefore, the third vertex must have no fewer than 7 lines coming from it, meaning the grandfather corresponding to that vertex must have no fewer than 7 grandchildren.
+  Assume that there are exactly three grandfathers. They are connected by a total of 10 lines. By the pigeon hole principle two vertices are connected by no more than three lines. Therefore the third vertex must have no fewer than 7 lines coming from it, meaning the grandfather corresponding to that vertex must have no fewer than 7 grandchildren.
 </p>
 <p>
-  Assume that there are more than three grandfathers. By definition each vertex must have at least one line coming from it and any to given lines connecting the vertices must share a vertex. Consider a vertex $A$, from which there must be at least two lines $AB$ and $AC$, and arbitrary lines going to the remaining vertices $D$. Then every line from $D$ must go to $A$ (else there would be two lines without a shared vertex). Then there can be no lines connecting $B$ and $C$ and every line is connected to $A$. The grandfather corresponding to $A$ must therefore be a grandfather to all 10 children.
+  Assume that there are more than three grandfathers. By definition each vertex must have at least one line coming from it and any to given lines connecting the vertices must share a vertex. Consider a vertex $A$, from which there must be at least two lines $AB$ and $AC$, and arbitrary lines going to the remaining vertices $D$. Then every line from $D$ must go to $A$ else there would be two lines without a shared vertex. Then there can be no lines connecting $B$ and $C$ and every line is connected to $A$. The grandfather corresponding to $A$ must therefore be a grandfather to all 10 children.
 </p>

@@ -8,12 +8,9 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
+<h1>Problem ID 109937</h1>
 <p>
-  We are given a table of size $n \times n$. $n-1$ of the cells in the table contain the number $1$. The remainder contain the number $0$.
-</p>
-<p>
-  We are allowed to carry out the following operation on the table:
+  We are given a table of size $n \times n$. $n-1$ of the cells in the table contain the number $1$. The remainder contain the number $0$. We are allowed to carry out the following operation on the table:
 </p>
 <p>
   1. Pick a cell.
@@ -31,34 +28,34 @@ use_math: true
 
 <h1>Solution</h1>
 <p>
-  We will prove that any such initial table will contain a sub-table of size $2 \times 2$, in which there is one zero, and three ones.
+  We will prove that any such initial table will contain a sub-table of size $2 \times 2$, in which there is one zero and three ones.
 </p>
 <p>
-  There will always be a row in the table containing only 0s (as there are $n$ rows but only $n-1$ 1s). It follows that there will always be two adjacent rows, one of which contains only 0s, and the other contains at least one cell with the number 1.
+  There will always be a row in the table containing only 0s, as there are $n$ rows but only $n-1$ 1s. It follows that there will always be two adjacent rows, one of which contains only 0s and the other contains at least one cell with the number 1.
 </p>
 <p>
-  This non-zero row will always contain two adjacent cells, one of which will contain the number 0 and the other the number 1. These two squares, along with the two adjacent squares in the row with only 0s make up the sub-table we are looking for.
+  This non-zero row will always contain two adjacent cells, one of which will contain the number 0 and the other the number 1. These two squares, along with the two adjacent squares in the row with only 0s, make up the sub-table we are looking for.
 </p>
 <p>
-  Let us choose an arbitrary $2 \times 2$ sub-table. Let the value in the top left corner equal $a$, the top right corner $b$, the bottom left corner $c$ and the bottom right - $d$. After the operation is carried out on a random cell $X$, let these values be $a_1, b_1, c_1, d_1$ respectively.
+  Let us choose an arbitrary $2 \times 2$ sub-table. Let the value in the top left corner equal $a$, the top right corner $b$, the bottom left corner $c$, and the bottom right - $d$. After the operation is carried out on a random cell $X$, let these values be $a_1, b_1, c_1, d_1$, respectively.
 </p>
 <p>
   Consider the expressions:
 </p>
 <p>
-  $$D = (a+d) - (b+c)$$ and $$D_1 = (a_1+d_1)-(b_1+c_1)$$.
+  $$D = (a+d) - (b+c)$$ and $$D_1 = (a_1+d_1)-(b_1+c_1)$$
 </p>
 <p>
   Three scenarios are possible:
 </p>
 <p>
-  1) Cell $X$ lies outside of our sub-table, but lies in a row or column, which intersects with our sub-table. Without loss of generality, let $X$ lie in the same row as $a$ and $b$. Then $a_1=a+1$, $b_1=b+1$, $c_1=c$, $d_1=d$ and $D_1= (a+1+d)-(b+1+c)=D$.
+  1) Cell $X$ lies outside of our sub-table, but lies in a row or column which intersects with our sub-table. Without loss of generality, let $X$ lie in the same row as $a$ and $b$. Then $a_1=a+1$, $b_1=b+1$, $c_1=c$, $d_1=d$ and $D_1= (a+1+d)-(b+1+c)=D$.
 </p>
 <p>
-  2) Cell $X$ lies outside of our sub-table, and lies on neither a row, nor a column which intersects with our sub-table. Then, obviously $D_1=D$.
+  2) Cell $X$ lies outside of our sub-table, and lies on neither a row nor a column which intersects with our sub-table. Then, obviously, $D_1=D$.
 </p>
 <p>
-  3) Cell $X$ lies within our sub-table. Without loss of generality, let it be the top left cell in the sub-table. Then $a_1=a-1$, $b_1=b+1$, $c_1=c+1$, $d_1=d$ and $D_1=D-3$. (If $X$ is the bottom right cell, then again $D_1=D-3$, otherwise $D_1=D+3$).
+  3) Cell $X$ lies within our sub-table. Without loss of generality, let it be the top left cell in the sub-table. Then $a_1=a-1$, $b_1=b+1$, $c_1=c+1$, $d_1=d$ and $D_1=D-3$. If $X$ is the bottom right cell, then again $D_1=D-3$, otherwise $D_1=D+3$.
 </p>
 <p>
   In this way, we have proved that the remainder when dividing $D$ by 3 is invariant. However in our initial table we found a $2 \times 2$ sub-table in which $D= \pm 1$, but we are tasked with creating a table in which all the numbers are the same - i.e. $D=0$, which is impossible.
