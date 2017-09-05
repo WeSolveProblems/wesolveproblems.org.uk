@@ -8,12 +8,12 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
+<h1>Problem ID 109441</h1>
 <p>
   We are given a 100x100  square grid and $N$ counters. All of the possible arrangements of the counters on the grid which follow the following rule are considered: no two counters lie in adjacent squares.
 </p>
 <p>
-  What is the largest value of $N$ for which in every single possible arrangement of counters following this rule, it is possible to find at least one counter, such that moving it to an adjacent square does not break the rule. (squares are considered adjacent if they share a side)
+  What is the largest value of $N$ for which, in every single possible arrangement of counters following this rule, it is possible to find at least one counter such that moving it to an adjacent square does not break the rule. Squares are considered adjacent if they share a side.
 </p>
 
 <h1>Solution</h1>
@@ -21,7 +21,7 @@ use_math: true
   We will call an arrangement 'strict' if moving any counter to an adjacent square results in the rule being broken. A strict arrangement of 100 counters exists - place all the counters along the length of the longest diagonal.
 </p>
 <p>
-  That any arrangement of 99 (or fewer) counters is not strict, is effectively proved in problem 35395.
+  That any arrangement of 99 or fewer counters is not strict, is effectively proved in problem 35395.
 </p>
 
 <h1>Answer</h1>
@@ -29,5 +29,5 @@ use_math: true
   The largest value is $N=99$</p>
 <h1>Note</h1>
 <p>
-  The question implies that all of the arrangements are considered for $N$ counters or fewer for each value of $N$
+  The question implies that all of the arrangements are considered for $N$ counters or fewer for each value of $N$.
 </p>

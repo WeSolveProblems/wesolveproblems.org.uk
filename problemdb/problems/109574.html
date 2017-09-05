@@ -10,7 +10,7 @@ use_math: true
 
 <h1>Problem ID 109574</h1>
 <p>
-  On a particular day, it turned out that every person living in a particular city made no more than one phone call. Prove that it is possible to divide the population of this city into no more than three groups, so that within each group, no person spoke to any other by telephone.
+  On a particular day it turned out that every person living in a particular city made no more than one phone call. Prove that it is possible to divide the population of this city into no more than three groups, so that within each group no person spoke to any other by telephone.
 </p>
 
 <h1>Solution</h1>
@@ -21,8 +21,8 @@ use_math: true
   Base case: For $n \le 2$ the truth of the statement is obvious.
 </p>
 <p>
-  Induction step: Let $n \ge 3$ and $m$ be the total number of calls made that day. Since $m \le n$ there must be at least one person $A$ living in the city, who talked to no more than two other people living in the city that day (otherwise $m \ge \frac{3n}{2} > n$).
+  Induction step: Let $n \ge 3$ and $m$ be the total number of calls made that day. Since $m \le n$ there must be at least one person $A$ living in the city who talked to no more than two other people living in the city that day, otherwise $m \ge \frac{3n}{2} > n$.
 </p>
 <p>
-  By induction, we can split all of the residents of the city apart from $A$ into three groups so as to fulfil the required condition. Resident $A$ cannot have talked to a person in all three groups, so can join the group that doesn't contain a person they talked to, without contravening the given condition.
+  By induction we can split all of the residents of the city apart from $A$ into three groups so as to fulfil the required condition. Resident $A$ cannot have talked to a person in all three groups, so can join the group that doesn't contain a person they talked to without contravening the given condition.
 </p>
