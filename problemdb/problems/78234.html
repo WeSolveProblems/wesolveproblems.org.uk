@@ -8,15 +8,15 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem</h1>
+<h1>Problem ID 78234</h1>
 <p>
-  The number $A$ is divisible by $1, 2, 3, ..., 9$. Prove that if $2A$ is presented in the form of a sum of some natural numbers smaller than 10, $2A= a_1 +a_2 +...+a_k$ then we can always choose some of the numbers $a_1, a_2, ..., a_k$ so that the sum of the chosen numbers is equal to $A$.
+  The number $A$ is divisible by $1, 2, 3, ..., 9$. Prove that if $2A$ is presented in the form of a sum of some natural numbers smaller than 10, $2A= a_1 +a_2 +...+a_k$, then we can always choose some of the numbers $a_1, a_2, ..., a_k$ so that the sum of the chosen numbers is equal to $A$.
 </p>
 
 <h1>Solution</h1>
 <p>
-  Notice that $2A \geq 2 \times $ LCM $(2, ..., 9)= 2 \times 2520 > 1000$. Hence for some $n=1, 2, ..., 9$ amongst the given natural numbers there will be some equal to $n$ with a sum of no less than 100. Mark the minimum number of numbers with value $n$, which together give a sum of greater than 90. Divide the remaining (unmarked) numbers into groups of $n$ numbers, so that the every number in a given group is the same (the sum of the numbers in each group should be a multiple of $n$ and so no greater than 81)
+  Notice that $2A \geq 2 \times $ LCM $(2, ..., 9)= 2 \times 2520 > 1000$. Hence for some, $n=1, 2, ..., 9$ amongst the given natural numbers, there will be some equal to $n$ with a sum of no less than 100. Mark the minimum number of numbers with value $n$, which together give a sum of greater than 90. Divide the remaining unmarked numbers into groups of $n$ numbers, so that every number in a given group is the same - the sum of the numbers in each group should be a multiple of $n$ and so no greater than 81.
 </p>
 <p>
-  In doing this, we may get a 'remainder' consisting of no more than 8 numbers of every value. The sum of the 'remainder' numbers along with the marked numbers does not exceed $(1+...+9)+100< A$ hence the total sum of all of the groups together must be greater than $A$. We will sum these groups, adding one more group each time, until the cumulative sum exceeds $A$. Upon removing the last group, we will get (since A is a multiple of $n$) a summation in the form $A-mn$ where $0 \leq m \leq 9$. We can fill up the missing $mn$ by taking $m$ of the marked numbers (we will have enough marked numbers, since the sum of the marked numbers is greater than $81 \geq mn$).
+  In doing this we may get a 'remainder' consisting of no more than 8 numbers of every value. The sum of the 'remainder' numbers, along with the marked numbers, does not exceed $(1+...+9)+100< A$, hence the total sum of all of the groups together must be greater than $A$. We will sum these groups, adding one more group each time, until the cumulative sum exceeds $A$. Upon removing the last group we will get $($since A is a multiple of $n$$)$ a summation in the form $A-mn$ where $0 \leq m \leq 9$. We can fill up the missing $mn$ by taking $m$ of the marked numbers; we will have enough marked numbers since the sum of the marked numbers is greater than $81 \geq mn$.
 </p>
