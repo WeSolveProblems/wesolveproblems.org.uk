@@ -10,7 +10,7 @@ use_math: true
 
 <h1>Problem ID 31363</h1>
 <p>
-  a) In a group of 4 people, who speak different languages, any three of them can communicate with one another (perhaps one translates for two others). Prove that it is always possible to split them into pairs, so that the two members of every pair have a common language.
+  a) In a group of 4 people, who speak different languages, any three of them can communicate with one another; perhaps by one translating for two others. Prove that it is always possible to split them into pairs so that the two members of every pair have a common language.
 </p>
 <p>
   b) The same, but for a group of 100 people.
@@ -21,14 +21,14 @@ use_math: true
 
 <h1>Solution</h1>
 <p>
-  a) Consider a graph with 4 vertices $A, B, C, D$ corresponding to people, and edges connecting them that correspond to a common language. The conditions given mean that any three vertices are connected by at least two edges. It remains to prove that there are two edges that do not share a vertex. Assume this is not true.
+  a) Consider a graph with 4 vertices $A, B, C, D$ that corresponds to people, and edges connecting them that correspond to a common language. The conditions given mean that any three vertices are connected by at least two edges. It remains to prove that there are two edges that do not share a vertex; assume this is not true.
 </p>
 <p>
-  Scenario 1: If in the group of 3 $(A, B, C)$ the edges $AB$ and $AC$ are present, then the edges $BD$ and $CD$ do not exist. But then the group of 3 $(B, C, D)$ would not have a shared vertex. This is a contradiction.
+  Scenario 1: If in the group of 3 $(A, B, C)$ the edges $AB$ and $AC$ are present then the edges $BD$ and $CD$ do not exist. But then the group of 3 $(B, C, D)$ would not have a shared vertex. This is a contradiction.
 </p>
 <p>
   Scenario 2: There are a total of 4 possible groups of 3. Each edge connects two of these groups. Therefore there are no fewer than $4 \times 2 \div 2=4$. On the other hand, each edge must have a corresponding 'missing' edge. Therefore there are no more than 3 edges. This is a contradiction.
 </p>
 <p>
-  c) Take two people, who have a common language. Divide the remaining 100 people (as in part b)) into groups of 4. From a) we get that it is possible to split every group of 4 into two pairs with a common language.
+  c) Take two people, who have a common language. Divide the remaining 100 people, as in part b$)$ into groups of 4. From a) we get that it is possible to split every group of 4 into two pairs with a common language.
 </p>
