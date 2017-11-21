@@ -1,0 +1,24 @@
+---
+problem_id: 35295
+category_ids: 367 355 1258
+difficulty: 3
+classes: 8 9 10
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35295</h1>
+<p>
+  On every cell of a $9 \times 9$ board there is a beetle. At the sound of a whistle, every beetle crawls onto one of the diagonally neighbouring cells. Note that, in some cells, there may be more than one beetle, and some cells will be unoccupied.
+Prove that there will be at least 9 unoccupied cells.
+</p>
+
+<h1>Hint</h1>
+<p>
+  Paint every over vertical of the board in black and the rest in white. Then the beetle will crawl from a  black cell to a white, and vice versa.
+
+<h1>Solution</h1>
+<p>
+  Let's paint every over vertical of the board in black and the rest in white. As a result, $5 \times 9$ = 45 cells (5 verticals) will be painted in black and only 36 cells in white. Note that from a black cell the beetle can only creep onto a white cell, and from a white cell only to a black one. Consequently, after the beetles crawled onto diagonally neighbouring cells, there were 36 beetles on 45 black cells. Hence, at least 9 black cells were not occupied.
+</p>
