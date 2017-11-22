@@ -1,0 +1,21 @@
+---
+problem_id: 35249
+category_ids: 269 352
+difficulty: 3+
+classes: 8 9 10
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35249</h1>
+<p>
+On a plane, there are given 2004 points. The distances between every pair of points is noted. Prove that among these noted distances at least thirty numbers are different.
+</p>
+<h1>Hint</h1>
+In the opposite case, all points except one are located on 29 circles.
+</p>
+<h1>Solution</h1>
+<p>
+DSuppose that there is a counterexample. We choose one of these points - A. Since the distance from point A to any other point takes less than 30 different values, the remaining 2003 points lie on 29 circles with centre A. Since $69\times29$ = 2001 which is less than 2003, no less than 70 points are located on one of these circles. We consider only points on this circle $($let's call it S$)$ and choose one of the points - B. The remaining 69 points are located on 29 circles with the centre B. However, each of these circles has, at most, two common points with the circle S, and $2 \times 29$ $<$ 69. Therefore, this is a contradiction.
+</p>
