@@ -1,0 +1,20 @@
+---
+problem_id: 32024
+category_ids: 681 355
+difficulty: 3+
+classes: 7 8 9
+source_id: 111442
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32024</h1>
+<p>
+In order to glaze 15 windows of different shapes and sizes, 15 pieces of glass are prepared exactly for the size of the windows $($windows are such that each window should have one glass$)$. The glazier, not knowing that the glass is specifically selected for the size of each window, works like this: he approaches a certain window and sorts out the unused glass until he finds one that is large enough $($that is, either an exactly suitable piece or one from which the right size can be cut$)$, if there is no such glass, he goes to the next window, and so on, until he has assessed each window. It is impossible to make glass from several parts. What is the maximum number of windows which can be left unglazed?
+</p>
+<h1>Solution</h1>
+<p>
+We show first that if at any time there are at least 8 windows $($and, correspondingly, not less than 8 pieces of glass$)$, then the glass for any window can be selected from the remaining pieces of glass. Indeed, if no more than seven pieces of glass have been dismantled, then at least one of the eight pieces of glass is intended in advance for the eight windows that are left over. This is something that you can insert into “your window”. Therefore, more than seven windows cannot remain unglazed.
+Now let's show that seven windows can remain unglazed. This happens, for example, in the following case. The pieces of glass have dimensions such that for any two, one can be obtained from the other by cutting $($note that the condition of the problem does not require this$)$. Thus, all of the pieces of glass can be arranged from smallest to largest, so that any smaller one can be "cut out" from the larger one, and the windows are ordered in the same way. Suppose a glazier approaches the windows in order of increasing size $($from the smallest to the largest$)$, and selects pieces of glasses in descending order of size, while he will be able to glaze the 8 smallest windows, the eighth window will get its own glass. The 7 largest windows will remain unglazed and so will the 7 smallest unused pieces of glass.
+
+</p>
