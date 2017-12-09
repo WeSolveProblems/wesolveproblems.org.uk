@@ -1,0 +1,27 @@
+---
+problem_id: 78578
+category_ids: 1278 355 251
+difficulty: 3+
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78578</h1>
+<p>
+All integers from 1 to 2n are written in a row. Then, to each number, the number of its place in the row is added, that is, to the first number 1 is added, to the second – 2, and so on.
+Prove that among the sums obtained there are at least two that give the same remainder when divided by 2n.
+</p>
+
+<h1>Solution</h1>
+<p>
+Let the numbers $a_1, a_2, ..., a_{2n}$ be written in a row. Suppose that all the numbers $a_1$ + 1, $a_2$ + 2, ..., $a_{2n}$ + 2n give different remainders when divided by 2n. Then these remainders are equal to 1, 2, ..., 2n. Therefore, $($$a_1$ + 1$)$ + $($$a_2$ + 2$)$ + ... + $($$a_{2n}$ + 2n$)$ = 2$($1 + 2 + ... + 2n$)$ $\equiv$ 1 + 2 + ... + 2n $($mod 2n$)$. This is a contradiction, since 1 + 2 + ... + 2n = n$($2n + 1$)$ $\equiv$ n $($mod 2n$)$.
+
+</p>
+
+<h1>Remarks</h1>
+<p>
+Compare with problem number 78122.
+
+</p>
