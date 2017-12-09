@@ -1,0 +1,23 @@
+---
+problem_id: 105052
+category_ids: 1258 355 251
+difficulty: 3+
+classes: 6 7 8
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 105052</h1>
+<p>
+In a chess tournament, each participant played two games with each of the other participants: one with white pieces, the other with black. At the end of the tournament, it turned out that all of the participants scored the same number of points $($1 point for a victory, $\frac{1}{2}$ a point for a draw and 0 points for a loss$)$. Prove that there are two participants who have won the same number of games using white pieces.
+</p>
+
+<h1>Solution</h1>
+<p>
+In total, n$($n – 1$)$ points were played for in the tournament. Therefore, each participant scored n - 1 points. Each chess player played n - 1 games using white pieces, and the number of games won by him using white pieces is equal to one of n numbers: 0, ..., n - 1. Suppose that everyone won a different number of games using white pieces. Then all possible options from 0 to n - 1 were achieved.
+Let’s consider two participants of the tournament: A, who won n - 1 games with white pieces, and B, who did not win any games in this way. What could be the result of the game, where A played against B with black pieces? On the one hand, A scored n - 1 points when playing with white pieces, so he lost all his games with black pieces, including this one. But B did not win a single game with white pieces, so he could not win this one either. This is a contradiction.
+
+
+
+</p>
