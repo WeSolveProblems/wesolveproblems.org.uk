@@ -1,0 +1,40 @@
+---
+problem_id: 116539
+category_ids: 679 355
+difficulty: 3+
+classes: 8 9 10
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116539</h1>
+<p>
+There are a thousand tickets with numbers 000, 001, ..., 999 and a hundred boxes with the numbers 00, 01, ..., 99. A ticket is allowed to be dropped into a box if the number of the box can be obtained from the ticket number by erasing one of the digits. Is it possible to arrange all of the tickets into 50 boxes?
+
+</p>
+
+<h1>Solution</h1>
+<p>
+Let's single out two groups of boxes: Group A will include all boxes whose numbers only contain the digits 0, 1, 2, 3 and 4; and in group B - all boxes containing only the numbers 5, 6, 7, 8 and 9. Each group will have 25 boxes: A will include half of the boxes of the first 50, and B will have half of the boxes of the last 50.
+Let us prove that any ticket can be put in one of the fifty selected boxes. Indeed, the ticket number consists of three digits, so among them there are two numbers that fall into one of the groups. Let’s fix these two digits and erase the remaining one. Thus, we get the number of the box that is present in one of the groups under consideration. We'll put a ticket in this box.
+</p>
+
+<h1>Answer</h1>
+<p>
+
+Yes, it is possible.
+</p>
+
+<h1>Remarks</h1>
+<p>
+
+To do this another way, it is also possible to divide ten numbers into two groups of five digits.
+
+
+
+
+
+
+
+</p>
