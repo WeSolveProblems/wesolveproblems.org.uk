@@ -1,0 +1,32 @@
+---
+problem_id: 31295
+category_ids: 230 355
+difficulty: 4-
+classes: 6 7 8
+source_id: 104207
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 31295</h1>
+<p>
+There are 100 notes of two types: a and b pounds, and a $\neq$ b $($mod 101$)$.
+Prove that you can select several bills so that the amount received (in pounds) is divisible by 101.
+
+</p>
+<h1>Solution</h1>
+<p>
+Let there be m ≤ 50 bills of a pounds and n = 100 - m bills of b pounds. Consider the sums a, a + b, 2a + b, 2a + 2b, 2a + 3b, 3a + 3b, ..., ma + mb, ma + $($m + 1$)$ b, ..., ma + nb. In total, we have 2m + $($n – m$)$ = 100. There are three possibilities.
+<p>
+  1) Among these sums there is a multiple of 101. This is the required sum.
+  <p>
+  2) There are two sums that are congruent modulo 101. Then the required sum is their difference.
+    <p>
+  3) The remainders from dividing these sums by 101 take all of the values from 1 to 100. Then one of them $($but not a$)$ is comparable with b, modulo 101. Subtracting b from it, we obtain the required sum.
+
+</p>
+<h1>Remarks</h1>
+<p>
+In Ivanov's book, it was only required that the numbers a and b were not equal. But then the statement is incorrect: for example, out of 100 denominations of denomination 1 and 102 pounds, you cannot collect an amount that is a multiple of 101.
+
+</p>
