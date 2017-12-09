@@ -1,0 +1,24 @@
+---
+problem_id: 64618
+category_ids: 1276 355 251
+difficulty: 3+
+classes: 8 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64618</h1>
+<p>
+We are given 111 different natural numbers that do not exceed 500. Could it be that for each of these numbers, its last digit coincides with the last digit of the sum of all of the remaining numbers?
+</p>
+
+<h1>Solution</h1>
+<p>
+Suppose this does happen. We can denote these numbers by $a_1, a_2, ..., a_111$, and their sum by S. By the condition of the problem, for each k, the numbers $a_k$ and S-$a_k$ end in the same digit. It follows that the difference between these numbers, which is equal to S - $2a_k$, is divisible by 10. Consequently, for any k, the number $2a_k$ ends with the last digit of the sum S. This means that the difference between each two numbers $a_k$ is a multiple of 5. Thus, all 111 distinct numbers $a_i$ should give the same remainder when divided by 5. But among the numbers from 1 to 500, there are exactly 100 numbers that give the same remainder when divided by 5. This is a contradiction.
+</p>
+
+<h1>Answer</h1>
+<p>
+It cannot be.
+</p>
