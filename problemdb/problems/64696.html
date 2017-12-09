@@ -1,0 +1,22 @@
+---
+problem_id: 64696
+category_ids: 1256 355 135
+difficulty: 3+
+classes: 6 7
+source_id: 212358
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64696</h1>
+<p>
+16 teams took part in a handball tournament where a victory was worth 2 points, a draw – 1 point and a defeat – 0 points. All teams scored a different number of points, and the team that ranked seventh, scored 21 points. Prove that the winning team drew at least once.
+</p>
+
+<h1>Solution</h1>
+<p>
+Each match is worth up to 2 points. In total, $16 \times 15$ / 2 = 120 matches were played in the tournament which means that 240 points were up for grabs. The 9 teams that finished last played $9 \times 8$ / 2 = 36 matches, that is, they played for 72 points. Consequently, the first seven teams could not have scored more 240 - 72 = 168 points.
+
+At the same time, the team that came in sixth place, scored at least 22 points, the team that ranked $5^th$ scored at least 23 points, and so on. Since 21 + 22 + ... + 27 = 168, each of them has scored exactly this number of points, that is the team that came sixth scored 22 points, the team that came fifth scored 23 points etc. Furthermore, the winning team scored 27 points. This number is odd, so this team drew at least once. 
+</p>
+
