@@ -1,0 +1,25 @@
+---
+problem_id: 78494
+category_ids: 228 355 836
+difficulty: 3+
+classes: 7 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78494</h1>
+<p>
+All of the integers from 1 to 64 are written in an $8 \times 8$ table. Prove that in this case there are two adjacent numbers, the difference between which is not less than 5. $($Numbers that are in cells which share a common side are called adjacent$)$.
+</p>
+<h1>Solution</h1>
+<p>
+Let’s consider a horizontal row of the table containing the number 1 and a vertical column containing the number 64. We can move from the cell containing the number 1 to the cell containing the number 64 by going first along the row, and then along the column, and our path will consist of no more than 14 steps $($a step is defined as a transition from any cell to an adjacent one$)$.
+Suppose that the difference between each two adjacent numbers in the table is less than 5. Then for the 14 steps or fewer, which occurred when moving from 1 to 64, no more than $14 \times 4$ = 56 can be added to the original number 1. Meanwhile, 64 - 1 = 63. This is a contradiction.
+</p>
+<h1>Remarks</h1>
+<p>
+Compare with problem number 78501.
+
+
+</p>
