@@ -1,0 +1,31 @@
+---
+problem_id: 98017
+category_ids: 681 355
+difficulty: 3+
+classes: 7 8 9
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98017</h1>
+<p>
+A staircase has 100 steps. Vivian wants to go down the stairs, starting from the top, and she can only do so by jumping down and then up, down and then up, and so on. The jumps can be of three types - six steps $($jumping over five to land on the sixth$)$, seven steps or eight steps. Note that Vivian does not jump onto the same step twice. Will she be able to go down the stairs?
+
+</p>
+
+<h1>Solution</h1>
+<p>
+The maximum number of steps that Vivian can descend is 2 and this can only be the case if she always jumps down 8 steps and up 6 steps. But she can only jump like this 3 + 3 times, otherwise she would have to jump back onto a passed step. Thus, with 8 jumps Vivian can at most descend by 7 steps; with 72 jumps - 63 steps, and note that she cannot descend below the 71st step. But then, by the Dirichlet principle, she will land on one step twice.
+</p>
+
+<h1>Answer</h1>
+<p>
+No, she cannot.
+</p>
+
+<h1>Remarks</h1>
+<p>
+3 points
+
+</p>
