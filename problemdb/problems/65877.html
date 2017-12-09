@@ -1,0 +1,30 @@
+---
+problem_id: 65877
+category_ids: 681 355 590
+difficulty: 3+
+classes: 8 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65877</h1>
+<p>
+100 children were each given a bowl with 100 pieces of pasta. However, these children did not want to eat and instead started to play. One of the children started to place one piece of her pasta into other children’s bowls $($to whomever she wants$)$. What is the least amount of transfers needed so that everyone has a different number of pieces of pasta in their bowl?
+</p>
+<h1>Solution</h1>
+<p>
+Example: Let’s number the children from 1 to 100. Let the $k^th$ child, where 1 $\leq$ k $\leq$ 50, transfer pasta to the children numbered from 51 to 50 + k. After all of the transfers, the children will have 99, 98, ..., 50, 150, 149, ..., 101 pieces of pasta, respectively.
+</p>
+Evaluation: Let’s say this can be done in less than 50 transfers. Then the number of children who do not give any pasta away is not less than 51. But the amount of pasta that each of these children has is in the range from 100 to 149. Therefore, there are two children with the same amount of pasta.
+
+
+</p>
+
+<h1>Answer</h1>
+<p>
+50 transfers.
+</p>
+<h1>Remarks</h1>
+5 points
+</p>
