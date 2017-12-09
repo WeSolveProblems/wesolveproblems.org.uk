@@ -1,0 +1,18 @@
+---
+problem_id: 79515
+category_ids: 103 355
+difficulty: 4-
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 79515</h1>
+<p>
+7 different digits are given. Prove that for any natural number n there is a pair of these digits, the sum of which ends in the same digit as the number.
+</p>
+<h1>Solution</h1>
+<p>
+Let $a_1, ..., a_7$ be given the digits. Note that if $a_i$ is the last digit of the number n-$a_j$, then the last digits of the numbers $a_i$ + $a_j$ and n are the same. Therefore, it suffices to prove that for some different i and j, $a_i$ is the last digit of the number n-$a_j$. Since all the digits in the set {$a_1, ..., a_7$} are different and all the digits are different in the set of the last digits of the numbers of the form n-$a_i$, in each of these sets there are seven digits, and the total number of digits is ten, then the sets intersect no less than by four digits. Therefore, either the statement of the problem is fulfilled, or for the four different digits $b_1, b_2, b_3, b_4$, the last digit of the number n coincides with the last digit of the number $2b_i$, which is impossible.
+</p>
