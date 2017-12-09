@@ -1,0 +1,33 @@
+---
+problem_id: 110083
+category_ids: 1258 352 202
+classes: 7 8 9
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 110083</h1>
+<p>
+Can the cells of a $5 \times 5$ board be painted in 4 colours so that the cells located at the intersection of any two rows and any two columns are painted in at least three colours?
+
+</p>
+
+<h1>Solution</h1>
+<p>
+Suppose that there exists a colouring of the $5 \times 5$ table satisfying this condition.
+In each column, there are at least two cells of the same colour. Let’s call this colour the prevailing one for a given column $($perhaps some columns will have two predominant colours$)$.
+Similarly, some colour $($let's call it 1$)$ will be the predominant one for two columns. Since nothing depends on the permutation of rows and columns, we will assume that these are columns a and b. We can also assume that the cells $a_4$ and $a_5$ are coloured in the first column in colour 1. Then the cells $b_4$ and $b_5$ must be coloured with two different colours which are not the same as the colour 1. Let’s assume that that these are painted with the colours 2 and 3, and since colour 1 is the predominant one for column b, we can assume that cells $b_2$ and $b_3$ are coloured in 1.
+<img src="110083 .gif">
+Let’s consider the cell a3. By selecting the 3rd and 5th rows and the columns a and b, we get that the cell a3 cannot be painted in colours 1 and 2. Similarly, it cannot be coloured in colours 1 and 2 and is therefore painted in colour 4. From similar arguments, we get that the cell a2 is also painted in colour 4.
+Hence, the square consisting of cells $a_3$, $a_2$, $b_3$ and $b_2$, is painted in two colours. This is a contradiction.
+</p>
+<h1>Answer</h1>
+<p>
+No, they cannot. 
+
+
+
+
+
+</p>
