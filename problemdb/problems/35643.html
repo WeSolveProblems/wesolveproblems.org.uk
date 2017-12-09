@@ -1,19 +1,31 @@
 ---
 problem_id: 35643
-category_ids: 361 355 747 1281 821
-difficulty: 3+
-classes: 9 10 11
-source_id: 151995
+category_ids: 437 352 679
+difficulty: 4-
+classes: 8 9
+source_id: 120601
 layout: problemdb_problem
 use_math: true
 ---
 
 <h1>Problem ID 35643</h1>
 <p>
-Prove that for every convex polyhedron there are two faces with the same number of sides.
+2001 vertices of a regular 5000-gon are painted. Prove that there are three coloured vertices lying on the vertices of an isosceles triangle.
+</p>
+<h1>Hint</h1>
+<p>
+If three vertices of a regular pentagon are painted, then they lie on the vertices of an isosceles triangle.
 </p>
 <h1>Solution</h1>
 <p>
-Suppose that any two faces of a convex polyhedron have a different number of sides. Let’s consider the face G, which has the greatest number of sides; let it be equal to m. Consequently, the number of sides of any of the other faces is strictly less than m. Hence, the number of remaining faces is strictly less than m $($even if there were 1-angled and 2-angled shapes, we could only get m-1 different polygons$)$. On the other hand, exactly m other faces of the polyhedron adjoin the face G $($one side to each side$)$. We have found a contradiction. Therefore, two faces have to have an equal number of sides.
+
+Let’s split all of the vertices of the regular 5000-gon into 1000 groups of five vertices, located on 999 consecutive vertices. The points in each group are the vertices of a regular pentagon. There are 2001 = $2 \times 1000$ + 1 painted vertices, therefore, at least three vertices are coloured in a certain group. But every three vertices of a regular pentagon lie at the vertices of an isosceles triangle.
+</p>
+<h1>Remarks</h1>
+<p>
+
+Compare with problem number 35758.
+
+
 
 </p>
