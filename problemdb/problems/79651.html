@@ -1,0 +1,26 @@
+---
+problem_id: 79651
+category_ids: 154 355
+difficulty: 3+
+classes: 8 9
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 79651</h1>
+<p>
+Prove that there is a number of the form
+  a) 1989 ... 19890 ... 0 $($the number 1989 is repeated several times, and then there are a few zeros$)$, which is divisible by 1988;
+</p>
+  b) 1988 ... 1988, which is divisible by 1989.
+
+</p>
+
+<h1>Solution</h1>
+<p>
+a) Let’s consider the numbers 1989, 19891989, ..., 19891989 ... 1989 $($in the last number 1989 is repeated 1989 times$)$. Let’s consider the remainder when this number is divided by 1988, since the number of remainders is smaller than the number of numbers written, then there must be two numbers with equal remainders $($by the Dirichlet principle$)$ and, therefore, their difference will be divisible by 1988. If the first number contains n 1989 numbers, and the second m 1989 numbers, then their difference can be written using n - m 1989 numbers and 4m zeros.
+</p>
+b) We can construct a sequence of numbers as in case a), but instead of 1989 we take 1988. As a result, we get a number which looks like 19881988 .... 198800..0 = $19881988 ... 1988 \times 10 ... 0$, which is divisible by 1989, but this means that the first factor is divisible by 1989.
+
+</p>
