@@ -1,5 +1,5 @@
 ---
-problem_id: 116661
+problem_id: 35058
 category_ids: 251 355 853 149
 difficulty: 3+
 classes: 5 6 7
@@ -8,21 +8,19 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem ID 116661</h1>
+<h1>Problem ID 35058</h1>
 <p>
-Can 100 weights of masses 1, 2, 3, ..., 99, 100 be arranged into 10 piles of different masses so that the following condition is fulfilled: the heavier the pile, the fewer weights in it?
-
+10 magazines lie on a coffee table, completely covering it. Prove that you can remove five of them so that the remaining magazines will cover at least half of the table.
 </p>
+<h1>Hint</h1>
+<p>
 
+Compare the problem to the case where the magazines do not overlap.
+</p>
 <h1>Solution</h1>
 <p>
-Suppose that we can arrange the weights in accordance with the condition of the problem. The sum of the masses of all of the weights is 5050. Hence, the mass of the heaviest pile is at least 5050 / 10 = 505. Since there are no weights of mass greater than 100, there are at least 6 weights in this pile. Hence, the total number of weights is not less than
-6 + 7 + 8 + ... + 15 = 105 $>$ 100. This is a contradiction.
-</p>
 
-<h1>Answer</h1>
-<p>
+Let’s number the magazines from 1 to 10. From the second magazine, let’s cut off that part $($if there is one$)$, which is already covered by the first magazine. From the third magazine, let’s cut off the part that is already covered by the first and second magazines. We continue in this way and in the end, from the tenth magazine, let’s cut off the part that is already covered by all of the magazines from the first to the ninth. After the described procedure, 10 magazines $($some of them may have some part cut off and it could be the case that an entire magazine has been removed$)$ will cover the table in one layer. Consequently, 5 magazines, that are the largest by area, cover at least half of the table. It is clear that the same 5 magazines covered at least half of the table area before we cut them. Therefore, the remaining 5 magazines can be removed from the table so that the condition is met.
 
-No, they cannot. 
 
 </p>
