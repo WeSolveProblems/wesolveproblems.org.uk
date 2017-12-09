@@ -1,0 +1,29 @@
+---
+problem_id: 78501
+category_ids: 1225 355
+difficulty: 3+
+classes: 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78501</h1>
+<p>
+All of the integers from 1 to 81 are written in a $9 \times 9$ table. Prove that in this case there are two adjacent numbers, the difference between which is not less than 6. $($Numbers that are in cells which share a common side are called adjacent$)$.
+</p>
+
+<h1>Solution</h1>
+<p>
+Somewhere in the table the number 1 is written, and elsewhere the number 81 is written. Let’s connect these numbers with a chain and pass from one number to another $($located in the next cell$)$, taking the minimum number of steps $($there will be no more than 16$)$. If in the table the difference between adjacent cells is less than 6, then the number of steps in the chain is exactly 16, otherwise there would be a step with a difference greater than 5. Hence, 1 and 81 are located in opposite corners of the table, and the chain consists of the numbers 1, 6, 11, 16, 21, ..., 81. Let’s consider another minimal chain connecting 1 and 81. It should also contain the numbers 1, 6, 11, 16, ..., 81. But in this table, all of the numbers are different. This is a contradiction.
+</p>
+
+<h1>Remarks</h1>
+<p>
+1. Compare with problem numbers 78494, 98071.
+</p>
+2. An analogous problem for the $n \times n$ table is discussed in M. Gerver's article "The problem of numbers in a table".
+
+
+
+</p>
