@@ -1,0 +1,26 @@
+---
+problem_id: 78680
+category_ids: 350 352 597
+difficulty: 3+
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78680</h1>
+<p>
+On a circle of radius 1, the point O is marked and from this point, to the right, a notch is marked using a compass of radius l. From the obtained notch $O_1$, a new notch is marked, in the same direction with the same radius and this is process is repeated 1968 times. After this, the circle is cut at all 1968 notches, and we get 1968 arcs. How many different lengths of arcs can this result in?
+
+</p>
+<h1>Solution</h1>
+<p>
+We prove by mathematical induction on n that the number of distinct arcs after n intersections does not exceed 3. For n = 2 this is obvious. Denote by $A_k$ the notch with the number k. Let n be notches be made and the point $A_n$ be on the arc $A_{k}A_{l}$. Then the point $A_{n-1}$ falls on the arc $A_{k-1}$$A_{l-1}$. Therefore, for k, l $\neq$1, no new arcs appear, and the required assertion is proved. Suppose now that, for example, l = 1. Let us prove that then the length of any arc $A_{p}A_{q}$ between adjacent notches is equal to the length of one of the arcs $A_{k}A_{1}$, $A_{n}A_{1}$, $A_{1}A_{s}$, where $A_s$ is the notch closest to $A_1$, and different to $A_n$. Indeed, for p, q $\neq$ 1, the length of the arc $A_{p}A_{q}$ is equal to the length of the arc $A_{p-1}A_{q-1}$, and between the notches $A_{p-1}$ and $A_{q-1}$ there are no other notches, except possibly, An. Thus, in a finite number of steps we arrive at one of the three considered arcs.
+
+
+</p>
+<h1>Answer</h1>
+<p>
+No more than three.
+
+</p>
