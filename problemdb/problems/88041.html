@@ -1,0 +1,27 @@
+---
+problem_id: 88041
+category_ids: 257
+difficulty: 2
+classes: 5 6 7 8
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88041</h1>
+<p>
+On the table four figures lie in a row: a triangle, a circle, a rectangle and a rhombus. They are painted in different colours: red, blue, yellow, green. It is known that the red figure lies between the blue and green figures; to the right of the yellow figure lies the rhombus; the circle lies to the right of both the triangle and the rhombus; the triangle does not lie on the edge; the blue and yellow figures are not next to each other. Determine in which order the figures lie and what colours they are.
+
+<h1>Hint</h1>
+Try to first determine how the figures are arranged by colour, not paying attention to their shape.
+</p>
+
+<h1>Solution</h1>
+For the sake of convenience, we repeat all of the conditions of the problem: 1) the red figure lies between the blue and the green; 2) to the right of the yellow figure lies the rhombus; 3) the circle lies to the right of both the triangle and the rhombus; 4) the triangle is not on the edge; 5) the blue and yellow figures are not next to each other. Since the red figure lies between the blue and the green $($condition 1$)$, and the yellow one is not next to the blue one $($condition 5$)$, then there are only two possible variations of the arrangement of the figures by colour: "blue, red, green, yellow" or "yellow, green, red, blue ". The first of the above options is incorrect, because by condition 2 the yellow figure cannot lie on the right edge. There is now only one possibility of arranging figures by colours: "yellow, green, red, blue". Condition 2 immediately determines that the rhombus is green. From this and condition 4 it follows that the triangle is red. In turn, from this and from condition 3 it follows that the circle is blue. Hence, the rectangle can only be yellow. The final answer is a yellow rectangle, a green rhombus, a red triangle, a blue circle.
+</p>
+
+<h1>Answer</h1>
+A yellow rectangle, a green rhombus, a red triangle, a blue circle.
+</p>
+
+
