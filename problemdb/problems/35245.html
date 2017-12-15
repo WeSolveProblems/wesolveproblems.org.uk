@@ -1,0 +1,26 @@
+---
+problem_id: 35245
+category_ids: 207
+difficulty: 2
+classes: 7 8 9
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35245</h1>
+<p>
+10 guests came to a party and each left a pair of shoes in the corridor $($all guests have the same shoes$)$. All pairs of shoes are of different sizes. The guests began to disperse one by one, putting on any pair of shoes that they could fit into $($that is, each guest could wear a pair of shoes no smaller than his own$)$. At some point, it was discovered that none of the remaining guests could find a pair of shoes so that they could leave. What was the maximum number of remaining guests?
+</p>
+<h1>Hint</h1>
+If more than five guests remain then the guest, who has the smallest shoe size among the remaining guests, can put on the largest remaining pair of shoes.
+</p>
+
+<h1>Solution</h1>
+We number the guests and their pairs of shoes with numbers from 1 to 10 in order of increasing shoe size. Suppose that there are 6 guests left $($and accordingly 6 pairs of shoes$)$. Then the smallest number of the remaining guest is not more than 5, and the largest number of the remaining pairs of shoes is not less than 6, so the guest with the lowest number will be able to put on the shoes with the largest number. This is a contradiction. On the other hand, if guests with numbers 1, 2, 3, 4, 5 left in order and put on shoes with numbers 10, 9, 8, 7, 6, then none of the remaining five guests could put on any of the remaining shoes.
+</p>
+
+<h1>Answer</h1>
+5
+</p>
+
