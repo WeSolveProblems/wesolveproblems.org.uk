@@ -1,0 +1,47 @@
+---
+problem_id: 66065
+category_ids: 1255 355 590
+difficulty: 4-
+classes: 6 7
+source_id: 212358
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66065</h1>
+<p>
+In each cell of a board of size $5\times5$ a cross or a nought is placed, and no three crosses are positioned in a row, either horizontally, vertically or diagonally. What is the largest number of crosses on the board?
+</p>
+
+
+<h1>Solution</h1>
+An example of the arrangement with 16 crosses according to the condition can be seen on the figure on the left.
+</p>
+<img src="66065.gif">
+</p>
+We can divide the board into a central cell and 8 rectangles $3\times1$ in size $($see right$)$. In each rectangle, there should be at least one nought. Therefore, there are at least eight of them on the board. If there is a nought in the central cell, then there are no more than 16 crosses, and the problem is solved. It remains to consider the case when there is a cross in the central cell.
+<p>
+The first method: 
+<p>
+Consider all cells of large diagonals $($see Fig.$)$.
+<img src="66065 2.gif">
+<p>
+Each pair of adjacent coloured cells, together with the central cell, forms a triple, in which at least one nought must stand. Hence, in eight shaded cells there are at least four noughts. Therefore, in each of the $3\times1$ rectangles located on the edge of the board, there must be at least one nought. And so, in total there are no fewer than 8 noughts. But if there are crosses in the other cells, then three crosses "in a row" form crosses that are adjacent to the central one horizontally and vertically, which contradicts the condition. So, there are at least nine of them.
+<p>
+The second method: 
+<p>
+Consider the 8 pairs of cells identified in the figure on the left. In one of the cells of each pair there should be at least one nought, so there are no less than eight noughts.
+<p>
+<img src="66065 3.gif">
+<p>
+Suppose that in each selected pair of cells there is exactly one nought, and there are no noughts outside of these pairs. Then the remaining cells all contain crosses $($see figure in the center$)$. Consider the four triplets of cells highlighted in this figure. In each of them there are already two crosses, so there are noughts between them. Again, consider four of the eight previously identified pairs of cells $($Figure on the right$)$. We already found out that in each pair exactly one cell contains a zero, and the other contains a cross. If crosses are placed as such, then in the centre of the board there will be three triplets, going in a row. Consequently, this arrangement also does not satisfy the condition.
+
+
+
+</p>
+<h1>Answer</h1> 
+16 crosses.
+</p>
+
+
+
