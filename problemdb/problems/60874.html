@@ -1,0 +1,26 @@
+---
+problem_id: 60874
+category_ids: 249 355 877 202
+difficulty: 4
+classes: 9 10 11
+source_id: 105521
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 60874</h1>
+<p>
+N points are given, no three of which lie on one line. Each two of these points are connected by a segment, and each segment is coloured in one of the k colours. Prove that if N $>$ [k! E], then among these points one can choose three such that all sides of the triangle formed by them will be colored in one colour.
+</p>
+
+<h1>Solution</h1>
+Induction by k. The base $($k = 1$)$ is obvious.
+</p>
+Inductive step. As can be seen from problem 60873 b$)$, 
+ <img src="60874.gif">
+Consider an arbitrary N of these points. From it there are no fewer than
+<img src="60874 2.gif"> segments, painted in the same colour. If the ends of any two of these segments are connected by a segment of the same colour, then the desired triangle is found. Otherwise, the ends are connected by segments coloured in k-1 colour. According to the induction hypothesis, one can find a triangle of the same colour with vertices at these points.
+
+</p>
+
+
