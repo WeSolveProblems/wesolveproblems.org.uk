@@ -1,0 +1,35 @@
+---
+problem_id: 66114
+category_ids: 367 355 590
+difficulty: 4
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66114</h1>
+<p>
+A grasshopper can make jumps of 8, 9 and 10 cells in any direction on a strip of n cells. We will call the natural number n jumpable if the grasshopper can, starting from some cell, bypass the entire strip, having visited each cell exactly once. Find at least one n $>$ 50 that is not jumpable.
+
+</p>
+
+<h1>Solution</h1>
+Suppose that the grasshopper jumped a strip of 62 cells. We will paint 8 of its cells starting from the left side white, the next 10 will be painted black, then again 8 will be painted white and so on. There will be 32 white cells and 30 black cells. Since the difference in the numbers of white and black cells is greater than 1, there was a jump between white cells. But such jumps are impossible.</p>
+Let us give an example of the movement of cyclists, in which they cannot be on any part of the track with a length of less than 75 m at any time. Let the first and third cyclists move with respect to point A with velocities equal in magnitude but different in direction, and in the initial moment they are at the point B, separated from A by a quarter of the circle $($Figure on the right$)$. Then they will meet alternately at the diametrically opposite points B and C $($a distance from A of 75 m$)$, and their positions at each moment in time will be symmetrical with respect to the straight line BC. Hence, at each moment in time the distance from one of them to point A will be no less than 75 m.
+</p>
+
+<h1>Answer</h1>
+n=62
+
+</p>
+
+<h1>Remarks</h1>
+1. Consider a strip of 63 cells. Let's increase the number of cells in one of the white strips by one. Then the difference in the number of white and black cells will increase by one and the number of possible jumps between white cells - by two. Therefore, again a contradiction arises. This can be done with each of the four white strips. Thus, the numbers 63, 64, 65, 66 are also not jumpable.
+Similarly, by reducing the number of cells in the black pieces, it can be shown that the numbers 59, 60, 61 are not jumpable.
+</p>
+2. It is easy to show that the numbers from 17k - 1 to 19k + 1 inclusive, where k is natural, are jumpable. In particular, the numbers 51, 52, ..., 58, as well as all numbers greater than 117, are jumpable.
+</p>
+3. 10 points.
+</p>
+
