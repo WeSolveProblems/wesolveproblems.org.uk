@@ -1,0 +1,35 @@
+---
+problem_id: 73648
+category_ids: 351 355 1056 103
+difficulty: 4-
+classes: 8 9 10
+source_id: 151995
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 73648</h1>
+<p>
+Prove that for any positive integer n, it is always possible to find a number, consisting of digits 1 and 2, that is divisible by 2n.
+$($For example, 2 divides by 2, 12 divides by 4, 112 divides by 8, 2112 divides by 16 and so on ...$)$.
+</p>
+
+
+<h1>Solution</h1>
+Solution 1
+<p>
+Let us prove that different n-digit numbers composed of digits 1 and 2 always give different remainders when dividing by 2n.
+<p>
+Indeed, the difference d of such numbers can be represented in the form an • $10_{n-1}$ + $a_{n-1}\times10_{n-2}$ + ... + $a_2\times10$ + $a_1$, where each of the numbers $a_i$ is 0 or ± 1. Consider the smallest number k for which ak $\neq$ 0. Obviously, d is divisible by 2k-1, but not divisible by 2k. Thus, d is divisible by 2n only if d = 0.
+But also of such n-digit numbers, there are exactly 2n various remainders, therefore one of these numbers gives the remainder zero, that is, it is divisible by 2n.
+<p>
+Solution 2
+<p>
+We prove by induction the following stronger assertion: for any positive integer n, there exists an n-digit number, which is a multiple of 2n, made up of digits 1 and 2.
+Base case: 2 divides by 2.
+<p>
+Inductive step: Suppose that an n-digit number A of 1's and 2's is divisible by 2n. The number 10n is divisible by 2n, but is not divisible by 2n + 1. Therefore, exactly one of the numbers 10n + A, $2\times10n$ + A is a multiple of 2n + 1.
+</p>
+
+
+
