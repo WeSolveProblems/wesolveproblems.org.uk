@@ -1,0 +1,19 @@
+---
+problem_id: 79403
+category_ids: 524 353 609 530
+difficulty: 4
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 79403</h1>
+<p>
+In a square with side length 1 there is a broken line, which does not self-intersect, whose length is no less than 200. Prove that there is a straight line parallel to one of the sides of the square that intersects the broken line at a point no less than 101 units along the line.
+</p>
+
+<h1>Solution</h1>
+Let $l_i$ be the length of the ith link of the polygon, $a_i$ and $b_i$ be the lengths of its projections onto the sides of the square. Then $l_i4 $\leq$ $a_i$ + $b_i$. Moreover, the equality $l_i$ = $a_i$ + $b_i$ is achieved only if the i-th link of the polygonal line is parallel to one of the sides of the square. But in this case the line passing through this link is parallel to the side of the square and intersects the polygonal line at a point greater than the 101st one $($it intersects the broken line in an infinite number of points$)$. Thus, we can assume that $l_i$ $<$ $a_i$ + $b_i$. Therefore, 200 = $l_1$ + ... + $l_n$ $<$($a_1 + ... + a_n$)$ + $($b_1 + ... + b_n$)$. Therefore, $a_1 + ... + a_n$ $>$ 100 or $b_1 + ... + $b_n $>$ 100. If the sum of the projections of the links on a segment of length 1 is greater than 100, then more than 100 different links of the polygonal line are projected onto one of the points of this segment. The perpendicular to the side of the square, raised from this point, is the straight line.
+</p>
+
