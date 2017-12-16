@@ -1,0 +1,33 @@
+---
+problem_id: 66020
+category_ids: 207 355 590
+difficulty: 4-
+classes: 8 9 10 11
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66020</h1>
+<p>
+Fred chose 2017 $($not necessarily different$)$ natural numbers $a_1, a_2, ..., a_2017$ and plays by himself in the following game. Initially, he has an unlimited supply of stones and 2017 large empty boxes. In one move Fred adds a1 stones to any box $($at his choice$)$, in any of the remaining boxes $($of his choice$)$ - $a_2$ stones, ..., finally, in the remaining box - $a_2017$ stones. His purpose is to ensure that eventually all the boxes have an equal number of stones. Could he have chosen the numbers so that the goal could be achieved in 43 moves, but is impossible for a smaller non-zero number of moves?
+</p>
+
+
+<h1>Solution</h1>
+2017 = $43\times46$ + 39. Suppose that among Fred’s numbers there are 39 twos, 46 numbers equal to 44, and the rest are ones.
+  To achieve the required goal in 43 moves, Fred chooses 39 boxes, in which he always places 2 stones - 43 turns will mean there are $43\times2$ = 86 stones placed in these boxes. The remaining boxes he splits into 43 groups of 46 boxes; on the i-th move, he places 44 stones in all the boxes of the i-th group and one stone in the boxes of the remaining groups. Then after 43 moves in each box of each group there will be 44 + $42\times1$ = 86 stones, that is, in all boxes there will be an equal number of stones.
+  Let Fred make k $<$ 43 moves. Then in any box A there were 44 stones per move, and in it there will be no fewer than 44 + $($k-1$)$\times 1 $ = 43 + k stones. On the other hand, since 46k $<$ 2017, in some box B none of the moves will be of 44 stones, that is, there will not be more than 2k stones in it. Since k $<$ 43, then
+2k $<$ k + 43, which means that in the box B there are fewer stones than in A. Thus, Fred has not yet achieved the required goal.
+
+</p>
+<h1>Answer</h1> 
+He could.
+</p>
+
+<h1>Remarks</h1> 
+The example given is not the only one. For example, a set of numbers consisting of 42 units, 2017 - 43 = 1974 numbers, equal to a $>$ 1, and one number equal to 43a - 42 is also suitable. There are even examples with pairwise different numbers; However, the verification that they are suitable is somewhat more difficult than for the examples cited above.
+</p>
+
+
+
