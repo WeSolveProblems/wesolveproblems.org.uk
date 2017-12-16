@@ -1,0 +1,39 @@
+---
+problem_id: 97823
+category_ids: 202 353 1257 590 135
+difficulty: 4-
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 97823</h1>
+<p>
+Given an endless piece of chequered paper with a cell side equal to one. The distance between two cells is the length of the shortest path parallel to cell lines from one cell to the other $($it is considered the path of the centre of a rook$)$. What is the smallest number of colours to paint the board $($each cell is painted with one colour$)$, so that two cells, located at a distance of 6, are always painted with different colours?
+</p>
+
+
+<h1>Solution</h1>
+An example of the coloration of the chequered plane into four colours, in which every two cells at a distance of 6 are coloured in different colours, is shown in the figure on the left.
+<p>
+<img src="97823.gif">
+<p>
+Another example. We introduce a coordinate system on the cellular plane. It is enough to colour the cells with an even sum of coordinates $($the colouring of the remaining cells is obtained from this shift by 1 to the right$)$. The points for which the sum of the coordinates is a multiple of 4 will be coloured in two colours: if both coordinates are even - in blue, if both odd - in red. Points whose sum of coordinates is even, but is not a multiple of 4, we will likewise colour in the remaining two colours.
+<p>
+To prove that a smaller number of colours cannot be dispensed with, it is sufficient to consider the four cells shown in the figure on right. Any two of them are located at a distance of 6 from each other, and therefore, they must all be painted in different colours.
+
+</p>
+
+<h1>Answer</h1>
+In 4 colours.
+</p>
+<h1>Remarks</h1>
+1. 8 points.
+<p>
+2. Compare with question 98224.
+<p>
+
+
+
+
