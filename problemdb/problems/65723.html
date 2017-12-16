@@ -1,0 +1,31 @@
+---
+problem_id: 65723
+category_ids: 905 355 590
+difficulty: 4-
+classes: 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65723</h1>
+<p>
+A firm recorded its expenses in pounds for 100 items, creating a list of 100 numbers $($with each number having no more than two decimal places$)$. Each accountant took a copy of the list and found an approximate amount of expenses, acting as follows. At first, he arbitrarily chose two numbers from the list, added them, discarded the sum after the decimal point $($if there was anything$)$ and recorded the result instead of the selected two numbers. With the resulting list of 99 numbers, he did the same, and so on, until there was one whole number left in the list. It turned out that in the end all the accountants ended up with different results. What is the largest number of accountants that could work in the company?
+</p>
+
+
+<h1>Solution</h1>
+Each time the accountants calculated the integer part of the sum of some two numbers, which is equal to the sum of their integer parts plus, possibly, one. We call this the addition of a unit by chance. It can happen only when both terms were non-integral. Each accountant recorded as a result the sum of the whole parts of the original numbers plus the number of such chance cases that he came across. Since each such case deleted two non-integer numbers, then there was a maximum of 50, and the possible different results were 51.
+</p>
+Example: suppose there were 50 numbers of 0.3 and 50 numbers of 0.7. Let's show how the accountant can obtain any whole result k from 0 to 50. First, he adds k times 0.3 + 0.7 and gets k units $($at k = 0 he adds 0.3 + 0.3$)$. Next to the already available integer, he adds in turn all the remaining numbers.
+
+</p>
+<h1>Answer</h1>
+51 accountants.
+</p>
+<h1>Remarks</h1>
+6 points.
+</p>
+
+
+
