@@ -1,0 +1,32 @@
+---
+problem_id: 65558
+category_ids: 1282 355 158 679
+difficulty: 4-
+classes: 8 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65558</h1>
+<p>
+Harry thought of two positive numbers x and y. He wrote down the numbers x + y, x - y, xy and x/y on a board and showed them to Sam, but did not say which number corresponded to which operation.
+Prove that Sam can uniquely figure out x and y.
+</p>
+
+
+<h1>Solution</h1>
+Note that
+<p>
+<img src="65558 1.gif">
+By searching, we can find on the board a pair of numbers, where a $<$b, whose arithmetic mean is equal to the geometric mean of the remaining pair of numbers c and d. Below we shall prove that such a partition is unique (up to a permutation of equal numbers), therefore a = x - y, b = x + y, and hence
+<p>
+<img src="65558 2.gif">
+<p>
+we can prove uniqueness. If in the equation,
+<img src="65558 3.gif">
+two unequal numbers from different parts of the equation are exchanged, then the equality is violated: one of the parts will increase and the other will decrease. It is also impossible to change pairs entirely: a negative number cannot stand under the root, and if all the numbers are nonnegative, equality is achieved only when all four numbers are equal, which is impossible as: x + y$>$x - y.
+</p>
+<h1>Remarks</h1>
+Points: 8-9 year 6, 10-11 year 5
+</p>
