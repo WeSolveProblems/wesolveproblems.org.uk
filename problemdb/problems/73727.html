@@ -1,0 +1,28 @@
+---
+problem_id: 73727
+category_ids: 1276 355 697
+difficulty: 4-
+classes: 7 8 9
+source_id: 151995
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 73727</h1>
+<p>
+Out of the given numbers 1, 2, 3, ..., 1000, find the largest number m that has this property: no matter which m of these numbers you delete, among the remaining 1000 - m numbers there are two, of which one is divisible by the other.
+</p>
+
+
+<h1>Solution</h1>
+If m $\geq$ 500, then by deleting the first m numbers $($from 1 to m$)$, we leave the numbers from m + 1 $\geq$ 501 to 1000, among which none obviously are divisible by the other $($all pairwise ratios are smaller than two$)$.
+The number m = 499 has the desired property. Indeed, if we take 501 numbers from a set from 1 to 1000, then among them there are two, of which one is divisible by the other $($see problem 60299$)$.
+</p>
+<h1>Answer</h1>
+m = 499
+</p>
+
+
+
+
+
