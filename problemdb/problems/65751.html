@@ -1,0 +1,24 @@
+---
+problem_id: 65751
+category_ids: 1286 355
+difficulty: 4-
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65751</h1>
+<p>
+A cubic polynomial f $($x$)$ is given. Let's find a group of three different numbers $($a, b, c$)$ such that f $($a$)$ = b, f $($b$)$ = c and f $($c$)$ = a. It is known that there were eight such groups [$a_i, b_i, c_i$], i = 1, 2, ..., 8, which contains 24 different numbers. Prove that among eight numbers of the form $a_i + b_i + c_i$ at least three are different.
+</p>
+
+
+<h1>Solution</h1>
+Suppose the contrary; then for some four groups [$a_i, b_i, c_i$] the sums of the numbers are the same and equal to some s. For each of these groups 
+s = $a_i + b_i + c_i$ = $a_i$ + f$($a_i$)$ + f$($f$($a_i$)$)$ = $b_i$ + f$($b_i$)$ + f$($f$($b_i$)$)$ = $c_i$ + f $($c_i$)$ + f$($f$($c_i$)$)$.
+Thus, all the 12 numbers of our four groups are the roots of the polynomial g $($x$)$ = x + f $($x$)$ + f $($f $($x$)$)$ - s. However, all these 12 numbers are different by the condition in the question, and the degree of the polynomial g $($x$)$ is equal to 9; hence, there cannot have been more than nine different roots. And so, we have a contradiction.
+</p>
+
+
+
