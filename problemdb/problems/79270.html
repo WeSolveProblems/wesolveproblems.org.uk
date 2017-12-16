@@ -1,0 +1,25 @@
+---
+problem_id: 79270
+category_ids: 495 353 679
+difficulty: 4-
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 79270</h1>
+<p>
+Two identical gears have 32 teeth. They were combined and 6 pairs of teeth were simultaneously removed. Prove that one gear can be rotated relative to the other so that in the gaps in one gear where teeth were removed there will be whole teeth of the second gear.
+</p>
+
+
+<h1>Solution</h1>
+Let n denote the number of removed pairs of teeth $($in our case, n = 6$)$. Then each gear has $n^2$ - n + 2 teeth $($in our case 32$)$. In total, there are $n^2$ - n + 1 such rotations of the top gear relative to the bottom gear, in which all the teeth of both gears are aligned. We call a hole the place on the gear where there is no tooth. Consider an arbitrary hole in the bottom gear. At n - 1 positions of the top gear $($except the original one$)$, above this hole is a hole on the upper gear. But there are n holes on the bottom gear, so out of $n^2$ - n + 1 turns of the top gear only for no more than n$($n - 1$)$ of them do the holes of both gears coincide. Since $($n^2$ - n + 1$)$ - n $($n-1$)$ = 1, there is such a rotation of the upper gear, when no holes will coincide. This turn is the desired one.
+
+</p>
+
+
+
+
+
