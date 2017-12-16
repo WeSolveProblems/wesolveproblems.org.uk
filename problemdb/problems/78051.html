@@ -1,0 +1,22 @@
+---
+problem_id: 78051
+category_ids: 905 355
+difficulty: 4
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78051</h1>
+<p>
+The numbers [a], [2a], ..., [Na] are all different, and the numbers [1/a], [2/a],..., [M/a] are also all different. Find all such a.
+</p>
+
+<h1>Solution</h1>
+Answer: (N-1)/N $\leq$ $|a|$ $\leq$ M/(M-1)
+</p>
+The numbers [x] and [y] are different only when the numbers [-x] and [-y] are also different. Therefore, it is sufficient to examine the case when a $>$ 0. If a $<$ (N-1)/N, then out of the numbers  [a], [2a], ..., [Na] there must be some number that are the same, since these N numbers are made up of only N-1 differs numbers: 0, 1, ..., N-2. Therefore a $\geq$ (N-1)/N. By considering similar principles for the numbers of the form 1/a, we can see that 1/a $\geq$ (M-1)/M, i.e. a $\leq$ M/(M-1). We can show that, if (N-1)/N $\leq$ $|a|$ $\leq$ M/(M-1), then all the numbers [a], [2a], ..., [Na] are different. Indeed, if a $\geq$ 1, then even all the numbers [a], [2a],..., [3a] are different. But if a $<$ 1, then 1-1/N $\leq$ a $\leq$ 1, 2-2/N $\leq$ 2a $<$ 2,...., N-1 $\leq$ Na $<$ N, and so [ka] = k-1 for k = 1, 2,..., N. For the numbers [1/a], [2/a], ..., [M/a] the reasoning is analogous. 
+
+</p>
+
