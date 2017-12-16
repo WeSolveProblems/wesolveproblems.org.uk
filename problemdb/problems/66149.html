@@ -1,0 +1,44 @@
+---
+problem_id: 66149
+category_ids: 251 355
+difficulty: 4-
+classes: 8 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66149</h1>
+<p>
+One hundred gnomes weighing each 1, 2, 3, ..., 100 pounds, gathered on the left bank of a river. They cannot swim, but on the same shore is a rowing boat with a carrying capacity of 100 pounds. Because of the current, it's hard to swim back, so each gnome has enough power to row from the right bank to the left one no more than once $($it's enough for any one of the gnomes to row in the boat, the rower does not change during one voyage$)$. Will all gnomes cross to the right bank?
+</p>
+
+
+<h1>Solution</h1>
+We can number the gnomes by their weight. Suppose that the crossing of the dwarfs was a success. We call the boat journeys from the left bank to the right, forward ones, and from the right to the left - backward ones.
+<p>
+The first method:
+<p>
+Let there be k backward journeys; then there were k + 1 forward journeys.
+<p>
+In k backward journeys, k different gnomes row; therefore, the total weight of the gnomes participating in the backward journeys is no less than 1 + 2 + ... + k = 1 k$($k + 1$)$. On each forward journey, the total weight of the gnomes does not exceed 100, so that as a result, the total weight of gnomes on the left bank decreased by no more than
+100 $($k + 1$)$ - ½ k $($k + 1$)$ = ½ $($200 - k$)$($k + 1$)$. On the other hand, this weight has decreased by 1 + 2 + ... + 100 = $50\times101$, from $($200 - k$)$($k + 1$)$\geq$ $100\times101$, or $($k - 100$)$($k - 99$)$ $\geq$ 0.
+<p>
+This can happen only if k = 99 or k = 100. In this case, the inequality becomes an equality; this means that on each forward journey the total weight of the dwarves was equal to 100. But then the gnome of weight 50 should swim with the gnome of weight 50, and the second such does not exist. And so, we have a contradiction.
+<p>
+  
+The second method:
+<p>
+We call the gnomes 50, 51, 52, ..., 100 heavy, and the rest - light. Let the heavy gnomes be rowers in d return flights. Then these d heavy gnomes made at least two forward journeys, and the rest made at least one. Since two heavy gnomes could not travel at the same time, the number of forward journeys was no less than 2d + $($51-d$)$ = 51 + d. Hence, there were no fewer than 50 + d backward journeys, that is, in at least 50 of them light gnomes were rowing. But there are only 49 light gnomes, so one of them had to row twice on the backward journey, which is impossible.
+<p>
+
+
+
+
+</p>
+<h1>Answer</h1> 
+They cannot.
+</p>
+
+
+
