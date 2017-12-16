@@ -1,0 +1,19 @@
+---
+problem_id: 78825
+category_ids: 246 355 677
+difficulty: 4
+classes: 8 9 10
+source_id: 164898
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78825</h1>
+<p>
+In the country of Mara there are several castles. Three roads lead from each castle. A knight left from one of the castles. Traveling along the roads, he turns from each castle standing in his way, either to the right or to the left depending on the road on which he came. The knight never turns to the side which he turned before it. Prove that one day he will return to the original castle.
+</p>
+
+<h1>Solution</h1>
+All the castles of the country of Mara are connected by some finite number of roads. If a knight wanders around the country long enough, he will pass a lot of roads, so there is at least one road AB $($where A and B are castles$)$, which he will pass at least five times. At least three times he will travel along this road in the same direction $($say, from A to B$)$; therefore, if from the castle B there are two roads, other than BA, lets name them BC and BD, along which the knight travels at least twice, say, after the i-th and after the j-th visit to the castle B, where j $>$ i, then they would lead him, after leaving B $($ to which he came each time from A$)$ the same way, say, towards Castle C. But from the condition in the question it then follows that not only in i-th and j-th visit of castle B did the knight came to B from one castle - from A - but to A he came each time from the same castle P $($because if the knight after B turned to BC, for example, to the left, then in A he had to turn right after visiting P$)$. Likewise, it is established that the knight's paths that preceded the two visits of castle B are completely identical: to castle P he came both times from the same castle, etc. But then, if the knight before the i-th visit of B passed, after exiting from the castle X, some number of k castles, then again for k castles before the jth visit to B, he again was in X, which proves the statement of the question.
+</p>
+
