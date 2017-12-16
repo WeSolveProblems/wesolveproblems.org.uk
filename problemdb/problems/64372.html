@@ -1,0 +1,29 @@
+---
+problem_id: 64372
+category_ids: 249 355 590
+difficulty: 4-
+classes: 6 7
+source_id: 212358
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64372</h1>
+<p>
+Find the largest number of colours in which you can paint the edges of a cube $($each edge with one colour$)$ so that for each pair of colours there are two adjacent edges coloured in these colours. Edges are considered to be adjacent if they have a common vertex.
+</p>
+
+
+<h1>Solution</h1>
+There are several ways to colour the edges of a cube in six colours in accordance with the condition of the problem. Here is one of them:
+</p>
+<img src="64372.png">
+</p>
+We show that this cannot be done with more than six colours.
+Suppose we painted the edges of a cube in seven or more colours. Since there are 12 edges in the cube, there must be a colour, for example, white, in which only one edge is coloured. For each cube edge, there are exactly four edges adjacent to it. Hence, with a white colour in a pair there can be no more than four colours, which means that there cannot be more than five colours in all. And so, we have a contradiction.
+
+</p>
+<h1>Answer</h1>
+6 colours.
+
+</p>
