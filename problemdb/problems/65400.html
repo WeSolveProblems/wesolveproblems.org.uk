@@ -1,0 +1,32 @@
+---
+problem_id: 65400
+category_ids: 1257 355 590
+difficulty: 4-
+classes: 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65400</h1>
+<p>
+What is the smallest number of cells that can be chosen on a $15\times15$ board so that a mouse positioned on any cell on the board touches at least two marked cells? $($The mouse also touches the cell on which it stands.$)$
+</p>
+
+
+<h1>Solution</h1>
+It is more convenient to solve the problem in a general way: we show that on the board $($2n + 1$)$\times $($2n + 1$)$ $($where n$>$ 1$)$ the answer is 4n. $($The figure corresponds to the case n = 3$)$.
+</p>
+<img src="65400.gif">
+<p>
+The first method:
+<p>
+Mark the cells on the perimeter of the rectangle $($2n-1$)$\times3$, as shown in the figure. In this case, two cells are marked on long diagonals $($from more than n + 1 cells$)$. Only four cells of the board $($they are painted in the picture$)$ do not lie on long diagonals, but for them the required condition is fulfilled.
+</p>
+We will show that a smaller number of marked cells cannot be dispensed with. We will arrange 8n mice in all cells along the perimeter of the board. Let k cells be marked. We estimate in two ways the number p of pairs $($of the mouse and the marked cell that he has touched$)$. Since each square of the board is touched by no more than four mice, then p $\leq$ 4k. But each mouse must touch at least two marked cells, so p $\geq$ 8n\times2. Hence, 16n $\leq$ 4k, that is, k $\geq$ 4n.
+
+</p>
+
+<h1>Answer</h1>
+${1/3}\times{1/3}$
+</p>
