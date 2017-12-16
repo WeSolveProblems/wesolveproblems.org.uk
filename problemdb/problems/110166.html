@@ -1,0 +1,34 @@
+---
+problem_id: 110166
+category_ids: 206 355
+difficulty: 4-
+classes: 7 8 9
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 110166</h1>
+<p>
+A set of weights has the following properties:
+It contains 5 weights, which are all different in weight.
+For any two weights, there are two other weights of the same total weight.
+What is the smallest number of weights that can be in this set?
+</p>
+
+
+<h1>Solution</h1>
+Let A be one of the lightest weights, and B one of the weights with the weight that is the next weight consecutively after A. Obviously, a pair of weights {A, B} can be balanced only by the same pair.
+</p>
+Therefore, there are at least two weights of weight A and B. A pair {A, A} can also only be balanced by the same pair. Therefore, there are at least 4 weights of weight equal to A. For similar principles, there are at least 4 weights of the heaviest weight E and at least two weights of the previous weight D.
+</p>
+In addition, by assumption, there is at least one weight C, which is heavier than A and B and is lighter than D and E.
+Thus, the total number of weights in the set is no fewer than 4 + 4 + 2 + 2 + 1 = 13.
+ </p>
+On the other hand, it is also easy to verify that a set of 13 weights: {1,1,1,1,2,2,3,4,4,5,5,5,5} satisfies the condition of the problem.
+
+</p>
+
+<h1>Answer</h1>
+13
+</p>
