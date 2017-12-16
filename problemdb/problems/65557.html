@@ -1,0 +1,30 @@
+---
+problem_id: 65557
+category_ids: 1257 355
+difficulty: 4-
+classes: 8 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65557</h1>
+<p>
+What is the largest number of horses that can be placed on an $8\times8$ chessboard so that no horse touches more than seven of the others?
+</p>
+
+
+<h1>Solution</h1>
+Consider an example of an arrangement of 60 horses: all cells are occupied, except cells of the central square $2\times2$. We can show that, if the condition satisfies the arrangement, at least four cells remain free $($that is, more than 60 horses cannot be arranged$)$. Consider the central square of $4\times4$. If there are four empty cells in it, all is proved.
+</p>
+Let there be no more than three free empty cells in it, then there are at least 13 horses positioned. Each of them touches 8 cells of the board, one of which is free. It is easy to verify that a fixed horse, standing in the central square, can be touched attacked by no more than four horses. Consequently, the number of free cells is no less than 13/ 4 $>$ 3, that is, no less than 4.
+
+</p>
+
+<h1>Answer</h1>
+60 horses.
+</p>
+
+<h1>Remarks</h1>
+6 points
+</p>
