@@ -1,0 +1,32 @@
+---
+problem_id: 64583
+category_ids: 264 355
+difficulty: 4-
+classes: 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64583</h1>
+<p>
+A chequered strip of $1\timesN$ is given. Two players play the game. The first player puts a cross into one of the free cells on his turn, and subsequently the second player puts a nought in another one of the cells. It is not allowed for there to be two crosses or two noughts in two neighbouring cells. The player who is unable to make a move loses.
+</p>
+Which of the players can always win $($no matter how their opponent played$)$?
+</p>
+
+
+<h1>Solution</h1>
+Let N$>$ 1. We give the winning strategy of the second player. His first move is in the outer cell, and he then plays as he likes. After the k-th move of the first player, the crosses divide the strip into at least k parts, consisting of empty squares and noughts. But by this time only k-1 noughts have been placed, which means that there is no sign in one of the parts, and there the second player can make a move. Since the game will at some point end, the first player will lose.
+</p>
+
+<h1>Answer</h1>
+For N = 1, the first player wins, while for N$>$ 1 the second player wins.
+</p>
+
+<h1>Remarks</h1>
+1. 7 points.
+<p>
+2. The task was also proposed in the Taskbook "Quantum" $($"Quantum", 2008, No. 2, back M2083$)$.
+
+</p>
