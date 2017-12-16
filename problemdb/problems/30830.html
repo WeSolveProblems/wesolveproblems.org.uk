@@ -1,0 +1,28 @@
+---
+problem_id: 30830
+category_ids: 247 355
+difficulty: 4-
+classes: 8 9
+source_id: 104111
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30830</h1>
+<p>
+In some state, there are 101 cities.
+</p>
+a) Each city is connected to each of the other cities by one-way roads, and 50 roads lead into each city and 50 roads lead out of each city. Prove that you can get from each city to any other, having travelled on no more than on two roads.
+</p>
+b) Some cities are connected by one-way roads, and 40 roads lead into each city and 40 roads lead out of each. Prove that you can get form each city to any other, having travelled on no more than on three roads.
+</p>
+
+
+<h1>Solution</h1>
+Consider cities A and B. Let the road connecting them lead from B to A.
+</p>
+a) Consider 50 cities, which have roads leading into them from A, and 50 cities, from which roads lead into B. Since 50 + 50 $>$ 99, there is a city C belonging to both sets. So, you can drive the route ACB.
+</p>
+b) Let the first group be of 40 cities, to which the roads from A lead; the second group be of 40 cities, out of which there is a road that leads to B as well as just the city of B; the third group be of the remaining 19 cities. When considering the cities of the first group in aggregate there are $40\times40$ = 1600 roads. Of these, $40\times39$ / 2 = 780 roads lead into the cities of the first group and no more than $40\times19$ = 760 roads lead into the cities of the third group. Since 780 + 760 $<$ 1600, there is a road leading from the first group to the second, which is what was required.
+
+</p>
