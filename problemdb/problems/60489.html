@@ -1,0 +1,37 @@
+---
+problem_id: 60489
+category_ids: 836 355 361 1083 230
+difficulty: 4
+classes: 8 9 10
+source_id: 105521
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 60489</h1>
+<p>
+Let a, b, c be integers; where a and b are not equal to zero.
+Prove that the equation ax + by = c has integer solutions if and only if c is divisible by d = GCD $($a, b$)$.
+</p>
+
+<h1>Solution</h1>
+Any number of the form ax + by must be divisible by d.
+It sufficient to verify that the equation ax + by = d has a solution. In addition, we can assume that a and b are positive.
+</p>
+The first method: See the problem 60488 b.
+</p>
+The second method: Consider the smallest natural number m, which is a linear combination of the numbers a and b $($that is, representable in the form ax + by$)$. Divide a by m with a remainder: a = qm + r. The number r = a - qm is also a linear combination of the numbers a and b, but it is less than m. Hence, r = 0, that is, a is a multiple of m. Similarly, b is a multiple of m. Hence, d is also divisible by m, and therefore is a linear combination of the numbers a and b.
+</p>
+The third method: Dividing by d, we reduce the problem to the case of relatively prime numbers a and b.
+For each integer c, consider on the coordinate plane the straight line lc given by the equation ax + by = c. All these lines are parallel.
+</p>
+We construct a parallelogram P with vertices $($0, 0$)$, $($0, 1$)$, $($b, 1 - a$)$, $($b, - a$)$, the two smaller sides of which are equal to 1, and the large ones lie on the lines $l_0$ and $l_b$. This parallelogram is intersected by the lines $l_1, l_2, ..., l_b-1$ $($and no other of this family of lines under consideration$)$. The coordinates of neighbouring integer points on each of these lines differ by b $($see problem 60514$)$, therefore, each of them contains at most one integer point belonging to P. The two upper $($lower$)$ vertices of the parallelogram are just the neighbouring integer points on the line $l_b $($l_0$)$, therefore on the sides of P there are no integer points which differ from the vertices.
+</p>
+<h1>Remarks</h1>
+
+1. It is clear from the second method that m = d, that is the LCM $($a, b$)$ is the smallest natural number, representable as ax + by.
+</p>
+2. In this source there was another, but practically equivalent, formulation $($see Problem 60488b$)$.
+</p>
+
+
