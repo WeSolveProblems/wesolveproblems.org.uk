@@ -10,16 +10,30 @@ use_math: true
 
 <h1>Problem ID 98408</h1>
 <p>
-A teacher filled the squares of a chequered table with $5\times5$ different integers and gave one copy of it to Janine and one to Zahara. Janine selects the largest number in the table, then she deletes the row and column containing this number, and then she selects the largest number of the remaining integers, then she deletes the row and column containing this number, etc. Zahara performs similar operations, each time choosing the smallest numbers. Can the teacher fill up the table in such a way that the sum of the five numbers chosen by Zahara is greater than the sum of the five numbers chosen by Janine?
+In a regular shape with 25 vertices, all the diagonals are drawn.
+Prove that there are no nine diagonals passing through one interior point of the shape.
 </p>
-
-
 <h1>Solution</h1>
-See problem 65859 a).
+<p>
+Solution 1
+<p>
+We denote the 25-gon by $A_1A_2 ... A_24A_25$. We call the index of the diagonal $A_iA_j$ $($i $<$ j$)$ the number min {j - i, 25 - j + i}. The index of the diagonal $A_iA_j$ passing through the point at which nine diagonals intersect can assume the values 9, 10, 11 and 12, since there are 8 diagonal ends between the points Ai and Aj on the contour of the 25-gon.
+<p>
+It is clear that the diagonals of one index are tangent to one circle.
+<p>
+Let nine diagonals of a regular 25-gon intersect at one point. Then among them there are at least three single indexes. This means that from a certain point three tangents to one circle can be drawn. And so, we have a contradiction.
+<p>
+Solution 2
+<p>
+Suppose that the n diagonals $A_1B_1, ..., A_nB_n$ intersect at the point M. We can assume that the points $A_1, ..., A_n, B_1, ..., B_n$ are arranged in this order "clockwise". Let us describe a circle around a 25-gon. Then the following sum of arcs
+$(A_1A_2 + B_1B_2) + (A_2A_3 + B_2B_3) + ... + (A_n-1A_n + B_n-1B_n) + (A_nB_1 + B_nA_1)$ is equal to 2φ. The value of each arc is a multiple of φ = 2π / 25, therefore each of the sums in parentheses equals at least 2φ.
+<p>
+Suppose that one of these sums $($for example, $A_1A_2 + B_1B_2$)$ is equal to 2φ. Then the chords $A_1A_2$ and $B_1B_2$ are equal, hence the quadrilateral $A_1A_2B_1B_2$ is an isosceles trapezoid. The perpendicular dropped from the centre O of the circle to the base $A_1B_2$ of this trapezoid passes through the middle of its bases, and hence through the point M of the intersection of its diagonals. Moreover, the straight line l perpendicular to OM and passing through the point M is parallel to the bases of the trapezium and, therefore, intersects its lateral sides, and hence also the arcs $A_1A_2$ and $B_1B_2$. If one of the sums is equal to 2φ, then the same line l intersects two more pairs of the arcs that are under consideration, which is impossible. Consequently, all the sums in parentheses, except perhaps by one, are no less than 3φ.
+And so, we obtain the inequality $($n - 1$)$\times3φ$ + 2φ$\leq$2φ = 25φ, and hence n $\leq$ 26/3 $<$ 9.
+</p>
+<h1>Remarks</h1>
+6 points 
 </p>
 
-<h1>Answer</h1>
-No, she cannot.
-</p>
 
 
