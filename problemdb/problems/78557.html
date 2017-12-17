@@ -1,21 +1,19 @@
 ---
-problem_id: 78496
-category_ids: 355 590
+problem_id: 78557
+category_ids: 375 355 361
 difficulty: 4
-classes: 8 9
+classes: 8 9 10
 source_id: 164898
 layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem ID 78496</h1>
+<h1>Problem ID 78557</h1>
 <p>
-What is the largest amount of numbers that can be selected from the set 1, 2, ..., 1963 so that the sum of any two numbers is not divisible by their difference?
-
+Several pieces of carpet are laid along a corridor. Pieces cover the entire corridor from end to end without omissions and even overlap one another, so that over some parts of the floor lie several layers of carpet. Prove that you can remove a few pieces, perhaps by taking them out from under others and leaving the rest exactly in the same places they used to be, so that the corridor will still be completely covered and the total length of the pieces left will be less than twice the length corridor.
 </p>
 
 <h1>Solution</h1>
-We show first that from the given set, you can select the 655 numbers that fit the required condition. In fact, we take all numbers of the form 3k + 1; k = 0, 1, ..., 654. The difference of any two such numbers is obviously divisible by 3, while the sum of any two of them gives the remainder 2 when divided by 3. It follows that the sum of any two chosen numbers is not divisible into their difference, that is, the correct ones were chosen. We now show that no more numbers can be chosen which satisfy conditions of the problem. Indeed, if we chose more than 655 numbers, we would find two numbers that differ from each other by less than 3 $($otherwise the difference between the largest and smallest numbers of the given set would be greater than $3\times654$ = 1962, which is impossible$)$. So, there must be two numbers that differ from each other by 1 or 2. In the first case, the difference between them is 1, and everything, including their sum, is divisible by 1. In the second case, the difference between the chosen numbers is 2, and so both of these numbers have the same parity, which means that their sum is an even number. And in this case the sum of the numbers taken is divisible by their difference. We showed that from this set it is impossible to select more than 655 numbers so that the conditions of the problem are fulfilled, and so we have constructed an example of how you can select 655 numbers. Therefore, the largest amount of numbers that can be selected from this set in accordance with the conditions of the task is 655.
-
+Choose out of all the pieces of the carpet that cover the left end of the corridor, the one with the right end that lies furthest to the right and denote this piece as I1. After selecting a piece of $I_k$, choose out of all the pieces covering its right end, the one whose right end lies furthest to the right. Thus, we select several pieces completely covering the corridor. It remains to prove that the sum of their lengths does not exceed 2. The piece $I_{k + 2}$ has no points in common with $I_k$, since otherwise we would have to choose $I_{k + 2}$ instead of $I_{k + 1}$. Therefore, each point of the corridor of length 1 is covered by at most two pieces $I_k$, that is, the sum of the lengths of these pieces does not exceed 2.
 </p>
 
