@@ -15,7 +15,7 @@ A council of 2,000 deputies decided to approve a state budget containing 200 ite
 
 
 <h1>Solution</h1>
-If k $\geq$ 1990, it may happen that the first 10 deputies will choose to allocate nothing for the first item of expenditure, but for the others, they will choose to allocate S / 199. The next 10 deputies may not allocate anything for the second item and will allocate S / 199 for the rest and so on. As a result, for each item, an amount of S / 199 will be allocated, and so the amount allocated for all 200 items in total will be 199 / 199S $>$ S.
+If k $\leq$ 1990, it may happen that the first 10 deputies will choose to allocate nothing for the first item of expenditure, but for the others, they will choose to allocate S / 199. The next 10 deputies may not allocate anything for the second item and will allocate S / 199 for the rest and so on. As a result, for each item, an amount of S / 199 will be allocated, and so the amount allocated for all 200 items in total will be {199/199}S $>$ S.
 <p>
 If k = 1991, then after the expenditure is approved for all items, it turns out that for each item no more than 9 deputies proposed an amount of expenditure that is less than the approved one. Since $200\times9$ $<$ 2000, there is a deputy who for each item proposed an amount of expenditure no smaller than that which was approved. But the sum of the expenses proposed by him can be no more than S, and, hence, so is the approved amount.
 </p>
