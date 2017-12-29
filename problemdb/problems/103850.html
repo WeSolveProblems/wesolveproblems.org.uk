@@ -1,0 +1,27 @@
+—--
+Problem_id: 103850
+Category_ids: 86
+Difficulty: 2
+Classes: 7 8
+Source_id: 198948
+Layout: problemdb_problem
+Use_math: true
+—--
+
+<h1>Problem ID 103850</h1>
+<p>
+The code of lock is a two-digit number. Ben forgot the code, but he remembers that the sum of the digits of this number, combined with their product, is equal to the number itself. Write all possible code options so that Ben could open the lock quickly.
+</p>
+
+<h1>Solution</h1>
+<p>
+Let the first digit of the code be x, and the second digit can be denoted as y. Then the number itself is written as 10x + y, and by the condition of the problem we can write the equation $($x + y$)$ + $x \times y$ = 10x + y. Therefore, $x \times y$ = 9x.
+<p>
+Since the code is a two-digit number, then x is not equal to 0, and therefore, y = 9. In this case, x can take any value except for 0. Check!
+</p>
+
+<h1>Answer</h1>
+<p>
+19, 29, 39, 49, 59, 69, 79, 89, 99.
+</p>
+
