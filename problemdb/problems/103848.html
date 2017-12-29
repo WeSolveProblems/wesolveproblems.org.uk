@@ -1,0 +1,35 @@
+—-
+Problem_id: 103848
+Category_ids: 86
+Difficulty: 2
+Classes: 7 8
+Source_id: 198948
+Layout: problemdb_problem
+Use_math: true
+—-
+
+<h1>Problem ID 103848</h1>
+<p>
+In the line of numbers and signs * 1 * 2 * 4 * 8 * 16 * 32 * 64 = 27 position the signs "+" or "-" instead of the signs "*", so that the equality becomes true.
+</p>
+
+<h1>Hint</h1>
+<p>
+You can find the required arrangement of signs easily, if you arrange the signs from right to left.
+<p>
+Try to prove to yourself that
+<p>
+a$)$ for any arrangement of signs on the left side of the equation, an odd number is obtained;
+<p>
+b$)$ the choice of signs can make any odd number between the numbers -128 and 128, and each number can be made in only one way.
+</p>
+
+<h1>Solution</h1>
+<p>
+We will replace the asterisks from right to left. Since 1 + 2 + 4 + 8 + 16 + 32 = 63 $<$ 64, before 64 there should be a "+" $($otherwise the result will be negative$)$. Therefore we get 1 * 2 * 4 * 8 * 16 * 32 + 64 = 27. Before 32 there should be a '' - '', otherwise the left side will be too great of a number, even if the rest of the asterisks are replaced by a '' - ''. Continuing in a similar way, we get +1 - 2 + 4 + 8 - 16 - 32 + 64 = 27.
+</p>
+
+<h1>Answer</h1>
+<p>
+The signs can be arranged as follows: +1 - 2 + 4 + 8 - 16 - 32 + 64 = 27.
+</p>
