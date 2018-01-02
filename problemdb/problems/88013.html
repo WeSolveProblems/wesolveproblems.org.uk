@@ -1,0 +1,29 @@
+---
+problem_id: 88013
+category_ids: 206
+difficulty: 2+
+classes: 5 6 7 8
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88013</h1>
+<p>
+We have scales without weights and 3 identical in appearance coins. One of the coins is fake, and it is not known whether it is lighter or heavier than the real coins $($note that all real coins are of the same weight$)$. How many weighings are needed to determine the counterfeit coin? Solve the same problem in the cases where there are 4 coins and 9 coins.
+</p>
+
+<h1>Hint</h1>
+<p>
+Pay attention: it is required to find the counterfeit coin thus it is not required to specify at all if it is lighter than the real coins, or heavier.
+
+
+<h1>Solution</h1>
+<p>
+If we have 3 coins, two weighings are enough. We put on each scale one coin. If the scales are not in equilibrium, then the coin that remains is real. If we put it on the scale with any of the others, we can immediately determine which one is fake. If the scales are in equilibrium, then the counterfeit coin is the one that remains, and in the second weighing we can even determine whether it is lighter or heavier than the real ones. If we have 4 coins, again two weighings are enough. We divide our coins into two piles of 2 coins and put one of the piles on the scales – one coin on each side of the scales. If the scales are in equilibrium, then both coins are real. If the scales are not balanced, then both of the coins on the table are real. So, now we know in which pile lies the fake coin. We put a coin from the pile of real coins onto one side of the scales, and onto the second scale - a coin from the pile where the fake coin is. If the scales are balanced, then the counterfeit coin remains on the table, and if they are not in equilibrium, then we put it on the scales $($in this case we can even find out whether it is lighter or heavier$)$. If we have 9 coins, we need three weighings. We divide the coins into three groups of 3 coins and put two of these groups of 3 onto two sides of the scales. If the scales are in equilibrium, there is a fake coin in the remaining pile, and using two weighings $($as shown in case 1 of the present task$)$, we can determine the counterfeit coin. So, all we need is three weighings. Suppose now that the scales are not balanced, then one of the piles on the scales contains the false coin, and in the pile, that remains there are only real coins. We put this pile onto the scales and any of the first two. So, in this way we can find not just the pile with the false coin, but we will immediately determine whether this coin is lighter or heavier than the real ones. We have carried out two weighings, but now only with one weighing $($as shown in case 1 of problem 49$)$ we can determine the counterfeit coin. So, all we need is three weighings.
+</p>
+
+<h1>Answer</h1>
+<p>
+ 2; 2; 3; 4.
+  </p>
