@@ -1,0 +1,26 @@
+---
+problem_id: 32045
+category_ids: 264 1257
+difficulty: 2+
+classes: 5 6 7
+source_id: 111442
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32045</h1>
+<p>
+Two grandmasters in turn put rooks on a chessboard $($one turn - one rook$)$ so that they cannot capture each other. The person who cannot put a rook on the chessboard loses. Who will win with the game - the first or second grandmaster?
+</p>
+
+<h1>Solution</h1>
+<p>
+You can place a rook on a certain cell if and only if neither the horizontal nor the vertical containing this cell contains a rook. Therefore, the game described above is equivalent to the following: grandmasters take turns to remove, one by one, a letter and a number from the set of letters a, b, ..., h and numbers 1, 2, ..., 8. Obviously, no matter how the players move, after the eighth move all of the letters and numbers will be crossed out. The eighth move is carried out by the second player, so the first player cannot make the next move.
+</p>
+
+<h1>Solution</h1>
+<p>
+Note that the second player wins regardless of how he and his opponent play.
+<p>
+Source of the solution: V.O. Bugaenko "Lomonosov Tournament Competitions in Mathematics". MCNMO-CheRo. 1998.
+</p>
