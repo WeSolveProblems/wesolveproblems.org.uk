@@ -1,0 +1,30 @@
+---
+problem_id: 88012
+category_ids: 206
+difficulty: 2+
+classes: 5 6 7 8
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88012</h1>
+<p>
+There are scales without weights and 3 identical in appearance coins, one of which is fake: it is lighter than the real ones $($the real coins are of the same weight$)$. How many weighings are needed to determine the counterfeit coin? Solve the same problem in the cases where there are 4 coins and 9 coins.
+</p>
+
+<h1>Hint</h1>
+<p>
+When searching for the counterfeit coin among the three coins, try putting one weight on each scale, among four - two, and among 9 - three coins.
+
+
+
+<h1>Solution</h1>
+<p>
+If we have 3 coins, one weighing is enough. Put one coin on each of the scales, and if one of the scales is lighter, this means that the false coin is on it. If the scales are balanced, then the counterfeit coin is the one that was not put on the scales. If we have 4 coins, then we need two weighings: with the first weighing, we put two coins on each scale, with the second weighing we take those 2 coins that were lighter, and put one coin on each scale. That coin that is lighter is false. If we have 9 coins, we again need two weighings. We divide the coins into three groups of 3 coins and put two of these groups onto scales. If the scales are in equilibrium, we consider those 3 coins that we did not put on the scale. If the scales are not in equilibrium then we consider those 3 coins that are lighter. Now the problem has been reduced to the very first one: "there are 3 coins, one of them is false". As we already know, in this case only one weighing is required to determine the counterfeit coin.
+</p>
+
+<h1>Answer</h1>
+<p>
+ 1; 2; 2.
+ </p>
