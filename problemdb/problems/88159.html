@@ -1,0 +1,25 @@
+---
+problem_id: 88159
+category_ids: 206
+difficulty: 2+
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88159</h1>
+<p>
+Alice the fox and Basilio the cat are counterfeiters. Basilio makes coins heavier than real ones, and Alice makes lighter ones. Pinocchio has 15 identical in appearance coins, but one coin is fake. How can Pinocchio determine who made the false coin - Basilio the cat or Alice the fox - with only 2 weighings?
+</p>
+
+<h1>Hint</h1>
+<p>
+Please note: Pinocchio does not need to know exactly which coin is fake. It is only required that he determines who made this coin - Basilio the cat or Alice the fox, or, what is the same, if the fake coin is lighter or heavier than the real ones.
+</p>
+
+<h1>Solution</h1>
+<p>
+Pinocchio can divide his coins into three groups of 7, 4, 4, or 5, 5, 5, or 3, 6, 6, or 1, 7, 7 coins. At the first weighing he will put on the scale two piles of coins of the same size. If the scales are balanced, then all of the coins on the scales are real, and the fake coin is in the remaining pile. Then, in the second weighing, Pinocchio will put the pile with the fake coin onto one side of the scales, and on the second side – the same number of real coins as the number of coins in the pile of the first side of the scales, and then he will immediately determine whether the counterfeit coin is lighter than the real one or heavier. If, on the first weighing, the scales are not in equilibrium, then all of the coins in the remaining pile are real. Then Pinocchio will remove the lighter pile from the scales, and divide the coins from the heavy pile into two equal parts and put them back onto the scales (if there were 5 or 7 coins in the pile, he will add one real coin). If the scales are balanced during the second weighing, then the counterfeit coin is lighter than the real one, and if not, then it is heavier.
+
+</p>
