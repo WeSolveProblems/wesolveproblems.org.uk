@@ -10,14 +10,15 @@ use_math: true
 
 <h1>Problem ID 103955</h1>
 <p>
-A three-digit number, in which the first and last digit is the same is given.
-<p>
-Prove that the number is divisible by 7 if and only if the sum of the second and third digits is divisible by 7.
+Ben and Joe play chess. In addition to a chessboard, they have one rook, which they put in the lower right corner, and they move it in turns. It can only be moved upwards or to the left (for any number of cells). The player who can not make a move, loses. Joe goes first. Who will win with the correct method?
 </p>
 
 <h1>Solution</h1>
 <p>
-Denote the first digit of our number by the letter a, and the second letter b. By the question, the last digit is also equal to a. Then our number is
-100a + 10b + a = $($98a + 7b$)$ + 3 $($a + b$)$. The first term is divisible by 7. If the second term is divisible by 7, then the number itself is divisible by 7. Conversely, if the number is divisible by 7, then the second term 3 $($a + b$)$ is divisible by 7, therefore, a + b is divisible by 7.
+The one who goes second, that is, Ben, will win. To do this, he needs to move the rook, after each of Joe’s turns, so that the rook returns to the main diagonal, leading from the lower right corner to the upper left. In this case, after each turn of Ben, the rook will stand on this diagonal, and higher than after the previous move of Ben. This means that sooner or later after the turn of Ben the rook will be in the upper left corner, which means that Joe will have nowhere to go.
 </p>
 
+<h1>Solution</h1>
+<p>
+Ben will win.
+</p>
