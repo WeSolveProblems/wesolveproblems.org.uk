@@ -1,0 +1,32 @@
+---
+problem_id: 88085
+category_ids: 103 207
+difficulty: 2
+classes: 6 7 8
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88085</h1>
+<p>
+In one move, it is permitted to either double a number or to erase its last digit. Is it possible to get the number 14 from the number 458 in a few moves?
+</p>
+
+
+<h1>Hint</h1>
+<p>
+Try multiplying the original number by 2 until the first digit of the result is 7.
+</p>
+
+
+<h1>Solution</h1>
+<p>
+You can first double the number, then cross out the last digit, or you can do the reverse - first cross out the last digit, and then double the number. The value of the first digit of the result is almost not affected. Therefore, you can, for example, double the number until the first digit of the result is 7; cross out all of the digits except for the first; then double it. We get: 458, 916, 1832, 3664, 7328, 732, 73, 7, 14.
+</p>
+
+
+<h1>Answer</h1>
+<p>
+Yes: 458, 45, 90, 9, 18, 36, 72, 7, 14.
+</p>
