@@ -1,6 +1,6 @@
 ---
-problem_id: 87936
-category_ids: 89 677
+problem_id: 87957
+category_ids: 103 86
 difficulty: 2
 classes: 5 6 7 
 source_id: 179741
@@ -8,23 +8,22 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem ID 87936</h1>
+<h1>Problem ID 87957</h1>
 <p>
-The grandad is twice as strong as the grandma, the grandma is three times stronger than the granddaughter, the granddaughter is four times stronger than the dog, the dog is five times stronger than the cat and the cat is six times stronger than the mouse. The grandad, the grandma, the granddaughter, the dog and the cat together with the mouse can pull out the pumpkin from the ground, which they cannot do without the mouse. How many mice should be summoned so that they can pull out the pumpkin themselves?
+The best student in the class, Katie, and the second-best, Mike, tried to find the minimum 5-digit number which consists of different even numbers. Katie found her number correctly, but Mike was mistaken. However, it turned out that the difference between Katie and Mike’s numbers was less than 100. What are Katie and Mike’s numbers?
 </p>
 
 <h1>Hint</h1>
 <p>
-How many mice are replaced by a cat? And the granddaughter?
+Think about what should be the first two digits of Katie’s number and the last two digits of Mike’s number.
 </p>
 
 <h1>Solution</h1>
 <p>
-The cat replaces 6 mice. The dog replaces $5 \times 6$ mice. The granddaughter replaces $4 \times 5 \times 6$ mice. The grandma replaces $3 \times 4 \times 5 \times 6$ mice. The grandad replaces $2 \times 3 \times 4 \times 5 \times 6$ mice. The total number of mice required is:
-$$($2 \times 3 \times 4 \times 5 \times 6$$)$ + $$($3 \times 4 \times 5 \times 6$)$$ + $$($4 \times 5 \times 6$)$$ + $$($5 \times 6$)$$ + 6 + 1 = 1237 mice.
+If you act in the same way as in the previous problem, Katie’s number would be 02468, but the first digit cannot be zero, so Katie’s number would be 20468. Let's try to find Mike’s number. It is larger than Katie’s number, but it consists of the same numbers. The first three digits cannot be changed, because then the difference between Mike and Katie’s numbers would be more than 100. Note that you can only replace the 4th digit, and you can change it only to the fifth, otherwise the difference will be more than 100. So, Mike’s number is 20486.
 </p>
 
 <h1>Answer</h1>
 <p>
-	1237 mice.
+20486.
 </p>
