@@ -1,0 +1,29 @@
+---
+problem_id: 88142
+category_ids: 103
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88142</h1>
+<p>
+Find the largest six-digit number, for which each digit, starting with the third, is equal to the sum of the two previous digits.
+</p>
+ 
+<h1>Hint</h1>
+<p>
+Notice, when two numbers have the same number of digits, then there will one which has a greater first digit.
+</p>
+ 
+<h1>Solution</h1>
+<p>
+If the first digit was a, and the second digit was b, then the third one would be $($a + b$)$, the fourth one would be $($a + 2b$)$, the fifth one would be $($2a + 3b$)$, the sixth one would be $($3a + 5b$)$. We need to find the maximum possible value of a, so that the sixth digit remains a "number", i.e. so that the inequality 3a + 5b $<$ 10 holds. This is possible for a = 3, b = 0, i.e. the required number will be 303369.
+</p> 
+
+<h1>Answer</h1>
+<p>
+303369.
+</p>
