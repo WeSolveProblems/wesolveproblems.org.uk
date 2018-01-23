@@ -1,0 +1,36 @@
+---
+problem_id: 32902
+category_ids: 190
+difficulty: 2
+classes: 7
+source_id: 150964
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32902</h1>
+<p>
+How many times greater is the sum of the numbers in the hundred and first line of the Pascal triangle than the sum of the numbers in the hundredth line?
+</p>
+
+
+<h1>Solution</h1>
+<p>
+Solution 1
+<p>
+Suppose that in the 100th line there are numbers $c_0, c_1, ..., c_100$. Then in the 101st row there are the numbers $c_0, c_0 + c_1, c_1 + c_2, ..., c_99 + c_100, c_100$; and their sum is $2c_0 + 2c_1 + ... + 2c_100$.
+<p>
+Solution 2
+<p>
+The sum of the numbers in the string is equal to the number of paths leading from the vertex O of the Pascal triangle to the "points" of this line (see problem number 30710). But from each point of the 100th line, two paths lead to the points of the 101st line. Therefore, the total number of paths is doubled.
+
+</p>
+
+<h1>Answer</h1>
+<p>
+Two times greater.
+
+<h1>Remarks</h1>
+<p>
+Also, see the solution to problem number 60412 c).
+</p>
