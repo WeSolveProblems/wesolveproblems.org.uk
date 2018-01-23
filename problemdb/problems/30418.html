@@ -1,0 +1,20 @@
+---
+problem_id: 30418
+category_ids: 233 135
+difficulty: 2+
+classes:  6 7
+source_id: 104111
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30418</h1>
+<p>
+In a city, there are 15 telephones. Can I connect them with wires so that each phone is connected exactly with five others?
+</p>
+
+
+<h1>Solution</h1>
+<p>
+Suppose that this is possible. Let’s then consider the graph whose vertices correspond to the telephones, and the edges to the wires connecting them. This graph has 15 vertices, the degree of each of which is equal to 5. Let’s calculate the number of edges in this graph. To do this, we first sum the degrees of all of its vertices. It is clear that with this calculation each edge is counted twice $($it in fact connects two vertices!$)$. Therefore, the number of edges of the graph must be equal to $15 \times 5$:2. But this number is not an integer! Therefore, there is no such graph, and this means that it is impossible to connect the telephones in the required way.
+</p>
