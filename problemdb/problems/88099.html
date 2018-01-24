@@ -1,0 +1,72 @@
+---
+problem_id: 88099
+category_ids: 376
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88099</h1>
+<p>
+Twenty-eight dominoes can be laid out in various ways in the form of a rectangle of $8 \times 7$ cells. In Fig. 1-4 four variants of the arrangement of the figures in the rectangles are shown. Can you arrange the dominoes in the same arrangements as each of these options?
+<p>
+<img src="88099 1.png">
+<p>
+<img src="88099 2.png">
+</p>
+ 
+
+ 
+
+
+<h1>Hint</h1>
+<p>
+Option 1 $($see figure. 1 in the task$)$. Try to determine where the duplicate dominoes are located. Option 4 $($see figure. 4 in the task$)$. Where is the domino 4-2? Can the second row contain the dominoes 0-1 and 5-6? Can the first row of dominoes contain the dominoes 1-2 and 4-5? Can the dominoes 2-5 and 1-4 lie in the second row? Can the domino 1-1 stand in the second column? And can the domino 5-5 stand in the seventh column? Where is the domino 0-6? Can the dominoes 6-3 and 3-0 be in the third or fourth rows?
+</p>
+
+<h1>Solution</h1>
+<p>
+All similar problems are solved in the same way. The usual properties of the dominoes are used. For example, in a domino set, a domino with a pair of any numbers from 0 to 6 is necessarily encountered, and no such pair is repeated twice. Dominos cannot be arranged on an odd number of cells, etc. Since the variations are proposed in order of increasing difficulty, we will consider detailed solutions only for the first - because of its clarity and for the latter - because of its complexity. 
+<p>
+Option 1 $($Figure 1$)$:
+<p>
+	1.	The places of all duplicates in this layout are uniquely determined. Let us note them. Hence, the locations of the dominoes 5-0, 5-3, 0-2, 3-4, 0-6, 2-5 are uniquely determined. Let us note now that if the above-mentioned pairs of digits stand side by side, then they cannot form dominoes. The resulting position is shown in Fig. 2.
+<p>
+<img src="88099 3.png">
+<p>
+ 
+	2.	Hence the locations of the dominoes 2-4 and 0-3 are also uniquely determined. Noting that these dominoes cannot be in other places, we get the locations of these dominoes $($the position in Figure 3$)$.
+<p>
+	3.	And again, we pay attention to the fact that, if the above-mentioned pairs of figures are nearby, they cannot form dominoes. From here it is already possible to unambiguously restore the entire layout $($Figure 4$)$.
+<p>
+Option 4 $($Figure 5$)$:
+<p>
+	1.	The only domino, the location of which can be determined unambiguously, is 4-2 $($nowhere else do the numbers 4 and 2 stand side by side$)$.
+<p>
+	2.	In the second row there cannot be a domino 0-1 $($otherwise we get two identical dominoes 0-1 in the first and second rows$)$. For the same reasons, in the second row there cannot be a domino 5-6, and in the sixth - the dominoes 4-6 and 0-2. Note this $($Figure 6$)$.
+<p>
+<img src="88099 4.png">
+<p>
+ 
+	3.	The domino 1-2 cannot be placed in the first row $($otherwise the number 1 at the intersection of the second row and the second column will form one more domino 1-2$)$. By analogy, in the first row there cannot be a domino 4-5.
+<p>
+	4.	Similarly, as was done in step 2, we will determine that dominoes 2-5 and 1-4 cannot lie in the second row. Note this $($Figure 7$)$.
+<p>
+	5.	Now it is obvious that the domino 1-1 cannot stand in the second column $($otherwise there is nowhere to place the domino 1-2$)$. By analogy, 5-5 cannot be in the seventh column $($otherwise there is no room for the domino 4-5$)$. From here you can unambiguously restore the locations of dominoes 0-1, 0-5, 5-6 and 6-1. Noting that in other places these dominoes cannot be located, we will get an unequivocal opportunity to place the dominoes 1-1 and 5-5. Note that any other location for them is impossible. Thus, we obtain the position of the dominoes in Fig. 8.
+<p>
+	6.	0 and 6 are found three times side by side, and all three times - in the sixth row. However, only the pair that lies exactly under the domino 4-2 can form a domino 0-6 $($otherwise we will get two dominoes 0-6$)$. Hence the position of the dominoes 4-0 and 2-6 is uniquely determined. Note the impossibility of placing these dominoes in other places $($Figure 9$)$.
+<p>
+<img src="88099 5.png">
+<p>
+ 
+	7.	Let's pay attention to the fact that in the third and fourth rows the dominoes 6-3 and 3-0 cannot be placed; hence the location of the dominoes 6-6 and 0-0 can be determined. Furthermore, the domino 3-3 cannot be in the third row, nor in the fourth or fifth columns. From this we determine the location of the dominoes 3-3, 5-3 and 1-3. Noting that these dominoes cannot be located elsewhere, we will get an unambiguous arrangement of all the dominoes $($Fig. 10$)$.
+</p>
+
+<h1>Answer</h1>
+<p>
+ See the figure.
+<p>
+<img src="88099 6.png">
+</p>
