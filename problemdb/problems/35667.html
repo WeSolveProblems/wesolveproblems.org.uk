@@ -17,13 +17,13 @@ Find the number of different keys for an arbitrary even number n.
 
 <h1>Hint</h1>
 <p>
-All cells of a square of size $n times n$ can be divided into non-intersecting groups of four cells, which are combined by rotations around the centre of the square. In the key-stencil, exactly one cell from each group should be cut out.
+All cells of a square of size $n \times n$ can be divided into non-intersecting groups of four cells, which are combined by rotations around the centre of the square. In the key-stencil, exactly one cell from each group should be cut out.
 </p>
 
 
 <h1>Solution</h1>
 <p>
-All cells of a square of size $n \times n$ can be divided into non-intersecting groups of four cells. We will assign cells to the same group, if at each turn of the square before its self-alignment each cell moves to the location of another cell in the same group. The total number of such groups will be $n^2$/4. When the stencil is applied to the square, exactly one cell from each group will appear under its cut-outs. We associate an ordered set of all cells with each stencil from such groups that appeared under the cut-outs of the stencil when it was placed on the square with the marked side up. There are $n^2$/4 such cells $($one in each group$)$, hence, in total, there are $4n^{2/4}$ of these sets.
+All cells of a square of size $n \times n$ can be divided into non-intersecting groups of four cells. We will assign cells to the same group, if at each turn of the square before its self-alignment each cell moves to the location of another cell in the same group. The total number of such groups will be $n^2$/4. When the stencil is applied to the square, exactly one cell from each group will appear under its cut-outs. We associate an ordered set of all cells with each stencil from such groups that appeared under the cut-outs of the stencil when it was placed on the square with the marked side up. There are $n^2$/4 such cells $($one in each group$)$, hence, in total, there are $4^{n^{2/4}}$ of these sets.
 </p>
 
 
