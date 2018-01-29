@@ -1,0 +1,39 @@
+---
+problem_id: 35628
+category_ids: 1059 1056 1057 1238
+difficulty: 2+
+classes: 9 10
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35628</h1>
+<p>
+How many ways can I schedule the first round of the Russian Football Championship, in which 16 teams are playing? $($It is important to note who is the host team$)$.
+</p>
+
+<h1>Solution 1</h1>
+<p>
+You can arrange 16 teams in 16 places by 16! methods, then break them into pairs 1-2, 3-4, ..., 15-16 $($teams with odd numbers are the hosts, and with even numbers – guests$)$. But in this case, each pairing occurs 8! times $($the number of ways of rearranging 8 pairs in order$)$. Thus, the number of schedules for the first round is 16!/8!.
+</p>
+
+
+<h1>Solution 2</h1>
+<p>
+There are IMAGE are ways to choose 8 teams that will play on their field. For each of these ways there are 8! ways to "arrange" the 8 remaining teams as their opponents. In total, there are $SAME IMAGE \times 8!$ ways.
+
+</p>
+
+
+<h1>Solution 3</h1>
+Let's take any team. There are 15 ways to choose its opponent and two ways to indicate which of the two teams is playing on its field. Now we take any team from the remaining ones. There are 13 ways to choose its opponent and two ways to indicate which of the two teams is playing on its field etc. Continuing in this way, we get $2 \times 15 \times 2 \times 13 \times ... \times 2 \times 1$ = $2^8 \times 15$!! ways.
+</p>
+
+<h1>Answer</h1>
+<p>
+16!/8! = $2^8 \times 15$!! ways.
+</p>
+
+
+

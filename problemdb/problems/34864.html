@@ -1,0 +1,30 @@
+---
+problem_id: 34864
+category_ids: 829
+difficulty: 2+
+classes: 
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 34864</h1>
+<p>
+A six-digit phone number is given. How many seven-digit numbers are there from which one can obtain this six-digit number by deleting one digit?
+</p>
+
+<h1>Hint</h1>
+<p>
+How many ways are there to insert another number into this phone number?
+</p>
+
+
+<h1>Solution</h1>
+<p>
+Let ABCDEF be a six-digit phone number. Let’s count how many seven-digit numbers can be obtained from it by inserting one digit. Before the number, you can insert any of 10 digits, but the number obtained by inserting the number A can also be obtained by inserting the number A between A and B. This case will be taken into account later. So, at the moment, we have 9 numbers. Similarly, you can get 9 numbers by inserting a digit between A and B $($the number obtained by inserting the number B there, is done in the next step), between B and C, etc. Finally, 10 numbers can be obtained by inserting a digit at the end of the original number. Thus, we obtain $6 \times 9$ + 10 = 64 numbers.
+</p>
+
+<h1>Answer</h1>
+<p>
+	64 numbers.
+</p>

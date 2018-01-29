@@ -1,0 +1,40 @@
+---
+problem_id: 103802
+category_ids: 1056 103 1276 852
+difficulty: 2+
+classes: 7 8
+source_id: 198948
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 103802</h1>
+<p>
+Which five-digit numbers are there more of: ones that are not divisible by 5 or those with neither the first nor the second digit on the left being a five?
+</p>
+
+<h1>Solution 1</h1>
+<p>
+Let's count the number of numbers that are not multiples of 5. For the first digit, you can choose among any of 9 non-zero digits, for the second, third and fourth - any of 10 digits, for the last digit - any of eight $($not 5 and not 0$)$. In total, we get $9 \times 8 \times 10^3$ numbers $($compare with problem number 60366$)$.
+<p>
+  Now we count the number of numbers for which neither the first nor the second digit is a five. The first digit can be any of 8 digits $($not 5 and not 0$)$, the second - any of nine $($not 5$)$, the third, fourth and fifth - any of 10 digits. We get the same result: $9 \times 8 \times 10^3$ numbers.
+
+</p>
+
+<h1>Solution 2</h1>
+<p>
+We establish a one-to-one correspondence between the two indicated sets of numbers. Suppose that the two first digits of the number ABCDE are not 5.
+<p>
+    If B ≠ 0, we assign to it the number BCDEA;
+<p>
+    If B = 0, we assign to it the number 5CDEA.
+<p>
+  It is clear that in this way all five-digit numbers that are not multiples of 5 are obtained.
+
+</p>
+<h1>Answer</h1>
+<p>
+There is the same number of numbers that are not divisible by 5 and those with neither the first nor the second digit on the left being a five.
+
+
+</p>

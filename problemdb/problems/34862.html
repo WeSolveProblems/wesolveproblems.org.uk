@@ -1,0 +1,37 @@
+---
+problem_id: 34862
+category_ids: 249 1057
+difficulty: 2+
+classes: 8 9 10
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 34862</h1>
+<p>
+There are 30 ministers in a parliament. Each two of them are either friends or enemies, and each is friends with exactly six others. Every three ministers form a committee. Find the total number of committees in which all three members are friends or all three are enemies.
+
+<p>
+
+</p>
+
+<h1>Hint</h1>
+<p>
+How many committees is a minister a member of? In how many committees are the remaining two members the friend and the enemy of the minister?
+
+
+</p>
+
+<h1>Solution</h1>
+<p>
+  We denote the ministers by dots. We connect the dots with a red line if the respective ministers are friends and with a blue line if they are enemies.
+We need to find the number of single-coloured triangles with vertices at these points. The number of all triangles is equal to <img src="34862.gif">.
+<p>
+  Let's first count the number of non-coloured triangles. In each such triangle, there are exactly two angles in which the red and blue segments converge $($let's call such angles multi-coloured$)$. In single-coloured triangles there are no multi-coloured corners. In each vertex, by hypothesis, 6 red and 23 blue segments converge, that is, there are $6 \times 23$ = 138 multi-coloured corners with a fixed vertex. The total number of multi-coloured triangles, therefore, is $138 \times 30$/2 = 2070. And the number of single-colour triangles is equal to 4060 - 2070 = 1990.
+</p>
+
+<h1>Answer</h1>
+<p>
+1990 committees.
+</p>

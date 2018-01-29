@@ -1,0 +1,31 @@
+---
+problem_id: 35791
+category_ids: 244 681 853 252
+difficulty: 3-
+classes: 8 9
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35791</h1>
+<p>
+Sam and Lena have several chocolates, each weighing not more than 100 grams. No matter how they share these chocolates, one of them will have a total weight of chocolate that does not exceed 100 grams. What is the maximum total weight of all of the chocolates?
+</p>
+
+<h1>Hint</h1>
+<p>
+It is possible to divide the chocolates "almost equally" - so that the difference between the weights of Lena’s and Sam’s chocolates does not exceed 100 grams.
+</p>
+
+<h1>Solution</h1>
+<p>
+  Let's give all of the chocolates to Sam and then, we will give one chocolate to Lena. At first, the weight of Sam’s chocolates is greater, but there will come a time when Lena's chocolates will weigh no less than Sam’s. Let Sam’s chocolates weigh A g at this point $($by condition A \leq 100$)$, Lena’s chocolates weigh B g, and the last chocolate that we transferred, weighed C g. Before the transfer, the total weight of Lena’s B-C chocolates was not more than 100g. Thus, the total weight of all of the chocolates is $A + (B-C) + C \leq 3 \times 100$ = 300g.
+</p>
+
+
+
+<h1>Answer</h1>
+<p>
+300 grams.
+</p>

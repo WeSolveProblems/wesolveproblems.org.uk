@@ -1,0 +1,30 @@
+---
+problem_id: 34943
+category_ids: 1057
+difficulty: 3-
+classes: 
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 34943</h1>
+<p>
+The city plan is a rectangle of $5 \times 10$ cells. On the streets, a one-way traffic system is introduced: it is allowed to go only to the right and upwards. How many different routes lead from the bottom left corner to the upper right?
+
+</p>
+
+<h1>Hint</h1>
+<p>
+For each route, match a string of 15 letters: "R" and "U" $($"R" means moving to the cell on the right, "U" means moving to the cell upwards$)$.
+</p>
+
+<h1>Solution</h1>
+<p>
+Each route can be associated with a string of 15 letters: "R" and "U" $($see the hint$)$, and the number of the letters "R" must be exactly equal to 5, and the number of the letters "U" must be exactly equal to 10. Conversely, for each such line of letters a unique route can be found. Therefore, the number of routes is equal to the number of such lines, which, in turn, is equal to <img src="34943.gif">
+</p>
+
+<h1>Answer</h1>
+<p>
+	3003 routes. 
+</p>

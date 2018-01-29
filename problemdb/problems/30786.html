@@ -1,0 +1,20 @@
+---
+problem_id: 30786
+category_ids: 235
+difficulty: 3-
+classes: 7 8
+source_id: 104111
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30786</h1>
+<p>
+Prove that there is a vertex in the tree from which exactly one edge emerges $($such a vertex is called a hanging top$)$.
+</p>
+
+
+<h1>Solution</h1>
+<p>
+We consider an arbitrary vertex of the tree and go along any edge emerging from it to another vertex. If there are no more edges from the new vertex, then we stay on it, otherwise we carry on along any other edge. In this journey, we will never be able to get to the top that we've already visited as this would mean we have a cycle. Since the graph has a finite number of vertices, our journey will end at some point. But it can end only at the hanging top!
+</p>
