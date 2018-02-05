@@ -1,0 +1,52 @@
+---
+problem_id: 65776
+category_ids: 210 1282
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65776</h1>
+<p>
+At a conference there were 18 scientists, of which exactly 10 know the eye-popping news. During the break $($coffee break$)$, all scientists are broken up into random pairs, and in each pair, anyone who knows the news, tells this news to another if he did not already know it.
+<p>
+a$)$ Find the probability that after the coffee break, the number of scientists who know the news will be 13.
+<p>
+b$)$ Find the probability that after the coffee break the number of scientists who know the news will be 14.
+<p>
+c$)$ Denote by the letter X the number of scientists who know the eye-popping news after the coffee break. Find the mathematical expectation of X.
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+a$)$ After the coffee break, everyone who was in a pair, where there is at least one person who already knew the news will know the news. Since these scientists form an integer number of pairs, their number is even. Therefore the probability that there will be 13 people is zero.
+<p>
+b$)$ The problem resembles the problem 65771, since the matter is reduced to the calculation of pairs consisting of a knowing and an unknowing person. For simplicity, we will assume that the scientists are seated at two-person tables. The chairs, on which sit the knowing scientists, will be painted gray. We will leave the umknowing people’s chairs white. In total there are 
+<img src="65776 1.png">
+ 
+ ways to arrange 10 knowing people and 8 unknowing people on 18 chairs, standing near two-person tables. We are interested in such seating arrangements, in which exactly four knowing people appear at the same table with unknowning people, in order to transfer their knowledge to them and bring the number of people to 14 $($see the figure$)$
+<p>
+<img src="65776 2.png">
+<p>
+ 
+We choose from nine tables four pairs of unknowing and knowing people $($in the figure these tables are covered with gray tablecloths$)$. From the remaining five tables, choose two tables for the unknowing people $($white tablecloths$)$. Note that the pair of one unknowing and one knowing person can be placed in 24 ways, forcing the knowing and the unknowing at each table to swap places. The figure shows one of these possible arrangements, and the total number of desired positions is equal to 
+<img src="65776 3.png">
+ 
+.
+Thus, the probability that the number of those knowing the news will be exactly 14, is 
+<img src="65776 4.png">
+<p>
+ 
+c$)$ Lets number in some way those who are unkowning by numbers from 1 to 8 and we introduce the indicators I_k for the number of those who don’t know the news: $I_k$ = 1, if during the coffee break the unknowing person number k learns the news, and $I_k$ = 0, if they did not learn the news. Obviously, X = 10 + $I_1$ + $I_2$ + ... + $I_8$.
+The distributions of all indicators are the same: 
+<img src="65776 5.png">
+ 
+since any of the remaining 17 scientists can get in a pair with a specific unknowing person, and exactly 10 of them already know the news. Therefore, $EI_k$ = 10/17, and EX = 10 + $EI_1$ + $EI_2$ + ... + $EI_8$ = 10 + $8 \times 10/17$ = 14 + 12/17 ≈ 14.7.
+</p>
+ 
+<h1>Answer</h1>
+<p>
+a$)$ 0; b$)$ 1120/2431; c$)$ 14 + 12/17.
+</p>

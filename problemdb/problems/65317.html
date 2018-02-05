@@ -1,0 +1,72 @@
+---
+problem_id: 65317
+category_ids: 210 568 1057
+difficulty: 3
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65317</h1>
+<p>
+A fly crawls along a grid from the origin. The fly moves only along the lines of the integer grid to the right or upwards $($monotonic wandering$)$. In each node of the net, the fly randomly selects the direction of further movement: upwards or to the right. Find the probability that at some point:
+<p>
+a$)$ the fly will be at the point $($8, 10$)$;
+<p>
+b$)$ the fly will be at the point $($8, 10$)$, along the line passing along the segment connecting the points $($5, 6$)$ and $($6, 6$)$;
+<p>
+c$)$ the fly will be at the point $($8, 10$)$, passing inside a circle of radius 3 with center at point $($4, 5$)$.
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+a$)$ A fly can reach the point $($8, 10$)$ in exactly 18 steps. Therefore, it is sufficient to consider the first 18 steps of the fly. The total number of possible paths consisting of 18 steps is 218. To get to the point $($8, 10$)$ in these 18 steps, the fly should make exactly 8 steps to the right and exactly 10 upwards. In this case, the order in which the steps to the right and up are taken is not important. Hence, the number of paths leading to the point $($8, 10$)$ is
+<img src="65317 1.png">
+ 
+.
+Thus, the probability of getting to this point is
+<img src="65317 2.png">
+ 
+.
+</p>
+b) The number of paths leading to the point $($5, 6$)$ is
+<img src="65317 3.png">
+ 
+. To the point $($6, 6$)$ only one path leads from the point $($5, 6$)$. After this the fly must pass from the point $($6, 6$)$ to the point $($8, 10$)$, and this can be done in 
+<img src="65317 4.png">
+ 
+ possible ways. Hence, the total number of paths that satisfy the condition of the problem is 
+<img src="65317 5.png">
+ 
+. The total number of 18-step paths is $21^8$. Hence, the probability of getting to the point $($8, 10$)$, passing along the road which goes through the points $($5, 6$)$ and $($6, 6$)$, is equal to 
+<img src="65317 6.png">
+ 
+.
+<p>
+c$)$ The fly will pass inside the circle if and only if it passes through one of the five marked points $($see the figure$)$.
+<p>
+<img src="65317 7.png">
+ 
+<p>
+In this case, the fly can pass only through one of these points. Therefore, in order to find the number of paths leading to the point $($8, 10$)$ through the circle, it is necessary to find the number of paths passing through each of these points and add the results:
+<img src="65317 8.png">
+ 
+The required probability is 
+<img src="65317 9.png">
+ 
+</p>
+<h1>Answer</h1>
+<p>
+a$)$ 
+<img src="65317 10.png">
+ 
+<p>
+b$)$ 
+<img src="65317 11.png">
+ 
+<p>
+c$)$ 
+<img src="65317 12.png">
+ 
+</p>

@@ -1,0 +1,27 @@
+---
+problem_id: 65266
+category_ids: 210 12650 1692
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65266</h1>
+<p>
+On each of four cards there is written a natural number. Take two cards at random and add the numbers on them. With equal probability, this amount can be less than 9, equal to 9 or more 9. What numbers can be written on the cards?
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+Let the natural numbers a $\geq$ b $\geq$ c $\geq$ d be written on four cards. Two of the four cards can be selected in six different ways. Since by assumption a pair of cards are randomly selected, the probability of choosing a specific pair is 1/6. Since by the condition of the event {s $<$ 9}, {s = 9}, {s $>$ 9} $($where s is the sum of the numbers on the selected cards$)$ are equally probable, then the probability of each of them is 1/3.
+<p>
+Hence, two of the sums a + b, a + c, a + d, b + c, b + d, c + d are 9, two are greater than 9 and two are less.
+By virtue of the inequalities a + b $\geq$ a + c $\geq$ a + d $\geq$ b + d $\geq$ c + d and a + c $\geq$ b + c $\geq$ b + d, the sums a + d and b + c are equal to 9, less than 9 are the sums a + b and a + c, and more than 9 - the sums b + d and c + d. In particular, a + c $<$ a + d, hence c $<$ d. Similarly, a $<$ b. In addition, b $<$ c, since the sum b + c is odd. Thus, the pairs {a, d} and {b, c} can be chosen from the pairs {1, 8}, {2, 7}, {3, 6}, {4, 5}, taking into account the inequalities obtained. Hence the <h1>Answer</h1>.
+</p>
+ 
+<h1>Answer</h1>
+<p>
+$($1, 2, 7, 8$)$, $($1, 3, 6, 8$)$, $($1, 4, 5, 8$)$, $($2, 3, 6, 7$)$, $($2, 4, 5, 7$)$, $($3, 4, 5, 6$)$.
+</p>

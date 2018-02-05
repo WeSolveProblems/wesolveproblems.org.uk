@@ -1,0 +1,28 @@
+---
+problem_id: 65295
+category_ids: 210 1282
+difficulty: 3
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65295</h1>
+<p>
+A die is thrown six times. Find the mathematical expectation of the number of different faces the die lands on.
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+Let ξi be a random variable, equal to 1 if die falls with the face with i points facing upwards at least once and 0, if this does not happen even once. Then the number of different dropped faces is ξ = ξ1 + ... + ξ6. Moving on to the expectations, we get: Eξ = 6Eξ1, since all the quantities ξi are distributed identically. The mathematical expectation Eξ1 is obviously equal to P$($ξ1 = 1$)$ = 1 - $($5/6$)$^6$.
+Hence, 
+<img src="65295 1.png">
+</p>
+
+ 
+ 
+<h1>Answer</h1>
+<p>
+<img src="65295 2.png">
+</p>

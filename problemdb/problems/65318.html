@@ -1,0 +1,30 @@
+---
+problem_id: 65318
+category_ids: 213 154 1282 163
+difficulty: 3
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65318</h1>
+<p>
+<p>
+In a numerical set of n numbers, one of the numbers is 0 and another is 1.
+<p>
+a$)$ What is the smallest possible variance of such a set of numbers?
+<p>
+b$)$ What should be the set of numbers for this?
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+We denote the numbers as $a_k$, where k = 1, ..., n, and the arithmetic mean of all the numbers is a. The variance D of the set is 1 / n $($($0 - a$)$^2$ + $($a_2$ - a$)$^2$ + ... + $($a_{n-1}$ - a$)$^2$ + $($1 - a$)$^2$)$. We divide the sum in the numerator into two groups: the first term is combined with the last one, and the second group includes all the remaining terms $($if they exist$)$: $($a^2$ + $($1 - a$)$^2$)$ + $($($a_2$ - a$)$^2$ + ... + $($a_{n-1}$ - a$)$^2$)$. If n = 2, then the second group does not exist. If n $>$ 2, then, so that this sum is the smallest possible, put $a_2$ = $a_3$ = ... = $a_{n-1}$ = a. Then D = 1 / n $($a^2$ + $($1 - a$)$^2$)$. The minimum of the quadratic function $a^2$ + $($1 - a$)$^2$ = 2$a^2$ - 2a + 1 = 2 $($a - 1$)$^2$ + 1/2 is equal to ½. Under these conditions, the variance is 1 / 2n.
+</p>
+
+<h1>Answer</h1>
+<p>
+a$)$ 1 / 2n; b$)$ all numbers except the first and last are equal to ½.
+</p>
+ 

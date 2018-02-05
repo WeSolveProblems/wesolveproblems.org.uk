@@ -1,0 +1,35 @@
+---
+problem_id: 65289
+category_ids: 210 854 1057
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65289</h1>
+<p>
+A coin is thrown 10 times. Find the probability that it never lands on two heads in a row.
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+The total number of outcomes for ten coin tosses is 210. Let's find the number of combinations where there are no two heads in a row.
+<p>
+The first method. If there are no heads at all, then such a sequence consists of ten tails and of these there is only one. If there is one head, then there are 10 such combinations $($the head can land on any of the 10 tosses$)$. If there are two heads, then there are 
+<img src="65289 1.png">
+    
+combinations $($we consider the number of options of arranging 2 heads one by one between 8 tails or at the edges$)$. And so on. If there are k heads, then there are 
+<img src="65289 2.png">
+ 
+ combinations $($the number of options to arrange the heads in 11 - k places between the tails and at the edges$)$. Hence, the total number of combinations is 
+<img src="65289 3.png">
+ 
+The second method. Let the coin be tossed n times, and f$($n$)$ the number of combinations with no two heads in a row. The number of permissible combinations in which the last throw lands on tails is f$($n - 1$)$. The number of permissible combinations in which at the last place is a head is f$($n - 2$)$, since before the head in the penultimate place there must necessarily be a throw which lands on tails. Thus, f$($n$)$ = f$($n-1$)$ + f$($n-2$)$. Since f$($1$)$ = 2, f$($2$)4 = 3, we can successively deduce f$($3$)$ = 5, f$($4$)$ = 8, ..., f$($10$)$ = 144. Consequently, the sought for probability is 144/ 210 = 9/64.
+</p>
+ 
+<h1>Answer</h1>
+<p>
+9/64.
+</p>
