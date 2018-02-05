@@ -1,0 +1,27 @@
+---
+problem_id: 65313
+category_ids: 210 1056
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65313</h1>
+<p>
+In the city where the Scattered Scientist lives, telephone numbers consist of 7 digits. The scientist easily remembers a phone number, if this number is a palindrome, that is, it is identical when read from left to right and from right to left. For example, the number 4435344 the scientist remembers easily, because this number is a palindrome. And the number 3723627 is not a palindrome, so the scientist does not remember this number easily. Find the probability that the scientist will remember the phone number of a new random acquaintance easily.
+</p>
+
+<h1>Solution</h1> 
+<p> 
+As you know, not every integer can be the first digit of a phone number. Let the number of allowed first digits be m. Then the total number of possible phone numbers is $m \times 10^6$. An easy number $($one that is remembered easily$)$ is uniquely determined by the first four digits. Hence, there are only $m times 10^3$ seven-valued palindromes. Therefore, the probability that an accidentally chosen number will be easy to remember is
+<img src="65313.png">
+</p>
+ 
+
+
+<h1>Answer</h1>
+<p>
+0.001.
+</p>

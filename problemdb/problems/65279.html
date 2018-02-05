@@ -1,0 +1,24 @@
+---
+problem_id: 65279
+category_ids: 210 190
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65279</h1>
+<p>
+The probability that a purchased lightbulb will work is 0.95. How many light bulbs should I buy so that, with a probability of 0.99, there would be at least 5 that work among them?
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+We take 6 bulbs. The probability that among them there will be at least 5 that work, is the sum of the probabilities that among them there will be exactly 5 that work and exactly 6 that work, that is $6 \times 0.95^5 \times 0.05$ + $0.95^6$ = 0.9672. Now we try taking 7 bulbs. The required probability is $21 \times 0.95^5 \times 0.05^2$ + $7 \times 0.95^6 \times 0.05$ + $0.95^7$ = 0.9962.
+</p> 
+
+<h1>Answer</h1>
+<p>
+7 light bulbs.
+</p>

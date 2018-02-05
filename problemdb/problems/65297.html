@@ -1,0 +1,24 @@
+---
+problem_id: 65297
+category_ids: 210 964
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65297</h1>
+<p>
+On a Christmas tree, 100 light bulbs hang in a row. Then the light bulbs begin to switch according to the following algorithm: all are lit up, then after a second, every second light goes out, after another second, every third light bulb changes: if it was on, it goes out and vice versa. After another second, every fourth bulb switches, a second later - every fifth and so on. After 100 seconds the sequence ends. Find the probability that a light bulb straight after a randomly selected light bulb is on $($bulbs do not burn out and do not break$)$.
+</p>
+
+<h1>Solution</h1> 
+<p> 
+Obviously, the bulb with the number n will remain lit only if it is switched an odd number of times, that is, if the number n has an odd number of natural divisors. It is clear that this condition is satisfied only by squares: n = 1, 4, 9, ..., 100 $($see problem 30365$)$. Thus, 10 light bulbs out of 100 will remain lit. Therefore, the probability of randomly selecting a burning light bulb is 0.1.
+</p>
+
+<h1>Answer</h1>
+<p>
+0.1.
+</p>

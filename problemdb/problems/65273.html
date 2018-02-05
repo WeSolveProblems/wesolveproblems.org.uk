@@ -1,0 +1,19 @@
+---
+problem_id: 65273
+category_ids: 210
+difficulty: 3
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65273</h1>
+<p>
+A die is thrown over and over again. Let $P_n$ denote the probability that, at some point, the sum of the points, taken from the numbers that came out on the top face of the die, from all the rolls made, is n. Prove that for n $\geq$ 7 the equality $P_n$ = 1/6 $($P_{n-1}$ + $P_{n-2}$ + ... + $P_{n-6}$)$ is true.
+</p>
+ 
+<h1>Solution</h1> 
+<p> 
+We divide the game into two independent tests: the first throw, which gives, with a probability of 1/6, any number of points k from 1 to 6, and the second test - all subsequent throws. All subsequent throws are the same game that gives at some time the sum m with the probability $P_m$. The probability P$($A_{k,m}$)$ of the event: $A_{k,m}$ = {k is the number from the first roll; m is equal to the sum of the rest at some instant} is equal to 1/6 $P_m$. Obviously, in the whole game the sum of the points at some instant will become equal to n if m = n - k. Events $A_{1,n-1}$, $A_{2,n-2}$, ..., etc. are incompatible, therefore $P_n$ = P$($A_{1,n-1}$)$ + ... + P$($A_{1,n-6}$)$ = 1/6 $P_{n-1}$ + ... + 1/6 $P_{n-6}$.
+</p>

@@ -1,0 +1,34 @@
+---
+problem_id: 65345
+category_ids: 212 568 590 829
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65345</h1>
+<p>
+An ant goes out of the origin along a line and makes a steps of one unit to the right, b steps of one unit to the left in some order, where a $>$ b. The wandering span of the ant is the difference between the largest and smallest coordinates of the ant for the entire length of its journey.
+<p>
+a$)$ Find the largest possible wandering range.
+<p>
+b$)$ Find the smallest possible range.
+<p>
+c$)$ How many different sequences of motion of the ant are there, where the wandering range is the greatest possible?
+</p>
+
+<h1>Solution</h1>
+<p> 
+b$)$ At the end of the path the final position of the ant is inevitable $($whatever the order of the steps to the right and left$)$ and this has a coordinate a - b. Hence, the range can not be less than a - b. Such a range is obtained, for example, as follows: the ant moves right-to-left exactly b times, and then a - b times to the right.
+<p>
+a$)$ Let the smallest coordinate of the ant for the entire length of the journey be equal to x $\geq$ 0. Until the moment t, when the ant first reached this position, it could not be at points with coordinates larger than x + b. After the moment t, it could not be at points with coordinates larger than x + a. Hence, the largest range does not exceed a. Such a range is obtained, for example, if the ant first makes a steps to the right.
+<p>
+c$)$ As can be seen from a$)$, the greatest range is obtained if all the steps to the right are made by the ant in a succession. The first step to the right can be made first, or second or so on until the number b + 1 $($the ant first makes b steps to the left and then all a steps to the right$)$. Thus, there are b + 1 sequences.
+</p>
+
+<h1>Answer</h1>
+<p>
+a$)$ a; b$)$ a - b; c$)$ b + 1.
+</p>

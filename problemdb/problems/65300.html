@@ -1,0 +1,38 @@
+---
+problem_id: 65300
+category_ids: 213 590 1282
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65300</h1>
+<p>
+A sailor can only serve on a submarine if their height does not exceed 168 cm. There are four teams A, B, C and D. All sailors in these teams want to serve on a submarine and have been rigorously selected. There remains the last selection round - for height.
+<p>
+In team A, the average height of sailors is 166 cm.
+<p>
+In team B, the median height of the sailors is 167 cm.
+<p>
+In team C, the tallest sailor has a height of 169 cm.
+<p>
+In team D, the mode of the height of the sailors is 167 cm.
+<p>
+In which team, can at least half of the sailors definitely serve on the submarine?
+</p>
+
+<h1>Solution</h1> 
+<p> 
+A counterexample for team A: three sailors with a height of 160, 169 and 169 cm. The average height is 166 cm, but two out of three are not fit for service on a submarine.
+Counterexample for team C: two sailors with a height of 169 cm. No one can serve on the boat. Team C therefore also does not fulfil the criteria of the question.
+Counterexample for team D: five sailors with 167, 167, 169, 170 and 171 cm. The mode is 167, but three out of five can not serve on the boat.
+Consider team B. By definition of the median, at least half of the sailors have a height of no more than 167 cm. These sailors can serve on the submarine. And, probably, there are still those whose height is exactly 168. Thus, at least half of the crew of team B can definitely serve on the submarine.
+</p>
+
+<h1>Answer</h1>
+<p>
+In team B.
+</p>
+

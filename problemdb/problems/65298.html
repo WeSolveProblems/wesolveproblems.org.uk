@@ -1,0 +1,30 @@
+---
+problem_id: 65298
+category_ids: 210
+difficulty: 3
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65298</h1>
+<p>
+In the final of a contest of performances on March 8 two performances were left. In the first, n pupils from the class 5A performed, and in the second - n pupils of class 5B. At the play there were 2n mothers of all 2n students. The best performance is chosen by a vote by the mums. It is known that every mother, with a probability of ½, votes for the best performance and with a probability of ½ - for the performance in which her child participates.
+<p>
+a$)$ Find the probability that the best performance will win with a majority of votes.
+<p>
+b$)$ The same question, if more than two classes have reached the finals.
+</p>
+
+<h1>Solution</h1> 
+<p> 
+a$)$ We call a mother confident, if her child plays in the best performance. A confident mother with a probability of 1 will vote for the best performance. There are exactly n confident mums, so the best performance will pick up at least half of the votes - it will get, at least, the votes of all confident moms. The only case when the best performance does not win is a draw, when the worst performance will receive the votes of all the uncertain mothers. This is possible only if all unsure mothers vote for their children. The probability of this event is $2^{-n}$. Hence, the probability that more votes will be cast for the best performance is 1 - $2^{-n}$.
+<p>
+b$)$ Let m $>$ 2 classes, with the same number n of participants in each of the performances, reach the final. The best performance will receive at least n votes - one vote from each confident mother. Each of the other performances will receive no more than n votes from all mothers. If at least one unsure mother voted for the best performance, that class wins. Hence, the best performance will not win, if all the unsure moms $($of which they are exactly $($m - 1$)$ n$)$ voted for their children. The probability of this event is $2^{n-mn}$.
+</p>
+
+<h1>Answer</h1>
+<p>
+a$)$ 1 - $2^{-n}$; b$)$ 1 - $2^{n-mn}$, where m is the number of classes.
+</p>
