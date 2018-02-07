@@ -8,14 +8,14 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem ID 66051</h1>
+<h1>Problem ID 65264</h1>
 <p>
 Peter plays a computer game "A bunch of stones." First in his pile of stones he has 16 stones. Players take turns taking from the pile either 1, 2, 3 or 4 stones. The one who takes the last stone wins. Peter plays this for the first time and therefore each time he takes a random number of stones, whilst not violating the rules of the game. The computer plays according to the following algorithm: on each turn, it takes the number of stones that leaves it to be in the most favorable position. The game always begins with Peter. How likely is it that Peter will win?
 </p>
 
 <h1>Solution</h1> 
 <p> 
-Note that the player making the first move always has an advantage and wins with the correct strategy. Indeed, in the first turn you need to take one stone from the heap, and on each subsequent turn take so many stones that the number of remaining stones is divisible by 5. Since according to the rules of the game, at each turn it is possible to take 1, 2, 3 or 4 stones, the strategy is always feasible. At the same time, if at some point the player making the first move retreats from this strategy, then his opponent has the opportunity to win the game using the same strategy. Note also that if the player who makes the first move wins the game, then he necessarily makes 4 moves per game. Thus, at each turn Peter has only one opportunity not to lose: if he takes one stone on the first turn, he leaves the computer exactly 10 stones with the second turn, exactly 5 stones with the third and then takes all the remaining stones in the fourth. After each of Peter’s moves, the computer must take one stone in order to minimize the probability of losing the game. Then Peter wins only if he takes 4 stones from the four remaining ones to create divisibility by 5. Thus, the probability of Peter winning is $($¼$)$^4$ = 1/256, where ¼ is the probability that Peter will take the correct number of stones on his turn.
+Note that the player making the first move always has an advantage and wins with the correct strategy. Indeed, in the first turn you need to take one stone from the heap, and on each subsequent turn take so many stones that the number of remaining stones is divisible by 5. Since according to the rules of the game, at each turn it is possible to take 1, 2, 3 or 4 stones, the strategy is always feasible. At the same time, if at some point the player making the first move retreats from this strategy, then his opponent has the opportunity to win the game using the same strategy. Note also that if the player who makes the first move wins the game, then he necessarily makes 4 moves per game. Thus, at each turn Peter has only one opportunity not to lose: if he takes one stone on the first turn, he leaves the computer exactly 10 stones with the second turn, exactly 5 stones with the third and then takes all the remaining stones in the fourth. After each of Peter’s moves, the computer must take one stone in order to minimize the probability of losing the game. Then Peter wins only if he takes 4 stones from the four remaining ones to create divisibility by 5. Thus, the probability of Peter winning is $(¼)^4$ = 1/256, where ¼ is the probability that Peter will take the correct number of stones on his turn.
 </p>
 
 <h1>Answer</h1>
