@@ -1,0 +1,30 @@
+---
+problem_id: 66041
+category_ids: 210 1282
+difficulty: 3
+classes: 8 9
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66041</h1>
+<p>
+When one scientist comes up with an ingenious idea, he writes it down on a piece of paper, but then he realises that the idea is not brilliant, scrunches up this sheet of paper and throws it under the table, where there are two rubbish bins. The scientist misses the first bin with a probability p $>$ 0.5, and with the same probability he misses the second. In the morning, the scientist threw five crumpled brilliant ideas under the table. Find the probability that there was at least one of these ideas in each bin.
+</p>
+
+</p> 
+<h1>Solution</h1>
+<p>
+We introduce a notation of events: A = {There is an idea in the first basket}, B = {There is an idea in the second basket}. It is required to find the probability of the event A∩B. It follows from the condition that P$($A$)$ = P $($B$)$ = 1 - $p^5$. The probability that, with a single 
+throw, the scientist will get a scrunched up piece of paper into one particular basket, is 1 - p. 
+<p>
+It's impossible to get two pieces of paper in at the same time, so the probability that the scientist gets at least one piece of paper into the basket is 2 - 2p. Hence, the probability of not getting the piece of paper into either of the baskets is 1 - $($2 - 2p$)$ = 2p - 1, and the probability of scoring none out of five times is $(2p - 1)^5$. Therefore, P $($A∪B$)$ = 1 - $(2p - 1)^5$, and
+P $($A∩B$)$ = P $($A$)$ + P $($B$)$ - P $($A∪B$)$ = 2 - $2p^5$ - 1 + $(2p - 1)^5$ = 1 - $2p^5$ + $(2p - 1)^5$.
+</p>
+
+</p> 
+<h1>Answer</h1> 
+<p>
+1 - $2p^5 + (2p - 1)^5$.
+</p>

@@ -1,0 +1,45 @@
+---
+problem_id: 66047
+category_ids: 210 1282
+difficulty: 3
+classes: 8 9
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66047</h1>
+<p>
+There were 50 white and black crows sitting on a birch, and the number of black crows was not less than the number of whites. On the oak, there too were white and black crows, and there were 50 of them in total. On the oak, the number of black crows was also not less than the number of white ones. It could be that there was the same number of black and white crows, or maybe even there was one black crow less than white crows. One random crow flew from the birch to the oak, and after a while another random crow $($maybe the same one$)$ flew from the oak to the birch. Which is more probable: that the number of white crows on the birch is the same as it was at first, or that it has changed?
+
+</p> 
+<h1>Solution</h1> 
+<p>
+Let there be a white and b black crows on the birch, and on the oak - c white and d black crows. The likelihood of flights of black and white crows from the birch to the oak and back is represented with the help of a tree. Point S is the beginning, event B is the flight of a black crow and event W is the flight white.
+<p>
+<img src="66047 1.gif">
+
+ <p>
+ Event A "The number of white crows is restored" is marked by the shaded area, where the chains SBB and SWW lead. The probability of this
+<p>
+<img src="66047 2.gif">
+
+<p>
+  The probability of the opposite event "the number has changed" is obtained by adding the probabilities along the chains SBW and SWB:
+<p>
+<img src="66047 3.gif">
+
+<p>
+  We have $50 \times 51 (P (A) -P (A))$ = $(b-a) (d-c) + a + b \geq a-b + a + b$ = 2a$>$ 0 $(by hypothesis b - a \geq 0 , d - c \geq -1)$.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+The event that number of white crows will be the same is more probable.
+
+</p> 
+<h1>Remarks</h1> 
+<p>
+2 marks. 
+</p>
+
