@@ -15,7 +15,7 @@ According to the rules of a chess match, the winner is declared to be the one wh
  
 <h1>Solution</h1> 
 <p> 
-Let X be the number of successful games. At the beginning of the match, the difference in the number of wins between the two participants is zero. Let's list the possible outcomes of two successful games, denoting by a 1 a win by the first player and with a 2 a victory by the second participant: 11, 12, 21, 22. Two of the four cases mean victory in the match overall, namely 11 and 22. The other two cases lead us to the initial state with zero difference in the number of wins. Thus, with probability of 1/2, the number of victories is 2 and with the same probability X = 2 + X', where X' is distributed in the same way as X. Hence EX = $2 \times 1/2$ + $($2 + EX$)$ \times 1/2$, that is EX = 4.
+Let X be the number of successful games. At the beginning of the match, the difference in the number of wins between the two participants is zero. Let's list the possible outcomes of two successful games, denoting by a 1 a win by the first player and with a 2 a victory by the second participant: 11, 12, 21, 22. Two of the four cases mean victory in the match overall, namely 11 and 22. The other two cases lead us to the initial state with zero difference in the number of wins. Thus, with probability of 1/2, the number of victories is 2 and with the same probability X = 2 + X', where X' is distributed in the same way as X. Hence EX = $2 \times 1/2 + (2 + EX) \times 1/2$, that is EX = 4.
 </p>
  
 <h1>Answer</h1>
