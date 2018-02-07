@@ -1,0 +1,72 @@
+---
+problem_id: 65335
+category_ids: 210 1282
+difficulty: 4
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65335</h1>
+<p>
+A cube is created from 27 playing blocks.
+<p>
+a)	Find the probability that there are exactly 25 sixes on the surface of the cube.
+<p>
+b)	Find the probability that there is at least one 1 on the surface of the cube.
+<p>
+c)	Find the mathematical expectation of the number of sixes on the surface of the cube.
+<p>
+d)	Find the mathematical expectation of the sum of the numbers that are on the surface of the cube.
+<p>
+  e) Find the mathematical expectation of a random variable: "The number of different digits that are on the surface of the cube."
+
+</p> 
+<h1>Solution</h1> 
+<p>
+a)	One of the 27 cubes is in the centre and therefore is not visible at all. The remaining 26 cubes are visible. Hence, the necessary event A = {25 sixes} is that all of the cubes have sixes on the surface, except for one – let’s call it the special cube.
+<p>
+  Let’s consider all of the cubes. If the cube is in the centre of one of the faces, then it "shows" a six with the probability of 1/6. If it is in the middle of the edge, then two of its faces are visible, so a six on it is visible with a probability of 2/6 = 1/3. Finally, if the cube is at the top of a large cube, then its three faces are visible, so it shows a six with a probability of 1/2.
+<p>
+  A special cube can be at the centre of a specific face with probability $5/6 \times (1/6)^5 \times (1/3)^12 \times (1/2)^8$ - here the probabilities of independent events are multiplied: "a special cube faces outwards with a six on it" , "5 other cubes in the centre, the faces of which have sixes facing outwards", "on all 12 cubes in the middle of the edges, a six is visible" and "on all 8 cubes on the top, a six is visible”.
+<p>
+  A special cube is located in the middle of a particular edge with probability $(1/6)^6 \times 2/3 \times (1/3)^11 \times (1/2)^8$.
+<p>
+  Finally, a special cube can be at a particular vertex of a large cube with probability $(1/6)^6 \times (1/3)^12 \times (1/2)^8$.
+<p>
+  The cube has 6 faces, 12 edges and 8 vertices. Therefore,
+<img src="65335 1.gif">
+
+ <p>
+b)	No one is on the surface of the cube with probability <img src="65335 2.gif">
+
+<p>
+  Therefore, there will be at least one 1 with probability <img src="65335 3.png">
+
+<p>
+c)	Let’s consider the cubes located at the centres of the faces. There are six such cubes. We introduce indicators $ξ_1, ξ_2, ..., ξ_6: ξ_k = 1$ if a six is visible on the k-th cube, $ξ_k$ = 0, if a six is not visible on the $ξ_k$-th cube.
+<p>
+  Similarly, we introduce indicators for the sixes $η_1, η_2, ..., η_{12}$ for each of the 12 cubes located in the middle of the edges. And, finally, we introduce indicators for the sixes $ζ1, ζ2, ..., ζ8$ of the 8 cubes located at the top of the large cube. Then the number of sixes on the surface of the large cube is equal to the sum of all of the indicators: $X = ξ_1 + ... + ξ_6 + η_1 + ... + η_{12} + ζ_1 + ... + ζ_8 …$
+<p>
+  The expectations $Eξ_k$ of $ξ_k$ are equal to each other and equal to $0 \times 5/6 + 1 \times 1/6$ = 1/6. In the same way, $Eη_k = 1/3, Eζ_k = ½$.
+  Therefore, $EX = 6Eξ_1 + 12EEη_1 + 8EEζ_1$ = 9.
+<p>
+d)	54 faces look outwards, each of which has an average of 3.5 points. In total, we have $54 \times 3.5$ = 189.
+<p>
+e)	Let’s denote the number of points for each k from 1 to 6 with the $θ_k$ indicator: $θ_k$ = 1 if k number of points can be seen on the surface of the cube at least once, and 0 otherwise.
+<p>
+  The expectation of each such value was found in point b): <img src="65335 4.gif">
+
+<p>
+  Consequently, the expectation EY of the random variable Y "the number of different points visible on the surface of the cube" is equal to <img src="65335 5.gif">
+
+
+</p> 
+<h1>Answer</h1> 
+<p>
+a)	<img src="65335 6.png">
+; b) <img src="65335 7.png">
+; at 9; d) 189; e) <img src="65335 8.png">
+.
+</p>

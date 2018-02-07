@@ -1,0 +1,30 @@
+---
+problem_id: 65340
+category_ids: 210 1282
+difficulty: 3
+classes: 8 9
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65340</h1>
+<p>
+In Anchuria, there is a single state examination. The probability of guessing the correct </p> <h1>Answer</h1> <p> to each exam question is 0.25. In 2011, in order to obtain a certificate, it was necessary to </p> <h1>Answer</h1> <p> correctly to 3 questions out of 20. In 2012, the Anchuria School of Management decided that 3 questions were not enough. Now you need to correctly </p> <h1>Answer</h1> <p> 6 questions out of 40. It is asked, if you do not know anything but just guess the </p> <h1>Answer</h1> <p>s, in what year is the probability of obtaining an Anchurian certificate higher: in 2011 or 2012?
+</p>
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  If the graduate guesses the </p> <h1>Answer</h1> <p>s, the exam can be viewed as a Bernoulli scheme with a probability of success of p = 0.25 and a probability of failure of q = 0.75. In 2011, to pass the exam, it was necessary to correctly </p> <h1>Answer</h1> <p> at least 3 questions. It is more convenient to find the probability of the opposite event, that is, the probability to </p> <h1>Answer</h1> <p> fewer than 3 questions. It is equal to the sum of the probabilities that the graduate </p> <h1>Answer</h1> <p>ed 0, 1 and 2 questions, that is <img src="65340 1.png">
+
+ ≈ 0.091; therefore, the probability of passing the exam is approximately 0.909.
+<p>
+  Similarly, we find that in 2012 the probability of failing at the exam is equal to <img src="65340 2.png">
+and the probability of passing the exam is approximately 0.957.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+In 2012.
+</p>

@@ -1,0 +1,38 @@
+---
+problem_id: 65325
+category_ids: 210 897 900
+difficulty: 4
+classes: 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65325</h1>
+<p>
+Hercules meets the three-headed snake Hydra of Lerna. Every minute, Hercules chops off one head of the snake. Let x be the survivability of the snake $(x > 0)$. The probability $p_s$ of the fact that in the place of the severed head will grow s new heads $($s = 0, 1, 2$)$ is equal to IMAGE 1 <img src="65325 1.gif">
+. During the first 10 minutes of the battle, Hercules recorded how many heads grew in place of each chopped off one. The following vector was obtained: K = $($1, 2, 2, 1, 0, 2, 1, 0, 1, 2$)$. Find the value of the survivability of the snake, under which the probability of the vector K is greatest.
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Due to the mutual independence of the growth of the heads $($the number of new-grown heads depends only on survivability, but not on previous events$)$, the probability of the vector K is equal to
+<img src="65325 2.gif">
+
+<p>
+ It is necessary to find the point at which this function takes the greatest value on the ray
+$($0; + ∞$)$.
+<p>
+   <img src="65325 3.gif">
+
+<p>
+  Equating the derivative to zero, we obtain the unique positive root $x_0$ = <img src="65325 4.gif">
+. Since $P (x) \geq 0, P (0) = 0$, and P $($x$)$ → 0
+as $x → ∞$, then $x_0$ is the unique maximum point.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+<img src="65325 4.gif">.
+</p>
+

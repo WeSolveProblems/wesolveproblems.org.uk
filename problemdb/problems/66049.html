@@ -1,0 +1,40 @@
+---
+problem_id: 66049
+category_ids: 210 1282 590
+difficulty: 3
+classes: 7 8 9 10
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66049</h1>
+<p>
+In a tournament, 100 wrestlers are taking part, all of whom have different strengths. In any fight between two wrestlers, the one who is stronger always wins. In the first round the wrestlers broke into random pairs and fought each other. For the second round, the wrestlers once again broke into random pairs of rivals $($it could be that some pairs will repeat$)$. The prize is given to those who win both matches. Find:
+<p>
+a)	the smallest possible number of tournament winners;
+<p>
+  b) the mathematical expectation of the number of tournament winners.
+
+ 
+</p> 
+<h1>Solution</h1>
+ <p> 
+a)	See problem number 64440.
+<p>
+b)	We number the fighters from the weakest by the number 1 to the strongest by the number 100. Let $I_k$ be the indicator of the event "the k-th wrestler won both matches". The probability of defeating an opponent in each fight for the k-th wrestler is equal to the probability that the wrestler’s opponent is one of those k-1 wrestlers who is weaker. Hence, the probability of winning is k-1/99. The probability of winning both times is $(k-1/99)^2$, so $EI_k$ = $(k-1/99)^2$.
+<p>
+  The total number of winners, X, is equal to the sum of all the indicators, that is
+ <img src="66049.gif">
+
+
+</p> 
+<h1>Answer</h1> 
+<p>
+a)	1; b) ≈33.5.
+
+</p> 
+<h1>Remarks</h1> 
+<p>
+Marks: 1 + 2
+</p>

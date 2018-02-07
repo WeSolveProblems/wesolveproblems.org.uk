@@ -1,0 +1,43 @@
+---
+problem_id: 65771
+category_ids: 210
+difficulty: 4
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65771</h1>
+<p>
+Ten tennis players came to the competitions, 4 of them were from Russia. According to the rules for the first round, the tennis players are broken into pairs randomly. Find the probability that in the first round, all Russian tennis players will play only with other Russian tennis players.
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Imagine that instead of splitting into pairs for matches, we want to settle 10 tennis players in pairs into five double rooms in a hotel, which is the same from the point of view of probability theory. The question of the problem is reduced to what is the probability that 4 Russian sportswomen will take exactly 2 rooms.
+<p>
+  Schematically, you can represent double rooms using five rectangles. Each rectangle is divided in half $($there are two sportswomen in each room$)$. However, it does not matter which Russian athlete occupies the place, it is important only that she is Russian. Therefore, the places occupied by the Russians can be marked in the same way. For example, with a flag. We will not mark the other places.
+<p>
+<img src="65771.png">
+
+<p>
+  The figure depicts one of the arbitrary settlements - some four places out of ten are chosen. There are <img src="65771 2.png">
+ ways of doing this. 
+<p>
+  Now consider the resettlement, when four Russians took exactly two rooms. This situation is shown in the following figure. There are exactly <img src="65771 3.png">
+such settlements, since the listing has been reduced to the choice of two rooms out of five.
+<p>
+<img src="65771 4.png">
+
+<p>
+  Hence, the probability of obtaining two "purely Russian pairs" is
+<img src="65771 5.png">
+
+</p>
+
+</p> 
+<h1>Answer</h1>
+ <p>
+1/21.
+</p>

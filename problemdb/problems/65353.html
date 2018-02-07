@@ -1,0 +1,36 @@
+---
+problem_id: 65353
+category_ids: 210 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65353</h1>
+<p>
+We throw a symmetrical coin n times. Suppose that heads came up m times. The number m/n is called the frequency of the fall of heads. The number m/n - 0.5 is called the frequency deviation from the probability, and the number |m/n - 0.5| is called the absolute deviation. Note that the deviation and the absolute deviation are random variables. For example, if a coin was thrown 5 times and heads came up two times, the deviation is equal to 2/5 - 0.5 = -0.1, and the absolute deviation is 0.1.
+<p>
+  The experiment consists of two parts: first the coin is thrown 10 times, and then - 100 times. In which of these cases is the mathematical expectation of the absolute deviation of the frequency of getting heads is greater than the probability?
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Let heads come up m times in a series of 10 tosses. Then the deviation of the frequency from the probability is |α|, where α = m/10 - 0.5.
+<p>
+  The second sequence, consisting of 100 tosses, is divided into 10 series of ten throws. In each of these 10 small series there is a deviation $($non-absolute$)$ $α_i$ $($i is the number of the series$)$, and E |$α_i$| = E |α|.
+<p>
+  Then the deviation of β in the 100-throw sequence is
+<img src="65353 1.gif">
+
+<p>
+  Therefore, | β | = $0.1 | α_1 + α_2 + ... + α_{10} | \leq 0.1 (| α_1 | + | α_1 | + ... + | α_{10} |).
+  Consider the random variable X = $| α_1 | + | α_2 | + ... + | α_{10} | - 10 | β |$, which is non-negative and equal to zero only if all of the deviations $α_i$ have the same sign. The probability of this is very small $($in any case, less than one$)$, hence, EX $>$ 0. Consequently,
+0 $<$ EX = $E | α_1 | + E | α_2 | + ... + E | α_{10} | - 10E | β | = 10 (E | α | - E | β |)$, whence E | α | $>$ E | β |.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+In a series of 10 tosses.
+</p>

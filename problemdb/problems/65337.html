@@ -1,0 +1,52 @@
+---
+problem_id: 65337
+category_ids: 210 82 1057
+difficulty: 4
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65337</h1>
+<p>
+Peter and 9 other people play such a game: everyone rolls a dice. The player receives a prize if he or she rolled a number that no one else was able to roll.
+<p>
+a)	What is the probability that Peter will receive a prize?
+<p>
+  b) What is the probability that at least someone will receive a prize?
+</p>
+
+</p> 
+<h1>Solution</h1> 
+<p>
+a)	Suppose $($for the sake of clarity only$)$ that Peter throws first. He rolled a certain number of points. The probability that each next player will roll another number of points is 5/6. Since the rolls are independent, the probability that the nine remaining players will not roll the same number as Peter is equal to (5/6) 9 ≈ 0.194.
+<p>
+b)	Let’s number the players and consider the events $A_j$ = {the j-th player will receive the prize}, where j = 1, 2, ..., 10. From a) it is clear that $P (A_j) = (5/6)^9$.
+<p>
+  Similarly, the probability that the first two players will receive prizes is:
+<p>
+<img src="65337 1.gif">
+
+<p>
+  Similarly, the probability that the first k players will receive prizes is equal to, <img src="65337 2.png">
+where k = 1, ..., 6.
+<p>
+  We are interested in the probability of an event A = {at least one player will receive a prize}. This event is the union of the events $A_j: A = A_1 ∪ A_2 ∪ ... ∪ A_10$. By the formula of probability of association of events we find that:
+$P (A) = P (A_1) + P (A_2) + ... + P (A10) - (P (A1 ∩ A2) + P (A1 ∩ A3) + ... + P (A9 ∩ A10)) +
+    + (P (A1 ∩ A2 ∩ A3) + P (A1 ∩ A2 ∩ A4) + ... + P (A8 ∩ A9 ∩ A10)) - ... - P (A1 ∩ A2 ∩ ... ∩ A10)$.
+  The last term $($with a minus sign$)$ is the probability of simultaneous winning of all ten. In fact, more than five players cannot win, so all the terms, where there are probabilities of simultaneous winning of six or more players, are zero. We also note that in each row the terms are the same, and their number is equal to <img src="65337 3.png">
+, where k = 1, ..., 5 is the line number.
+  So, <img src="65337 4.gif">
+
+
+</p> 
+<h1>Answer</h1> 
+<p>
+a)	$(5/6)^9$ ≈ 0.194; b) ≈ 0.919.
+
+</p> 
+<h1>Remarks</h1> 
+<p>
+Surprisingly, the probability that at least one player will win is very high.
+</p>

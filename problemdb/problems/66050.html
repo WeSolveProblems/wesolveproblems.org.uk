@@ -1,0 +1,31 @@
+---
+problem_id: 66050
+category_ids: 210 1282 149
+difficulty: 3
+classes: 8 9 10
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66050</h1>
+<p>
+At the ball, there were n married couples. In each pair, the husband and wife are of the same height, but there are no two pairs of the same height. The waltz begins, and all those who came to the ball randomly divide into pairs: each gentleman dances with a randomly chosen lady.
+Find the mathematical expectation of the random variable X, "the number of gentlemen who are shorter than their partners".
+
+</p> 
+<h1>Solution</h1> 
+<p>
+Let's give the gentlemen numbers from 1 to n. Let $I_j$ be the indicator of the event "the gentleman of the number j is shorter than his lady". P$(I_j = 1) = j-1/n$. Hence,
+EX = E$(I_1 + I_2 + ... + I_n)$= 1/n $($0 + 1 + ... + (n-1)$)$ = $\frac{n-1}{2}$.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+$\frac{n-1}{2}$.
+
+</p> 
+<h1>Remarks</h1> 
+<p>
+3 marks.
+</p>

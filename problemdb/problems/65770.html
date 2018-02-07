@@ -1,0 +1,32 @@
+---
+problem_id: 65770
+category_ids: 210 1057
+difficulty: 4
+classes: 7 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65770</h1>
+<p>
+The shooter shoots at 3 targets until he shoots everything. The probability of a hit with one shot is p.
+<p>
+a)	Find the probability that he needs exactly 5 shots.
+<p>
+b)	Find the mathematical expectation of the number of shots.
+</p>
+
+</p> 
+<h1>Solution</h1> 
+<p>
+a)	The desired event occurs only if the first four shots have given two downed targets, and the last shot was successful. The probability of this is <img src="65770.png">
+ 
+<p>
+  b) When the probability of a hit is p, the average number of shots needed to bring down the first target is 1/p. This is intuitively understandable, but strictly follows from the properties of the geometric distribution. This means that 1/p shots are required for the second target and the same number for the third one.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+a)	$6p^3 (1-p)^2$; b) 3/p.
+</p>

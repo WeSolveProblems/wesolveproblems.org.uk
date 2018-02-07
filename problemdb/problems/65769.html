@@ -1,0 +1,31 @@
+---
+problem_id: 65769
+category_ids: 1057 210
+difficulty: 4
+classes: 7 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65769</h1>
+<p>
+In a convex hexagon, independently of each other, two random diagonals are chosen. Find the probability that these diagonals intersect inside the hexagon $($inside - that is, not at the vertex$)$.
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  In total, a hexagon has 9 diagonals and, therefore, $9 \times 8/2$ = 36 pairs of diagonals. It remains to understand how many pairs of diagonals intersect inside the hexagon. Diagonals of the hexagon are of two types: the main ones $($connecting the opposite vertices$)$ and the non-principal ones. For example, the diagonal AC is non-principal $($see Fig.$)$. There are 6 non-principal diagonals, and each intersects 3 other diagonals. There are only 3 main diagonals $($such as AD$)$, and each intersects 4 other diagonals. In total, we obtain $($see Fig.$)$ $(6 \times 3 + 3 \times 4)/2 = 15 pairs of intersecting diagonals.
+<p>
+  Consequently, the probability that two randomly chosen diagonals intersect inside is 15/36 = 5/12.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+5/12.
+
+</p> 
+<h1>Remarks</h1> 
+<p>
+Compare with problem number 65775.
+</p>

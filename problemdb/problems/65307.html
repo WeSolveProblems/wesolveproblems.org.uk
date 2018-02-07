@@ -1,0 +1,69 @@
+---
+problem_id: 65307
+category_ids: 210 246
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65307</h1>
+<p>
+In the Valley of the Five Lakes there are five identical lakes, some of which are connected by streams $($in the image, dotted lines denote the possible "routes" of streams$)$. Small carps are born only in lake S. While the carp is growing up, it passes exactly four times from one lake to another by some stream $($the carp chooses a stream at random$)$, and then it remains in the lake in which it ended up. Of every thousand carps, an average of 375 remain in lake S, and the rest remain in lake B, no one else lives in the other lakes. Determine how many streams there are in the Valley of the Five Lakes.
+<p>
+<img src="65307 1.gif">
+
+</p>
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  The move from one lake to another will be called a route of length n if it passes through n streams. We can prove several assertions.
+<p>
+1.	There is no route of length 2 from S to either of the lakes A, C, and D.
+<p>
+  Proof. Suppose that from lake S you can swim to lake A through one intermediate lake $($say C$)$. Then this route would be possible: S - C - A - C - A. In this case, there would be a nonzero probability to get to lake A by four connections. Hence, there is no route of length 2 from S to A.
+<p>
+<img src="65307 2.gif">
+
+<p>
+2.	 Lake S is connected to lake B by a route of length 2.
+  Proof. Obviously, S and B are connected. Suppose they are connected by a common stream. Then there are no other exits from B, otherwise condition (1) is not satisfied. Hence, one can get to lake B only from S on the first or third move. But then after the fourth connection, the carp cannot get to B. This is a contradiction. 
+<p>
+  Suppose that S and B are connected by a route of length 3 or 4. But then there is a route of length 2 from S to one of the lakes A, C or D, and this cannot be.
+<p>
+  Hence, there is a route from S to B passing through one intermediate lake A, C or D, and one is no worse than the other. For definiteness, we can assume that there is a route S-A-B.
+<p>
+  From this and assertion 1 it follows that there are no routes A-C and A-D.
+<p>
+3.	There is at least one of the routes B-C or B-D.
+<p>
+  Proof. Suppose that there is no route B - C or B - D. We get one of the following figures.
+<p>
+<img src="65307 3.gif">
+
+<p>
+  In the first case, the carp first passes into lake A, and it still has three transitions to make. Lakes S and B are equally located in relation to A, therefore the chance of getting to both should be the same. It is easy to see that in the other three cases the probability of remaining in lake S is greater than in B.
+<p>
+  Therefore, one of the routes B-C or B-D is present.
+<p>
+  It follows that there is no route C-D.
+<p>
+4.	The constructed configuration of three streams satisfies the condition.
+<p>
+  Proof. For the constructed configuration, the following routes of length 4 are possible:
+<p>
+<img src="65307 4.gif">
+
+<p>
+  Above each transition, the probability of this transition is indicated, and on the right, is the probability of the entire route, obtained by the product of the probabilities of transitions between the lakes.
+<p>
+  The probability that the carp, having made four jumps, will be in the lake S, is equal to 0.25 + 0.125 = 3/8 - just what is needed.
+  Hence, the probability that B is the final point of the route is 1 - 3/8 = 5/8.
+<p>
+5.	There cannot be any more streams.
+<p>
+  Proof. Adding any streams S-C, S-D, B-D separately or together, we change the probability. This can be seen directly by making seven more figures corresponding to possible configurations and calculating the probabilities for each of the resulting schemes.
+  Thus, up to the notation of the vertices, the scheme shown in the last figure is the only possible one, and the total number of streams is 3.
+</p>

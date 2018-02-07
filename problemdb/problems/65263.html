@@ -1,0 +1,39 @@
+---
+problem_id: 65263
+category_ids: 210 169 154
+difficulty: 4
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65263</h1>
+<p>
+Is it possible to:
+<p>
+a)	load two coins so that the probability of “heads" and "tails" were different, and the probability of getting any of the combinations "tails, tails," "heads, tails", "heads, heads" be the same?
+<p>
+  b) load two dice so that the probability of getting any amount from 2 to 12 would be the same?
+
+</p> 
+<h1>Solution</h1> 
+<p>
+a)	We will show that it is impossible to load the coins in such a way. We can immediately notice that if both coins are symmetrical, then getting the combination "heads, tails" is more likely than getting the other combinations. Therefore, we can assume that the first coin is more likely to land on "heads". Let's consider all of the possible cases.
+<p>
+1)	For the second coin, the probability of getting "heads" is not less than the probability of getting "tails". Then when you throw two coins, the probability of getting the combination "heads, heads" is greater than the probability of the combination "tails, tails".
+<p>
+2)	For the second coin, the probability of getting "tails" is greater than the probability of getting "heads". Then the probability of getting the combination "heads, tails" is not less than the probability of getting "heads" on the first coin, and "tails" on the second coin, which in turn is more likely to happen than the combination "tails, tails".
+<p>
+b)	Suppose that we were able to load two dice in the required way. Let the probability of getting "i" on the first die be equal to $P_i$, and on the second die – $Q_i4$. Note that the only way to get the sum of 2 when throwing the dice is to get "1" and "1", and the only way to get 12 is to throw "6" and "6". Hence,
+$P_1Q_1 = P_6Q_6$ = 1/11 ≠ 0 ;. Also note that the probability of obtaining a sum of 7 is not less than the probability of the event
+A = {on one of the dice you get "1", and on the other - "6"}.
+<p>
+  Since the probability of the event A is $P_1Q_6 + P_6Q_1$, and the probability of obtaining the sum 7 is equal to the probability of obtaining the sum 2 by the condition, then
+$P_1Q_1 \geq P_1Q_6 + P_6Q_1$. Hence, $P_1Q_1> P_1Q_6$, that is, $Q_1> Q_6$. Similarly, $P_1> P_6$. Therefore, $P_1Q_1> P_6Q_6$. This is a contradiction.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+No, you cannot.
+</p>

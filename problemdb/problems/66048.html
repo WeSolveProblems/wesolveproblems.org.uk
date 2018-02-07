@@ -1,0 +1,31 @@
+---
+problem_id: 66048
+category_ids: 210 1282 150
+difficulty: 3
+classes: 8 9
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66048</h1>
+<p>
+At the Antarctic station, there are n polar explorers, all of different ages. With the probability p between each two polar explorers, friendly relations are established, regardless of other sympathies or antipathies. When the winter season ends and it's time to go home, in each pair of friends the senior gives the younger friend some advice. Find the mathematical expectation of the number of those who did not receive any advice.
+
+</p> 
+<h1>Solution</h1>
+ <p> 
+  Let 0 $<$ p $<$ 1. Let us give the polar explorers numbers from 1 to n according to age - the older the polar explorer, the lower the number. Polar explorer with the number k can get advice from k - 1 polar explorers that are older than him. Therefore, the only way that he will not receive any advice is if he is not friends with any of them. The probability of this is $(1 - p)^{k-1}$. Therefore, the event "polar explorer k did not receive any advice" has an indicator $I_k$ with a mathematical expectation $EI_k = (1 - p)^{k-1}$. The total number of polar workers who did not receive a single piece of advice is $I_1 + I_2 + ... + I_n$.
+  $E(I_1 + I_2 + ... + I_n)$ = $(1-p)^0 + (1-p)^1 + ... + (1-p)^{n-1}$ = $\frac {1}{p}$ $(1 - (1-p )^n)$.
+  For p = 0, it is obvious that E = n, and for p = 1, E = 1.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+n for p = 0; $\frac{1}{p}$ $(1 - (1 - p)^n)$ for 0 $<$ p $<$ 1; 1 for p = 1.
+
+</p> 
+<h1>Remarks</h1> 
+<p>
+2 marks. 
+</p>

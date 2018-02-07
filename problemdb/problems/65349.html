@@ -1,0 +1,34 @@
+---
+problem_id: 65349
+category_ids: 210 
+difficulty: 4
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65349</h1>
+<p>
+Every day, Patrick the dog chews one slipper from the available stock in the house. Strictly with a probability of 0.5 Patrick wants to chew the left slipper, and with a probability of 0.5 - the right one. If the desired slippers are not present, Patrick becomes upset. How many pairs of the same slippers need to be bought, so that with a probability of not less than 0.8 Patrick does not get upset for an entire week (7 days)?
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Let Patrick want to chew S left and 7 - S right slippers in one week. We need to find a k such that $P (S \leq k ∩ 7 - S \leq k) \geq 0.8$. We write the event in brackets differently: $P (7 - k \leq S \leq k)$. It is clear that $7 - k \leq k$, that is, $k \geq 4$.
+  The probability on the left-hand side of the inequality is equal to the sum
+<img src="65349 1.png">
+
+<p>
+  Hence, <img src="65349 2.png">
+
+<p>
+  Note that <img src="65349 3.gif">
+therefore, there is already a sum <img src="65349 4.png">
+. Hence, the smallest k equals 5.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+5 pairs.
+</p>

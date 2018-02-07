@@ -1,0 +1,29 @@
+---
+problem_id: 35352
+category_ids: 212
+difficulty: 3
+classes: 9 10 11
+source_id: 
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35352</h1>
+<p>
+When boarding a plane, a line of n passengers was formed, each of whom has a ticket for one of the n places. The first in the line is a crazy old man. He runs onto the plane and sits down in a random place $($perhaps, his own$)$. Then passengers take turns to take their seats, and in the case that their place is already occupied, they sit randomly on one of the vacant seats. What is the probability that the last passenger will take his assigned seat?
+
+</p> 
+<h1>Hint</h1> 
+<p>
+Let the last passenger sit down at his assigned seat. Then the moment when some passenger takes the place of the latter, he could take the old man’s place.
+
+</p> 
+<h1>Solution</h1> 
+<p>
+Suppose, with some passenger seating arrangement, the last passenger did not sit down in his assigned seat $($let’s call such an arrangement an unsuccessful one$)$. Then, before the last passenger arrived, his seat was occupied by passenger A $($A may be the crazy old man$)$. At the time of the arrival of the passenger A, he is faced with the choice of which place to take. In the considered seating arrangement, he takes the place of the last passenger. But with the same probability, he could take the place of the old man, and in the future, all passengers, including the latter, will take their own seats. $($Of course, we still need to explain why the old man’s seat is still free at the time of arrival of passenger A, but this is really so - it is easy to see that while the old man’s is free, among all of the passengers that have not yet entered there is exactly one whose place is already occupied. The next passenger occupies the old man’s place, all of the others will sit down only in their own seats$)$. Thus, each unsuccessful seating corresponds to a successful one, which can happen with the same probability. This suggests that in half of all of the cases the seating arrangement will be unsuccessful.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+0.5
+</p>

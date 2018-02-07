@@ -1,0 +1,29 @@
+---
+problem_id: 65290
+category_ids: 210 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65290</h1>
+<p>
+N people lined up behind each other. The taller people obstruct the shorter ones, and they cannot be seen.
+What is the mathematical expectation of the number of people that can be seen?
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Let’s denote by $X_n$ the random value "the number of people visible among n". What happens when an n-th person is added to the back of the queue?
+<p>
+With probability 1/n he or she is taller than all of the other people in queue and with probability n-1/n he or she is not the tallest. In the first case, one more person will be visible, and in the second case, the number of those who are visible will not change. Hence, $X_n = 1 / n (X_{n-1} + 1) + n-1 / n X_{n-1}$.
+  Let's move on to the expectations: $EX_n = EX_{n-1} + 1/n = EX_{n-2} + 1/$($n-1$)$ + 1/n = ... = EX_1 + 1/2 + 1/3 + ... + 1/n$.
+  $EX_1 = 1$, because one person is always visible. Hence, $EX_n = 1 + 1/2 + 1/3 + ... + 1/n$.
+
+</p> 
+<h1>Answer</h1>
+ <p>
+1 + 1/2 + 1/3 + ... + 1/n.
+</p>

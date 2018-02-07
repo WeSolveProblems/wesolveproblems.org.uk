@@ -1,0 +1,42 @@
+---
+problem_id: 65352
+category_ids: 210 590
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65352</h1>
+<p>
+In a terrible thunderstorm, along a rope ladder, n dwarfs ascend in a chain. If suddenly there is a thunderbolt, then from fear, every gnome, regardless of others, can fall with probability p $($0 $<$ p $<$ 1$)$. If the dwarf falls, then he also hits all of the dwarfs that are below him. Find:
+<p>
+a)	The probability that exactly k dwarfs will fall.
+<p>
+b)	The mathematical expectation of the number of fallen dwarfs.
+</p>
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Let q = 1 - p be the probability that the gnome does not fall from the fright $($though, perhaps, he will fall, not from fear, but from the fact that someone else falls on top of him$)$.
+<p>
+a)	Exactly k dwarfs will fall, only if the k-th gnome falls from fear, counting from below, and none of the n-k dwarfs that are above him will fall. Hence, the required probability is $pq^{n-k} = p (1 - p)^{n-k}$.
+<p>
+b)	Let’s use indicators. Let the random variable $I_j$ be 1 if the j-th dwarf falls and 0 if he does not fall. The probability that the j-th dwarf does not fall is equal to the probability that he does not fall himself and that none of the j-1 dwarfs located above: $P (I_j = 0) = q^j$ fall. Therefore, $EI_j = P (I_j = 1) = 1 – q$.
+<p>
+  The total number of fallen dwarfs is equal to the sum of all of the indicators, hence the expectation of this value is
+
+<img src="65352 .png">
+
+</p> 
+<h1>Answer</h1> 
+<p>
+a)	$p (1 - p)^{n-k}$; b) <img src="65352 2.png">.
+
+</p> 
+<h1>Remarks</h1> 
+<p>
+An event indicator is a random variable that is equal to one if the event occurred or is zero if the event did not occur. The mathematical expectation of the indicator is equal to the probability of this event.
+<p>

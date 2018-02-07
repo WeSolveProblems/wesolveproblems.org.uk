@@ -1,0 +1,32 @@
+---
+problem_id: 65780
+category_ids: 210 1057 1282
+difficulty: 4
+classes: 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65780</h1>
+<p>
+ Two hockey teams of the same strength agreed that they will play until the total score reaches 10.
+<p>
+Find the mathematical expectation of the number of times when there is a draw.
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  If 2n is the maximum total score, then the game can be considered as a random walk of length 2n: at each step, the gap in the score either increases by one, or decreases by one.
+  Let $I_{2k}$ be the indicator of a draw at the 2k-th step: <img src="65780 1.png">
+
+<p>
+  The random variable X "the number of times when a tie occurred" is equal to the sum of all of the indicators. The beginning of the game will not be considered an "offensive". Therefore, $X = I_2 + I_4 + ... + I_{2n}$, and <img src="65780 2.png">
+
+  For n = 5 we obtain EX = 2/4 + 6/16 + 20/64 + 70/256 + 252/2048 ≈ 1.707.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+≈ 1.707.
+</p>

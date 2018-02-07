@@ -1,0 +1,32 @@
+---
+problem_id: 65324
+category_ids: 210 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65324</h1>
+<p>
+At the sound of the whistle of the PE teacher, all 10 boys and 7 girls lined up randomly.
+Find the mathematical expectation of the value "the number of girls standing to the left of all of the boys."
+
+</p> 
+<h1>Solution</h1>
+<p>
+  Add one more boy mentally, putting him to the right of all. Then the whole line is divided into 11 groups, each of which ends with a boy. The smallest group consists of one boy, the largest can consist of 8 people - 7 girls and one boy.
+<p>
+  We number these groups from left to right and call $ξ_k$ the number of the k-th group. We are interested in the expected number of the first group, that is, $Eξ_1$.
+<p>
+  The sum of all $ξ_k$ values is 18 $($17 current schoolchildren and one conceptual boy$)$: $ξ_1 + ξ_2 + ... + ξ_11$ = 18 $($*$)$.
+  By chance, all of the quantities $ξ_k$ are equally distributed, so their expectations are equal to each other and equal to $Eξ_1$.
+<p>
+  Going from the equality $($*$)$ to the expectations, we get: $11Eξ_1 = 18$, from which $Eξ_1 = 18/11$. The expected number of girls per unit is 7/11.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+7/11.
+</p>

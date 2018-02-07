@@ -1,0 +1,39 @@
+---
+problem_id: 66057
+category_ids: 210 158
+difficulty: 3
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66057</h1>
+<p>
+According to one implausible legend, Cauchy and Bunyakovsky were very fond of playing darts in the evenings. But the target was unusual - the sectors on it were unequal, so the probability of getting into different sectors was not the same. Once Cauchy throws a dart and hits the target. Bunyakovsky throws the next one. Which is more likely: that Bunyakovsky will hit the same sector that Cauchy’s dart went into, or that his dart will land on the next sector clockwise?
+<p>
+<img src="66057 1.gif">
+
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Let probabilities of hitting the sectors be equal to $p_1, p_2, ..., p_n$ $($indices indicate the sector numbers$)$. The probability that Bunyakovsky will hit the same sector as Cauchy is equal to IMAGE <img src="66057 2.gif">
+, and the probability that Bunyakovsky will hit the next clockwise sector is equal to $p_1p_2 + p_2p_3 + ... + p_n-1p_n + p_np_1$.
+<p>
+  It obviously follows from the inequality $a^2 + b^2 ≥ 2ab$ that
+IMAGE <img src="66057 3.gif">
+
+<p>
+ In this case, equality is attained only in the case when $p_1 = p_2 = ... = p_n$, which contradicts the condition.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+That he will hit the same sector.
+
+</p> 
+<h1>Remarks</h1>
+ <p>
+5 marks. 
+</p>
