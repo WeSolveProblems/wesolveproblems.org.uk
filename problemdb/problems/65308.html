@@ -16,12 +16,21 @@ A regular dice is thrown many times. Find the mathematical expectation of the nu
 <h1>Solution</h1> 
 <p>
 Let $X_n$ be the number of throws that had to be made to make the sum of the points n. We introduce the indicator $I_k$: where $I_k$ is equal to 1 if the first roll gives k points, and 0 otherwise. Obviously, $EI_k$ = 1/6.
-  It is clear that $X_n = X_{n-1}I_1 + X_{n-2}I_2 + ... + X_{n-6}I_6 + 1$. The value of $X_{n-k}$ does not depend on the result of the first throw. Hence, the quantities $X_{n-k}$ and $I_k$ are independent. Passing to the mathematical expectations, we get: $EX_n = EX_{n-1}EI_1 + EX_{n-2}EI_2 + ... + EX_{n-6}EI_6 + 1 = 1/6 (EX_{n-1} + EX_{n-2} + ... + EX_{n-6}) + 1$.
+  It is clear that $X_n = X_{n-1}I_1 + X_{n-2}I_2 + ... + X_{n-6}I_6 + 1$. The value of $X_{n-k}$ does not depend on the result of the first throw. Hence, the quantities $X_{n-k}$ and $I_k$ are independent. 
+  <p>
+  	Passing to the mathematical expectations, we get: $EX_n = EX_{n-1}EI_1 + EX_{n-2}EI_2 + ... + EX_{n-6}EI_6 + 1 = 1/6 (EX_{n-1} + EX_{n-2} + ... + EX_{n-6}) + 1$.
   Denoting $EX_k = e_k$ for ease, we write the recurrence formula: $e_n = 1/6 (e_{n-1} + e_{n-2} + ... + e_{n-6}) + 1$. $($1$)$
-  The formula obtained is valid for all $n \geq 1$, if we set $EX_k$ = 0 for all $k \leq 0$.
+  
+  <p>
+  	The formula obtained is valid for all $n \geq 1$, if we set $EX_k$ = 0 for all $k \leq 0$.
+  <p>
   From $($1$)$ we can obtain another formula. We write the equality $($1$)$ for $e_{n-1}: e_{n-1} = 1/6 (e_{n-2} + e_{n-3} + ... + e_{n-7}) + 1$.
-  Now subtracting the second equality from the first term, we get: $e_n-e_{n-1} = 1/6 (e_{n-1}-e_{n-7})$, whence $e_n = 7/6 e_{n-1} - 1/6 e_{n-7}$. $($2$)$
+  <p>
+  Now subtracting the second equality from the first term, we get: $e_n-e_{n-1} = 1/6 (e_{n-1}-e_{n-7})$, whence $e_n = 7/6 \times e_{n-1} - 1/6 \times e_{n-7}$. $($2$)$
+
+  <p>
   In the derivation of this formula, it was already assumed that $e_{n-1}> 0$, therefore, $e_n$ can be considered only starting with n = 2.
+  <p>
   Since $e_1$ = 1, by the formula $($2$)$ we compute successively: $e_2 = 7/6 \times 1 - 1/6 \times 0$ = 7/6; $e_3 = 7/6 \times 7/6 - 1/6  \times 0$ = 49/36; $e_4 = 7/6 \times 49/36 - 1/6 \times 0$ = 343/216, ...,
 E_2010 ≈ 574.761904.
 
@@ -33,7 +42,7 @@ E_2010 ≈ 574.761904.
 </p> 
 <h1>Remarks</h1> 
 <p>
-1.	It seems that mathematical expectations form a geometric progression with a denominator of 7/6. This is in no way consistent with the intuitively obvious fact that the number of rolls should grow approximately like an arithmetic progression with a difference of 2/7 - exactly 2 rolls on average need to be carried out to increase the amount by 7. Of course, the impression is false - a geometric increase after the sum of 6 $(once e_{n-7} becomes a positive number)$ is replaced by a slower growth and everything comes to the expected values.
+1.	It seems that mathematical expectations form a geometric progression with a denominator of 7/6. This is in no way consistent with the intuitively obvious fact that the number of rolls should grow approximately like an arithmetic progression with a difference of 2/7 - exactly 2 rolls on average need to be carried out to increase the amount by 7. Of course, the impression is false - a geometric increase after the sum of 6 $($once $e_{n-7}$ becomes a positive number$)$ is replaced by a slower growth and everything comes to the expected values.
 <p>
 2.	Of course, to calculate $e_{2010}$, you need to use some calculating tool. If we assume that the sought value grows approximately as an arithmetic progression with a difference of 2/7, we get that $e_{2010} ≈ 2010 \times 2/7 ≈ 574.286$. As you can see, the error is small.
 <p>
