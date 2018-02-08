@@ -1,0 +1,46 @@
+---
+problem_id: 65323
+category_ids: 212 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65323</h1>
+<p>
+On the skin of a Rhinoceros, its folds are vertical and horizontal. If the Rhinoceros has a vertical and b horizontal folds on the left side, and on the right side - c vertical and d horizontal folds, we will say that this is a rhinoceros in the state $($abcd$)$ or just an $($abcd$)$ rhinoceros.
+<p>
+  If the Rhinoceros’ itches one of his sides against a tree in an up-down movement, and Rhinoceros has two horizontal folds on this side, then these two horizontal folds are smoothed out. If there are no two folds like this, then nothing happens.
+<p>
+  Similarly, if the Rhinoceros itches on of his sides in a back and forth movement, and on this side, there are two vertical folds, then they are smoothed out. If there are no two folds like this, then nothing happens.
+<p>
+  If, on some side, two folds are smoothed out, then on the other side, two new folds immediately appear: one vertical and one horizontal.
+<p>
+  The rhinoceroses often have random sides that are itchy and need to be scratched against a tree in random directions.
+<p>
+  At first there was a herd of Rhinoceroses in the savannah $($0221$)$. Prove that after some time there were Rhinoceros of state $($2021$)$ in the savannah.
+
+</p> <h1>Solution</h1> <p>
+  We construct a graph whose vertices are the states of the Rhinoceros, and the edges with arrows indicate the possible transitions between states and their probabilities.
+  It turns out that there are 8 states. However, no state is finite - a Rhinoceros can go from any state to any other state. But will it do so? Consider an infinite sequence of transitions. Since there are only a finite number of states, by virtue of the Dirichlet principle among them there is a state a that will occur an infinite number of times.
+  <p>
+<img src="65323 1.png">
+<p>
+  From this state, there is a nonzero probability $p_a$ of going to state $($2021$)$, without going along a, on the way again. For example, from the state a = $($3101$)$ there is a chain 
+
+<p>
+<img src="65323 2.png">
+<p>
+that does not pass through $($3101$)$ again. 
+<p>
+Therefore, $p_{3101} ≥ 0.25^3 > 0$.
+<p>
+  Therefore, $q_a = 1 – p_a $<$ 1$, that is, the probability of returning from a to a without going into state $($2021$)$ is less than one.
+<p>
+  Hence, the probability of the event "The rhinoceros never goes to the state $($2021$)$ from the state a" is equal to $q_aq_aq_a ... = 0$.
+<p>
+  Therefore, the Rhinoceros will, someday, go to state $($2021$)$, and, therefore, such a Rhinoceros will walk in the savannah.
+
+</p>

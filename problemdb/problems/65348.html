@@ -1,0 +1,49 @@
+---
+problem_id: 65348
+category_ids: 212 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65348</h1>
+<p>
+The figure shows a payment order to pay an electricity bill to some power supply company for March 2013.
+<p>
+<img src="65348 1.png">
+<p>
+  Every month, the client sends the company the testimony of a three-tariff meter installed her the apartment. From the indications for the current month, the corresponding indications for the previous month are subtracted, and the actual monthly expenditure is obtained for each of the three tariff zones (peak, night, inter-peak). Then the expense for each zone is multiplied by the price of one kilowatt-hour in this zone. Adding the received amounts, the client receives the total amount of payment for a month. In this example, the customer will pay £660.72.
+<p>
+  The company maintains a record of electricity consumption and payment, using the data received from the customer. The problem is that the company sometimes confuses the six numbers obtained, rearranging them in an arbitrary order, however, it ensures that the current reading remains greater than the previous one. As a result, the calculation of the company may be flawed. If the company believes that the client must pay more than she has paid, the company requires additional payment.
+<p>
+  Using the data from the receipt shown, find:
+<p>
+    a) the maximum possible amount of surcharge for March 2013, which the company will require from the client;
+    b) the mathematical expectation of the difference between the amount that the company calculates and the amount paid by the client.
+
+</p> 
+<h1>Solution</h1> 
+<p>
+a)	Obviously, the amount that the company will require will be greatest if the expenditure at the highest tariff is the greatest possible, on the average - the largest possible of the remaining ones. The largest possible amount is equal to $4.03 \times (1402 - 1214) + 3.39 \times (1347 - 1270) + 1.01 \times (1337 - 1298) = 1058.06 (pounds). The company will require an additional payment of 1058.06 - 660.72 = 397.34 (pounds).
+<p>
+b)	We solve the problem in a general way, assuming that the client communicated six different numbers a $<$ b $<$ c $<$ d $<$ e $<$ f. Consider one of the tariff zones $($for example, peak$)$. For this zone, you can choose two any numbers from the given six and put them in the corresponding order - in ascending order. This can be done in <img src="65349 2.png">
+ ways. By condition, all methods are equally possible. Therefore, the mathematical expectation $EX_1$ of the random variable $X_1$ "expenses for the peak rate" is the arithmetic mean of the fifteen numbers: f - e, f - d, f - c, f - b, f - a, e - d, e - c, e - b , e - a, d - c, d - b, d - a, c - b, c - a, b - a, that is
+<p>
+$EX_1 = \frac{1}{15} (5f + 3e + d-c-3b-5a)$.
+<p>
+  Obviously, the random values $X_2$ and $X_3$ "expenses for the night" and "expenses for the inter-peak tariff" have the same expectation. The total payment amount S, calculated by the company, is $t_1X_1 + t_2X_2 + t_3X_3$, where $t_1, t_2 and t_3$ are the prices of one kilowatt-hour at the respective tariffs. Consequently,
+<p>
+$ES = t_1EX_1 + t_2EX_2 + t_3EX_3 = \frac{1}{15} (5f + 3e + d - c - 3b - 5a) (t_1 + t_2 + t_3)$.
+<p>
+  In our case, f = 1402, e = 1347, d = 1337, c = 1298, b = 1270, a = 1214; $t_1 + t_2 + t_3 = 4.03 + 1.01 + 3.39 = 8.43$. In this way,
+<p>
+$ES = \frac{1}{15} (5 \times 1402 + 3 \times 1347 + 1337 - 1298 - 3 \times 1270 - 5 \times 1214) \times 8.43 = 1210/15 \times 8.43 = 680.02$.
+<p>
+  The mathematical expectation of the difference between the amount that the company will require and the amount that the customer pays will be equal to
+ES - 660.72 = 680.02 - 660.72 = 19.03 $($pounds$)$.
+
+</p> <h1>Answer</h1> <p>
+a)	£397.34; b) £19.03.
+</p>

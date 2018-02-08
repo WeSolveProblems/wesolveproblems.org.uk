@@ -1,0 +1,25 @@
+---
+problem_id: 65788
+category_ids: 212 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65788</h1>
+<p>
+The teacher on probability theory leaned back in his chair and looked at the screen. The list of those who signed up is ready. The total number of people turned out to be n. Only they are not in alphabetical order, but in a random order in which they came to the class.
+<p>
+  "We need to sort them alphabetically," the teacher thought, "I'll go down in order from the top down, and if necessary I'll rearrange the student's name up in a suitable place. Each name should be rearranged no more than once”.
+<p>
+  Prove that the mathematical expectation of the number of surnames that you do not have to rearrange is 1 + 1/2 + 1/3 + ... + 1/n.
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  For each k we introduce the indicator $I_k$, which is equal to 1, if the k-th surname in the list does not need to be rearranged, and 0, if it does need to be rearranged. The total number of surnames that do not need to be rearranged is $I_1 + I_2 + ... I_n$.
+<p>
+  Surname k does not need to be rearranged, if and only if among the first k surnames it is last in alphabetical order. Since among these k surnames it can appear with equal chances in any of the k places in alphabetical order, the probability of it being last in the alphabet is 1/k. Therefore, the mathematical expectation of the number of surnames that do not need to be rearranged is $1 + 1/2 + 1/3 + ... + 1/n$.
+</p>

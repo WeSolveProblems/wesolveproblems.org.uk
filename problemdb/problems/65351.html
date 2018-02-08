@@ -1,0 +1,41 @@
+---
+problem_id: 65351
+category_ids: 212 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65351</h1>
+<p>
+In Anchuria, presidential elections are being prepared, in which President Miraflores wants to win. Exactly half of the voters support Miraflores, and the other half support Dick Maloney. Miraflores is also a voter. According to the law, he has the right to divide all of the voters into two constituencies at his own discretion. In each of the districts, the voting is conducted as follows: each voter marks the name of their candidate on the ballot; all ballots are placed in the ballot box. Then one random ballot is chosen from the ballot box, and the one whose name is marked on it will win in this district. The candidate wins the election only if he wins in both districts. If the winner does not appear, the next round of voting is appointed according to the same rules. How should Miraflores divide the electorate in order to maximize the probability of his victory on the first round?
+
+</p> 
+<h1>Solution</h1> 
+<p>
+  Suppose that there are 2n voters in Anchuria. You can divide them into districts so that in each district exactly half of the voters are adherents of Miraflores. Under this condition, the probability that Miraflores wins in the first round is $½ \times ½$ =0.25.
+<p>
+  Now suppose that in one of the districts less than half of the voters vote for Miraflores. Such a district will be called an opposition district. Then in another district more than half of the voters vote for Miraflores.
+<p>
+  If there are m voters in the opposition district $($m $<$ 2n$)$, then the number of voters voting for Miraflores in this district does not exceed m/2 - 0.5. Therefore, the probability of Miraflores winning in the opposition district is no more
+<p>
+<img src="65351 1.gif">
+<p>
+  The probability of Miraflores's victory in the non-opposition district does not exceed 1. Hence, the probability of Miraflores's victory in the first round is no more <img src="65353 2.gif">
+. 
+
+<p>
+It is possible to achieve such a probability if Miraflores assigns to the non-opposition district only one voter – his adherent. Then, in the opposition district, there will be 2n - 1 voters, of which n - 1 voters vote for Miraflores.
+
+</p> 
+<h1>Answer</h1> 
+<p>
+One district should consist of only Miraflores, and the second should consist of all of the other voters.
+</p> 
+<h1>Remarks</h1> 
+<p>
+With such rules, the victory of Miraflores is only a matter of time. He cannot lose, because each time a district consisting of one person votes against Dick Maloney. Thus, Maloney on cannot win in any round. Hence, in the end, Miraflores will win.
+
+</p>
