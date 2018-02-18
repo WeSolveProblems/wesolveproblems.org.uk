@@ -1,0 +1,47 @@
+---
+problem_id: 65311 
+category_ids: 210 1233 1282 855
+difficulty: 4+
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65311</h1>
+<p>
+ A correct dice is thrown many times. It is known that at some point the total amount of points became equal to exactly 2010.
+Find the mathematical expectation of the number of throws made to this point.
+
+</p> <h1>Solution</h1> <p> 
+  The first way. Let the event $A_n$ be "the sum of the points is equal to n", and $X_n$ be the number of throws made. The event $A_n$ we consider to be already realised, and we are interested in waiting for $EX_n$. Let $I_k$ be equal to 1 if the first throw gave k points, and 0 otherwise.
+<p>
+  Events $B_k$ "the first throw gave k points" and $A_{n-k}$ $($for the remaining throws$)$ refer to different throws and are therefore independent. Consequently, the conditional probability of the event $(I_k = 1)$ is <IMG SRC="65311 1.gif">
+<p>
+  It is clear that $X_n = X_{n-1}I_1 + X_{n-2}I_2 + ... + X_{n-6}I_6 + 1$.
+<p>
+  In this case, the random variables $X_{n-}k$ and $I_k$ are independent, since they refer to different series of throws. Therefore, <IMG SRC="65311 2.gif">
+<p>
+  Introducing the notation $EX_k = e_k$ and $P (A_k) = p_k$, we obtain: <IMG SRC="65311 3.gif"> $($1$)$
+<p>
+  It remains to use the fact that $6p_n = p_{n-1} + ... + p_{n-6}$. This follows, for example, from the fact that the sum of the probabilities $P (I_k = 1)$ is equal to one. Hence, <IMG SRC="65311 3.gif">
+<p>
+  The initial values are: $p_{-5} = p_{-4} = ... = p^{-1} = 0; p_0 = 1; e_{-5} = e_{-4} = ... = e_0 = 0$. A sequential calculation yields $e_1 = 1, p_1 = 1/6$;
+<p>
+      <IMG SRC="65311 5.gif">...,
+<p>
+$e_{2010}$ = 574,5238095 ...
+<p>
+  The second way. It is known that the sum of the points is equal to n. Let the event $A_k$ "at some point the sum is equal to k" occur. Then the subsequent throws should lead to the event $A_{n-k}$. Hence <IMG SRC="65311 6.gif"> $($the events $A_{n-k}$ and $A_k$ refer to different series of throws and are therefore independent$)$.
+<p>
+  Let's consider the value of $J_k$, which is 1 if the sum is at some time equal to k, and 0 otherwise.
+<p>
+  Obviously, the random quantity "the number of sums obtained" $X_n = J_1 + J_2 + ... + J_n$ is equal to the number of shots made.
+<p>
+  We introduce brief notations $EX_k = e_k, P (A_k) = p_k$. The expectation of $EJ_k$ is, <IMG SRC="65311 7.gif"> therefore, <IMG SRC="65311 8.gif">
+<p>
+  Using the relation $p_{n-k}$ = $1/6 (p_{n-k-1} + ... + p_{n-k-6})$, we write the expectation differently: <IMG SRC="65311 9.gif">
+ 
+
+</p> <h1>Answer</h1> <p> 
+574,5238095 ...

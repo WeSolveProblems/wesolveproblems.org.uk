@@ -1,0 +1,34 @@
+---
+problem_id: 35052 
+category_ids: 210 1251 157
+difficulty: 4
+classes: 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35052</h1>
+<p>
+There are 30 students in the class. Prove that the probability that some two students have the same birthday is more than 50%.
+
+</p> <h1>Hint</h1> <p> 
+Find the probability that no two students have the same birthday.
+
+</p> <h1>Solution</h1> <p> 
+  Let us prove that the probability that no two students have birthdays that coincide is less than ½.
+<p>
+  Let's arrange the students. The probability that the second student was not born on the same day as the first one is 364/365 $($we omit the subtleties associated with the fact that the birthday can be on $29^th$ February$)$. The probability that the third was not born on the same day as the first or second, is 363/365, ..., the probability that the birthday of the thirtieth did not coincide with the remaining 29 birthdays is 336/365. Therefore, <IMG SRC="35052 1.gif">. One can verify $($by using a computer$)$ that p is much smaller than ½.
+<p>
+  It is also possible to propose rough estimates of p.
+<p>
+  The first way. We need to prove that <IMG SRC="35052 2.gif">. Multiplying both sides of equality by <IMG SRC="35052 3.gif">,
+  <p>
+   we get <IMG SRC="35052 4.gif">
+<p>
+The left-hand side is less than 1, so it suffices to verify that <IMG SRC="35052 5.gif"> But <IMG SRC="35052 6.gif">
+<p>
+  The second way. According to the Bernoulli inequality $($see problem number 30899$)$
+<IMG SRC="35052 7.gif">
+<p>
+  As is known, the number <IMG SRC="35052 8.gif"> is close to <IMG SRC="35052 9.gif">. Moreover, <IMG SRC="35052 10.gif">.

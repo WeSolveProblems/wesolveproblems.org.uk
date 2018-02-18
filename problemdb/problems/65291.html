@@ -1,0 +1,23 @@
+---
+problem_id: 65291 
+category_ids: 212 1256 1057 152
+difficulty: 3+
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65291</h1>
+<p>
+In the magical land of Anchuria there is a drafts championship made up of several rounds. The days and cities in which the rounds are carried out are determined by a draw. According to the rules of the championship, no two rounds can take place in one city, and no two rounds can take place on one day. Among the fans, a lottery is arranged: the main prize is given to those who correctly guess, before the start of the championship, in which cities and on which days all of the round will take place. If no one guesses, then the main prize will go to the organising committee of the championship. In total, there are eight cities in Anchuria, and the championship is only allotted eight days. How many rounds should there be in the championship, so that the organising committee is most likely to receive the main prize?
+
+</p> <h1>Solution</h1> <p> 
+  In the $8 \times 8$ table, you need to select k cells so that no more than one cell is selected in one row and in one column. Moreover, in this case, the number of rounds k should be chosen so that the number $N_k$ of possible choices is the greatest possible.
+<p>
+    <IMG SRC="65291 1.gif">, here, $C^k_8$ is the number of ways to choose k cities from eight without considering the order, $A^k_8$ is the number of ways to choose k days out of eight, taking into account the order, since each day must correspond to one of the cities.
+<p>
+  Note that <IMG SRC="65291 2.gif"> where m = 9 - k. Since $m^2 <$9 - m$ only for m = 1, 2, then $N_1 $<$N_2 <... <$N_6$>$ N_7$>$ N_8$.
+
+</p> <h1>Answer</h1> <p> 
+6 rounds.

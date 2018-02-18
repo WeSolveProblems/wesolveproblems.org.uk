@@ -1,0 +1,34 @@
+---
+problem_id: 66044 
+category_ids: 210 1233
+difficulty: 4-
+classes: 7 8 9 10
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66044</h1>
+<p>
+ The television game "What? Where? When?" consists of a team of "experts" trying to solve 13 questions $($or sectors$)$, numbered from 1 to 13, that are thought up and sent in by the viewers of the programme. Envelopes with the questions are selected in turn in random order with the help of a spinning top with an arrow. If this sector has already come up previously, and the envelope is no longer there, then the next clockwise sector is played. If it is also empty, then the next one is played, etc., until there is a non-empty sector. 
+Before the break, the players played six sectors.
+<p>
+a)	What is more likely: that sector number 1 has already been played or that sector number 8 has already been plated? 
+<p>
+  b) Find the probability that, before the break, six sectors with numbers from 1 to 6 were played consecutively.
+
+</p> <h1>Solution</h1> <p> 
+a)	Nothing to translate. 
+<p>
+b)	Consider the sequence of sectors $n_1, n_2, ..., n_6$ that are chosen when the top is rotated. The event A = "sectors 1 to 6 are played" is favoured by all sequences in which $n_k ≤ k$, and all permutations of each such sequence. For example, the sequence 1, 1, 2, 3, 3, 6 and all of its possible permutations are suitable, etc.
+<p>
+  The number of sequences favouring A does not depend on the number of unselected sectors, which means that it is the same for any circle with more than six sectors. It is convenient to count these sequences on a circle with seven sectors. Then, whatever the succession of chosen sectors will be, there will be only one non-played sector, and the sectors that are played out are in a row. There are $7^6$ sequences in total. There are exactly 7 times fewer $(7^5)$ sequences for which sector number 7 was not played.
+<p>
+  On the circle, there are $13^6$ identical sequences. Therefore, the probability of event A is $7^5/13^6$.
+
+</p> <h1>Answer</h1> <p> 
+a) The probabilities are equal; b) $7^5/13^6$ ≈ 0.00348.
+
+</p> <h1>Remarks</h1> <p> 
+Marks: 1 + 5
+

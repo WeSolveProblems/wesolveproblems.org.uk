@@ -1,0 +1,35 @@
+---
+problem_id: 65356 
+category_ids: 210 1282 1233
+difficulty: 4-
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65356</h1>
+<p>
+There is a deck of playing cards on the table $($for example, in a row$)$. On top of each card we put a card from another deck. Some cards may have coincided. Find:
+<p>
+a)	the mathematical expectation of the number of cards that coincide;
+<p>
+  b) the variance of the number of cards that coincide.
+
+</p> <h1>Solution</h1> <p> 
+a)	Number the pairs from 1 to N $($we do not know how many of them$)$ in the order in which they lie on the table. Let the indicator $I_k$ be equal to 1 if there are two identical cards in the k-th pair, and 0 if the cards are not identical in the k-th pair. Obviously, $P (I_k = 1) = 1/N$. Hence, $EI_k = 1/N$.
+<p>
+  Let S be the number of pairs that coincide. It is equal to $I_1 + I_2 + ... + I_N$. Therefore, $ES = EI_1 + EI_2 + ... + EI_N = N \times 1 / N = 1$.
+<p>
+b)	<IMG SRC="65356 1.PNG">, where in brackets is the sum of pairwise products of various indicators.
+  Obviously, $I^2_k = I_k$ therefore, $EI^2_k = 1/N$.
+<p>
+  Now consider the quantity $I_jI_k$. It is equal to 1 if the cards coincide in both the j-th and the k-th pair. In the j-th pair, the cards coincide with the probability 1/N. If this happens, then the probability of matching cards in the k-th pair is 1/{N-1}. Therefore, $P (I_jI_k = 1) = 1/{N (N-1)}$. In all of the other cases $I_jI_k = 0$. Consequently, $E (I_jI_k) = 1/{N (N-1)}$.
+<p>
+ Hence, $ES^2 = N \times 1/N + N (N-1) \times 1/{N (N-1)} = 1 + 1 = 2$, and therefore $DS = ES^2 - (ES)^2 = 2 - 1 = 1$.
+
+</p> <h1>Answer</h1> <p> 
+a) 1; b) 1.
+
+</p> <h1>Remarks</h1> <p> 
+Here the plot of the well-known coincidence problem is used, but the question is not about the probability, but about the expectation and variance of the number of coincidences. Strangely enough, it is easier to solve this problem than to find the probability. Note that both the expectation and the variance of the number of coincidences is independent of the number of cards in the deck.

@@ -1,0 +1,32 @@
+---
+problem_id: 65302 
+category_ids: 210 1233 1057
+difficulty: 4-
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65302</h1>
+<p>
+The mathematics teacher suggested changing the voting scheme at the performance competition. Currently, two groups compete in the final. In the first group, there are n pupils from class 5A, and in the second, there are n pupils from class 5B. 2n mothers of all 2n students attended the final of the competition. The best performance is chosen by the mothers voting. It is known that exactly half of the mothers vote honestly for the best performance, and the other half, in any case, vote for the performance in which her child participates $($see problem number 65299$)$. The teacher believes that it is necessary to choose a jury of 2m people $(2m ≤ n)$ from all 2n mums at random. Find the probability that the best performance will win under such voting conditions.
+
+</p> <h1>Solution</h1> <p> 
+  We call a mother honest, if she votes for the best performance.
+  Since, in total, there are n dishonest mothers and the same number of honest mothers, the probability that there are q dishonest mothers in the jury and 2m - q honest mothers, is equal to <IMG SRC="65302.PNG">.
+<p>
+  If this event is realised, then the fate of the competition depends on the distribution of the votes of the dishonest mothers. If t children of the dishonest mothers take part in the worst performance, then this worst performance will receive exactly t votes, while all of the other votes $($there are 2m - t of them$)$ will be given to the best performance. Thus, the best performance wins if 2m - t $>$ t, that is, if t $<$m.
+<p>
+  The likelihood that the worst performance will receive exactly t votes is equal to the probability <IMG SRC="65302 1.PNG"> that exactly t children of dishonest mothers from the jury take part in this performance.
+<p>
+  Therefore, the probability of a combination in which q dishonest mothers gather in the jury, and the worst performance receives fewer votes than the best one, is equal to <IMG SRC="65302 2.PNG">.
+<p>
+  Summing these probabilities over all of the possible distributions of dishonest mothers, we find that the required probability is <IMG SRC="65302 3.PNG">
+
+
+</p> <h1>Answer</h1> <p> 
+<IMG SRC="65302 4.gif">
+
+</p> <h1>Remarks</h1> <p> 
+Calculations by this formula can be shortened a little, if we note that for q $<$m, the worst performance has no chance, and therefore $(4and also from purely combinatorial considerations$)$ <IMG SRC="65302 5.PNG">.

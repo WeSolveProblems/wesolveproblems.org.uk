@@ -1,0 +1,35 @@
+---
+problem_id: 65338
+category_ids: 210 1282
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65338</h1>
+<p>
+The television game "What? Where? When?" consists of a team of "experts" trying to solve 13 questions that are thought up and sent in by the viewers of the programme. Envelopes with the questions are selected in turn in a random order with the help of a spinning top with an arrow. If the experts answer correctly, they earn a point, and if they answer incorrectly, the viewers get one point. The game ends as soon as one of the teams scored 6 points. Suppose that the abilities of the teams of experts and viewers are equal.
+<p>
+a)	Find the mathematical expectation of the number of points scored by the team of experts in 100 games.
+<p>
+  b) Find the probability that, in the next game, envelope number 5 will come up.
+
+</p> <h1>Solution</h1> <p> 
+a)	Suppose that in one game the losing team scored k points. The winning team scored 6 points, so only 6 + k envelopes were played. At the same time, the winning team received a point for the question from the last envelope, and for the remaining 5 + k questions, both the team of experts and the team of viewers could have scored points with a probability of ½. Therefore, the mathematical expectation of a random variable X "the number of points earned by the losing team in one game" is equal to <IMG SRC="65338 1.PNG">
+<p>
+  We note that <IMG SRC="65338 2.PNG">, in particular, <IMG SRC="65338 3.PNG">. Therefore, <IMG SRC="65338 4.PNG">
+<p>
+ 
+  In the first bracket is the sum of the probabilities that, when playing up to 7 correctly answer ed questions by one team, the losing team will earn k - 1 points $(1 ≤ k ≤ 7)$ which is equal to 1. Therefore,
+<IMG SRC="65338 5.PNG">
+<p>
+  Let's add 6 to get the total amount of points $($earned by both teams$)$, divide by two, in order to only get the expectation of the sum of the points of the experts $($because the abilities of both teams are equal$)$:<IMG SRC="65338 6.PNG">. Now we have to multiply the result by 100, since 100 games are played.
+<p>
+b)	Let's introduce the indicators $ξ_k, 1 ≤ k ≤ 13: ξ_k = 1$ if the envelope with the number k was played, and 0 otherwise.
+<p>
+  Note that the sum of points earned by both teams in one game is equal to the sum of all $ξ_k$. The expectation of the amount of points earned by both teams is known from a): <IMG SRC="65338 7.PNG">. All of the envelopes are equal, so the number is divided by 13: <IMG SRC="65338 8.PNG">. But $Eξ_k$ is the probability of playing the k-th envelope.
+
+</p> <h1>Answer</h1> <p> 
+a)	<IMG SRC="65338 9.PNG">; b) <IMG SRC="65338 10.PNG">.

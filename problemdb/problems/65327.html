@@ -1,0 +1,36 @@
+---
+problem_id: 65327 
+category_ids: 210 1233 855
+difficulty: 4
+classes: 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65327</h1>
+<p>
+ Hercules meets the three-headed snake, the Lernaean Hydra and the battle begins. Every minute, Hercules cuts one of the snake's heads off. With probability ¼ in the place of the chopped off head grows two new ones, with a probability of 1/3, only one new head will grow and with a probability of 5/12, not a single head will appear. The serpent is considered defeated if he does not have a single head left. Find the probability that sooner or later Hercules will beat the snake.
+
+</p> <h1>Solution</h1> <p> 
+  Hercules' strikes, in which the number of heads changes, will be called a successful strike.
+  We will find the probability that one day the last successful strike will come. This means that starting from this, successful strikes will no longer happen, that is, all blows will be unsuccessful. The probability of this is $1/3 \times 1/3 \times 1/3 \times ... = 0$.
+<p>
+  Thus, there will not be a last successful strike, but there will be an infinite succession of successful strikes, which we will consider, ignoring all other blows.
+  The probability of a successful strike is 2/3. The conditional probability that, with a successful hit, the number of heads increases is equal to $¼ \div 2/3 = 3/8$.
+  Likewise, the conditional probability that with a successful strike the number of heads decreases is equal to $5/12 \div 2/3 = 5/8$.
+<p>
+  The standard problem of a one-dimensional random walk arises. Suppose that as a result of a series of successful strikes, the number of the snakes' heads becomes one less than it was. We call this event D, and denote its probability by x.
+  There are two possibilities.
+<p>
+1)	As a result of the first successful strike the number of heads decreases by one $($event M, with probability 5/8$)$. In this case, event D has already occurred - its conditional probability is 1.
+<p>
+2)	As a result of the first successful strike the number of heads increases by one $($event N, with probability 3/8$)$. In this case, event D will occur only if the number of heads decreases by 2 - decrease by one, and then by one more. Therefore, the conditional probability of event D in this case is equal to $x^2$.
+<p>
+  By the formula of total probability, $x = P (D) = P (D | M) \times P (M) + P (D | N) \times P (N) = 5/8 + 3/8 x^2$.
+<p>
+  Hence x = 1 or x = 5/3. The second root is not valid. Hence, event D is reliable.
+  So, sooner or later the number of heads will necessarily decrease from three to two. Then, for the same reason, the number of heads decreases to one and, finally, becomes zero. The snake has no chance.
+
+</p> <h1>Answer</h1> <p> 
+1.

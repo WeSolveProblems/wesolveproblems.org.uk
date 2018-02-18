@@ -1,0 +1,32 @@
+---
+problem_id: 65354 
+category_ids: 210 1282
+difficulty: 4-
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65354</h1>
+<p>
+  In the magical land of Anchuria there are only K laws and N ministers. The probability that a randomly chosen minister knows a randomly chosen law is p. One day, the ministers gathered for a meeting, to write the Constitution. If at least one minister knows the law, then this law will be taken into account in the Constitution, otherwise this law will not be taken into account in the Constitution. Find:
+<p>
+a)	The probability that exactly M laws will be taken into account into the Constitution.
+<p>
+b)	The mathematical expectation of the number of registered laws.
+
+
+</p> <h1>Solution</h1> <p> 
+  a) The probability that no minister knows the first law is $(1 - p)^N$. Hence, the probability that the first law will be taken into account is
+$q = 1 - (1-p)^N$.
+<p>
+  The probability that exactly M laws out of the available K will be taken into account into the Constitution can easily be found by the binomial probability formula:
+<p>
+<IMG SRC="65354 1.PNG">
+<p>
+  b) Let's introduce the indicator $I_k$ which represents a random variable, which is equal to 1 if the law with the number k is taken into account and 0 otherwise. $EI_k = 1 - (1 - p)^N$.
+  The number of registered laws X is equal to the sum of these quantities: $X = I_1 + I_2 + ... + I_K$. Therefore $EX = EI_1 + EI_2 + ... + EI_K = K (1 - (1 - p)^N)$.
+
+</p> <h1>Answer</h1> <p> 
+a)	<IMG SRC="65354 2.PNG">; b) $K (1 - (1-p)^N)$.

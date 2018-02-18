@@ -1,0 +1,41 @@
+---
+problem_id: 65778 
+category_ids: 211 1233 1014 754
+difficulty: 4-
+classes: 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65778</h1>
+<p>
+ Investigating one case, the investigator John Smith discovered that the key witness is the one from the Richardson family who, on that fateful day, came home before the others. The investigation revealed the following facts.
+<p>
+1.	The neighbour Maria Kuzmina, wanting to borrow some salt from the Richardson's, rang their doorbell, but no one opened the door. At what time though? Who knows? It was already dark ...
+<p>
+2.	Jill Richardson came home in the evening and found both children in the kitchen, and her husband was on the sofa - he had a headache.
+<p>
+3.	The husband, Anthony Richardson, declared that, when he came home, immediately sat down on the sofa and had a nap. He did not see anyone, nor did he hear anything, and the neighbour definitely did not come - the doorbell would have woken him up.
+<p>
+4.	The daughter, Sophie, said that when she returned home, she immediately went to her room, and she does not know anything about her father, however, in the hallway, as always, she stumbled on Dima's shoes.
+<p>
+5. Dima does not remember when he came home. He also did not see his father, but he did hear how Sophie got angry about his shoes. 
+<p>
+"Aha," thought John Smith. "What is the likelihood that Dima returned home before his father?".
+<p>
+
+</p> <h1>Solution</h1> <p> 
+Regarding Dima, Sophie and Antony, there is no certainty, it is only known that all three came home between Maria's visit and Jill's arrival - these two events limit the period of time that interests Mr Smith. We will assume that the probability of some member of the family arriving home at some time interval is proportional to the length of this interval.
+<p>
+We introduce a notation. Let the time that passed from Maria's visit to the arrival of Jill Richardson be m, before Anthony's arrival - time x, before Dima's arrival - time y, and before Sophie's arrival - time z. 
+<p>
+It follows from the testimony that $0 <$x <$m, 0 <$y <$z <$m$. In the Oxyz coordinate system, we obtain a triangular prism F with vertices $(0, 0, 0), (0, 0, m), (0, m, m), (m,0,0), (m, 0, m)$ and $($m, m, m$)$ $($see the figure$)$. Under these conditions, it is required to find the probability of the event y $<$ x. Inside the prism F this inequality forms a quadrilateral pyramid G with vertices $(0, 0, 0), (m, 0, 0), (m, 0, m), (0, 0, m)$ and $($m, m, m$)$,
+<p>
+<IMG SRC="65778 1.PNG">
+<p>
+The sought probability is <IMG SRC="65778 2.PNG">
+<p>
+
+</p> <h1>Answer</h1> <p> 
+2/3.

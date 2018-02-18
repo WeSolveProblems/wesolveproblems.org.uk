@@ -1,0 +1,33 @@
+---
+problem_id: 65309
+category_ids: 211 1282 682
+difficulty: 4
+classes: 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65309</h1>
+<p>
+The point O is randomly chosen on piece of square paper. Then the square is folded in such a way that each vertex is overlaid on the point O. The figure shows one of the possible folding schemes. Find the mathematical expectation of the number of sides of the polygon that appears.
+<p>
+<IMG SRC="65309 1.gif">
+
+</p> <h1>Solution</h1> <p> 
+  A small geometric study shows that the result can be a hexagon, a pentagon and a quadrilateral. A quadrilateral is obtained only if the point O precisely hits either the centre or the vertex of the square. The probability of this is zero.
+<p>
+<IMG SRC="65309 2.gif">
+<p>
+  A hexagon is obtained if the point O is inside the figure, the boundary of which is formed by four semicircles $($the orange flower with four petals shown in the figure$)$. If the point O is in any other place $($the grey area$)$, then a pentagon is obtained.
+<p>
+  If we assume that the area of the square is 1, then the probability that the point O falls into the orange region is equal to the area of this region:
+<p>
+$P_o = S_o = 8 \times (π/16 - 1/8) = π/2 - 1$.
+<p>
+  The probability $P_g$ that the point O falls into the grey region is equal $1 - P_o = 2 - π/2$.
+<p>
+  Thus, the mathematical expectation of the number of sides of the polygon is equal to $5(2 - π/2) + 6 (π/2 - 1) = 4 + π/2 ≈ 5.571$.
+
+</p> <h1>Answer</h1> <p> 
+$4 + π/2 ≈ 5.571$.

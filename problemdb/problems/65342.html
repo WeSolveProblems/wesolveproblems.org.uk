@@ -1,0 +1,33 @@
+---
+problem_id: 65342
+category_ids: 210 1282 1057 851 1083
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65342</h1>
+<p>
+On a laundry drying line n socks hang in a random order $($the order in which they got out of the washing machine$)$. Among them there are the two favourite socks of the Scattered Scientist. The socks are covered by a drying sheet, so the Scientist does not see them, and takes out one sock by touch. Find the mathematical expectation of the number of socks taken out by the Scientist by the time he has both of his favourite socks.
+
+</p> <h1>Solution</h1> <p> 
+  It is convenient to compile a triangular table. The coloured cells correspond to the pairs of favourite socks. For example, the pair [2, 4] marked with an "X" sign corresponds to the case when the first favourite sock was taken out second and the second was taken out fourth from the washing machine. All pairs are equally possible, and their total number is equal to <IMG SRC="65342 1.PNG">.
+<p>
+<IMG SRC="65342 2.PNG">
+<p>
+  The table shows the distribution of the random variable ξ "the number of socks taken out of the washing machine". In fact, the table represents an inverted diagram of this distribution: the values of ξ are taken from the first line, and the corresponding probabilities are shown below them with painted columns. In this way,
+$P (ξ = k)$ = <IMG SRC="65342 3.gif"> where $($k = 1, ..., n$)$.
+<p>
+  Consequently,
+<p>
+<IMG SRC="65342 4.gif">
+</p> <h1>Answer</h1> <p> 
+$2/3 \times (n + 1)$.
+
+</p> <h1>Remarks</h1> <p> 
+A geometric solution is also possible: the mathematical expectation is the abscissa of the centre of mass M of the diagram. We can draw an auxiliary triangle with the same centre of mass and find the abscissa. It is equal to the average arithmetic abscissa of the vertices: $1/3 (n + n + 2) = 2/3 (n + 1)$.
+<p>
+<IMG SRC="65342 5.PNG">
+<p>

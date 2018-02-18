@@ -1,0 +1,42 @@
+---
+problem_id: 98415
+category_ids: 213 1282 590
+difficulty: 4
+classes: 7 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98415</h1>
+<p>
+A group of psychologists developed a test, after which each person gets a mark, the number Q, which is the index of his or her mental abilities $($the greater Q, the greater the ability$)$. For the country's rating, the arithmetic mean of the Q values of all of the inhabitants of this country is taken.
+<p>
+a)	A group of citizens of country A emigrated to country B. Show that both countries could grow in rating.
+<p>
+b)	After that, a group of citizens from country B $($including former ex-migrants from A$)$ emigrated to country A. Is it possible that the ratings of both countries have grown again?
+<p>
+  c) A group of citizens from country A emigrated to country B, and group of citizens from country B emigrated to country C. As a result, each country's ratings was higher than the original ones. After that, the direction of migration flows changed to the opposite direction - part of the residents of C moved to B, and part of the residents of B migrated to A. It turned out that as a result, the ratings of all three countries increased again $($compared to those that were after the first move, but before the second$)$. $($This is, in any case, what the news agencies of these countries say$)$. Can this be so $($if so, how, if not, why$)$?
+$($It is assumed that during the considered time, the number of citizens Q did not change, no one died and no one was born$)$.
+
+</p> <h1>Solution</h1> <p> 
+a)	Let's say, for example, that only two people with scores of 3 and 5 live in country A, and in B - one person with a score of 1. After the movement of a person with a score of 3 from A to B in both countries, the rating will increase.
+<p>
+b)	First, we note that if the entire population of the country is divided into two groups X and Y with ratings $q_X$ and $q_Y$, respectively, then the rating q of the whole country is between $q_X$ and $q_Y$ $(and the equality will be only in the case when q_X = q_Y)$.
+<p>
+  Denote by a and b the ratings of countries A and B before emigration from A to B, by $a_1$ and $b_1$ the ratings of these countries after this emigration, and by c, the rating of the group of emigrants. By the condition a $<$a_1. Hence, as shown above, it follows that c $<$a $<$a_1 $($before emigration, A is divided into a group of emigrants with a rating of c and a group of those remaining with a rating $a_1$$)$.
+<p>
+  Similarly, $b $<$b_1 $<$c$. Thus, $b $<$a$ and $b_1 $<$a_1$. The first inequality shows that an increase in the ratings of both countries is possible only when emigrating from a country with a higher rating to a country with a lower rating. The second inequality shows that the rating of country A remained higher than that of country B. Thus, a simultaneous increase in ratings with emigration from B to A is impossible.
+<p>
+  c) Suppose there are only two residents in country A with marks Q = 1 and 2, in country B, there are four inhabitants $($Q = 2, 2, 4, 10$)$, in country B, there is one inhabitant $($Q = 1$)$. After the first wave of emigration from A to B, one person with Q = 1 emigrated, and from B to C - two with Q = 2. For the second wave, from C in B, one person with Q = 1 moved, and from B to A - two with Q = 1 and 4. The ratings of the countries changed as follows: A - 1.5 → 2 → 2 1/3; B - 4.5 → 5 → 5.5; C - 1 → 1 2/3 → 2.
+
+</p> <h1>Answer</h1> <p> 
+b) It is not possible; c) It can.
+
+</p> <h1>Remarks</h1> <p> 
+1.	The idea of constructing an example in point c) is based on placing a group of "geniuses" in country B $($with a very high Q$)$. There are also fundamentally different examples based on the very low ranking of country B in comparison with the other two countries.
+<p>
+2.	Marks: 1 + 3 + 2.
+<p>
+3. In the formulation proposed in the Lomonosov Tournament, part c) was absent.
+

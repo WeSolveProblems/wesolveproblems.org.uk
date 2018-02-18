@@ -1,0 +1,23 @@
+---
+problem_id: 65292
+category_ids: 210 1057
+difficulty: 4+
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65292</h1>
+<p>
+The building has n floors and two staircases running from the first to the last floor. On each staircase between each two floors on the intermediate staircase there is a door separating the floors $($it is possible to pass from the stairs to the floor, even if the door is locked$)$. The porter decided that too many open doors is bad, and locked up exactly half of the doors, choosing the doors at random. What is the probability that you can climb from the first floor to the last, passing only through open doors?
+
+</p> <h1>Solution</h1> <p> 
+  Doors leading from one floor to the next will be called the door of the floor k $($where k = 1, 2, ..., n - 1$)$.
+<p>
+  If both doors of the floor are closed $($on both stairs$)$, then it is impossible to get from floor k to floor k + 1, and consequently, you cannot get from the first to the last one. If on each floor at least one of the doors is open, you are able to pass. Hence, the event A = {a path is possible} is carried out if and only if there are no two doors closed on the same level. But exactly half of the doors are closed. Thus, in case of event A, if any door on the left staircase is open, then the corresponding door on the right staircase is closed. In total, there are $2^{n-1}$ such combinations.
+<p>
+  The total number of ways to close half out of 2 $($n - 1$)$ doors is equal to <img src="65292 1.gif">. Thus, P $($A$)$ = <IMG SRC="65292 2.gif">
+
+</p> <h1>Answer</h1> <p> 
+<IMG SRC="65292 2.gif">

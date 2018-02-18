@@ -1,0 +1,61 @@
+---
+problem_id: 65343 
+category_ids: 210 1282 1233 856 851
+difficulty: 4+
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65343</h1>
+<p>
+N pairs of socks hang on a washing line in a random order $($the order in which they were taken out of the washing machine$)$. There are no two identical pairs. The socks hang under the drying sheet, so the Scattered Scientist takes out one toe by touch and compares each new sock with all of the previous ones. Find the mathematical expectation of the number of socks taken at the moment when the Scientist will have some pair.
+
+</p> <h1>Solution</h1> <p> 
+  Let us call $ξ_n$ a random value equal to the number of socks taken, provided that n pairs hang on the washing line. Obviously, $Eξ_1 = 2$.
+<p>
+  Let n$>$ 1. We number the socks in the order in which the Scattered Scientist removes them from the washing line. $($Obviously, the numbering method does not matter$)$. In this numbering, some sock is the last $($its number is 2n, and it will never be removed, since the sock with the number n + 1 is sure to form a pair with any previous one$)$. Distinguish this last sock somehow: let it be white.
+<p>
+  We denote by $p_{j, n}$ the probability of the event $ξ_n = j$. Obviously, $p_{1, n} = 0$.
+  We find $p_{2, n}$. It all depends on where the other white sock hangs. If it hangs on the first or second place $($the probability of this is 2/{2n-1}$)$, then the first two socks do not form a pair. If it hangs on the third or subsequent places $($the probability of this is {2n-3}/{2n-1}$)$, then the conditional probability that the first two socks form a pair is $p_{2, n-1}$ is the probability of getting a pair from the second attempt, removing both white socks from the sequence. By the formula of total probability, we get: <IMG SRC="65343 1.PNG">.
+<p>
+  Similarly, we find $p_{3, n}$. If the white sock hangs on one of the first two places $($with a probability of 2/{2n-1}$)$, then the conditional probability that the third sock will give a pair is equal to the probability that the second sock will give the pair in a sequence without white socks. If the white sock is in third place $($with probability 1/{2n-1}$)$, then the conditional probability that the third sock will give the pair is 0, because it is white, and the pair is hanging at the end. If the white sock hangs at the third place $($with probability {2n-4}/{2n-1}$)$, then the conditional probability that the first two socks form a pair is $p_{3, n-1}$, since in this case the presence of white socks does not play a role. The formula of total probability gives: <IMG SRC="65343 2.PNG">.
+<p>
+  Reasoning similarly and further, we obtain: <IMG SRC="65343 3.gif"> for all k from 2 to n.
+<p>
+<IMG SRC="65343 4.PNG"> 
+<p>
+Here, the k-th sock $($with the line pointing towards it$)$ is the number k-1 in the sequence, from which the white socks are removed. Therefore, in this case, $p_{k,n}=p_{k-1,n-1}$.
+<p>
+<IMG SRC="65343 5.PNG"> 
+<p>
+Here, the k-th sock $($with the line pointing towards it$)$ is white, so therefore, it cannot form a pair with any of the previous ones: $p_{k,n} = 0$.
+<p> 
+<IMG SRC="65343 6.PNG">
+<p>
+Here, the white socks hangs further that then k-th, therefore, the white one can be disregarded: $p_{k,n}=p_{k,n-1}$. 
+<p>
+  If the total number of pairs is n - 1, then the probability that the first pair is obtained on the $($n + 1$)$-th sock is zero: $p_{n + 1, n-1} = 0$. Therefore, for k = n + 1, we get: <IMG SRC="65343 7.gif">
+<p>
+  We now find the mathematical expectation:
+<p>
+<IMG SRC="65343 8.PNG">
+<p>
+  Grouping the summands for $p_{k, n-1}$, we obtain:
+<p>
+<IMG SRC="65343 9.PNG">
+<p>
+  The resulting relation makes it possible to compute $Eξ_n$, knowing that $Eξ_1 = 2$:
+<p>
+ <IMG SRC="65343 10.PNG">
+<p>
+  To obtain an approximation for large n, we use the Stirling formula: <IMG SRC="65343 11.PNG">. We get:
+<p>
+<IMG SRC="65343 12.PNG">
+
+</p> <h1>Answer</h1> <p> 
+<IMG SRC="65343 13.gif">
+
+</p> <h1>Remarks</h1> <p> 
+Let's say that, if on washing line there are 2012 pairs of socks, then the exact formula will give $Eξ_{2012}$ ≈ 79.509, and the approximate formula will give <IMG SRC="65343 14.gif">. The error is less than 0.065%. Thus, if there are 4024 socks on the line, then the Scattered Scientist will, on average, be lucky on the 79-80th attempt.

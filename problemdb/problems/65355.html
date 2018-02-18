@@ -1,0 +1,40 @@
+---
+problem_id: 65355 
+category_ids: 210 1282 1233
+difficulty: 3+
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65355</h1>
+<p>
+ The probability of the birth of twins in Cambria is p, and no triplets are born in Cambria. 
+<p>
+a)	Evaluate the probability that a random Cambrian that one meets on the street is one of a pair of twins?
+<p>
+b)	There are three children in a random Cambrian family. What is the probability that among them there is a pair of twins?
+<p>
+c)	In Cambrian schools, twins must be enrolled in the same class. In total, there are N first-graders in Cambria.
+<p>
+What is the expectation of the number of pairs of twins among them?
+
+</p> <h1>Solution</h1> <p> 
+a)	Let M pairs of twins and N "singles" walk along the streets of the Cambrian cities and villages. Then <IMG SRC="65355 1.PNG">, from where <IMG SRC="65355 2.PNG">. We'll meet an accidental Cambrian. He is one of a pair of twins with probability <IMG SRC="65355 3.PNG">
+<p>
+b)	The required probability is conditional. We can draw a graph $($the red lines represent the birth of twins and the blue lines, the birth of one child$)$. The graph can be continued down as long as you like, but we are only interested in the fragment that takes into account all of the possible ways of bringing into the world three children $($see the figure$)$. Near each line we note the probability. We draw the curved area event A = {Three children}. Three vertices enter this event, that is, three elementary events with a total probability of $2pq + q^3$.
+<p>
+<IMG SRC="65355 4.PNG">
+<p>
+  Of these, two elementary events $($chains containing red lines$)$ favour the event B = {There are twins} with a total probability of 2pq. Hence, the conditional probability is equal to 
+<IMG SRC="65355 5.PNG">
+<p>
+c)	As we know, the probability that a randomly taken first-grader is one of a pair of twins is $\frac{2p}{p + 1}$. Let's introduce a random value $I_k$ - a twin indicator: $I_k = 1$ if the k-th first-grader is one of a pair of twins and $I_k$ = 0 if the k-th first-grader is a single child. $EI_k = \frac{2p}{p + 1}$.
+<p>
+  The total number S of pairs of first-grader-twins is $½ (I_1 + I_2 + ... + I_N)$.
+  Consequently,
+<IMG SRC="65355 6.PNG">
+
+</p> <h1>Answer</h1> <p> 
+a)	<IMG SRC="65355 7.PNG">; b) <IMG SRC="65355 8.PNG">; c) <IMG SRC="65355 9.PNG">.

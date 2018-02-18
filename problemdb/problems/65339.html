@@ -1,0 +1,72 @@
+---
+problem_id: 65339
+category_ids: 210 1282 190 856
+difficulty: 4+
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65339</h1>
+<p>
+On board the airplane there are 2n passengers, and the airline loaded for them n servings of lunch with chicken and n servings with fish. It is known that a passenger with a probability of 0.5 prefers chicken and with a probability of 0.5 prefers fish. Let's call a passenger dissatisfied if he does not have what he prefers.
+<p>
+a)	Find the most likely number of dissatisfied passengers.
+<p>
+b)	Find the mathematical expectation of the number of dissatisfied passengers.
+<p>
+  c) Find the variance of the number of dissatisfied passengers.
+
+</p> <h1>Solution</h1> <p> 
+a)	The number of dissatisfied passengers can be any from 0 to n. In the case of n = 1, everything is obvious: there are either no dissatisfied passengers or there is one dissatisfied passenger, where both cases are equally possible. In what follows, we assume that n$>$1.
+<p>
+  We introduce a random quantity ξ "the number of dissatisfied passengers". ξ = 0, only if exactly n passengers prefer chicken, and n others prefer fish. We consider the event when "the passenger prefers chicken" a successful one. 
+<p>
+Then P$($ξ=0$)$ = P$($there are n successes out of 2n trials$)$ = $C^n_{2n} \times \frac{1}{2^{2n}}$.
+<p>
+  Exactly one passenger will be dissatisfied if the number of passengers who prefer chicken differs from n by one, that is, the number of successes is equal to n ± 1. Therefore
+P $($ξ = 1$)$ = P $($n + 1 success in a series of 2n trials$)$ + P $($n - 1 success in a series of 2n trials$)$ = <IMG SRC="65339 1.gif">
+<p>
+  Arguing in the same way, we find that <IMG SRC="65339 2.PNG">, where k = 1, 2, ..., n.
+  In the sequence <IMG SRC="65339 3.PNG"> of numbers there are 2n + 1 numbers $($this is the 2nd line of Pascal's triangle). First, these numbers increase for m = 0, 1, ..., n, and then decrease with
+m = n, n + 1, ..., 2n. In this case, the average number <IMG SRC="65339 4.PNG"> is greater than the others, but smaller than double the previous one: <IMG SRC="65339 5.PNG"> $($equality occurs only when n = 1$)$.
+<p>
+  Thus, for $n> 1, P (ξ = 0) <P (ξ = 1)> P (ξ = 2)> ...> P (ξ = n)$.
+<p>
+  The result is illustrated in the diagram of the distribution of the random variable ξ for n = 5. For comparison, a diagram of the binary-dimensional distribution of <IMG SRC="65339 6.PNG"> is given in the same figure with a pale colour.
+<p>
+<IMG SRC="65339 7.PNG">
+<p>
+  Thus, the most likely number of dissatisfied passengers is equal to one.
+<p>
+  b) Find the mathematical expectation of ξ + n:
+<p>
+<IMG SRC="65339 8.PNG">
+<p>
+  We note that <IMG SRC="65339 9.gif"> 
+<p>
+Hence, E (ξ + n) = <IMG SRC="65339 10.gif">.
+<p>
+  In the parentheses, we have the sum of the first half of all of the numbers of the $($2n-1$)$-th row of Pascal's triangle. The sum of all of the numbers of this line is equal to $2^{2n-1}$, therefore, the sum in parentheses is $2^{2n-2}$. Thus, $E (ξ + n) = nC^n_{2n} \times \frac{1}{2^{2n}}+ n$, and $Eξ = E (ξ + n) - n = nC^n_{2n} \times \frac{1}{2^{2n}}$.
+<p>
+  Let us find this number approximately using the Stirling formula <IMG SRC="65339 11.PNG">:
+<IMG SRC="65339 12.gif">
+<p>
+  c) $Eξ^2 = 0^2 \times P (ξ = 0) + 1^2 \times P (ξ = 1) + ... + n^2P (ξ = n)$ = <IMG SRC="65339 13.gif">
+    <p>
+  This expression is exactly equal to the variance of the random variable η "the number of successes in the series of 2n Bernoulli trials with a probability of success of 0.5". As is known, this is equal to $2n \times 0.5 \times 0.5 = n/2$.
+<p>
+  Therefore, $Dξ = Eξ^2 - (Eξ)^2$ = <img src="65339 14.gif"> 14
+
+</p> <h1>Answer</h1> <p> 
+a)	If n$>$ 1, then it is most likely that one person is dissatisfied; if n = 1, then with equal probabilities either there is one dissatisfied passenger, or there are no dissatisfied passengers at all;
+<p>
+b)	<IMG SRC="65339 15.PNG">; 
+<p>
+c)	 <IMG SRC="65339 16.PNG">.
+
+</p> <h1>Remarks</h1> <p> 
+1.	The result of a) is rather unexpected - the mode of distribution of ξ does not depend on n.
+<p>
+2. If there are, say, 400 passengers on board, we should on average expect that <IMG SRC="65339 18.PNG"> of the passengers will be dissatisfied. This does not mean that you can solve all of the problems with dissatisfied passengers, having only 8 spare sets of food of each kind. There will almost certainly be no dissatisfied passengers $($with a probability of more than 0.95$)$, if you take an extra 42 sets - 21 sets of each kind $($you can check this$)$. Recall that we carried out the calculation in a simplified situation. In life, the likelihood of preferring fish and chicken is not the same. If we took this into account, the calculations would be much more cumbersome, and we would not have had such beautiful results.

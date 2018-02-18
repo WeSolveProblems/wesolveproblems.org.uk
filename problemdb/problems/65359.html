@@ -1,0 +1,41 @@
+---
+problem_id: 65359 
+category_ids: 210 1282 1233 1057 1059 1238
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65359</h1>
+<p>
+There are 9 street lamps along the road. If one of them does not work but the two next to it are still working, then the road service team is not worried about it. But if two lamps in a row do not work then the road service team immediately changes all non-working lamps. Each lamp does not work independently of the others.
+<p>
+a)	Find the probability that the next replacement will include changing 4 lights.
+<p>
+  b) Find the mathematical expectation of the number of lamps that will have to be changed on the next replacement.
+
+</p> <h1>Solution</h1> <p> 
+  We will solve the problem in the general case. We replace the working lamp with a one, and the non-working one with a zero. Then first we have a series of n units that are successively and randomly converted to zeros.
+<p>
+a)	After the first transformation, we cannot have two zeros in a row. Let us find the probability that after k transformations the series does not have two zeros in a row. We shall call such a series a correct one. The number of regular rows of length n with exactly k zeros is <IMG SRC="65359 1.PNG"> $($see problem number 60403$)$.
+<p>
+  We note that in the course of the transformations k zeros can arise in any order, and there are k! such orders in total. Hence, there are <IMG SRC="65359 2.PNG"> ways to obtain, from the initial series of ones, some regular series with k zeros. On the other hand, the total number of rows of length n with k zeros is equal to $C_n^k$, and, therefore, there are $C_n^kk!$ ways in total to obtain a series with k zeros by successive transformations of ones into zeros.
+<p>
+  All of these methods are equally possible, therefore the probability $p_k$ of the fact that after k transformations the resulting series will be correct, is equal to <IMG SRC="65359 3.gif"> Now we find the probability $p_k$ that two zeroes in succession appear exactly after k transformations. For this, it is necessary to subtract from the probability of obtaining the correct series with
+k - 1 zeros the probability of obtaining the correct series with k zeros. In this way, <IMG SRC="65359 4.PNG">
+  For n = 9, k = 4 we get: <IMG SRC="65359 5.PNG">
+<p>
+  b) Let us find the mathematical expectation of the number of lamps that need replacement. Clearly, this is the mathematical expectation of the number of transformations of ones into zeros, before two consecutive zeros are formed. We denote this random variable by X.
+  $EX = p_1 + 2p_2 + 3p_3 + 4p_4 + ...$. Summation is meaningful to continue to k = <IMG SRC="65359 6.PNG">: for k$>$ <IMG SRC="65359 7.PNG"> all of the probabilities are zero. Thus, <IMG SRC="65359 8.gif">. The resulting expression obtained can be conveniently interpreted using Pascal's triangle. The numerators form an oblique line, and the denominators form a horizontal line $($see the figure$)$. By dividing the numerators by the corresponding denominators
+$($in the same column$)$, we add the obtained result.
+<p>
+<IMG SRC="65359 9.PNG">
+<p>
+  For n = 9
+<p>
+<IMG SRC="65359 10.PNG">
+
+</p> <h1>Answer</h1> <p> 
+a)	25/84 ≈ 0.294; b) 837/252 ≈ 3.32.

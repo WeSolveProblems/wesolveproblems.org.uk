@@ -1,0 +1,32 @@
+---
+problem_id: 65341 
+category_ids: 210 1233 1282 190 856
+difficulty: 4-
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65341</h1>
+<p>
+  James bought n pairs of identical socks. For n days James did not have any problems: every morning he took a new pair of socks out of the closet and wore it all day. After n days, James' father washed all of the socks in the washing machine and put them into pairs in any way possible as, we repeat, all of the socks are the same. Let's call a pair of socks successful, if both socks in this pair were worn by James on the same day.
+<p>
+a)	Find the probability that all of the resulting pairs are successful.
+<p>
+  b) Prove that the expectation of the number of successful pairs is greater than 0.5.
+
+</p> <h1>Solution</h1> <p> 
+a)	The probability that the first pair was successful is $\frac{1}{2n-1}$, because when the father took the first sock in his hands, 2n-1 socks remained, and only one of them makes a successful pair with the first. Further, we can continue in the same way: the probability that the second pair is successful $($provided that the first pair was successful$)$ is $\frac{1}{2n-3}$, etc. We can represent the probability that all of the pairs are successful as a product:
+<p>
+<IMG SRC="65341 1.PNG">
+<p>
+  To find an approximate expression, we apply the Stirling formula: $<IMG SRC="65341 2.PNG"> \div <IMG SRC="65341 3.PNG">$
+<p>
+b)	The probability that a particular pair is successful is found in a) - it is equal to $\frac{1}{2n-1}$. Let's number the pairs by numbers from 1 to n. Let's introduce the indicators: $ξ_k = 1$ if the k-th pair is successful and $ξ_k = 0$, if the k-th pair is unsuccessful. Then $Eξ_k = $\frac{1}{2n-1}$.
+<p>
+  The random variable X "the number of successful pairs" is equal to the sum of the indicators: $X = ξ_1 + ξ_2 + ... + ξ_n$.
+  Hence, $EX = nEξ_1 = $\frac{n}{2n-1}$ > 0.5$.
+
+</p> <h1>Answer</h1> <p> 
+a)	<IMG SRC="65341 4.PNG">.

@@ -1,0 +1,25 @@
+---
+problem_id: 66052
+category_ids: 210 152 1282
+difficulty: 4
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66052</h1>
+<p>
+A sequence consists of 19 ones and 49 zeros, arranged in a random order. We call the maximal subsequence of the same symbols a "group". For example, in the sequence 110001001111 there are five groups: two ones, then three zeros, then one one, then two zeros and finally four ones. Find the mathematical expectation of the length of the first group.
+
+</p> <h1>Solution</h1> <p> 
+  Separately, we number the ones by the numbers from 1 to 19 and separately, the zeros by numbers from 1 to 49. Let $I_k$ be the indicator of the event "there are no zeros before the k-th unit" and let $J_m$ be the indicator of the event "there are no ones before m-th zero", where $1 ≤ k ≤ 19$ and $1 ≤ m ≤ 19$. If at least one of the indicators $I_k$ is equal to one, then the first group consists of ones, and therefore all of the indicators $J_m$ are equal to zero. Conversely, if at least one of the indicators $J_m$ is equal to one, then all of the $I_k$ are equal to zero. The required quantity X "length of the first group" is equal to $I_1 + I_2 + ... + I_{19} + J_1 + J_2 + ... + J_{49}$.
+<p>
+  The probability of the event "$I_k$ = 1" is equal to 1/50, since this event occurs only when, in a randomly intermixed sequence consisting of the k-th one and all 49 zeros, the one is first. Therefore, $EI_k = P (I_k = 1) = 0.02$. Similarly, $EJ_m = P (J_m = 1) = 1/20 = 0.05$. Therefore
+$EX = 19 \times 0.02 + 49 \times 0.05 = 2.823$.
+
+</p> <h1>Answer</h1> <p> 
+2.83.
+
+</p> <h1>Remarks</h1> <p> 
+3 marks. 

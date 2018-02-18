@@ -1,0 +1,19 @@
+---
+problem_id: 35178 
+category_ids: 212 80
+difficulty: 3
+classes: 8 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35178</h1>
+<p>
+Every evening Ross arrives at a random time to the bus stop. Two bus routes stop at this bus stop. One of the routes takes Ross home, and the other takes him to visit his friend Rachel. Ross is waiting for the first bus and depending on which bus arrives, he goes either home or to his friend's house. After a while, Ross noticed that he is twice as likely to visit Rachel than to be at home. Based on this, Ross concludes that one of the buses runs twice as often as the other. Is he right? Can buses run at the same frequency when the condition of the task is met? $($It is assumed that buses do not run randomly, but on a certain schedule$)$.
+
+</p> <h1>Hint</h1> <p> 
+If the schedule is arranged in such a way that route B always comes almost immediately after route A, then you will almost never take bus route B.
+
+</p> <h1>Solution</h1> <p> 
+Consider the following example. Let route A, which takes Ross home, come every hour at 00 minutes $($i.e. 0:00, 1:00, 2:00, ..., 23:00$)$, and route B, which takes Ross to his friend's house, come every hour 40 minutes after bus route A $($i.e. at 0:40, 1:40, ..., 23:40$)$. Thus, if Ross comes to a stop in the first 40 minutes of every hour, he finds himself going to his friend's house, and if he arrives in the last 20 minutes of every hour $($this happens twice less often$)$, then he finds himself at home.

@@ -1,0 +1,20 @@
+---
+problem_id: 35710 
+category_ids: 207 212
+difficulty: 3
+classes: 7 8
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35710</h1>
+<p>
+Three friends decide, by a coin toss, who goes to get the juice. They have one coin. How do they arrange coin tosses so that all of them have equal chances to not have to go and get the juice?
+
+</p> <h1>Hint</h1> <p> 
+The occurrence of some combination may have the meaning of "repeating the coin toss".
+
+</p> <h1>Solution</h1> <p> 
+One possible way is as follows. First, we throw a coin two times. If both times we get tails, then the first goes, if we get tails the first time and heads the second time, then the second one goes to get the juice, if we get heads the first time and tails the second, then the third one goes, if we get heads both times then we carry out a second round of the coin toss, similar to the first, i.e. again we throw a coin twice, and so on. It is clear that in each round the probability each of the three friends losing is 1/4, and with a probability of 1/4 they will have to carry out a new coin toss. Theoretically, it is possible that we get heads all of the time which means that the process will not end. But the probability of this event is 0. Indeed, the probability that after n rounds the coin toss is not finished is $1/2^{2n}$ $($we get heads in all 2n tosses$)$; but $1/2^{2n}$ tends to zero as n tends to infinity.
+

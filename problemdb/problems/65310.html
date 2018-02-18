@@ -1,0 +1,37 @@
+---
+problem_id: 65310
+category_ids: 210 351
+difficulty: 4
+classes: 8 9 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65310</h1>
+<p>
+The bus has n seats, and all of the tickets are sold to n passengers. The first to enter the bus is the Scattered Scientist and, without looking at his ticket, takes a random available seat. Following this, the passengers enter one by one. If the new passenger sees that his place is free, he takes his place. If the place is occupied, then the person who gets on the bus takes the first available seat. Find the probability that the passenger who got on the bus last will take his seat according to his ticket?
+
+</p> <h1>Solution 1</h1> <p> 
+  We number all of the passengers, starting with the Scientist, in the order in which they get onto the bus. The last passenger is number n. For the sake of simplicity, we number the seats in the same way. Let everyone, except the last passenger already enter and occupy their seats. There is one free seat left. If this were the second seat, then the second passenger $($or the Scientist$)$ would have already occupied it. The same is true for places 3, 4, 5, ..., n - 1. This means that this place belongs to either the last passenger or to the Scattered Scientist.
+<p>
+  Clearly, it can belong to both the first and the last passenger with equal chances. In the first case, the last passenger does not sit in his place, but in the second case he does sit in his own seat. Hence, the probabilities of both events are equal to $½$.
+
+</p> <h1>Solution 2</h1> <p> 
+  We prove by induction that for n $>$ 1 the required probability is $½$.
+<p>
+  Base $($n = 2$)$. With probability $½$, the scientist will take his place, which means that the second passenger $($he's the last one$)$ will take his place with the same probability.
+<p>
+  Induction steps. With probability 1/n, the scientist will take his place. In this case, the last passenger takes his place with a probability of 1.
+<p>
+  With probability 1/n, the scientist will take the place of the last passenger, and then he will take his own place with a probability of 0.
+<p>
+  With probability $\frac{n-2}{n}$, the scientist will take the place of the passenger with the number i, where 1 $<$i $<$n. Then the i-th passenger plays the role of the "new Scattered Scientist" with fewer passengers. By the induction hypothesis, in this case the last passenger takes his place with probability $½$.
+<p>
+  Thus, according to the formula of the total probability, the probability of the event "the last passenger took his place" is equal to $1/n \times 1 + \frac{n-2}{ n} \times ½  = ½$.
+
+</p> <h1>Answer</h1> <p> 
+$½$.
+
+</p> <h1>Remarks</h1> <p> 
+In a more traditional formulation, we are talking about a crazy old man sitting finding his seat on a plane.

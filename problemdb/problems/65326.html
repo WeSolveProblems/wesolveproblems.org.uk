@@ -1,0 +1,42 @@
+---
+problem_id: 65326
+category_ids: 210 568
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65326</h1>
+<p>
+In his laboratory, the Scattered Scientist created a unicellular organism, which, with a probability of 0.6 is divided into two of the same organisms, and with a probability of 0.4 dies without leaving any offspring. Find the probability that after a while the Scattered Scientist will not have any such organisms.
+
+</p> <h1>Solution</h1> <p> 
+  It does not matter how much time passes. Therefore, for simplicity, we will assume that organisms divide or die every second, but strictly one at a time. When something happens to one of them, the others wait patiently for their turn. Having made such an assumption, we get the standard random walk problem: every second we get one more organism $($with probability p = 0.6$)$, or one less organism $($with probability q = 0.4$)$ than there was previously.
+<p>
+  At some point the number of organisms will be called the state of the population. Let x be the probability that in a few steps the number of organisms will decrease by 1.
+<p>
+  Initially, the population is in state 1, and we are interested in the probability of a transition 1 → 0, that is, the value of x.
+<p>
+  The population can arrive at state 0 in two ways.
+<p>
+1)	In the first second, the only available organism dies. The probability of this is q.
+<p>
+2)	In the first second, a single organism divides, and the population goes to state 2. The probability of this event is p. The further transition 2 → 0 has the probability $x^2$, since it consists of two independent transitions 2 → 1 and 1 → 0, each of which has probability x.
+<p>
+<IMG SRC="65326 1.PNG">
+<p>
+  Thus, the formula for the total probability is given by the equation $x = q + px^2$.
+  Hence x = 1 or x = q/p. It is now necessary to find out which of the roots is extraneous. Let's consider x as a function of p. Having depicted the lines x $($p$)$ = 1 and x $($p$)$ = $\frac{1-p}{p}$ in the coordinate system pOx, we use the following considerations.
+<p>
+  1) The function x $($p$)$ is continuous.
+  2) $x (p) ≤ 1$.
+3)	x $($1$)$ = 0 - if the organisms do not perish, but only divide, then the population will not perish with certainty. This condition is satisfied by the function <IMG SRC="65326 2.PNG"> TERESA whose graph is highlighted in the figure.
+<p>
+<IMG SRC="65326 3.PNG">
+	<p>
+  In our case, p = 0.6> ½, therefore, x = q/p = 2/3.
+
+</p> <h1>Answer</h1> <p> 
+2/3.

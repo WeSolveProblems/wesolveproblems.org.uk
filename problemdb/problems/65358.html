@@ -1,0 +1,73 @@
+---
+problem_id: 65358
+category_ids: 210 1282 1238
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65358</h1>
+<p>
+If one person spends one minute waiting, we will say that one human-minute is spent aimlessly. In the queue at the bank, there are eight people, of which five plan to carry out simple operations, which take 1 minute, and the others plan to carry out long operations, taking 5 minutes. Find:
+<p>
+a)	the smallest and largest possible total number of aimlessly spent human-minutes;
+<p>
+  b) the mathematical expectation of the number of aimlessly spent human-minutes, provided that customers queue up in a random order.
+
+</p> <h1>Solution</h1> <p> 
+  Let the short operation take $a$ minutes, and the long one $b$ minutes $($a $<$b$)$. The client planning a simple operation will be called a "hurrier", and the one who is going to take up a lot of time will be called a "dawdler". Suppose that there are n hurriers and m dawdlers.  
+  Obviously, the number of aimlessly spent human-minutes depends on the order in which the hurriers and dawdlers alternate.
+<p>
+a)	Let a hurrier stand somewhere in the line right behind a dawdler. Let's swap them. Then:
+<p>
+    those who stand before them do not win or lose anything;
+<p>
+    for those who are behind them, the waiting time also does not change;
+<p>
+    for the hurrier, the waiting time is reduced by b minutes;
+<p>
+    for the dawdler, the waiting time will increase by a minutes.
+<p>
+  Therefore, the total time wasted by all of those who are in the queue will decrease by b - a minutes. We will thus rearrange people in pairs of "hurriers and dawdlers" until we get a queue where all hurriers are standing in front of all of the dawdlers. In this queue, aimlessly spent time will be at a minimum.
+<p>
+  Let's find the total time wasted. The second person waits for the first, the third waits for the first two and so on.
+<p>
+  The total time that is spent waiting by all until all of the ahead-standing hurriers complete their operations, is equal to
+$(a + 2a + ... + (n-1) a) + mna = ½  an (n-1) + mna$.
+<p>
+  Here the term mna is the total time spent by all of the dawdlers whilst waiting for all of the hurriers. 
+<p>
+  The total time spent by those waiting, while the operations of the dawdlers standing in front are being carried out is equal to $(b + 2b + ... + (m - 1) b) = ½ bm (m - 1)$. The total minimum waiting time for all of the clients is $T_{min} = ½ an (n-1) + mna + ½ bm (m-1)$.
+<p>
+  In our particular case, we get: $1 \times 10 + 1 \times 3 \times 5 + 5 \times 3 = 40$.
+<p>
+  Likewise, it is proved that the most time wasted will occur if all of the dawdlers are in front of all of the hurriers. This time is equal to
+$T_{max} = ½ an (n - 1) + mnb + ½  bm (m - 1)$.
+<p>
+  With the numerical data from the problem, we obtain $1 \times 10 + 5 \times 5 + 5 \times 3 = 70$.
+<p>
+b)	Let's consider the k-th customer in the queue. We denote by $X_k$ the number of dawdlers standing in front of her. Then $X_k = I_1 + I_2 + ... + I_{k-1}$, where the indicator $I_j$ takes the value 1 if the j-th client is a dawdler and 0 if the j-th client is a hurrier. The j-th client can turn out to be a dawdler with a probability of $\frac{m}{m + n}$ and a hurrier with a probability of $\frac{n}{m + n}$. Hence, $EI_j = \frac{m}{m + n}$.
+<p>
+  Consequently, <IMG SRC="65358 1.PNG">
+<p>
+  We denote by $T_k$ the waiting time of the k-th client. We get: $T_k = X_kb + (k - 1 - X_k) a = (b - a) X_k + a (k - 1)$.
+<p>
+  Consequently, <IMG SRC="65358 2.PNG">
+<p>
+  Summing over all of the customers from the first to $($m + n$)$-th, we get the mathematical expectation of all the time that was wasted uselessly:
+<p>
+<IMG SRC="65358 3.PNG">
+<p>
+  We substitute the numbers known from the condition to get: <IMG SRC="65358 4.PNG">
+
+</p> <h1>Answer</h1> <p> 
+a) 40 minutes and 100 minutes; b) 70 minutes.
+
+</p> <h1>Remarks</h1> <p> 
+  The expected time was the arithmetic mean between the largest and the smallest possible. This is always the case: $ET = ½ (T_{min} + T_{max})$ by virtue of the identity <IMG SRC="65358 5.PNG">
+<p>
+  Problem b) could be solved almost without computations, noting that each arrangement of hurriers and dawdlers can be put into correspondence with a symmetric arrangement of equal probability, and the sum of the waiting time for both arrangements will be equal to <IMG SRC="65358 6.PNG">.
+<p>
+  To do this, it is convenient to depict the waiting time of each customer graphically with a bar (you can do this yourself). Each next bar will be longer than the previous one. If the width of bar 1, and the length is equal to the number of minutes of waiting for the client, then the total waiting time will be equal to the area of the resulting figure.

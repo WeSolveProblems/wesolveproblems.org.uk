@@ -1,0 +1,56 @@
+---
+problem_id: 65322 
+category_ids: 210 1233 1057
+difficulty: 4
+classes: 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65322</h1>
+<p>
+  King Arthur has two equally wise advisers - Merlin and Percival. Each of them finds the correct answer to any question with probability p or an incorrect answer, with probability q = 1 - p.
+<p>
+  If both counsellors say the same thing, the king listens to them. If they say opposite things, then the king chooses a solution by tossing a coin.
+<p>
+  One day, Arthur thought about why he had two advisers, would one not be enough? Then the king called for his counsellors and said:
+<p>
+  "It seems to me that the probability of making the right solutions will not decrease if I keep one adviser and listen to him. If so, I must fire one of you. If not, I'll leave it as it is. Tell me, should I fire one of you?".
+<p>
+  "Who exactly are you going to fire, King Arthur?", asked the advisers.
+<p>
+  "If I make the solution to fire one of you, I will make a choice by tossing a coin".
+<p>
+  The advisers went to think about the answer. The advisors, we repeat, are equally wise, but not equally honest. Percival is very honest and will try to give the right answer, even if he faces dismissal. And Merlin, honest about everything else, in this situation decides to give such an answer with which the probability of his dismissal is as low as possible. What is the probability that Merlin will be fired?
+
+</p> <h1>Solution</h1> <p> 
+  Merlin should reason like this.
+<p>
+  "Let's see if the advisor should be fired. If there is one advisor, then the king, following his advice, will make the right solution with probability p on any question.
+<p>
+  What happens when there are two advisers? The probability that we both give the correct answer is $p^2$. Then the king makes the right solution with probability 1. If both advisers are mistaken $(with probability q^2)$, then the king makes the correct solution with probability 0. Finally, if the advisers diverge $($with probability 2pq$)$, then the king chooses the correct solution with probability ½. By the formula of total probability
+P $($the king made the right solution $)$ = $p^2 + 2pq \times 1 = p (p + q) = p$.
+<p>
+  Thus, one of the advisers must be dismissed.
+<p>
+  If I say "Yes, you need to fire someone", then there are two options.
+<p>
+1)	Percival also says "Yes" with probability p, and then the king will fire me with a probability of ½.
+<p>
+2)	Percival is mistaken $($with probability q$)$, and then the king will make a solution by tossing a coin. If he decides to fire someone $($with probability ½$)$, then I will again be fired with a probability of ½.
+<p>
+  Thus, P $($I will be fired if I say "Yes"$)$ = ½ p + ¼ q.
+<p>
+  If I say "No, do not dismiss anyone", then again there are two cases.
+<p>
+1)	Percival will say "Yes" $($with probability p$)$, and then the king can fire me by tossing a coin twice.
+<p>
+2)	Percival is mistaken $($with probability q$)$, and then the king will not fire anyone, as we will say the same thing.
+<p>
+  Hence, P $($I will be fired if I say "No"$)$ = ¼ p. Obviously, $¼ p < ½  p + ¼  q$. So, I have to say "no".".
+<p>
+  By condition, Merlin will find this answer with probability p, and with probability q Merlin will make a mistake and therefore say "Yes, fire someone". Hence, by the formula of total probability: P $($Merlin is fired$)$ = $¼  p \times p + (½ p + ¼ q) \times q = ¼  p^2 + ½  pq + ¼  q^2 = ¼$.
+
+</p> <h1>Answer</h1> <p> 
+¼.
