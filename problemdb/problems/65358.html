@@ -50,24 +50,24 @@ $T_{max} = ½ an (n - 1) + mnb + ½  bm (m - 1)$.
 <p>
 b)	Let's consider the k-th customer in the queue. We denote by $X_k$ the number of dawdlers standing in front of her. Then $X_k = I_1 + I_2 + ... + I_{k-1}$, where the indicator $I_j$ takes the value 1 if the j-th client is a dawdler and 0 if the j-th client is a hurrier. The j-th client can turn out to be a dawdler with a probability of $\frac{m}{m + n}$ and a hurrier with a probability of $\frac{n}{m + n}$. Hence, $EI_j = \frac{m}{m + n}$.
 <p>
-  Consequently, <IMG SRC="65358 1.PNG">
+  Consequently, <IMG SRC="65358 1.png">
 <p>
   We denote by $T_k$ the waiting time of the k-th client. We get: $T_k = X_kb + (k - 1 - X_k) a = (b - a) X_k + a (k - 1)$.
 <p>
-  Consequently, <IMG SRC="65358 2.PNG">
+  Consequently, <IMG SRC="65358 2.png">
 <p>
   Summing over all of the customers from the first to $($m + n$)$-th, we get the mathematical expectation of all the time that was wasted uselessly:
 <p>
-<IMG SRC="65358 3.PNG">
+<IMG SRC="65358 3.png">
 <p>
-  We substitute the numbers known from the condition to get: <IMG SRC="65358 4.PNG">
+  We substitute the numbers known from the condition to get: <IMG SRC="65358 4.png">
 
 </p> <h1>Answer</h1> <p> 
 a) 40 minutes and 100 minutes; b) 70 minutes.
 
 </p> <h1>Remarks</h1> <p> 
-  The expected time was the arithmetic mean between the largest and the smallest possible. This is always the case: $ET = ½ (T_{min} + T_{max})$ by virtue of the identity <IMG SRC="65358 5.PNG">
+  The expected time was the arithmetic mean between the largest and the smallest possible. This is always the case: $ET = ½ (T_{min} + T_{max})$ by virtue of the identity <IMG SRC="65358 5.png">
 <p>
-  Problem b) could be solved almost without computations, noting that each arrangement of hurriers and dawdlers can be put into correspondence with a symmetric arrangement of equal probability, and the sum of the waiting time for both arrangements will be equal to <IMG SRC="65358 6.PNG">.
+  Problem b) could be solved almost without computations, noting that each arrangement of hurriers and dawdlers can be put into correspondence with a symmetric arrangement of equal probability, and the sum of the waiting time for both arrangements will be equal to <IMG SRC="65358 6.png">.
 <p>
   To do this, it is convenient to depict the waiting time of each customer graphically with a bar (you can do this yourself). Each next bar will be longer than the previous one. If the width of bar 1, and the length is equal to the number of minutes of waiting for the client, then the total waiting time will be equal to the area of the resulting figure.
