@@ -1,0 +1,33 @@
+---
+problem_id: 65276
+category_ids: 210 679
+difficulty: 4
+classes: 8 9 10 11
+source_id: 213994
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65276</h1>
+<p>
+On the occasion of the beginning of the winter holidays all of the boys from class 8B went to the shooting range. It is known that there are n boys in 8B. There are n targets at the shooting range which the class attended. Each of the boys randomly chooses a target, while some of the boys could choose the same target. After this, all of the boys simultaneously attempt to shoot their target. It is known that each of the boys hits their target. The target is considered to be affected if at least one boy has hit it.
+<p>
+a)	Find the average number of affected targets.
+<p>
+  b) Can the average number of affected targets be less than n/2?
+
+</p> <h1>Solution</h1> <p> 
+a)	Denote by p the probability that this target is struck, that is, it is an affected target. By symmetry, the average number of affected targets is np.
+<p>
+  Note that the probability that this boy will hit this target is 1/n. Therefore, the probability that this boy will not hit this target is 1 - 1/n. Therefore $($due to the independence of shots$)$ the probability that no boy will hit this target is $(1 - 1/n)^n$. Hence, the probability that at least one boy will hit this target is $1 - (1 - 1/n)^n$.
+<p>
+ Thus, the average number of targets hit is $n(1 - (1 - 1 / n)^n)$.
+<p>
+  b) We show that the average number of targets hit is greater than n/2. For this, it suffices to show that $(1 - 1 / n)^n $<$1$.
+  Note that the sequence <IMG SRC="65276 1.gif"> is increasing. Indeed, the sequence $b_n$ of inverse numbers <IMG SRC="65276 2.gif"> decreases $($see the solution of problem number 61394 c$)$.
+  <p>
+  In addition, <IMG SRC="65276 3.gif"> consequently <IMG SRC="65276 4.gif">, $($see problem number 60873$)$.
+
+</p> <h1>Answer</h1> <p> 
+a)	$n(1 - (1 - 1/n)^n)$; b) No, it cannot.
+
