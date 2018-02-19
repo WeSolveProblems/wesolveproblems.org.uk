@@ -29,8 +29,8 @@ b)	Let $u_{k, n}$ and $d_{k, n}$ denote the probability that a figure from k fal
   The total probability is $p_{k, n} = u_{k, n} + d_{k, n} = ½  p_{k-1, n-2} + ½  d_{k-1, n-2} + ¼  u_{k-1, n-2} + ¼ u_{k-1, n-1} = p_{k-1, n-2} - ¼  u_{k-1, n-2} + ¼  u_{k-1, n-1}$, whence
 $p_{k, n}$ = $p_{k-1, n-2} + \frac{1}{8} p_{k-2, n-3} - \frac{1}{8} p_{k-2, n-4}$.
 <p>
-  To start the recursion, we set $p_{0,0} = p_{1,2} = 1$, in addition $p_{k, n} = 0$ for n$>$ 2k. We get: $p_{2,3} = p_{1,1} + 1/8 p_{0,0} - 1/8 p_{0, -1} = 0 + 1/8 - 0,
-p_{2,4} = p_{1,2} + \frac{1}{8} p_{0,1} - 1/8 p_{0,0} = 1 + 0 - 1/8 = 7/8$ and so on. The calculation can be carried out, for example, using Excel $($see the figure$)$. For convenience, we can introduce n = -1, putting the corresponding probabilities equal to zero. In the figure, this corresponds to an empty column C. Then only the cells, starting with k = 2, n = 3, will need to be filled in with the corresponding formula. In the image below, we have the number of G-shaped dominoes, k, as the row heading and the height of resulting polygon, n, is the column heading. 
+  To start the recursion, we set $p_{0,0} = p_{1,2} = 1$, in addition $p_{k, n} = 0$ for n$>$ 2k. We get: $p_{2,3} = p_{1,1} + \frac{1}{8} p_{0,0} - \frac{1}{8} p_{0, -1} = 0 + 1/8 - 0,
+p_{2,4} = p_{1,2} + \frac{1}{8} p_{0,1} - \frac{1}{8} p_{0,0} = 1 + 0 - 1/8 = 7/8$ and so on. The calculation can be carried out, for example, using Excel $($see the figure$)$. For convenience, we can introduce n = -1, putting the corresponding probabilities equal to zero. In the figure, this corresponds to an empty column C. Then only the cells, starting with k = 2, n = 3, will need to be filled in with the corresponding formula. In the image below, we have the number of G-shaped dominoes, k, as the row heading and the height of resulting polygon, n, is the column heading. 
 <p>
 <IMG SRC="65777.png"> 
 <p>
