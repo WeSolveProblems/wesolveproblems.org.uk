@@ -1,0 +1,25 @@
+---
+problem_id: 65562
+category_ids: 1079
+difficulty: 3+
+classes: 10 11
+source_id: 111187098596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65562</h1>
+<p>
+The functions f and g are defined on the entire number line and are reciprocal. It is known that f is represented as a sum of a linear and a periodic function: f $($x$)$ = kx + h $($x$)$, where k is a number, and h is a periodic function. Prove that g is also represented in this form.
+</p>
+
+<h1>Solution</h1> 
+Note that k ≠ 0 $($otherwise the values of f $($x$)$ are repeated periodically, but a function which has an inverse does not have this property$)$.
+Let t be the period of the function h. The condition means that the function f $($x$)$ - kx is periodic with period t, which is equivalent to the identity f $($x + t$)$ = f $($x$)$ + kt. $($*$)$
+We set T = kt and verify that the function g satisfies the identity g $($y + T$)$ = g $($y$)$ + T / k $($which means that g is the sum of a function with period T and a linear function y / k$)$. Denote by x = g $($y$)$, then y = f $($x$)$. Using $($*$)$ and the equality g $($f $($x + t$)$)$ = x + t, we have g $($y + T$)$ = g $($f $($x$)$ + kt$)$ = g $($f $($x + t$)$)$ = x + t = g $($y$)$ + T / k.
+</p>
+
+<h1>Remarks</h1> 
+<p>
+4 points
+</p>

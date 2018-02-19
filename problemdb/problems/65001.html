@@ -1,0 +1,26 @@
+---
+problem_id: 65001
+category_ids: 878 136 361
+difficulty: 3+
+classes: 7 8 9
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65001</h1>
+<p>
+In a row there are 20 different natural numbers. The product of every two of them standing next to one another is the square of a natural number. The first number is 42. Prove that at least one of the numbers is greater than 16,000.
+</p>
+
+<h1>Solution</h1> 
+<p>
+We note that 42 = $2 \times 3 \times 7$, that is, all prime factors enter into its expansion in the first degree. Therefore, in order for the product of the first two numbers to be a complete square, the second number must have the form 
+<IMG SRC="65001 1.png"> 
+where $k_1$ is a natural number.
+Since the product of the second and third numbers is a complete square, the third number, for the same reasons, has the form 
+<IMG SRC="65001 2.png"> 
+where $k_2$ is a natural number, and so on. Thus, all the written numbers, except the first, have the form
+<IMG SRC="65001 3.png"> 
+ where $k_i$ is a natural number which does not equal one. Since all the numbers are different, the largest of the numbers $k_i$ cannot be less than 20. Therefore, one of the recorded numbers is no less than $42 \times 202$ $>$ 16,000.
+</p>

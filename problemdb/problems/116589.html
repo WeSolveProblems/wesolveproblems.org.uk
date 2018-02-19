@@ -1,0 +1,43 @@
+---
+problem_id: 116589
+category_ids: 878 1270 1276
+difficulty: 3+
+classes: 8 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116589</h1>
+<p>
+The sequence of numbers $a_1$, $a_2$, ... is given by the conditions $a_1$ = 1, $a_2$ = 143 and 
+<IMG SRC="116589 1.png"> 
+for all n $≥$ 2.
+Prove that all members of the sequence are integers.
+</p>
+
+<h1>Solution 1</h1> 
+<p>
+The number $a_3$ = $5 \times 72$ = 360 is an integer. For n $≥$ 4
+<p>
+<IMG SRC="116589 2.png"> 
+ 
+, from which we get
+<IMG SRC="116589 3.png"> 
+Hence, if n $≥$ 4, then
+<IMG SRC="116589 4.png"> 
+$($n + 3$)$ $($n + 2$)$ $($n + 1$)$ n.
+</p>
+
+<h1>Solution 2</h1> 
+<p>
+We set $S_n$ = $a_1$ + $a_2$ + ... + $a_n$, then $a_{n + 1}$ = $S_{n + 1}$ - $S_n$. It suffices to show that all the numbers $S_n$ are integers. Note that $S_1$ = 1, $S_2$ = 144, and
+<IMG SRC="116589 5.png"> 
+ that is
+<IMG SRC="116589 6.png"> 
+. Hence, for n $≥$ 2
+<IMG SRC="116589 7.png"> <IMG SRC="116589 8.png"> 
+
+ 
+Since one of the numbers n + 5, n + 4, n + 3, n + 2, n + 1 is divisible by 5, then for n $≥$ 2 the number $S_{n + 1}$ is an integer.
+</p>

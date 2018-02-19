@@ -1,0 +1,40 @@
+---
+problem_id: 66111
+category_ids: 873 590 158
+difficulty: 3+
+classes: 8 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66111</h1>
+<p>
+We took several positive numbers and constructed the following sequence: $a_1$ is the sum of the initial numbers, $a_2$ is the sum of the squares of the original numbers, $a_3$ is the sum of the cubes of the original numbers, and so on.
+<p>
+a$)$ Could it happen that up to $a_5$ the sequence decreases $($a_1> a_2> a_3> a_4> a_5$)$, and starting with $a_5$ - it increases $($a_5 $<$a_6 $<$a_7 <...$)$?
+<p>
+b$)$ Could it be the other way around: before a_5 the sequence increases, and starting with a_5 - decreases?
+</p>
+
+<h1>Solution</h1> 
+<p>
+a$)$ Example 1. Take the number 2 and 1024 numbers equal to ½. Then $a_n$ = $2^n$ + $1024 times 2^{-n}$ = 32 $($2^{n-5} + 2^{5-n}$)$. The sum of two positive reciprocal inverses is smaller, the closer they are to each other. Therefore, the constructed sequence decreases until n = 5, and then increases.
+<p>
+Example 2. Take $a_n$ = $1.02^n$ + $0.5^n$. Note that $a_{n + 1}$ $>$ $a_n$ ⇔ $0.02 \times 1.02^n$ $>$ $0.5^{n + 1}$ ⇔ $2.04^n$ $>$ 25 ⇔ n $≥$ 5. That is, the sequence decreases until n = 5, and then increases.
+<p>
+b$)$ Suppose this happens. The first method. Then $a_n$ $<$ $a_54 for any n. Among the initial numbers was the number x $>$ 1, otherwise the sequence would never increase. Notice that
+$a_n$ $>$ $x^n$ for any n. But the sequence $x^n$ is not bounded. So we have a contradiction.
+<p>
+The second method. Then $a_4$ $<$ $a_5$ and $a_6$ $<$ $a_5$, that is, $a_4$ + $a_6$ $<$ $2a_5$. Hence, $x^4$ + $x^6$ $<$ $2x^5$ for at least one of the original numbers x. But this contradicts the Cauchy inequality.
+</p>
+
+<h1>Answer</h1> 
+<p>
+a$)$ It could; b$)$ it could not.
+</p>
+
+<h1>Remarks</h1> 
+<p>
+Years 8-9 - 4 + 4 points, years 10-11. - 3 + 3 points.
+</p>

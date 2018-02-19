@@ -1,0 +1,24 @@
+---
+problem_id: 61019
+category_ids: 953 958
+difficulty: 3+
+classes: 9 10 11
+source_id: 105521
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 61019</h1>
+<p>
+For a given polynomial P $($x$)$ we describe a method that allows us to construct a polynomial R $($x$)$ that has the same roots as P $($x$)$, but all multiplicities of 1. Set Q $($x$)$ = $($P $($x$)$, P' $($x$)$)$ and R $($x$)$ = P $($x$)$ Q-1 $($x$)$. Prove that
+<p>
+a$)$ all the roots of the polynomial P $($x$)$ are the roots of R $($x$)$;
+<p>
+b$)$ the polynomial R $($x$)$ has no multiple roots.
+</p>
+
+<h1>Solution</h1> 
+<p>
+It follows from the equality P $($x$)$ = R $($x$)$ Q $($x$)$ that all the roots of the polynomial R are the roots of P. On the other hand, let a be a root with multiplicity n of the polynomial P, that is, P $($x$)$ = $($x - a$)$^n$ S $($x$)$, where S $($x$)$ is not divisible by x - a.
+P '$($x$)$ = $($x - a$)$^n$ S' $($x$)$ + n $($x - a$)$^{n-1}$ S $($x$)$. Thus, P' $($x$)$, and hence also Q $($x$)$ is divisible by $($x - a$)$ n-1, but not by $($x - a$)$ n. Now, from P $($x$)$ = R $($x$)$ Q $($x$)$ it follows that R $($x$)$ is divisible by x - a, but not by $($x - a$)$^2$. This means that all the roots of P are roots of R, and R has no multiple roots.
+</p>

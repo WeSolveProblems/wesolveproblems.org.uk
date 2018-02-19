@@ -1,0 +1,25 @@
+---
+problem_id: 116994
+category_ids: 885
+difficulty: 3+
+classes: 9 10 11
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116994</h1>
+<p>
+Let $x_1$, $x_2$, ..., $x_n$ be some numbers belonging to the interval [0, 1]. Prove that on this segment there is a number x such that
+1 / n $($| x - x_1 | + | x - x_2 | + ... + | x - x_n |$)$ = 1/2.
+</p>
+
+<h1>Solution</h1> 
+<p>
+Consider the function f $($x$)$ = 1 / n $($| x - x_1 | + | x - x_2 | + ... + | x - x_n |$)$ on the interval [0, 1]. It is continuous. Let's consider two of its values:
+<p>
+f $($0$)$ = 1 / n $($| x_1 | + | x_2 | + ... + | x_n |$)$ and f $($1$)$ = 1 / n $($| 1 - x_1 | + | 1 - x_2 | + ... + | 1 - x_n |$)$. Since | x | + | 1 - x | = 1 for any x in the interval [0, 1], then
+f $($0$)$ + f $($1$)$ = 1.
+If f $($0$)$ = f $($1$)$ = 1/2, then the equality is valid for both x = 0 and x = 1. If one of these numbers is less than 1/2, then the other is greater than 1/2. Then, by the intermediate value theorem, f $($x$)$ = 1/2, for some x in the interval [0, 1].
+</p>
+

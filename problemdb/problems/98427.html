@@ -1,0 +1,30 @@
+---
+problem_id: 98427
+category_ids: 1079 1270
+difficulty: 3
+classes: 7 8 9
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98427</h1>
+<p>
+In a row there are 1999 numbers. The first number is 1. It is known that each number, except the first and the last, is equal to the sum of two neighboring ones.
+Find the last number.
+</p>
+
+<h1>Solution</h1> 
+<p>
+We denote our numbers by $a_1, a_2, ..., a_1999$. Adding the equalities $a_{n + 1}$ = $a_{n + 2}$ + $a_n$ and $a_{n + 2}$ = $a_{n + 3}$ + $a_{n + 1}$, we get $a_{n + 3}$ + $a_n$ = 0 or $a_{n + 3}$ = - $a_n$. Hence $a_{n + 6}$ = - $a_{n + 3}$ = $a_n$, that is, the sequence has a period of 6. Therefore, $a_1999$ = $a_{6 \times 333 + 1}$ = $a_1$ = 1.
+</p>
+
+<h1>Answer</h1> 
+<p>
+1
+</p>
+
+<h1>Remarks</h1> 
+<p>
+3 points
+</p>
