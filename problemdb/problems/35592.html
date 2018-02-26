@@ -1,0 +1,23 @@
+---
+problem_id: 35592
+category_ids: 207
+difficulty: 2+
+classes: 8 9
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35592</h1>
+<p>
+Your task is to find out a five-digit phone number, asking questions that can be answered with either "yes" or "no." What is the smallest number of questions for which this can be guaranteed $($provided that the questions are answered correctly$)$?
+
+</p> <h1>Hint</h1> <p> 
+It is necessary to ask questions so that each subsequent question reduces the number of remaining options by approximately two times.
+
+</p> <h1>Solution</h1> <p> 
+In the beginning, when we do not know anything about the phone number, there are $10^5$ = 100,000 possible options for the phone number. We ask the question: "Is it true that the number is greater than 50,000?". Regardless of the answer, we halve the number of remaining options. So, after the first question there are no more than 50,000 possible options for the phone number. If the answer  to the first question is "yes", then we ask the question: "Is it true that the number is greater than 75,000?". After answering this question, there will be no more than 2500 variants. And so on - if there are k possible variants left after the n-th question, then it is possible to ask the $($n + 1$)$th question in such a way that after the answer to it leaves no more than [k / 2] +1 possible variants. Thus, we get the following dependence of the number of remaining possible options relative to the number of questions asked: After the first question, 50,000 options, after the second question - 25,000, 3 - 12,500, 4 - 6250, 5 - 3125, 6 - 1563, 7 - 782, 8 - 391, 9 - 196, 10 - 98, 11 - 59, 12 - 30, 13 - 15, 14 - 8, 15 - 4, 16 - 2, 17 - 1. So, after 17 questions there will be one option, that is you can guess the phone number. On the other hand, you can not guess the number from 16 questions. Indeed, after 16 questions there are $2^16$ $<$ 100000 sequences of answers to the questions. Hence, one of the sequences of answers corresponds to at least two variants of the telephone number. Thus, if the desired number is either of these two numbers, then the sequence of answers to the questions will be the same, i.e. Uniquely determining the number will not be possible.
+
+</p> <h1>Answer</h1> <p> 
+17 questions.
+</p>

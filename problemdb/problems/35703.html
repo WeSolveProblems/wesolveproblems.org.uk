@@ -1,0 +1,20 @@
+---
+problem_id: 35703
+category_ids: 207
+difficulty: 2+
+classes: 7 8
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35703</h1>
+<p>
+Hannah has 10 employees. Each month, Hannah raises the salary by 1 pound of exactly nine of her employees $($of her choice$)$. How can Hannah raise the salaries to make them equal? $($Salaries are an integer number of pounds.$)$
+
+</p> <h1>Hint</h1> <p> 
+Those who have not had their salary added a pound to lose a pound relative to the other employees.
+
+</p> <h1>Solution</h1> <p> 
+Those who have not had a pound added to their salary lose this pound relative to the other employees. We will not pay the employee with the highest salary until his salary is equal to the one that was the smallest $($if the there are multiple employees with the highest salary then choose any of them$)$. Thus, at least two employees will have the smallest salary. Then, again, we select the employee with the highest salary and we will not pay them until their salary is equal to the one that was the smallest, and we get at least three employees with the same salary. Having done this operation no more than nine times, Hannah will be able to pay all the salaries.
+</p>

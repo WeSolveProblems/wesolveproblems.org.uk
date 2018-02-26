@@ -1,0 +1,21 @@
+---
+problem_id: 35786
+category_ids: 207 104 693
+difficulty: 2+
+classes: 8 9 10
+source_id: 120605
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35786</h1>
+<p>
+To transmit messages by telegraph, each letter of the Russian alphabet $($а, б, в, г, д, е, ё, ж, з, и, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ъ, ы, ь, э, ю, я$)$ $($E and Ё are counted as identical$)$ is represented as a five-digit combination of zeros and ones corresponding to the binary number of the given letter in the alphabet $($letter numbering starts from zero$)$. For example, the letter A is represented in the form 00000, letter B-00001, letter Ч-10111, letter Я-11111. Transmission of the five-digit combination is made via a cable containing five wires. Each bit is transmitted on a separate wire. When you receive a message, Cryptos has confused the wires, so instead of the transmitted word, a set of letters ЭАВЩОЩИ is received. Find the word you sent.
+
+</p> <h1>Hint</h1> <p> 
+Note that as a result of the "entanglement" of the wires, the number of units in the representation of the transmitted letter does not change - this will greatly reduce the number of variants of the transmitted word.
+
+</p> <h1>Solution</h1> <p> 
+Let's write out under each letter of the received text ЭАВЩОЩИ all letters in which the representation has the same quantity of units, as the initial letter. Next, we try to "read" the meaningful text, choosing from each column of the resulting table one letter. The only option is the word STEAM.
+</p>
+

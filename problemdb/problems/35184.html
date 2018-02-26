@@ -1,0 +1,23 @@
+---
+problem_id: 35184
+category_ids: 257
+difficulty: 2+
+classes: 7 8 9
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35184</h1>
+<p>
+On an island live liars and knights, in total there are 2001 people. Knights always tell the truth, and liars always lie. Each resident of the island said: "Among the remaining residents of the island, more than half are liars." How many liars are on the island?
+
+</p> <h1>Hint</h1> <p> 
+Take one knight and one liar. From the statements made by them follow the lower and upper bounds on the number of liars.
+
+</p> <h1>Solution</h1> <p> 
+All of the inhabitants of the island cannot be knights, otherwise each of them would tell the truth. Take some knight. From his statement it follows that there are more than $($2001 -1$)$/2 = 1000 liars on the island. Let us now take a certain liar. His statement is false, so apart from him, no more than half of the island's inhabitants are liars. This means that apart from him on the island there are no more than 2000/2 = 1000 liars, i.e. along with that liar there are no more than 1001. Thus, from the estimates obtained for the number of liars, we get that the only possibility is when there are exactly 1001 liars on the island.
+
+</p> <h1>Answer</h1> <p> 
+1001.
+</p>

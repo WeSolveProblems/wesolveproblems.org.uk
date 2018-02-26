@@ -1,0 +1,23 @@
+---
+problem_id: 34924
+category_ids: 254
+difficulty: 2+
+classes: 
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 34924</h1>
+<p>
+ There is a counter on the chessboard. Two in turn move the counter to an adjacent on one side cell. It is forbidden to put a counter on a cell, which it has already visited. The one who can not make the next turn loses. Who wins with the right strategy?
+
+</p> <h1>Hint</h1> <p> 
+Put the moves of the first player in relation to the second player.
+
+</p> <h1>Solution</h1> <p> 
+We divide the board into dominoes of 1 * 2 cells. The strategy of the first player will be as follows: if before the turn of the first player the counter is in one of the cells belonging to some dominoes, then the first player moves it to another cell of the same domino. Note that after each move of the first player for each domino one of the conditions is fulfilled: the counter has already visited both cells; the counter has not been in either of the cells. This means that the first player can always make a move, adhering to his strategy, and therefore, he will not lose.
+
+</p> <h1>Answer</h1> <p> 
+The first player wins.
+</p>

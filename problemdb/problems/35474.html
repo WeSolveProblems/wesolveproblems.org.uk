@@ -1,0 +1,23 @@
+---
+problem_id: 35474
+category_ids: 207
+difficulty: 2+
+classes: 7 8
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35474</h1>
+<p>
+A journalist came to a company which had N people. He knows that this company has a person Z, who knows all the other members of the company, but nobody knows him. A journalist can address each member of the company with the question: "Do you know such and such?" Find the smallest number of questions sufficient to surely find Z. $($Everyone answers the questions truthfully. One person can be asked more than one question.$)$
+
+</p> <h1>Hint</h1> <p> 
+Can I say anything about members of the company A and B, if A knows B $($if A does not know B$)$?
+
+</p> <h1>Solution</h1> <p> 
+In order to directly determine that this person is Z, you have to ask 2 * $($N-1$)$ questions: N-1 to him $($does he know every member of the company$)$ and N-1 to the other members of the company $($do they know him$)$. Clearly, such a path is hardly optimal. Consider the method of elimination. Obviously, there can be only one Z in the company. Let the journalist ask A if he knows B. Then if A does not know B, then A is not Z, if A knows B, then B is not Z. Thus, with every question, regardless of the answer, the journalist reduces the search by one person. It is clear that he will be able to do this with N-1 questions, since it is sufficient to check N-1 people, and leaving just the person Z.
+
+</p> <h1>Answer</h1> <p> 
+N-1.
+</p>

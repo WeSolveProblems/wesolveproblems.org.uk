@@ -1,0 +1,23 @@
+---
+problem_id: 35177
+category_ids: 264
+difficulty: 2+
+classes: 9 10
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35177</h1>
+<p>
+On a plane there are 100 sheep-points and one wolf-point. In one move, the wolf moves by no more than 1, after which one of the sheep moves by a distance of no more than 1, after that the wolf again moves, etc. At any initial location of the points, will a wolf be able to catch one of the sheep?
+
+</p> <h1>Hint</h1> <p> 
+Sheep can walk on fairly distanced from one another parallel lines.
+
+</p> <h1>Solution</h1> <p> 
+We introduce a coordinate system on the plane. Let the k-th sheep have the coordinates $($4k; 0$)$, k = 1,2, ..., 100, and the initial position of the wolf is such that in one move it can not reach any sheep. We describe the strategy of the sheep. Sheep will only walk on straight lines where x = 4k. Let the wolf be at the point $($x; y$)$ on one of the vertical lines | x-4k | $<$ 2 $($before the sheep moves$)$ $($these bands do not intersect$)$. Then the sheep with the number k moves, and if this sheep is at the point $($4k; z$)$, then it moves to the point $($4k; z + 1$)$ if z $>$ y and to the point $($4k; z-1$)$ if z is not greater than y $($ie, the k-th sheep is moving away from the wolf by 1 along the axis Oy$)$. It is clear that after this the wolf within one turn again can not catch a single sheep. If the wolf before the movement of the sheep is outside the strips | x-4k | $<$ 2, then the sheep can make any move. Adhering to this strategy, the sheep will be able to achieve their goal of none of them being caught.
+
+</p> <h1>Answer</h1> <p> 
+No.
+</p>

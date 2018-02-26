@@ -1,0 +1,24 @@
+---
+problem_id: 35797
+category_ids: 207 
+difficulty: 2+
+classes: 7 8
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35797</h1>
+<p>
+ In one urn there are two white balls, in another two black ones, in the third - one white and one black. On each urn there was a sign indicating its contents: WW, BB, WB. Someone rehung the signs so that now each sign indicating the contents of the urn is incorrect. It is possible to remove a ball from any urn without looking into it. What is the minimum number of removals required to determine the composition of all three urns?
+
+</p> <h1>Hint</h1> <p> 
+Substantially use the condition that not one of the labels indicates the contents correctly.
+
+</p> <h1>Solution</h1> <p> 
+We take out the ball from the urn with the WB sign. If we removed a white ball, then in this urn there are two white balls $($otherwise the table would indicate the contents correctly$)$. Next, we determine that in an urn with a BB sign there can be only one white and one black ball $($otherwise the table would indicate the contents correctly$)$. There was only one possibility left - in the urn with a sign of WW there are two black balls. If we removed a black ball from the urn with a black ball, we similarly define that there are two black balls in it, in the urn with a sign of WW there is one white and one black ball, and in an urn with a sign of BB there are two white balls.
+
+</p> <h1>Answer</h1> <p> 
+One extraction is enough!
+</p>
+

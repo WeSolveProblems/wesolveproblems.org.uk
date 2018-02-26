@@ -1,0 +1,20 @@
+---
+problem_id: 34945
+category_ids: 206
+difficulty: 2+
+classes: 
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 34945</h1>
+<p>
+27 coins are given, of which one is a fake, and it is known that a counterfeit coin is lighter than a real one. How can the counterfeit coin be found from 3 weighings on the scales without weights?
+
+</p> <h1>Hint</h1> <p> 
+Divide the coins into 3 equal groups.
+
+</p> <h1>Solution</h1> <p> 
+We divide the coins into 3 groups of 9 coins and compare the weights of two of them. If, however, equality scores were not obtained on the balance scales, the counterfeit coin is contained among the 9 lighter coins. If equality is obtained, it is clear that a counterfeit coin can be held only among 9 coins that did not take part in the weighing. In any case, after making one weighing, we find a group of 9 coins, among which there must be a fake coin. Next, we divide 9 coins into 3 groups of 3 coins and weigh two of these groups. Similar to the previous time, after that we select a group of 3 coins, among which one is a fake one. Finally, by the last weighing, we compare the masses of the two coins from these three. After this, you can uniquely identify the counterfeit coin.
+</p>
