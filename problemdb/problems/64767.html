@@ -1,0 +1,30 @@
+---
+problem_id: 64767
+category_ids: 1068 590
+difficulty: 4
+classes: 8 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64767</h1>
+<p>
+In the Republic of mathematicians, the number α $>$ 2 was chosen and coins were issued with denominations of 1 pound, as well as in $α^k$ pounds for every natural k. In this case α was chosen so that the value of all the coins, except for the smallest, was irrational. Could it be that any amount of a natural number of pounds can be made with these coins, using coins of each denomination no more than 6 times?
+
+</p> <h1>Solution</h1> <p>
+Let us show that the mathematicians could choose a number
+ <IMG SRC="64767 1.png"> 
+ - the root of the equation $α^2$ + α = 7. It is clear that α $>$ 2. It is easy to see that for a natural m, 
+ <IMG SRC="64767 2.png"> 
+where $a_m$ and $b_m$ are integers, and $a_m$ $<$ 0 $<$ $b_m$ for odd m and $a_m$ $>$ 0 $>$ $b_m$ for even m. Hence, the number $α_m$ is irrational.
+It remains to show that for any natural number n the sum of n pounds can be made in the required way. Consider all the ways to collect n pounds in coins issued $($at least one such method exists: you can take n pound coins$)$. Choose from them the way in which the smallest number of coins is used. Suppose that some coin of value $α^k$ $(k ≥ 0)$ occurs using this method at least 7 times. Then you can replace 7 $α^k$ coins with coins of the values of $α^{k + 1}$ and $α^{k + 2}$. The total value of the coins will not change $(α^{k + 1} + α^{k + 2} = $7α^k)$, and their number will decrease. This contradicts the result of our method.
+
+</p> <h1>Answer</h1> <p>
+It could.
+</p>
+
+<h1>Remarks</h1>
+<p>
+As is not hard to see, for any desired α the sum of 7 pounds can be collected only in the following way where 7 = α + α². Hence, the presented value of α is unique.
+</p>

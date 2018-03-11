@@ -1,0 +1,51 @@
+---
+problem_id: 73808
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 73808</h1>
+<p>
+Author: V.A. Popov
+<p>
+On the interval [0; 1] a function f is given. This function is non-negative at all points, f $(1)$ = 1 and, finally, for any two non-negative numbers $x_1$ and $x_2$ whose sum does not exceed 1, the quantity $f (x_1 + x_2)$ does not exceed the sum of $f (x_1)$ and $f (x_2 )$.
+<p>
+a)	Prove that for any number x on the interval [0; 1], the inequality $f (x_2) ≤ 2x$ holds.
+<p>
+b) Prove that for any number x on the interval [0; 1], the $f (x_2) ≤ 1.9x$ must be true?
+
+</p> <h1>Solution</h1> <p> 
+a) A function satisfying the condition of the problem increases monotonically. In fact, if $x_2 \geq x_1$ and $x_2 \geq 1$, then $f (x_2) \geq f (x_1) + f (x_2-x_1)$ and $f (x_2-x_1) \geq  0$; consequently, $f (x_2) \geq f (x_1)$. Therefore, if $½ $<$x \geq 1$, since $f (1) = 1$, we have
+$f (x) \leq 1 \leq 2x$.
+<p>
+
+
+Now let $0 $<$x \leq ½$. We take a natural number n such that $½ $<$nx \leq 1$ $($it is clear that this can always be done$)$. It is easy to prove $($by induction$)$ that if $x \geq 0$ and $nx \leq 1$, then $f (nx) \geq nf (x)$. For $½ $<$nx \leq 1$, it is already proved that $f (nx) \leq 2 \times nx$.
+<p>
+Therefore, $nf (x) \leq f (nx) \leq 2 \times nx$, whence $f (x) \leq 2x$ and for $0 $<$x \leq ½$.
+Now, it only remains to find out what will happen at zero. We take $0 $<$x_1 \leq 1$; then
+$f (x_1) = f (0 + x_1) \geq f (0) + f (x_1)$.
+<p>
+
+But by definition $f (0) \geq 0$, therefore, $f (0) = 0$.
+<p>
+b)	The </p> <h1>Answer</h1> <p> : no, it is not true.
+<p>
+Let us give an example. We define the function as follows:
+f $($x$)$ = <IMG SRC="73808 1.gif">
+<p>
+
+If $1 \geq x_1 \geq x_2 \geq 0$ and $x_1 + x_2 \leq 1$, then $x_2 \leq ½$ and $f (x_2) = 0$.
+Consequently, $f (x_1 + x_2) \geq f (x_1) + f (x_2)$ and the function in question satisfies the requirements of the problem.
+At the same time,
+$f (\frac{51}{100}) = 1> 1.9 \times \frac{51}{100}$.
+
+
+</p> <h1>Answer</h1> <p> 
+b) No, it is not true.
+
+

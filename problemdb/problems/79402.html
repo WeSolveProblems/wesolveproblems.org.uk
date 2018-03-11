@@ -1,0 +1,32 @@
+---
+problem_id: 79402
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 79402</h1>
+<p>
+Prove that the sequence $x_n = sin (n^2)$ does not tend to zero for n that tends to infinity.
+
+</p> <h1>Solution</h1> <p> 
+We use the following trigonometric inequality:
+<p>
+$| sin (α - β) | ≤ | sinα | + | sinβ |$.
+<p>
+Let $sin (k^2) \rightarrow 0$. Choose $ε < {\frac {1} {8}} | sin 2 |$ and an N such that $| sin (n^2) | <ε$ for any n$>$ N. Using the trigonometric inequality given above twice, we obtain:
+<p>
+$| sin ((n + 1)^2 - n^2) | = | sin (2n + 1) | ≤ | sin (n + 1)^2 | + | sin (n^ 2) | $<$2ε$,
+<p>
+$| sin ((2n + 3) - (2n + 1)) | = | sin (2) | ≤ | sin (2n + 3) | + | sin (2n + 1) | $<$2ε + 2ε = 4ε$,
+from which the contradictory inequality follows:
+$| sin 2 | $<$4ε $<$4 \times \frac{sin2}{8}= \frac {1}{2} = ½| sin 2 |$.
+
+$($This solution is from the book Halperin, Tolpygo$)$.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+

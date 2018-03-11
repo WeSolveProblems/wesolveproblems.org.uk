@@ -1,0 +1,42 @@
+---
+problem_id: 65125
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65125</h1>
+<p>
+Author: I.I. Bogdanov
+<p>
+Peter wants to write down all of the possible sequences of 100 natural numbers, in each of which there is at least one 4 or 5, and any two neighbouring terms differ by no more than 2. How many sequences will he have to write out?
+
+</p> <h1>Solution</h1> <p> 
+Let's find the </p> <h1>Answer</h1> <p>  for similar sequences of n natural numbers.
+<p>
+  The first way. We call a sequence of n natural numbers, any two adjacent terms of which differ by no more than 2, interesting. To each interesting sequence $a_1, a_2, ..., a_n$ we associate a difference sequence $b_i = a_{i + 1} - a_i (i = 1, 2, ..., n - 1)$. All of the terms of the difference sequence are equal to 0, ± 1 or ± 2, so the number of all possible difference sequences is equal to $5^{n-1}$.
+<p>
+  We first calculate the number S of all interesting sequences whose minimal term does not exceed 5. Consider an arbitrary difference sequence $b_1, b_2, ..., b_{n-1}$. Any two interesting sequences corresponding to it are distinguished by the addition of the same number to each term. Hence, among them there is exactly one sequence with a minimum term of 1, 2, 3, 4 or 5. Thus, S = $5 \times 5^{n-1} = 5^n$.
+<p>
+  In S, all of the sequences written by Peter are taken into account, and a few extra ones - those that do contain a 4 or a 5. It is clear that if in an interesting sequence there are both numbers greater than 4 or 5 and less than 4 or 5, then the numbers 4 or 5 also occur. But the minimum term of each extra sequence is not greater than 3, so all of the terms of these sequences do not exceed 3. So, all of the remaining sequences consist of ones, twos and threes. On the other hand, each sequence of ones, twos and threes is interesting, and, therefore, it's extra.
+<p>
+  In total, there are exactly $3^n$ sequences that are extra, which means that the required quantity is $S - 3^n = 5^n - 3^n$.
+<p>
+  The second way. We call a sequence of n natural numbers, in which there is at least one three, good. Denote by $S_n$ the number of good sequences of length n. We prove by induction on n that $S_n = 5^n - 3^n$. The base $($n = 1$)$ is obvious.
+<p>
+  Induction steps. Consider an arbitrary n-term good sequence; let it end with k. Then any number from k - 2 to k + 2 can be assigned to it and the resulting sequence will be good if the assigned number is a natural number. If it is non-positive $($that is, it is 0 or -1$)$, then after adding it, we add 5 to all of the numbers of the sequence. The resulting sequence will end with 4 or 5, which means it will be good.
+<p>
+  Note that all of the sequences obtained are different. For sequences obtained without adding 5, this is obvious. In this way, exactly all good sequences are obtained, among the first n terms of which there are 4 or 5. The sequences obtained by adding 5 are also pairwise different; moreover, exactly all of these are good sequences, the first n members of which are greater than 5 and wherein 9 or 10 are among them. In particular, these sequences are different from those described earlier. In total, we have so far constructed $5S_n$ good $($n + 1$)$-terms.
+<p>
+  It remains to calculate the number of still unconsidered sequences. In each unconsidered sequence, among the first n members there are no numbers 4, 5, 9 and 10, and the last term is 4 or 5. Hence, either the first n of its terms are ones, twos and threes, or all of them are sixes, sevens or eights. Let's count the number of the first and the number of the second is the same.
+<p>
+  Let's consider any sequence of n ones, twos and threes $($its neighbouring terms automatically differ by a maximum of 2$)$. If it ends with a number 3, then you can assign 4 or 5 to it, having achieved an unconsidered sequence. If it ends with a number 2, then only 4 can be assigned. If its last number is 1, then a good sequence cannot be obtained from it. Hence, the number of unconsidered sequences obtained is equal to $2 \times 3^{n-1} + ^{3n-1} = 3^n$ $($and the same number is obtained from sequences with numbers 6, 7 and 8$)$.
+<p>
+  Thus, $S_{n + 1} = 5S_n + 2 \times 3^n = 5 (5^n - 3^n) + 2 \times 3^n = 5^{n + 1} - 3^{n + 1}$.
+
+</p> <h1>Answer</h1> <p> 
+$5^{100} - 3^{100}$.
+

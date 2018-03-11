@@ -1,0 +1,18 @@
+---
+problem_id: 109685
+category_ids: 1068 251 1250
+difficulty: 4
+classes: 9 10 11
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109685</h1>
+<p>
+At all rational points of the real line, integers are arranged. Prove that there is a segment such that the sum of the numbers at its ends does not exceed twice the number on its middle.
+ 
+</p> <h1>Solution</h1> <p>
+Suppose the contrary. Let A, B, C, $A_n$, $B_n$, n = 1, 2, ... be the points -1, 1, 0, $-2^{-n}$, $2^{-n}$ of the real line, a, b, c, $a_n$, $b_n$ are integers written at these points. Then c $<$ 1/2 $(a + b)$, $a_1$ $<$ 1/2 $(a + c)$, $a_2$ $<$ 1/2 $(a_1 + c)$, and so on. It follows that max {a, c} $>$ $a_1$. Similarly, max {$a_1$, c} $>$ $a_2$, max {$a_2$, c} $>$ $a_1$, max {b, c} $>$ $b_1$, max {$b_1$, c} $>$ $b_2$, ... If $a_m$ $>$ c, then c $<$ $a_m$ $≤$ $a_{m-1}$ - 1 $≤$ ... $≤$ a-m, which is impossible for m $≥$ a-c. Therefore, when
+m $≥$ max {1, a - c, b - c}, we get $a_m$ $≤$ c, $b_m$ $≤$ c, hence $a_m$ + $b_m$ $≤$ 2c, which contradicts our assumption.
+</p>

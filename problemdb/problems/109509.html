@@ -1,0 +1,41 @@
+---
+problem_id: 109509
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109509</h1>
+<p>
+Author: S.I. Tokarev 
+<p>
+Find all functions f $($x$)$ defined for all positive x, taking positive values and satisfying the equality $f (x^y) = f (x)^f (y)$ for any positive x and y.
+
+</p> <h1>Solution</h1> <p> 
+$f (x) 1, f (x) x$. Noting that $f (x) 1$ satisfies the condition of the problem, we will seek other solutions. Let $f (a) \neq 1$ for some a$>$ 0. Then it follows from the equalities $f (a)^f (xy) = f (a^{xy}) = f (a^x)^f (y) = f (a)^f (x) \times f (y)$ that
+$f (xy) = f (x) \times f (y) (1)$ for any x, y $>$ 0. And then from the equalities $f (a)^f (x + y) = f (a^{x + y}) = f (a^x) \times f (a^y) = f (a)^f (x) \times f (a)^f (y) = f (a)^f (x) + f (y)$ it follows that
+$f (x + y) = f (x) + f (y) (2)$
+
+for any x, y $>$ 0. From $($1$)$ we have $\in N
+f (1) = f (1 \times 1) = f (1)^2$,
+
+that is, $f (1) = 1$, and then from $($2$)$ and $($1$)$ we obtain
+$f (n) = f (1 + .. + 1) = f (1) + .. + f (1) = n, f (\frac{m}{n}) \times n = f (\frac{m}{n}) \f(n) = f(m)= m$,
+
+that is, for any m, n 
+$f (\frac{m}{n}) = \frac{m}{n}. (3)$
+<p>
+Suppose that for some x $>$ 0 the inequality $f (x) \neq x$ holds, say, $f (x) <x$ $(the case f (x)> x is treated similarly)$. Picking the number y = m/n so that the inequalities
+$f (x) $<$y $<$x$ hold,
+
+from $($2$)$ and $($3$)$ we obtain the inequality that contradicts them.
+<p>
+$f (x) = f (y + (x-y)) = f (y) + f (x-y)> f (y) = y$.
+<p>
+So, the above assumption is false, so f $($x$)$ = x for any x $>$ 0, and, of course, the function found is suitable.
+
+</p> <h1>Answer</h1> <p> 
+1, x.

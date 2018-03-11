@@ -1,0 +1,39 @@
+---
+problem_id: 109834
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109834</h1>
+<p>
+Author: O.K. Podlipsky
+<p>
+Ten pairwise distinct non-zero numbers are such that for each two of them either the sum of these numbers or their product is a rational number.
+Prove that the squares of all numbers are rational.
+
+</p> <h1>Solution</h1> <p> 
+  The first way. Let our set contain an irrational number a. Then each of the remaining numbers has the form either p - a or p/a, where p is rational. We show that there are no more than 2 numbers of the form p - a. Let $b_1 = p_1 - a, b_2 = p_2 - a, b_3 = p_3 - a$, then the number $b_1 + b_2 = (p_1 + p_2) - 2a$ is not rational, then the number
+$b_1b_2 = p_1p_2 - a (p_1 + p_2) + a^2$ is rational. Similarly, the numbers $b_1b_3, b_2b_3$ are rational. It follows that the subsequent numbers are rational: $A_3 = a^2 - a (p_1 + p_2), A_2 = a^2 - a (p_1 + p_3), A_1 = a^2 - a (p_2 + p_3)$ are rational. Hence, the number $A_3 - A_2 = a (p_3 - p_2)$ is rational, which is possible only for $p_3 = p_2$, that is, $b_3 = b_2$. This is a contradiction.
+<p>
+  Consequently, there are more than two numbers of the second kind, let <IMG SRC="109834 1.gif"> be such numbers. The sum <IMG SRC="109834 2.gif"> can be rational only for $q_2 = - q_1$. But $q_3 ≠ q_2$, which means that the sum <IMG SRC="109834 3.gif"> is irrational. Then the number <IMG SRC="109834 4.gif"> is rational, from where we get that $a^2$ is rational.
+<p>
+  The second way. Let's consider six arbitrary numbers from our set. You can construct a graph yourself with six vertices corresponding to these numbers; vertices are connected by a blue edge if the sum of the corresponding numbers is rational, and a red edge if the product of the corresponding numbers is rational. In this graph, we can find a triangle of one colour $($see problem number 30815$)$. We can consider two cases.
+<p>
+1)	This triangle is blue, that is, there are three numbers x, y, z such that x + y, x + z, y + z are rational. Then the number $(x + y) + (x + z) - (y + z) = 2x$ is also rational. Similarly, the numbers 2y and 2z are rational. Consider any of the t remaining numbers. From the rationality of any of the numbers xt and x + t, the rationality of the number t follows $($all of the numbers are non-zero by hypothesis$)$. That is, all of the numbers in the set are rational.
+<p>
+2)	We found a red triangle, that is, there were three numbers x, y, z such that xy, xz, yz are rational. Then the number <IMG SRC="109834 5.gif"> is rational. Similarly, the numbers $y^2$ and $z^2$ are rational. If at least one of the numbers x, y, z is rational, then, similarly to the previous case, we obtain the rationality of all of the numbers in the collection.
+<p>
+Let <IMG SRC="109834 6.gif"> where a is rational, m = ± 1. Since the number <IMG SRC="109834 7.gif"> is rational, then <IMG SRC="109834 8.gif">, where c is rational. Consider any of the remaining numbers t. If xt or yt are rational, then analogous to the previous one, where d is rational, that is, $t^2$ is rational.
+<p>
+  If the numbers x + t and y + t are rational, then the number <IMG SRC="109834 9.gif"> is rational. But this is not so. This is a contradiction.
+That is, in any case, the squares of all of the numbers of the set are rational.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+
+</p> <h1>Remarks</h1> <p> 
+The statement of the problem is true for any number of numbers greater than 4.

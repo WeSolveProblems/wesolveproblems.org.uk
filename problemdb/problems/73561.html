@@ -1,0 +1,25 @@
+---
+problem_id: 73561
+category_ids: 81234
+difficulty: 4-
+classes: 8 9 10
+source_id: 151995
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 73561</h1>
+<p>
+Suppose that in each issue of our journal in the "Quantum" problem book there are five mathematics problems. We denote by f $(x, y)$ the number of the first of the problems of the x-th issue for the y-th year. Write a general formula for f $(x, y)$, where 1 $\geq$ x $\geq$ 12 and 1970 $\geq$ y $\geq$ 1989. Solve the equation f $(x, y)$ = y.
+For example, f $(6, 1970)$ = 26. Since 1989, the number of tasks has become less predictable. For example, in recent years, half the issues have 5 tasks, and in other issues there are 10. Even the number of magazine issues has changed, no longer being 12 but now 6.
+
+</p> <h1>Solution</h1> <p>
+The function f satisfies the following conditions: 1$)$ f $(1,1970)$ = 1; 2$)$ f $(x + 1, y)$ = f $(x, y)$ +5 $(1 $\leq$ x $<$ 12)$ - for each month f $(x, y)$ increases by 5; 3$)$ f $(1, y + 1)$ = f $(1, y)$ +60 - for every year f $(x, y)$ increases by 60. It is clear that by these conditions the function is uniquely determined; it can be set, for example, with the following formula:
+f $(x, y)$ = 5x + 60 $(y-1970)$ -4.
+<p>
+It is easy to verify that f $(5,2003)$ = 2001; f $(6,2003)$ = 2006. Therefore, the equation f $(x, y)$ = y has no solutions. It is clear from what was said above that if we had introduced such a function: f $(k, x, y)$ - denoting the number of the k-th problem of the x-th issue of the journal for the yth year $(1 \leq k \leq 5, 1 \leq x \leq 12, y \geq 1970)$ , then the equation f $(k, x, y)$ = y would have a unique solution k = 3, x = 5, y = 2003 - in other words, if our system is preserved until then unchanged $($still in each issue there will be five tasks in mathematics$)$, then the third task in the "Quantum" problem book # 5 for 2003 will be the number M2003. $($Note Problems.Ru - the third task in the "Quantum" quiz 5 for 2003 is M1878$)$ The general formula for f $(k, x, y)$ is this:
+f $(k, x, y)$ = k + 5x + 60 $(y-1970)$ -5.
+<p>
+For the reader, perhaps, the formulas defining the inverse function, which by the number n of the problem allow us to find the year y and the number of the journal x, in which this problem was proposed, is perhaps more useful. For this it is convenient to use the following notation: [a] is the integer part of a $(the largest integer not exceeding a)$ and a = a- [a] is the fractional part of a. Check that
+x = [12 (n-1) / 60] +1, y = [(n-1) / 60] +1970.
+</p>

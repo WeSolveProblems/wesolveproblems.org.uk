@@ -1,0 +1,20 @@
+---
+problem_id: 35644
+category_ids: 866 375 
+difficulty: 4
+classes: 10 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35644</h1>
+<p>
+Prove that rational numbers from [0; 1] can be covered by a system of intervals of total length no greater than 1/1000.
+
+</p> <h1>Hint</h1> <p>
+Number the rational numbers and cover each successive rational number by an interval of length two times smaller than the length of the interval covering the previous rational number.
+
+</p> <h1>Solution</h1> <p>
+Consider the finite sets $A_n$, n = 1, 2, ..., where $A_n$ denotes the set of rational numbers in the interval [0; 1] that can be represented as a fraction m / n for some integer m. A finite set of points can be covered by a system of intervals of arbitrarily small length. Therefore, we can cover the set $A_1$ by intervals of total length $(1/2)$ * $(1/1000)$, the set $A_2$ - by intervals of total length $(1/4)$ * $(1/1000)$, etc. , the set $A_k$ by intervals of the total length $(1 / 2k)$ * $(1/1000)$. Thus, all rational numbers turn out to be covered by a system of intervals whose total length is not greater than $(1/2)$ * $(1/1000)$ + $(1/4)$ * $(1/1000)$ + ... + $(1 / 2k )$ * $(1/1000)$ + ... = 1/1000. $($Here we used the formula for the sum of an infinite geometric progression.$)$
+</p>

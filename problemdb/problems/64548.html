@@ -1,0 +1,27 @@
+---
+problem_id: 64548
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64548</h1>
+<p>
+Find the largest value of the expression a + b + c + d - ab - bc - cd - da, if each of the numbers a, b, c and d belongs to the interval [0, 1].
+
+</p> <h1>Solution 1</h1> <p> 
+  Note that $a + b + c + d - ab - bc - cd - da = (a + c) + (b + d) - (a + c) (b + d)$. Let $a + c = x, b + d = y, 0 ≤ x ≤ 2$, and $0 ≤ y ≤ 2$.
+<p>
+$x + y - xy = (x - 1) (1 - y) + 1$, where $| x - 1 | ≤ 1$ and $| 1 - y | ≤ 1$. Therefore, $(x - 1) (1 - y) ≤ 1$, and $x + y - xy ≤ 2$.
+<p>
+  The value 2 is achieved, for example, if a = c = 1, b = d = 0.
+
+</p> <h1>Solution 2</h1> <p> 
+  We fix the values of the variables b, c and d and consider the function $f (a) = (1 - b - d) a + b + c + d - bc - cd$, where $0 ≤ a ≤ 1$. Due to monotonicity, at one end of [0, 1], that is, it is equal to b + c + d - bc - cd or 1 + c - bc - cd. Considering these expressions as a function of c, similarly we get that their maximum values: b + d or 1, 1 or 2 - b - d.
+  Since $0 ≤ b + d ≤ 2$, the largest value of this expression is 2.
+
+</p> <h1>Answer</h1> <p> 
+2.

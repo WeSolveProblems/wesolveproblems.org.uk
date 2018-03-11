@@ -1,0 +1,24 @@
+---
+problem_id: 32884
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32884</h1>
+<p>
+Prove that if the irreducible rational fraction p/q is a root of the polynomial $P (x)$ with integer coefficients, then $P (x) = (qx - p) Q (x)$, where the polynomial $Q (x)$ also has integer coefficients.
+
+</p> <h1>Solution</h1> <p> 
+Suppose that the assertion is false, and let's consider the polynomial $P (x) = a_0x^n + a_1x^{n-1} + ... + a_n$ of the smallest degree for which this is not so. It is clear that n $>$ 0. According to problem number 61013, $a_0$ is a multiple of q: $a_0 = qb_0$, therefore $R (x) = P (x) - (qx - p) b_0x^{n-1}$ is a polynomial of degree n - 1 with integer coefficients. p/q is the root of the polynomial $R (x)$, therefore, by choice of n, $R (x) = (qx - p) T (x)$, where $T (x)$ is a polynomial with integer coefficients $(if n = 1, then R (x) ≡ T (x) ≡ 0). Hence, P (x) = (qx - p) (b_0x^{n-1} + T (x))$. This is a contradiction.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+
+</p> <h1>Remarks</h1> <p> 
+1.	Of course, the assertion can also be proved by induction.
+<p>
+2. By Bezout's theorem, $P (x)$ is divisible by x - p/q. This assertion means that all of the coefficients of the quotient are integers that are multiples of q.

@@ -1,0 +1,67 @@
+---
+problem_id: 66202
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66202</h1>
+<p>
+Author: A.K. Tolpygo
+<p>
+An irrational number α, where 0 $<$α $<$½, is given. It defines a new number $α_1$ as the smaller of the two numbers 2α and 1 - 2α. For this number, $α_2$ is determined similarly, and so on.
+<p>
+a)	Prove that for some n the inequality $α_n <3/16$ holds.
+<p>
+  b) Can it be that $α_n> 7/40$ for all positive integers n?
+
+</p> <h1>Solution 1</h1> <p> 
+a)	We successively prove the existence of such an n so that $α_n$ is less than 1/3, 1/4, 1/5, 3/16.
+<p>
+  If α> 1/3, then $α_1$ <1/3.
+<p>
+  If 1/4 $<$ $α_k$ $<$ 1/3, then each step doubles the deviation from 1/3: let $α_k$ = 1/3 - ε (where ε $<$ 1/12), then $α_{k + 1} = 1/3 + 2ε, α_{k +2} = 1/3 - 4ε$. If this number is still greater than 1/4, repeat the procedure ...
+<p>
+  If 1/5 $<$ $α_k$ $<$1/4, then already $α_{k + 2}$ $<$ 1/5.
+<p>
+  If 3/16 $<$ $α_k$ $<$ 1/5, we will increase the deviation from 1/5: $α_k$ = 1/5 - ε $(ε $<$1/80)$, $α_{k + 2} = 1/5 + 4ε, α_{k + 4} = 1/5 - 16ε$. If this number is still greater than 3/16, repeat the procedure ...
+<p>
+  b) To construct an example, we need a representation of numbers in the form of infinite binary fractions. As usual, irrational numbers are represented by infinite non-periodic fractions.
+  Let's consider the fraction δ = 0.0000001000000010 ..., where the units are in the 7th, 15th, 23rd, ... ranks. It is equal to the sum of an infinite geometric progression $2^{-7} + 2^{-15} + 2^{-23} + … = \frac{2^{-7}}{1-2^{-8}} = \frac{2}{25}$. If the part of the ones is replaced non-periodically by zeros and multiplied by 3, we get an irrational number less than 6/255 = 2/85. We call such a number a convenient one.
+ 
+<p>
+  Let α = 1/5 - β, where β is a convenient number. Then α $>$ 1/5 - 2/85 $>$ 7/40. When obtaining β, we could replace in the 7th digit of the fraction δ by a one by a zero or leave it. Let us consider both cases.
+1)	If it is replaced, then $α = 1/5 - γ \times 2^{-8}$, where the number γ is convenient. Then $α_1 = 2/5 - γ \times 2^{-7}, α_2 = 1/5 + γ \times 2^{-6}, α_3 = 2/5 + γ \times 2^{-5}, α_4 = 1/5 - γ \times 2^{-4},. .., α_8 = 1/5 - γ$.
+<p>
+  2) If it is left, then $α = 1/5 - 3 \times 2^{-7} - γ \times 2^{-8} = 113/640 - γ \times 2^{-8}$, where the number γ is convenient. Then, $α_1 = 113/320 - γ \times 2^{-7}, α_2 = 47/160 + γ \times 2^{-6}, α_3 = 33/80 - γ \times 2^{-5}, α_4 = 7/40 + γ \times 2^{-4},
+Α_5 = 7/20 + γ \times 2^{-3}, α_6 = 3/10 - γ \times 2^{-2}, α_7 = 2/5 + γ \times 2^{-1}, α_8 = 1/5 - γ$.
+<p>
+  In both cases, $α_1, α_2, ..., α_7 $>$ 7/40$, and $α_8$ is a number of the same kind as γ. Hence, everything will be fine after that.
+
+</p> <h1></p> <h1>Solution 2</h1> <p> </h1> <p> 
+  We use the abbreviated record of a binary fraction: instead of writing out all of its signs, we will indicate how many identical signs are in a row: first some zeros $($all of our fractions are less than ½$)$, then some ones, etc. So, the fraction 1/5 = 0,00110011 ... = 0. \dot{0}01 \dot{1} corresponds to the abbreviated record 222222 ...,
+<p>
+The fraction 3/17 = 0. \dot{0}010110 \dot{1} corresponds to 211211 ..., and the fraction 7/40 = 1/8 · (1 + 2/5) = 0.0010 \dot{1}10 \dot{0} to 21122222 ...
+<p>
+  The numbers in the abridged record are not difficult to compare: we find the first place where the records differ; if this place is even, then the number that is bigger is the ones which as a larger "number" in this place, and if it is odd, then vice versa. $($For example, when comparing 1/5 $>$ 3/17 in a shortened 1/5 record, a larger number is in the second place, and when comparing 3/17 $>$ 7/40 in the shortened record 3/17, the fifth digit the smaller number).
+<p>
+  The operation specified in the condition of the problem acts on the abbreviated entry as follows: if the first "digit" is greater than 1, then it decreases by one. The one is simply erased at the beginning. Multiple application of the operation is the removal of the first few digits and (possibly) the subsequent reduction of the first digit. The resulting record will be called the tail of the original.
+a)	The fraction 3/16 corresponds to the abbreviated entry 22. If there is a three in the abbreviated record of α, then one day it will take the first place and therefore the corresponding number of $α_n$ will be less than 3/16.
+<p>
+  If, however, the abbreviated notation of the number α consists only of zeros and ones, then by virtue of the infinity and non-periodicity (ordinary) binary notation of the number in the abbreviated record, there is a place where after a two there is one. When the fragment 21 gets to the beginning of the recording, the corresponding number of $α_n$ becomes less than 3/16.
+<p>
+b)	To build an example, we need only consider numbers that do not have three characters in a binary record $($that is, their abbreviated entries consist of ones and twos$)$. We need to select such a shortened record, all the tails of which are greater than 21122222 ... Such, for example, will be any record of the form 112 ... 2112 ... 211 ..., where the ones stand only in pairs and between each two adjacent pairs of ones there is an odd number of twos.
+<p>
+  Indeed, if at the beginning of the abbreviated recording of the tail there is the number 1 or 22, then everything is clear.
+<p>
+  Otherwise it has the form 2112 ... 211 ..., where the third one is at an odd place. Therefore, this number is more than 7/40, which has a two on this place.
+  It remains to see that the fraction was non-periodic.
+</p> <h1>Answer</h1> <p> 
+b) It can.
+</p> <h1>Remarks</h1> <p> 
+1.	Ideology. The mapping indicated in the condition besides the fixed point 1/3 has many periodic points. It is not difficult to find points of a short period. For example, for 1/5 period 2 $($1/5 → 2/5 → 1/5$)$, and for 3/17 - period 3 $($3/17 → 6/17 → 5/17 → 3/17$)$. Both of these numbers are slightly larger than 7/40, and the numbers generated by them are even greater. But unfortunately, these numbers are rational. But unfortunately, these numbers are rational. But they are represented by periodic binary fractions: 1/5 = 0. \dot{0}01\dot{1}, 3/17 = 0.\dot{0}010110\dot{1}. Let's try to construct the desired irrational number, mixing the fragments of the above fractions 00110011 and 00101101. It can be expected that it will also generate a sequence where all of the terms are not less than 7/40. Solution 1 is a formal test of this idea: 1/5 - 3/17 = 2/85, when subtracting β from 1/5, the substitution of δ ones to zero does not change the corresponding fragment 00110011 in the 1/5 expansion, and the remainder of the ones subtracts from it 00000110, that is, converts to 00101101.
+<p>
+2.	Points: 4 + 4.

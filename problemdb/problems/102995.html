@@ -1,0 +1,42 @@
+---
+problem_id: 102995
+category_ids: 1234 251 590 351
+difficulty: 4
+classes: 9 10 11
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 102995</h1>
+<p>
+Can there exist two functions f and g that take only integer values such that for any integer x the following relations hold:
+<p>
+a$)$ f $(f (x))$ = x, g $(g (x))$ = x, f $(g (x))$ $>$ x, g $(f (x))$ $>$ x?
+<p>
+b$)$ f $(f (x))$ $<$ x, g $(g (x))$ $<$ x, f $(g (x))$ $>$ x, g $(f (x))$ $>$ x?
+  
+</p> <h1>Solution</h1> <p>
+a$)$ f $(x)$ = f $(g (g (x)))$ $>$ g $(x)$. But it can also be proven in exactly the same way that g $(x)$ $>$ f $(x)$. this gives us a contradiction.
+<p> 
+b$)$ It is sufficient to set the values of the functions in solely integer terms: for the remaining values can be defined arbitrarily.
+<p>
+The first method. Let's call even numbers "own", and odd ones - "strangers" for the function f, and for g - the opposite way around. Let these functions translate each of their own numbers x into - | x | - 2, and the stranger numbers into | x | + 1. Note that each function translates each number into one of its own. Let us check two inequalities, where the internal function is f. It's clear that
+| f $(x)$ | $>$ | x |. Therefore f $(f (x))$ = - | f $(x)$ | - 2 $<$ - | x | - 2 $<$ x, and g $(f (x))$ = | f $(x)$ | + 1 $>$ | x | + 1 $>$ x. The remaining two inequalities are verified similarly.
+<p>
+The second method. We number all integers with natural numbers $($for example, $x_1$ = 0, $x_2$ = 1, $x_3$ = -1, $x_4$ = 2, $x_5$ = -2, etc.$)$. We will make the values of f $(x_n)$, g $(x_n)$ by induction; and all of them will be different. We denote by $X_n$ = {$x_1$, ..., $x_n$}, $V_n$ = {f $(x_1)$, ..., f $(x_n)$, g $(x_1)$, ..., g $(x_n)$}.
+<p>
+Base case. f $(x_1)$ and g $(x_1)$ are arbitrary distinct integers differing from $x_1$.
+<p>
+Inductive step. Suppose that all the elements of $V_n$ are already constructed. If $x_{n + 1}$ ∉ $V_n$, then for f $(x_{n + 1})$ and g $(x_{n + 1})$ we take arbitrary distinct integers that do not appear in either $X_{n + 1}$ or $V_n$.
+If $x_{n + 1}$ ∈ $V_n$, then $x_{n + 1}$ = f $(x_i)$ or $x_{n + 1}$ = g $(x_i)$, where i $≤$ n. In the first case, for f $(x_{n + 1})$ we take an integer smaller than $x_i$ that is not in $X_n$ ∪ $V_n$, and for g $(x_{n + 1})$ an integer greater than $x_i$ and not in $X_n$ ∪ $V_n$. Then f $(f (x_i))$ $<$ $x_i$, g $(f (x_i))$ $>$ $x_i$. In the second case, we do the opposite, ensuring the inequalities g $(g (x_i))$ $<$ $x_i$, f $(g (x_i))$ $>$ $x_i$ are fulfilled.
+As a result, all the values of the functions will be made and all inequalities will be satisfied.
+ 
+</p> <h1>Answer</h1> <p>
+a$)$ They do not exist; b$)$ they do exist.
+</p>
+ 
+<h1>Remarks</h1>
+<p>
+Points: 3 + 5
+</p>

@@ -1,0 +1,21 @@
+---
+problem_id: 109603
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109603</h1>
+<p>
+Author: A.V. Shapovalov 
+<p>
+Is there a sequence of natural numbers in which every natural number occurs exactly once, and for any k = 1, 2, 3, ... the sum of the first k terms of the sequence is divisible by k?
+
+</p> <h1>Solution</h1> <p> 
+We indicate the method of constructing such a sequence. As the first term $a_1$, one can take the number 1. Suppose that it was possible to choose the first n terms $a_1, a_2, a_n$, and let m be the smallest of those not included in the n terms, and M the largest of the included ones. We denote by $S_k$ the sum of the first k terms. Now let $a_{n + 1} = m ((n + 2)^t-1) -S_n, a_{n + 2} = m$, where the natural number t is chosen large enough that $a_{n + 1}> M$. It is easy to see that $S_{n + 1} = S_n + a_{n + 1} = m ((n + 2)^t-1)$ is divisible by $(n + 2) - 1 = n + 1$, and the sum $S_{n + 2} = m (n + 2)^t$ is divisible by n + 2. Continuing with this, we include all of the natural numbers and, moreover, exactly once in our sequence.
+
+</p> <h1>Answer</h1> <p> 
+Yes, there is.

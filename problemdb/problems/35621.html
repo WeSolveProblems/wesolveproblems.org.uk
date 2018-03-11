@@ -1,0 +1,23 @@
+---
+problem_id: 35621
+category_ids: 925 174 692
+difficulty: 4-
+classes: 11
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35621</h1>
+<p>
+Calculate $\int_0^{\pi/2}$ $(sin^2 (sin x) + cos^2 (cos x))$ dx.
+ 
+</p> <h1>Hint</h1> <p>
+Convert the integral using the reduction formula sin x = cos $(\pi/2 - x)$ and the basic trigonometric identity $sin^{2}x$ + $cos^{2}x$ = 1 .
+ 
+</p> <h1>Solution</h1> <p>
+Let's write: $\int_0^{\pi /2}$ $(sin^2 (sin x) + cos^2 (cos x))$ dx = $\int_0^{\pi/2}$ $(sin^2(sin x) + 1 - sin^2(sin (\pi/2 - x))$ dx. But $\int_0^{\pi/2}$ f $(x)$ dx = $\ int_0^{\pi/2}$ f$(\pi/2 - x)$ dx, since the graphs of the functions f $(x)$ and f $(\pi/2 - x)$ are symmetric with respect to the line x = $\pi/4 $, and the integrals of these functions on the interval from 0 to $\pi/2$ are equal. Thus, the required integral is equal to $\pi/2$.
+ 
+</p> <h1>Answer</h1> <p>
+$\pi/2$.
+</p>

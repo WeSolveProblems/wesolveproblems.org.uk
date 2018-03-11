@@ -1,0 +1,44 @@
+---
+problem_id: 65118
+category_ids: 878 1059 351
+difficulty: 4+
+classes: 9 10
+source_id: 204607
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65118</h1>
+<p>
+Author: I.I. Bogdanov
+<p>
+Peter wants to write down all of the possible sequences of 100 natural numbers, in each of which there is at least one 3, and any two neighbouring terms differ by no more than 1. How many sequences will he have to write out?
+
+</p> <h1>Solution</h1> <p> 
+Let's find the answer for similar sequences of n natural numbers.
+<p>
+  The first way. We call a sequence of n natural numbers, any two adjacent terms of which differ by no more than 1, interesting. To each interesting sequence $a_1, a_2, ..., a_n$ we associate a difference sequence $b_i = a_{i + 1} - a_i (i = 1, 2, ..., n - 1)$. All of the terms of the difference sequence are equal to 0 or ± 1, so the number of all possible difference sequences is $3^{n-1}$.
+<p>
+  We first calculate the number S of all interesting sequences whose minimal term does not exceed 3. Consider an arbitrary difference sequence $b_1, b_2, ..., b_{n-1}$. Any two interesting sequences corresponding to it are distinguished by the addition of the same number to each term. Hence, among them there is exactly one sequence with a minimum term of 1, 2 and 3. Thus, S = $3 \times 3^{n-1} = 3^n$.
+<p>
+  In S, all of the sequences written by Peter are taken into account, and a few extra ones - those that do contain a 3. It is clear that if, in an interesting sequence, there are both numbers greater than 3 and those that are less than 3, then 3 also occurs. But the minimum term of each extra sequence is not greater than 2, so all of the terms of these sequences do not exceed 2. So, all of the remaining sequences consist of ones and twos. On the other hand, each sequence of ones and twos is interesting, and, therefore, it's extra.
+<p>
+  In total, there are exactly $2^n$ sequences that are extra, which means that the required quantity is $S - 2^n = 3^n - 2^n$.
+<p>
+  The second way. We call a good sequence of n natural numbers, in which there is at least one three. Denote by $S_n$ the number of good sequences of length n. We prove by induction on n that $S_n = 3^n - 2^n$. The base $($n = 1$)$ is obvious.
+<p>
+  Induction steps. We call a good $($n + 1$)$-term sequence A different if among the first n members of it there is a three. Let's drop the last term from each distinct sequence and so, in each case, we get a good n-term sequence. In this case, if a good n-term sequence A' ends in the number 1, then it is obtained in this way from two distinct ones - ending in the numbers 1 or 2. If A' ends with the number k$>$1, then it is obtained from three good ones, which end in k - 1, k, or k + 1. So, if the number of n-term good sequences ending in 1 is $T_n$, then the number of distinct $($n + 1$)$-term sequences is $2T_n + 3 (S_n-T_n) = 3S_n-T_n$.
+<p>
+  It remains to calculate the number of non-distinct $($n + 1$)$-term sequences. Each of them ends with the number 3; if this 3 is thrown away, we get an n-term sequence A' without threes. Since its neighbouring terms differ by no more than 1, then either they are all greater than 3 or less 3.
+<p>
+  If all of the members of A' are less than 3, then A' consists of the numbers 1 and 2, ending with number 2. Any such sequence, supplemented at the end by a triple, will give a good sequence. Hence, such sequences A' are obtained from exactly $2^{n-1}$ non-good ones.
+<p>
+  Suppose that all of the terms of A' are greater than 3; then it ends in a 4. Subtracting all of its terms by 3, we get either a good sequence ending in the number 1 $($if there is 3 in the sequence obtained$)$ and there are exactly $T_n$ such sequences; or a sequence of ones and twos ending in 1, of which there are exactly $2^{n-1}$. In total, there are $T_n + 2^{n-1}$ sequences of the latter type.
+<p>
+  Thus, $S_{n + 1} = (3S_n - T_n) + 2^{n-1} + (T_n + 2^{n-1}) = 3S_n + 2^n = 3^{n + 1} - 2^{n + 1}$.
+
+</p> <h1>Answer</h1> <p> 
+$3^{100} - 2^{100}$.
+
+</p> <h1>Remarks</h1> <p> 
+Compare with problem number 65125.
