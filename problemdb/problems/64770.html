@@ -16,6 +16,7 @@ A function f is given, defined on the set of real numbers and taking real values
 By the hypothesis f $(y)$ $≥$ $(f (y + 1))$ ² $≥$ 0 for any y, therefore all values of the function are nonnegative.
 Now let f $(x_0)$ = 1 + a $>$ 1 for some $x_0$. We prove by induction on n that f $(y)$ $>$ 1 + $2^{n}a$ for any y $>$ $x_0$.
 Base case $(n = 1)$. f $(y)$ $≥$ $(f (x0))$ ² = 1 + 2a + a² $>$ 1 + 2a.
-Inductive step. y $<$ 1/2 $(x_0 + y)$ $<$ $x_0$. By the induction hypothesis, f $(1/2 (x_0 + y))$ $>$ 1 + $2^{n}a$. Therefore, f $(y)$ $≥$ $(f (½ (x_0 + y)))$ ² = 1 + 42^{n + 1}$a + $(2^{n}a)² $>$ 1 + $2^{n + 1}a.
+Inductive step. y $<$ 1/2 $(x_0 + y)$ $<$ $x_0$. By the induction hypothesis, $f (1/2 (x_0 + y)) $>$ 1 + 2^{n}a$. Therefore, $f (y) $≥$ (f (½ (x_0 + y)))² = 1 + 42^{n + 1}a + (2^{n}a)² $>$ 1 + 2^{n + 1}a$.
+<p>
 Thus, for any fixed y $<$ $x_0$, we have f $(y)$ $>$ 1 + $2^{n}a$ for any positive integer n. But this is impossible, since $2^{n}a$ $>$ f $(y)$ for a sufficiently large n. And so we have a contradiction.
 </p>

@@ -10,13 +10,13 @@ use_math: true
 
 <h1>Problem ID 109715</h1>
 <p>
-Find the sum 1/3 + 2/3 + $2^2$/3 + $2^3$/3 + ... + $2^1000$/3
+Find the sum 1/3 + 2/3 + $2^2$/3 + $2^3$/3 + ... + $2^{1000}$/3
 
 </p> <h1>Solution</h1> <p>
 We remove the first term - it is equal to 0 - and instead of the sum of the remaining 1000 terms we consider the sum
-2/3 + $2^2$/3 + $2^3$/3 + .. + $21000/3.
+2/3 + $2^2$/3 + $2^3$/3 + .. + 21000/3.
 <p>
-This is the sum of the geometric progression, and it is equal to $(21001-2)$ / 3. Now we replace all its terms with whole parts. Note that none of these summands is an integer, and the sum of any two consecutive terms is an integer $(because $2^k$/3 + $2^{k + 1}$/3 = $(3 \times 2^k) / 3 = 2^k)$. It is clear that if the sum of two non-integer numbers is an integer, then the sum of their integer parts is less than the sum of the numbers themselves by 1 $([α + β] = [[α] + {α} + [β] + {β}] = [α ] + [β] + [{α} + {β}] = [α] + [β] + [1] = [α] + [β] +1)$. Therefore, replacing each successive member of our geometric progression with integer parts, the sum is reduced by 1, and since in the sum of only 1000 terms, when all parts are replaced by whole parts, it decreases by 500.
+This is the sum of the geometric progression, and it is equal to $(21001-2)$ / 3. Now we replace all its terms with whole parts. Note that none of these summands is an integer, and the sum of any two consecutive terms is an integer $($because $2^k/3 + 2^{k + 1}/3 = (3 \times 2^k) / 3 = 2^k$$)$. It is clear that if the sum of two non-integer numbers is an integer, then the sum of their integer parts is less than the sum of the numbers themselves by 1 $([α + β] = [[α] + {α} + [β] + {β}] = [α ] + [β] + [{α} + {β}] = [α] + [β] + [1] = [α] + [β] +1)$. Therefore, replacing each successive member of our geometric progression with integer parts, the sum is reduced by 1, and since in the sum of only 1000 terms, when all parts are replaced by whole parts, it decreases by 500.
 
 </p> <h1>Answer</h1> <p>
 $(21001-2)$ / 3-500.
