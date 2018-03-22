@@ -1,0 +1,29 @@
+---
+problem_id: 98510
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98510</h1>
+<p>
+A store brought 20 kg of cheese, and as a result a queue of customers formed in the store. Having given some cheese to the next customer in the queue, the saleswoman unerringly calculates the average weight of a purchase from all the cheese sold so far and says for how many people there will be enough cheese if everyone buys exactly this average weight. Could the saleswoman after all of the first 10 buyers report that there is enough cheese for exactly 10 people? If so, how much cheese is left in the store after the first 10 buyers?
+ 
+</p> <h1>Solution</h1> <p>
+Let $s_k$ be the average weight of the cheese sold to the first k buyers. By the condition 20 - $ks_k$ = $10s_k$, from here 
+<img src="98510 1.png">
+ kg, and after the k-th buyer there remains 
+<img src="98510 2.png">
+ kg of cheese. As the sequence we have collated decreases, the saleswoman can make such a message after every buyer $($not limited to the first ten$)$. After the 10th buyer exactly half of the cheese remains, which is 10 kg.
+  
+</p> <h1>Answer</h1> <p>
+Yes, she could; 10 kg.
+ 
+</p> <h1>Remarks</h1> <p>
+1.	4 points.
+<p>
+2. This problem is a discrete analog of the problem number 98513.
+</p>

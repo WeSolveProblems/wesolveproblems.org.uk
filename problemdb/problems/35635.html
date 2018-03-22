@@ -1,0 +1,24 @@
+---
+problem_id: 35635
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35635</h1>
+<p>
+Two players play the following game. They take turns. One names two numbers that are at the ends of a line segment. The next then names two other numbers, which are at the ends of a segment nested in the previous one. The game goes on indefinitely. The first aims to have at least one rational number within the intersection of all of these segments, and the second aims to prevent such occurring. Who wins in this game?
+ 
+</p> <h1>Hint</h1> <p>
+With each turn the second player can avoid certain rational numbers from falling into the intersection of all segments.
+ 
+</p> <h1>Solution</h1> <p>
+The winning strategy of the second player is as follows. For the first move he chooses his segment so that it does not have a single whole number point. With his second move, he chooses his segment so that there is not a single point of the form m / 2 in it, where m is an integer. Acting on and on, on the n-th move, he chooses his segment so that there is not a single point of the form m / n in it, where m is an integer. Note that for any move made by the first player, the second player can choose segments according to the rules stated above.
+Let a rational number p / q $($ for some integer p and a natural number q $)$ lie in the intersection of all the segments. But this contradicts the fact that the second player on his q-th move named a segment that does not contain any rational numbers, representable as a fraction with denominator q.
+ 
+</p> <h1>Answer</h1> <p>
+The second player wins.
+</p>
