@@ -1,0 +1,27 @@
+---
+problem_id: 32088
+category_ids: 207 355 590
+difficulty: 4-
+classes: 8 9 10 11
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32088</h1>
+<p>
+It is known that a certain polynomial at rational points takes rational values. Prove that all its coefficients are rational.
+
+</p> <h1>Solution</h1> <p>  
+By induction on n, we prove a stronger assertion:
+if a polynomial of degree n takes rational values at a rational point n + 1, then its coefficients are rational.
+<p>
+Base case. For any polynomial of degree zero $($ constant $)$ the assertion is obvious.
+<p>
+Inductive step. Let the polynomial P $(x)$ of degree n take rational values at rational points $x_0$, $x_1$, ..., $x_n$. By Bezout's theorem $($ see Problem 60965 $)$
+P $(x)$ - P $(x_0)$ = $(x - x_0)$ Q $(x)$, $(*)$
+where Q $(x)$ is a polynomial of degree n - 1. The values at the points $x_1$, ..., $x_n$ are rational: By the induction hypothesis, all the coefficients of the polynomial Q $(x)$ are rational. Expanding the brackets in $(*)$, we obtain that all the coefficients of the polynomial P $(x)$ are rational.
+
+</p> <h1>Remarks</h1> <p>
+Using one of the formulas for the interpolation polynomial $($ see problem 61448 or task 61052 $)$, we can recover the polynomial P $(x)$ of degree n from its values at the points 0, 1, ..., n. It is easy to see that the coefficients in the expressions obtained are rational.
+</p>

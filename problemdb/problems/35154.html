@@ -1,0 +1,24 @@
+---
+problem_id: 35154
+category_ids: 207 355 590
+difficulty: 4-
+classes: 8 9 10 11
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35154</h1>
+<p>
+Prove that multiplying the polynomial $(x + 1)^{n-1}$ by any polynomial different from zero, we obtain a polynomial having at least n nonzero coefficients.
+
+</p> <h1>Hint</h1> <p>
+Use differentiation and induction.
+
+</p> <h1>Solution</h1> <p>
+We prove the assertion by induction on n.
+<p>
+Base case. For n = 1 the assertion is obvious.
+<p>
+Inductive step. Consider the product Q $(x)$ = $(x + 1)^ n$ P $(x)$, where P $(x)$ is a nonzero polynomial. Without loss of generality, we can assume that the free term of the polynomial P $(x)$ is non-zero $($ multiplication by x does not change the number of nonzero coefficients $)$, then the free term of the polynomial Q $(x)$ is also nonzero, and the derivative Q ' $(x)$ by one non-zero coefficient is less than that of Q $(x)$. But Q ' $(x)$ = $(x + 1)^n$ P' $(x)$ + n $(x + 1)^{n-1}$ P $(x)$ = $(x + 1)^{n-1}$ $((x + 1) P '(x) + nP (x))$, that is, Q ' $(x)$ is obtained by multiplying the polynomial $(x + 1)^{n-1}$ by a non-zero $($ as it is easy to verify $)$ polynomial. By the induction hypothesis, the polynomial Q ' $(x)$ has at least n non-zero coefficients, hence the polynomial Q $(x)$ has at least n + 1 non-zero coefficients.
+</p>

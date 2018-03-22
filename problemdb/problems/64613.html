@@ -1,0 +1,32 @@
+---
+problem_id: 64613
+category_ids: 1194 900
+difficulty: 3+
+classes: 10 11
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64613</h1>
+<p>
+A polynomial of degree n $>$ 1 has n distinct roots $x_1$, $x_2$, ..., $x_n$. Its derivative has the roots $y_1$, $y_2$, ..., $y_{n-1}$.
+Prove the inequality 
+  <img src="64613 1.png">
+ 
+</p> <h1>Solution</h1> <p>
+We can assume that our polynomial can be reduced to: P $(x)$ = $x^n$ - $a_1x^{n-1}$ + $a_2x^{n-2}$ + ... By Viet formulas, $x_1$ + ... + $x_n$ = $a_1$, $x_1x_2$ + $x_1x_3$ + ... + $x_{n-1}x_n$ = $a_2$, whence 
+  <img src="64613 2.png">
+Since P ' $(x)$ = $nx^{n-1}$ - $(n-1)$ $a_1x^{n-2}$ + $(n-2)$ $a_2x^{n-3}$ + ..., we similarly obtain:
+  <img src="64613 3.png">   <img src="64613 4.png">
+
+  <img src="64613 5.png">
+  <img src="64613 6.png">
+ 
+   
+After substituting the resulting expression in the right-hand side of the original inequality, multiplying by n-1, and reducing such terms, it turns into a known inequality between the mean square and the arithmetic mean $($ for unequal numbers, see problem 61402b $)$.
+ 
+</p> <h1>Remarks</h1> <p>
+1. 6 points.
+2. The task was also proposed in the Taskbook "Quantum" $($ "Quantum", 2008, No. 6, back M2113$)$.
+</p>

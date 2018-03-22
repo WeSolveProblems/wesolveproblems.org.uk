@@ -1,0 +1,27 @@
+---
+problem_id: 116775
+category_ids: 207 355 590
+difficulty: 4-
+classes: 8 9 10 11
+source_id: 111596
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116775</h1>
+<p>
+We are given a polynomial P $(x)$ and numbers $a_1$, $a_2$, $a_3$, $b_1$, $b_2$, $b_3$ such that $a_1a_2a_3$ ≠ 0. It turned out that P $(a_1x + b_1)$ + P $(a_2x + b_2)$ = P $(a_3x + b_3)$ for any real x. Prove that P $(x)$ has at least one real root.
+</p>
+<h1>Solution 1</h1>
+<p>
+Suppose that P $(x)$ has no real roots. Then P $(x)$ has an even power of at least 2. Indeed, any polynomial of odd degree has at least one real root, and if P $(x)$ = const, then from the condition we get that P $(x)$ ≡ 0.
+Since P $(x)$ does not have real roots, it takes values of the same sign. We assume that P $(x)$ $>$ 0 $($ otherwise we multiply it by -1 $)$. Since P $(x)$ has an even power, there is a point $t_0$ in which a $($ global non-strict $)$ minimum P $(x)$ is attained, that is,
+P $(x)$ $≥$ P $(t_0)$ = A $>$ 0. Consider an $x_0$ such that $t_0$ = $a_3x_0$ + $b_3$. Then P $(a_1x_0 + b_1)$ + P $(a_2x_0 + b_2)$ $≥$ 2A $>$ A = P $(t_0)$ = P $(a_3x_0 + b_3)$. And so we have a contradiction.
+</p>
+
+
+<h1>Solution 2</h1>
+<p>
+If $a_1$ ≠ $a_3$, then there is an $x_0$ such that $a_1x_0$ + $b_1$ = $a_3x_0$ + $b_3$. Substituting x = $x_0$ in the given equation, we obtain after reduction P $(a_2x_0 + b_2)$ = 0, that is, P $(x)$ has a root. The case $a_2$ ≠ $a_3$ is treated similarly.
+There remains only the case $a_1$ = $a_2$ = $a_3$ = a ≠ 0. Let $p_0$ be the leading coefficient of the polynomial P $(x)$, and let n be its degree. Then the leading coefficients of the polynomials on the left and right sides of the given equality are $2p_0a^n$ and $p_0a^n$, therefore $p_0$ = 0. This means that P $(x)$ ≡ 0.
+</p>
