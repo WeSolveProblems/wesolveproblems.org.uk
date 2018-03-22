@@ -10,33 +10,37 @@ use_math: true
 
 <h1>Problem ID 78102</h1>
 <p>
-Solve the systems of equations:
+Solve the equation $x^3$ - [x] = 3.
+</p>
+
+<h1>Solution</h1>
 <p>
-$10x_1$ + $3x_2$ + $4x_3$ + $x_4$ + $x_5$ = 0,
+Let [x] = n and x = n + α, where 0 $≤$ α $<$ 1. Then $x^3$ - x + α = 3, and it follows from the restrictions on α that 2 $<$ $x^3$ - x $≤$ 3.
+If x $≥$ 2, then x $(x^2 - 1)$ $≥$ $2 \times 3$ = 6, so the inequality $x^3$ - x $≤$ 3 does not hold. If x $<$ -1, then x $(x^2 - 1)$ $<$ 0, therefore the inequality
+2 $<$ $x^3$ - x does not hold.
+Thus, -1 $≤$ x $<$ 2, that is, [x] = -1, 0 or 1. Accordingly, we get the equations $x^3$ + 1 = 3, $x^3$ = 3, $x^3$ - 1 = 3. Their solutions:
+x = <IMG SRC="78102 1.gif">
+
+, x =<IMG SRC="78102 2.gif">
+
+, x =<IMG SRC="78102 3.gif">
+
+. In this case, [
+
+<IMG SRC="78102 1.gif">
+] ≠ -1, [
+
+<IMG SRC="78102 2.gif">
+] ≠ 0, and [
+
+<IMG SRC="78102 3.gif">
+] = 1.
+</p>
+
+<h1>Answer</h1>
 <p>
-$11x_2$ + $2x_3$ + $2x_4$ + $3x_5$ + $x_6$ = 0,
-<p>
-$15x_3$ + $4x_4$ + $5x_5$ + $4x_6$ + $x_7$ = 0,
-<p>
-$2x_1$ + $x_2$ - $3x_3$ + $12x_4$ - $3x_{54}$ + $x_{64}$ + $x_7$ = 0,
-<p>
-$6x_1$ - $5x_2$ + $3x_3$ - $x_4$ + $17x_5$ + $x_6$ = 0,
-<p>
-$3x_1$ + $2x_2$ - $3x_3$ + $4x_4$ + $x_5$ - $16x_6$ + $2x_7$ = 0,
-<p>
-$4x_1$ - $8x_2$ + $x_3$ + $x_4$ - $3x_5$ + $19x_7$ = 0.
- 
-</p> <h1>Solution</h1> <p>
-We write the equations of the system in the form 
- <img src="78102 1.png">
-The coefficients $a_{ij}$ have the following property: 
- <img src="78102 2.png">
-for each i. Let $x_1, ..., x_7$ be a nonzero solution of the system under consideration, and $x_k$ be the largest absolute value of these numbers. Then, 
- <img src="78102 3.png">
- therefore, 
- <img src="103843 3.png">
-and such an equality cannot be fulfilled. This gives us a contradiction.
- 
-</p> <h1>Answer</h1> <p>
-$(0, 0, 0, 0, 0, 0, 0)$.
+x =
+
+<IMG SRC="78102 3.gif">
+.
 </p>

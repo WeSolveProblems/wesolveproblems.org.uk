@@ -10,19 +10,11 @@ use_math: true
 
 <h1>Problem ID 64409</h1>
 <p>
-Prove the inequality: 
- <img src="61403 1.png"> 
-The values of variables are considered positive.
- 
-</p> <h1>Hint</h1> <p>
-Consider the functions $f_k$ $(x)$ = $a_ke^x$ - $b_k$ $(x + 1)$ and refer to task number 614000.
+Prove that the polynomial P $(x)$ is divisible by its derivative if and only if P $(x)$ has the form P $(x)$ = $a_n$ $(x – x_0)^n$.
  
 </p> <h1>Solution</h1> <p>
-Consider the function f $(x)$ = aex-b $(x + 1)$ $(a, b> 0)$. Its derivative f ' $(x)$ = aex - b strictly increases and vanishes at the point 
- <img src="61403 2.png"> 
-. Therefore, 
- <img src="61403 3.png"> 
-Since $a_1e^x$ - $b_1$ $(x + 1)$ + ... + $a_ne^x$ - $b_n$ $(x + 1)$ = $(a_1 + ... + a_n)$ $e^x$ - $(b_1 + ... + b_n)$ $(x + 1)$, then according to problem number 61400 
- <img src="61403 4.png"> 
-, which is equivalent to the inequality to be proved.
-</p> 
+If the polynomial has the indicated form, then the assertion is obvious.
+Suppose that a polynomial P of degree n is divisible by P '. The quotient must have a power of 1, so it follows from the comparison of the primary coefficients that nP $(x)$ = $(x – x_0)$ P ' $(x)$.
+Let $x_0$ be a root of multiplicity k, that is, P $(x)$ = $(x – x_0)^k$ Q $(x)$, where Q $(x_0)$ ≠ 0. Then
+n $(x – x_0)^k$ Q$(x)$ = nP $(x)$ = $(x – x_0)$ P '$(x)$ = $(x – x_0)^{k + 1}$ Q' $(x)$ + k$(x – x_0)^k$ Q $(x)$ , that is, nQ $(x)$ = $(x – x_0)$ Q’ $(x)$ + kQ $(x)$, $(n - k)$ Q $(x)$ = $(x – x_0)$ Q' $(x)$. Since Q $(x_0)$ ≠ 0, it follows that k = n.
+</p>

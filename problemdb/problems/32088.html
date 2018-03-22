@@ -20,7 +20,9 @@ Base case. For any polynomial of degree zero $($ constant $)$ the assertion is o
 <p>
 Inductive step. Let the polynomial P $(x)$ of degree n take rational values at rational points $x_0$, $x_1$, ..., $x_n$. By Bezout's theorem $($ see Problem 60965 $)$
 P $(x)$ - P $(x_0)$ = $(x - x_0)$ Q $(x)$, $(*)$
-where Q $(x)$ is a polynomial of degree n - 1. The values at the points $x_1$, ..., $x_n$ are rational: By the induction hypothesis, all the coefficients of the polynomial Q $(x)$ are rational. Expanding the brackets in $(*)$, we obtain that all the coefficients of the polynomial P $(x)$ are rational.
+where Q $(x)$ is a polynomial of degree n - 1. The values at the points $x_1$, ..., $x_n$ are rational: 
+<p>
+$Q(x_i) = \frac{P(x_i) - P(x_0)}{x_i - x_0}$. By the induction hypothesis, all the coefficients of the polynomial Q $(x)$ are rational. Expanding the brackets in $(*)$, we obtain that all the coefficients of the polynomial P $(x)$ are rational.
 
 </p> <h1>Remarks</h1> <p>
 Using one of the formulas for the interpolation polynomial $($ see problem 61448 or task 61052 $)$, we can recover the polynomial P $(x)$ of degree n from its values at the points 0, 1, ..., n. It is easy to see that the coefficients in the expressions obtained are rational.
