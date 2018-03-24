@@ -1,0 +1,29 @@
+---
+problem_id: 116704
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116704</h1>
+<p>
+Author: O.N. Kosukhin
+<p>
+The teacher wrote on the board in alphabetical order all possible $2^n$ words consisting of n letters A or B. Then he replaced each word with a product of n factors, correcting each letter A by x, and each letter B by $($1 – x$)$, and added several of the first of these polynomials in x. Prove that the resulting polynomial is either a constant or increasing function in x on the interval [0, 1].
+
+</p> <h1>Solution</h1> <p> 
+   Induction on base n. If n = 1, x and $($1 – x$)$ will be written on the board after the teacher's actions. x is an increasing function, and x + (1 - x) is a constant. Later on, we will also consider the constant function to be increasing.
+<p>
+   Induction step. Let the teacher summarise the first k obtained expressions $(1 ≤ k ≤ 2^n)$.
+   If $k ≤ 2^{n-1}$, then the first factor in each of these k terms is x. If we take it outside of the bracket, then a polynomial remains in parentheses, which the teacher would have obtained by adding the first k polynomials obtained from words of length n - 1. By the induction hypothesis, the expression in parentheses is a constant or increasing function on the interval [0, 1]. After multiplying by x, we also get an increasing function on [0, 1].
+<p>
+   If $k = 2^n$, then the teacher added all of the expressions on the board. The resulting expression can be grouped and written in the form $(x + (1 - x))^n$. This function is constant and equal to one.
+<p>
+   If $2^{n-1} $<$ k $<$ 2^n$, then we denote the function f $(x)$ obtained by the teacher and consider the sum of the remaining expressions that have not been used. In each of these we make the substitution t = 1 - x. By what has been proved above, this sum is an increasing function in t on the interval [0, 1] $($in fact, we now read all of the words from right to left$)$. Hence, it is a function decreasing in x on the interval [0, 1]. But this function is $1 - f (x)$. Consequently, the function f $(x)$ increases on the interval [0, 1].
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+

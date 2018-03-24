@@ -1,0 +1,25 @@
+---
+problem_id: 61392
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 61392</h1>
+<p>
+We are given rational positive numbers p, q, where 1/p + 1/q = 1. Prove that for positive a and b, the following inequality holds: $ab ≤ ap/p + bq/q$.
+
+</p> <h1>Solution 1</h1> <p> 
+We can find natural numbers m and n such that the inequality holds <img src="61392 1.gif"> After the substitution $α = a^{1 / m}, β = b^{1 / n}$, the original inequality takes the form <img src="61392 2.gif"> To prove it, it suffices to use the Cauchy inequality: <img src="61392 3.gif">
+
+</p> <h1>Solution 2 </h1> <p>
+By the convexity of the function ln x, the inequality $ln (αx + (1 - α) y) ≥ α ln x + (1 - α) ln y$ holds for 0 $<$ α $<$ 1 for all positive x and y $($see problem number 61406$)$. Substituting $α = 1/p, x = a^p, y = b^q$, we obtain <img src="61392 4.gif"> as required.
+
+</p> <h1>Answer</h1> <p>  
+See the solution above. 
+
+</p> <h1>Remarks</h1> <p> 
+As can be seen from Solution 2, the word "rational" in the condition is not necessary.

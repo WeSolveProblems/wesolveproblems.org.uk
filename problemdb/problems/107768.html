@@ -1,0 +1,59 @@
+---
+problem_id: 107768
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 107768</h1>
+<p>
+Author: N.B. Vasiliev
+<p>
+A cherry which is a ball of radius r is dropped into a round glass whose axial section is the graph of the function $y = x^4$. At what maximum r will the ball touch the most bottom point of the bottom of the glass? $($In other words, what is the maximum radius r of a circle lying in the region $y \geq x^4$ and containing the origin?$)$.
+
+</p> <h1>Solution</h1> <p> 
+First, we solve another problem: we construct a circle with the centre on the y axis, which is tangent to the x axis and find out for which smallest radius r it has a common point with the curve $y = x^4$ that is different from the origin. In other words, what is the smallest r for which the system of equations
+$y = x^4, x^2 + (y - r)^2 = r^2$
+has a nonzero </p> <h1>Solution</h1> <p> . It is intuitively clear that these problems are equivalent, later we will prove this rigorously.
+We substitute $y = x^4$ into the equation of the circle. We reduce similar terms and cancel by $x^2 (x> 0):
+x^6 - 2rx^2 + 1 = 0$
+<p>
+We express r in terms of x:
+$r (x) = ½ (x^4 + 1/x^2)$
+<p>
+The desired number $r_0$ is the minimum of this function. The derivative of the function is
+$r '(x) = 2x3 – 1/x^3$
+<p>
+For x $>$ 0, this derivative behaves as follows: it is negative for $x $<$ x_0$ = $ {\frac {1} {\sqrt [6] 2}} $, it is zero at $x_0$ and it is positive for x $>$ $x_0$. Hence, $r (x)$ decreases for 0 $<$ x $<$ $x_0$, reaches a minimum at $x = x_0$, and increases for x $>$ $x_0$.
+<p>
+Thus, the smallest r for which the circle has a common point with the curve $y = x^4$ is 
+$r_0 = r (x_0) = {\frac {3 \sqrt [3] 2} {4}} $.
+<p>
+It remains to show that this $r_0$ gives the </p> <h1>Answer</h1> <p>  in the original problem. We show first that the corresponding cherry is entirely contained in the glass. Indeed, for any $x \neq 0$ we have $r_0 \leq r (x)$. Substituting the expression for $r (x)$ into this inequality, we obtain that for any x:
+$x^6 - 2r_0x^2 + 1 \geq 0$.
+Multiplying both sides by $x^2$ and substituting $y = x^4$, we obtain
+$x_2 + (y – r_0)^2 \geq r_0^2$
+for all x, $y = x^4$. But this means that the cherry is in the glass.
+<p>
+It remains to show that if r $>$ $r_0$, then the cherry does not touch the origin. Indeed, in this case
+$x_0^6 - 2rx_0^2 + 1 $<$ 0$,
+therefore, for $y_0 = x_0^4$, we have that
+$x_0^2 + (y_0 - r)^2 $<$ r^2$.
+This means that a circle of radius r tangent to the abscissa at the origin intersects the graph of the function $y = x^4$. Therefore, the cherry does not touch the bottom.
+
+</p> <h1>Answer</h1> <p> 
+See the </p> <h1>Solution</h1> <p>  above. 
+
+</p> <h1>Remarks</h1> <p> 
+1.	It is not difficult to see that the "maximal" cherry touches the curve $y = x^4$ at the origin and at two other points.
+<p>
+2.	An analogous problem can be solved for the graph of the function $y = |x|^a$ for any a. For the abscissa of the point of tangency of the "maximum cherry", we obtain the equation $x^{2 (a-1)} = (a-2)/a$
+<p>
+a)	For a $>$ 2 there is a nonzero </p> <h1>Solution</h1> <p> , and the situation is the same as for a = 4;
+<p>
+b)	for a = 2, we get x = 0 and r = 1/2 is the radius of curvature of the graph at $($0; 0$)$, - the maximum cherry touches the parabola at a single point;
+<p>
+c) for 0 $<$ a $<$ 2 no circle can touch the "bottom" of the graph.

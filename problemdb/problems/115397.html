@@ -1,0 +1,30 @@
+---
+problem_id: 115397
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 115397</h1>
+<p>
+Author: A.S. Golovanov
+<p>
+The sequence $a_1, a_2, …$ is such that $a_1 \in (1,2)$ and $a_{k + 1} = a_k + \frac{k}{a_k}$ for any positive integer k. Prove that it cannot contain more than one pair of terms with an integer sum.
+
+</p> <h1>Solution</h1> <p> 
+We set $b_k = a_k-k$. Then
+<p>
+$b_{k + 1} = b_{k-1} + \frac{k}{k+b_k} = b_k - \frac{b_k}{k+b_k} = b_k (1 - \frac{1}{k+b_k})$.
+
+Hence, by induction for k, we obtain that $b_k$ $>$ 0 $($since $b_1$ $>$ 0$)$. In addition, $b_{k + 1} = b_k - \frac{b_k}{k+b_k} $<$ b_k$. From this, in particular, it follows that $b_k \leq b_1 $<$1$.
+<p>
+Note that $b_2 = a_1 + \frac{1}{a_1} -2 = (\sqrt{a_1} - \frac{1}{\sqrt{a_1}})^2$. The expression in parentheses is positive and increases when $a_1$ goes through the interval (1,2); then 0 = 1 + 1/1 -2 $<$ $b_2$ $<$ 2 + ½ -2 = ½. Thus, $b_k \leq b_2 < ½$ for $k \geq 2$.
+<p>
+Now, if $a_k + a_j$ is an integer, then $b_k + b_j$ is also an integer. Hence, one of the numbers $b_k, b_j$ $($for definiteness, let’s say b_k$)$ is not less ½; then k = 1, and $b_j = 1-b_1$. But there are at most one such number j, since the sequence $(b_i)$ decreases. From this follows the statement of the problem.
+Comments. It can be shown that the number of pairs with an integer sum is finite for any $a_1> 1$.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 

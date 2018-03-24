@@ -1,0 +1,28 @@
+---
+problem_id: 107841
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 107841</h1>
+<p>
+Author: M.A. Evdokimov
+<p>
+Three functions are written on the board: $f_1 (x) = x + 1/x, f_2 (x) = x^2, f_3 (x) = (x - 1)^2$. You can add, subtract and multiply these functions $($and you can square, cube, etc. them$)$. You can also multiply them by an arbitrary number, add an arbitrary number to them, and also do these operations with the resulting expressions. Therefore, try to get the function 1/x.
+<p>
+Prove that if you erase any of the functions $f_1, f_2, f_3$ from the board, it is impossible to get 1/x.
+
+</p> <h1>Solution</h1> <p> 
+  Since $f_2 (x) – f_3 (x) = 2x – 1$, and since we can add 1 and multiply the resulting 2x expression by ½, we can obtain the function x. Subtracting it from $f_1 (x)$, we obtain $1/x = f_1 (x) – ½ (f_2 (x) – f_3 (x) + 1)$.
+<p>
+  Since the division operation is not allowed, it is impossible to express 1/x only through the functions $f_2$ and $f_3$: if we multiply and add polynomials, we again obtain polynomials, and the function 1/x is not a polynomial.
+  The derivatives of the functions $f_1$ and $f_3$ at the point x = 1 are equal to 0. If the derivatives of the two functions at the point 1 are 0, then the derivative of both their sums and their products is 0. So, all of the functions that can be obtained by means of the specified operations from the functions $f_1$ and $f_3$, have a zero derivative at the point 1. The derivative of the function 1/x at the point 1 is different from 0.
+  All our functions are defined for all complex x ≠ 0. If we substitute x = i in $f_1$ and $f_2$, then we get $i + i^{-1} = 0, i^2 = -1$, and these are real numbers. Hence, each of the functions obtained from $f_1$ and $f_2$ will have a real value at the point i. But using only real numbers we cannot express the imaginary number $f_3 (i) = - 2i$.
+
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 

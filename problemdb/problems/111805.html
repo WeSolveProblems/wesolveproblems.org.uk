@@ -1,0 +1,25 @@
+---
+problem_id: 111805
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 111805</h1>
+<p>
+Author: M.V. Murashkin
+<p>
+The sequence $(a_n)$ is given by the conditions $a_1 = 1000000, a_{n + 1} = n [a_n/n] + n$. Prove that an infinite subsequence can be found within it, which is an arithmetic progression.
+
+</p> <h1>Solution</h1> <p> 
+We note that the numbers $k_n = a_{n+1}/n=[a_n n] +1$ are natural, and
+$k_{n + 1} = [a_{n + 1} n + 1] +1 = [nk_n/(n+1)] + 1 = k_n + [-k_n/(n+1)] + 1 \leq k_{n-1} + 1 = k_n$.
+<p>
+Hence, the sequence $k_n$ is non-increasing, and all of its terms are natural numbers. Then, starting from a certain point, it is constant, i.e. $k_n = k_{n + 1} = k_{n + 2} = .. = k$. This means that for $d \geq n$ we have that $a_{d + 2}-a_{d + 1} = (d + 1) k_d + 1-dk_d = (d + 1) k-dk = k$, that is, the whole subsequence $a_{n + 1}, a_{n + 2}, a_{n + 3}, ...$ is an arithmetic progression with difference k.
+
+</p> <h1>Answer</h1> <p>  
+See the solution above.
+

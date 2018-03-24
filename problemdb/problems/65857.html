@@ -1,0 +1,28 @@
+---
+problem_id: 65857
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65857</h1>
+<p>
+Author: A.K. Tolpygo
+12 grasshoppers sit on a circle at various points. These points divide the circle into 12 arcs. Let’s mark the 12 mid-points of the arcs. At the signal the grasshoppers jump simultaneously, each to the nearest clockwise marked point. 12 arcs are formed again, and jumps to the middle of the arcs are repeated, etc. Can at least one grasshopper return to his starting point after he has made a) 12 jumps; b) 13 jumps?
+
+</p> <h1>Solution</h1> <p> 
+a)	The first way. After each "move" the grasshopper will not jump to the point where the next grasshopper was before. So, the next one after him will not reach this point in two consecutive jumps. So, continuing in this way, we get that after the 12th jump the first one will not reach its initial position.
+<p>
+  The second way. Suppose that one of the grasshoppers $($let's call it the first one$)$ returned to the starting point A after 12 moves. Then the remaining 11 grasshoppers jumped through point A before the first grasshopper returned to this point. But in one move through point A, no more than one grasshopper could jump over, and on the first move through A no one jumped. This is a contradiction.
+<p>
+  b) If at the beginning, one of the grasshoppers is moved clockwise, then the first jump, and the next one after it, will jump further, and the rest will jump as before. For the second jump, three grasshoppers will now jump further, and the rest - as before. Continuing the argument in this way, we see that as a result, for 13 jumps all grasshoppers will jump further. We number the grasshoppers counter-clockwise and move all but the first one to the point O, where the first sits $($first we shift the 2nd, then the 3rd, etc.$)$. At this initial position, it is easy to follow the sequence of jumps: the k-th grasshopper will first leave O on the k-th "go", jumping by $1/2^k$ from the circumference, and the first after this jump will be at the same distance from O on the other side. As a result, the first grasshopper on his 13th jump will return to point O. Hence, in the initial situation, he will not jump to his starting point.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+
+</p> <h1>Remarks</h1> <p> 
+Marks: 4 + 3
+

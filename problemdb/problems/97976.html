@@ -1,0 +1,43 @@
+---
+problem_id: 97976
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 97976</h1>
+<p>
+Author: V. Galperin
+<p>
+We consider a sequence of words consisting of the letters "A" and "B". The first word in the sequence is "A", the k-th word is obtained from the $(k-1)$-th by the following operation: each "A" is replaced by "AAB" and each "B" by "A". It is easy to see that each word is the beginning of the next, thus obtaining an infinite sequence of letters: AABAABAAABAABAAAB ...
+a)	Where in this sequence will the 1000th letter "A" be?
+<p>
+   b) Prove that this sequence is non-periodic.
+
+</p> <h1>Solution</h1> <p> 
+   We denote the nth word by $W_n$, and the indicated operation by f: $W_n + 1 = f (W_n)$. Note that $f (UV) = f (U) f (V)$. We can assume that
+$W_0 = B$. Since $W_2 = W_1W_1W_0, W_{n + 1} = W_nW_nW_{n-1}. (*)$
+<p>
+   Let $W_n$ contain $a_n$ letters A and $b_n$ letters B. It follows from $(*)$ that $a_{n + 1} = 2a_n + a_{n-1}. (**)$
+<p>
+   By hypothesis $b_{n + 1} = a_n$.
+<p>
+a)	We can calculate successively: $a_0 = 0, a_1 = 1, a_2 = 2, a_3 = 5, a_4 = 12, a_5 = 29, a_6 = 70, a_7 = 169, a_8 = 408, a_9 = 985$. Consequently, the 1000th the letter will already appear in the word $W_10 = W_9W_9W_8 = W_9W_5 ... = W_9W_4W_4 ... = W_9W_4W_3W_3 ... = W_9W_4W_2W_2 ...$
+<p>
+   The word $W_9$ contains 985 + 408 = 1393 letters, the word $W_4$ - 12 + 5 = 17 letters, $W_2W_2$ = AAB(A)AB $($the marked letter is the 1000th letter A$)$. Thus, the 1000th letter A is on the 1414th place $(1393 + 17 + 4 = 1414)$.
+<p>
+b)	Suppose that there exists <img src="97976 1.gif"> Then <img src="97976 2.gif"> Then, passing to the limit in the equality obtained from $(**)$ <img src="97976 3.gif">, we see that l is the root of the equation l = 2 + 1/l, that is, irrational.
+<p>
+   Suppose that our sequence is periodic, the pre-period contains c letters, the period contains a letters A, b letters B and fits $k_n$ times in the word $W_n$. Then $k_na ≤ a_n $<$c + (k_n + 1) a, k_nb ≤ b_n $<$c + (k_n + 1) b$; hence, <img src="97976 4.gif">. It follows that $a_n/b_n$ tends to a rational number a/b. This is a contradiction.
+
+</p> <h1>Answer</h1> <p> 
+a) At the 1414th place.
+
+</p> <h1>Remarks</h1> <p> 
+1.	Points: 4 + 4.
+<p>
+2. Compare with problem number M1125 from the “Quant” problems. For a more detailed discussion of the problem, see the </p> <h1>Solution</h1> <p> s from the “Quant” problems.
+

@@ -1,0 +1,27 @@
+---
+problem_id: 109534
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109534</h1>
+<p>
+Author: V. Vavilov
+<p>
+Seven triangular pyramids stand on the table. For any three of them, there is a horizontal plane that intersects them along triangles of equal area. Prove that there is a plane intersecting all seven pyramids along triangles of equal area.
+
+</p> <h1>Solution</h1> <p> 
+For each pyramid with the base area $S_i$ and the height $H_i$, i = 1, 2, 7, let’s consider the function $S_i (x)$ expressing the dependence of the cross-sectional area of the pyramid by a horizontal plane located at a distance x from the table surface. We have:
+$S_i (x) = S_i (1- x/H_i)^2, 0 \leq x \leq H_i$.
+<p>
+The graphs of any two such functions $($see the figure below$)$ can either have one common point, or coincide, since the equation
+$S_i (1- x/H_i)^2 = S_j (1- x/H_i)^2$
+
+by the condition of the problem for $H_i $<$ H_j$ has a root on the interval [0, $H_i$], and the second root belongs to the interval $[H_i, H_j]$ $($since for x = $H_i$ the left hand side is less than the right hand side, and vice versa for x =$ H_j$ $)$ and does not fall into the domain of definition of the function $S_i (x)$ $($in the case $H_i$ = $H_j$ they have either one root $x = H_i = H_j$, or they coincide$)$. Let’s consider two graphs that have exactly one common point with abscissa $x_0$ $($if there are none, then all seven graphs coincide, and any horizontal secant plane can be chosen$)$. Then from the condition of the problem it follows that any other graph also passes through this point. Therefore, a plane passing at a distance $x_0$ from the table satisfies the requirement of the problem.
+<p>
+<img src="109534 1.gif">
+

@@ -1,0 +1,41 @@
+---
+problem_id: 116558
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116558</h1>
+<p>
+Author: I.I. Bogdanov
+<p>
+The nonzero numbers a, b, c are such that every two of the three equations $ax^{11} + bx^4 + c = 0, bx^{11} + cx^4 + a = 0, cx^{11} + ax^4 + b = 0$ have a common root. Prove that all three equations have a common root.
+
+</p> <h1>Solution</h1> <p>  1
+   We note that all of the roots of our equations are nonzero, since the free terms are not equal to zero.
+<p>
+   Let p be the common root of the first two equations. Then
+$0 = b (ap^{11} + bp^4 + c) -a (bp^{11} + cp^4 + a) = p^4 (b^2 -ac) - (a^2-bc), 0 = b (bp^{11} + cp^4 + a) -c (ap^{11} + bp^4 + c) = p^{11} (b^2-ac) - (c^2-ab)$.
+<p>
+   It follows that if one of the numbers $A = a^2 - bc, B = b^2 - ac, C = c^2 – ab$ is equal to zero, then all three are equal to zero. But then
+a/b = b/c = c/a, and since the product of these numbers is 1, then all of them are equal to 1, that is, a = b = c. In this case the statement of the problem is obvious.
+<p>
+   Otherwise, all three numbers A, B, C are nonzero. Then $p^4 = A / B, p^{11} = C/B$.
+<p>
+   We denote by q the common root of the second and third equations, and by r the common root of the third and first equations. Analogously we obtain $q^4 = B/C$, from which $p^{11}q^4 = 1$. In the same way we obtain the equalities $q^{11}r^4 = 1, r^{11}p^4 = 1$. Hence $p^{11^3} = q^{-4 \times 11^2} = r^{4^2 \times 11} = p^{-4^3}$, hence p = 1. Similarly, q = r = 1. Thus, 1 is the common root of all three equations.
+<p>
+   Comment. The </p> <h1>Solution</h1> <p>  can be found in a different way. Suppose that | B | Is the average of the numbers | A |, | B |, | C |. Then one of the numbers <img src="116558 1.gif"> and <img src="116558 2.gif"> one of which is not more than one, and the other is not less than one. Hence, they are both equal to one, that is, | p | = 1. Therefore,
+| A | = | B | = | C | and | q | = | r | = | p | = 1. Therefore, two of the numbers p, q, r are equal, say, p = q. But then this number is the common root of all three equations.
+
+</p> <h1>Solution</h1> <p>  2
+   It suffices to prove that one of these equations has exactly one root; then it will be the common one between this equation and each of the others. Consider among these equations the one in which the coefficients for $x^4$ and the free term have the same sign; let’s say that, for definiteness, b $>$ 0, c $>$ 0 $($the case b $<$ 0, c $<$ 0 reduces to the multiplication of the equation by -1$)$. We write the equation in the form
+$ax^7 + b + cx^{-4} = 0$. On the positive semi-axis, the function $f (x) = ax^7 + b + cx^{-4}$ is positive, and on the negative semi-axis it increases strictly. Consequently, it has at most one root.
+<p>
+   Comments. The uniqueness of the root can also be shown with the help of a derivative.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+

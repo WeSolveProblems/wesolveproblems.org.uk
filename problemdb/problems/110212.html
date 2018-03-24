@@ -1,0 +1,26 @@
+---
+problem_id: 110212
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 110212</h1>
+<p>
+Author: V.A. Senderov
+<p>
+For what natural numbers n are there positive rational but not whole numbers a and b, such that both a + b and $a^n + b^n$ are integers?
+
+</p> <h1>Solution</h1> <p> 
+  If n is odd, then we set a = ½, b = ½ $(2^n - 1)$. Then $a + b = 2^{n-1}$, and $a^n + b^n = (a + b) (a^{n-1}-a^{n-2}b + ... + b^{n-1})$. The denominator of the fraction in parentheses is $2^{n-1}$, therefore the number $a^n + b^n$ is also an integer.
+<p>
+  Let n be even. Suppose that the required numbers a and b are found. Since their sum is an integer, the denominators in their irreducible notation are equal, that is, their irreducible record is as follows: a = p/d, b = q/d; and p + q is a multiple of d.
+  Since the number <img src="110212 1.gif"> is integer, $p^n + q^n$ is divisible by d. But $p^n + q^n = (p^n – q^n) + 2q^n$, and $p^n – q^n$ is divisible by a multiple of d:
+<p>
+$p^2 – q^2 = (p + q) (p - q)$. Hence, $2q^n$ is divisible by d. Since the fraction q/d is uncancellable, then 2 is divisible by d, that is, d = 2. But then $p^n$ and $q^n$ are the squares of odd numbers, which hence give the remainder 1 when dividing by 4. Therefore $p^n + q^n$ is not divisible by 4, and more so, by $2^n$. This is a contradiction.
+
+</p> <h1>Answer</h1> <p> 
+For all odd n.

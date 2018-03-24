@@ -1,0 +1,39 @@
+---
+problem_id: 111829
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 111829</h1>
+<p>
+Author: A.S. Golovanov
+<p>
+In the infinite sequence $(x_n)$, the first term $x_1$ is a rational number greater than 1, and $x_{n + 1} = x_n + \frac{1}{[x_n]}$ for all positive integers n.
+Prove that there is an integer in this sequence.
+Note that in this problem, square brackets represent integers and curly brackets represent non-integer values or 0.
+
+
+
+</p> <h1>Solution</h1> <p> 
+  We call a term of the sequence $x_n$ such that $[x_n]> [x_{n-1}]$ is special. There are infinitely many special terms, since if $[x_n]$ = k, then
+<p>
+$[x_{n + k}]$ $>$ k$. For each special term, we represent its fractional part in the form of an irreducible fraction $($if the special term is an integer, we will consider the numerator of its fractional part equal to 0$)$.
+<p>
+  Let $x_k$ be a special term. We denote its whole part by m $(obviously m ≥ 2)$, and its fractional part by r. Since $[x_{k-1}] = m-1$, then $r $<$ \frac{1}{m-1} ≤ 2/m$.
+<p>
+  If $0 $<$r $<$1/m$, then the following m terms of the sequence will be equal to $x_{k + 1} = x_k + 1/m, x_{k + 2} = x_k + 2/m, ...,
+x_{k + m-1} = x_k + \frac{m-1}{m} = m + r + \frac{m-1}{m} $<$m + 1, x_{k + m} = x_k + 1$. Thus, $x_{k + m}$ is the next special term, and in comparison with the previous, its fractional part has not changed, and the whole part has increased by 1. Continuing in this way, we come to a special term $x_n$, the integer part of which is $p = [x_n]$ and the fractional part is $r = {x_n}$ satisfy the condition $1/p ≤ r $<$ \frac{1}{p -1}$. Then the following terms of the sequence will be equal to $x_{n + 1} = x_n + 1 / p, x_{n + 2} = x_n + 2 / p, ...,
+x_{n + p-2} = xn + p-2 / p = p + r + \frac{p-2}{p} $<$ p + 1, x_{n + p-1} = x_n + \frac{p-1}{p} = (p + 1) + (r - 1 / p)$. The new special term $x_{n + p-1}$ has a fractional part r - 1/p. The numerator is smaller than r. Indeed, if r = a/b, then $r = 1/p = \frac{ap-b}{pb}$, and since $a/b < \frac{1}{p-1}$, then ap -a $<$ b ⇔ ap-b $<$ a.
+<p>
+  Thus, for each singular term in a sequence whose fractional part has a nonzero numerator, we have found a special term with the smallest numerator of the fractional part. Since the numerator is a natural number that cannot decrease infinitely, a term appears in the sequence, the fractional part of which is equal to 0, which is what was required.
+
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+
+
+

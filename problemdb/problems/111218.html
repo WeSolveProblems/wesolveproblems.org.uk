@@ -1,0 +1,38 @@
+---
+problem_id: 111218
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 111218</h1>
+<p>
+The base of the pyramid is a square. The height of the pyramid crosses the diagonal of the base. Find the largest volume of such a pyramid if the perimeter of the diagonal section containing the height of the pyramid is 5.
+
+</p> <h1>Solution</h1> <p> 
+Lemma: Of all triangles with given bases and perimeters, the largest area (and hence the height) comes from an isosceles triangle.
+<p>
+Proof of the lemma: Let x, y and z be sides of a triangle, z be its predetermined side, S be a height, p = $\frac{x+y+z}{2}$ be the given semi-permeter of a triangle. By Heron's formula
+$S = k \sqrt{(p-x)(p-y) = \sqrt{p(p-z)} \times \sqrt{(p-x)(p-y)} = k \sqrt{(p-x)(p-y)}$,
+
+where $k = \sqrt{p(p-z)}$ is a fixed value. Then
+S = k\sqrt{(p-x)(p-y)} \leq k \times \frac{(p-x)+(p-y)}{2} = k \frac{2p-x-y}{2} = kz$,
+<p>
+and equality is achieved if p-x = p-y, that is, if x = y, as required.
+<p>
+Let the base of the pyramid PABCD be the square ABCD with side a. Let the base H of the height PH of the pyramid lie on the diagonal of the base AC, and let the perimeter of the diagonal section of the APC be 5. Then the volume of the pyramid is maximal if its height PH is maximal; the perimeter of the triangle is equal to 5, then by the lemma the maximal height occurs with an isosceles triangle, hence, for a fixed a, the largest volume occurs for a pyramid for which AP = CP = $\frac{5 – a\sqrt{2}}{2}$. Let V $($a$)$ be this volume. Then
+V $($a$)$ = $\frac{1}{3} AB2 \times PH = \frac{1}{3} a2 \times \sqrt{(\frac{5-a\sqrt{2}}{2})^2 - \frac{a\sqrt{2}}{2})^2} = \frac{\sqrt{5}}{6} a2 \sqrt{5-2a\sqrt{2}}.
+<p>
+We find a for which the greatest value of the positive function $f (a) = V2 (a) = 5/36 a4 (5-2a\sqrt{2})$ is attained on the ray $(0; +\infinity)$:
+<p>
+$f '(a) = 5/36 (4a3 (5-2a\sqrt{2}) - 2a4\sqrt{2}) = \frac{25 \sqrt{2}}{18} a3 (\sqrt {2} -a)$.
+<p>
+The ray $(0; +\infinity)$ belongs to the unique critical point a = $\sqrt{2}$ of this function, and when passing through this point the derivative changes the sign from "+" to "-". Consequently, a = $\sqrt{2}$ is a maximum point. Then the function V $($a$)$ takes the largest value at this point, which is equal to
+$V (\sqrt{2}) =\frac{\sqrt{5}}{6} \times 2 \sqrt {5-\sqrt{2} \times \sqrt{2}} = \frac{\sqrt{5}}{3}$.
+
+
+</p> <h1>Answer</h1> <p> 
+  $\frac{\sqrt{5}}{3}$.

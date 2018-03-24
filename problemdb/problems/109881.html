@@ -1,0 +1,26 @@
+---
+problem_id: 109881
+category_ids: 353 905
+difficulty: 3+
+classes: 8 9 10
+source_id: 187098
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109881</h1>
+<p>
+Author: I.S. Rubanov
+<p>
+The polynomial P $($x$)$ of degree n has n distinct real roots.
+What is the largest number of its coefficients that can be equal to zero?
+
+</p> <h1>Solution</h1> <p> 
+  Evaluation. Between any two roots of a differentiable function there is a root of its derivative. Hence, the polynomial P '$($x$)$ $($degree of n – 1$)$ has n - 1 distinct real roots, that is, it does not have multiple roots. Continuing in this way, we obtain that all of the derivatives of the polynomial P possess the same property. It follows that from any two successive coefficients of the polynomial P at least one is not equal to zero. Indeed, if the coefficients of $x^k$ and $x^{k + 1}$ are equal to zero, then the free term and the coefficient of x are equal to zero for the derivative of P $($k$)$. But this means that 0 is a multiple root of P $($k$)$, which is not the case.
+<p>
+  We divide the coefficients of the polynomial into pairs $($leaving, for even n, the leading coefficient without a pair$)$. By what has been proved, the number of zero coefficients does not exceed the number of pairs, that is, n/2 for even n and $(n + 1)/2$ for odd n.
+<p>
+  Examples. The polynomial $(x^2-1)(x^2-2^2)…(x^2-k^2)$ of degree n = 2k and the polynomial $x (x^2 - 1) (x^2 – 2^2) ... (x^2 – k^2)$ of degree n = 2k + 1 show that this result cannot be improved upon: the first polynomial has coefficients for all odd powers, and the second polynomial for all even powers are equal to zero.
+
+</p> <h1>Answer</h1> <p> 
+n/2 for even n, $(n + 1)/2$ for odd n.
