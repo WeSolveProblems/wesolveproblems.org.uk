@@ -17,11 +17,11 @@ Consider the powers of the number five: 1, 5, 25, 125, 625, ... We form the sequ
 Prove that any part of this sequence, written in reverse order, will occur in the sequence of the first digits of the powers of the number two $(1, 2, 4, 8, 1, 3, 6, 1, ...)$.
 
 </p> <h1>Solution</h1> <p> 
-  It suffices to prove that any initial part of the sequence of the first digits of the powers of the number five is encountered (in reverse order) in the sequence of the first digits of the powers of the number two.
+  It suffices to prove that any initial part of the sequence of the first digits of the powers of the number five is encountered $($in reverse order$)$ in the sequence of the first digits of the powers of the number two.
 <p>
   Consider the numbers: $2^{-1}, 2^{-2}, ..., 2^{-n}$. The sequence of the first non-zero digits of their decimal records is exactly the sequence of the first digits of the decimal numbers of the numbers $5, 25, ..., 5^n$.
 <p> 
-  Therefore, to solve the problem it suffices to show that for any k there exists a power of the number two of $x = 2^n$ whose decimal notation has the form
+  Therefore, to solve the problem it suffices to show that for any k there exists a power of the number two of $x = 2^n$ whose decimal notation has the form 1
 <img src="107838 1.gif"> y, where y is the rest of the decimal notation. In other words, $x = 10^N + y$, and $y $<$ 10^{N-k}$.
 <p>
   In this case, $2^{n-1} = 2^n \div 2 = 500 ... 0 *, 2^{n-2} = 250 ... 0 *, 2^{n-3} = 1250 ... 0 *$, that is, $2^{n-1}$ coincides with the first digit of the number $5^l$ for l $<$ k.
