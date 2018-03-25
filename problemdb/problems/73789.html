@@ -1,0 +1,71 @@
+---
+problem_id: 73789
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 73789</h1>
+<p>
+Author: A.A. Egorov 
+<p>
+Calculate the square root of the number 0.111 ... 111 $($100 ones$)$ to within a) 100; b) 101; c) * 200 decimal places.
+
+</p> <h1>Solution</h1> <p> 
+We give a solution that allows us to calculate this root with an accuracy of 301 decimal places. 
+We transform this number as follows:
+  <p>
+$1/3 \times 100 = 1/3 \times \sqrt{1-10^{-100}}$.
+<p>
+Then
+$(1) \sqrt{1-10^{-100}} < 1 -0.5 \times 10^{-100}$.
+<p>
+We refine this estimate: we find a positive number a such that the following inequality was true
+<p>
+$(1) \sqrt{1-10^{-100}} < 1 -0.5 \times 10^{-100} – a \times 10^{-200}$.
+<p>
+To this end, we square both sides of the inequality $($eq: 254.2$)$:
+<p>
+$1 – 10^{-100} < 1 +0.25 \times 10^{-200} + a^2 \times 10^{-400} - 10^{-100} – 2a \times 10^{-200} + a \times 10^{-300}$;
+<p>
+
+simplifying, we get
+<p>
+$0 <(0.25-2a) + a \times 10 ^{-100} + a^2 \times 10^{-200}$.
+<p>
+
+In order to satisfy the inequality $($eq: 254.2$)$, it suffices to take $a = 0.125 + 10^{-102}$. Indeed, at this value of a the expression $0.25-2a + a \times 10^{-100}$ is positive.
+<p>
+Thus, we arrive at the estimate:
+$(1) \sqrt{1-10^{-100}} < 1 -0.5 \times 10^{-100} – 0.125 \times 10^{-200} – 10^{-302}$.
+<p>
+To estimate the number $\sqrt{1-10^{-100}}$ from below, we choose a number b such that the following inequality holds
+ $\sqrt{1-10^{-100}} > 1-0.5 \times 10-^{100}-b \times 10^{-200}$,
+<p>
+
+Equivalently,
+$(1) 0 > (0.25 -2b) + b \times 10^{-100} + b^2 \times 10^{-200}$
+<p>
+
+In order to satisfy the inequality $($eq: 254.4$)$, it suffices to set $b = 0.125 + 10^{-101}$.
+We obtain the following estimate:
+<p>
+ $\sqrt{1-10^{-100}} > 1-0.5 \times 10-^{100} -0.125 \times 10^{-200} – 10^{301}$,
+<p>
+From the estimates $($eq: 254.3$)$ and $($eq: 254.5$)$ it follows that
+<p>
+0.10049987498 <$\sqrt{1-10^{-100}}$ < 0.10049987499.
+<p>
+
+Hence, we obtain
+ 100 = 0.100 100; 98 ...,
+<p>
+
+and all 301 signs after the comma are correct.
+A similar solution to this problem was sent by our reader S. Domoryad.
+
+</p> <h1>Answer</h1> <p>
+See the solution above.

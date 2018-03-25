@@ -1,0 +1,32 @@
+---
+problem_id: 65561
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65561</h1>
+<p>
+Author: Shapovalov A.V.
+<p>
+Let A and B be two rectangles. From rectangles equal to A, a rectangle similar to B was created.
+Prove that from rectangles equal to B, you can create a rectangle similar to A.
+
+</p> <h1>Solution</h1> <p> 
+  Let’s call rectangles equal to A bricks. Let the size of A be $a_1 \times a_2$, and let the size of B be $b_1 \times b_2$. Let P be a rectangle made of bricks, similar to B. Then its dimensions are $(pa_1 + qa_2) \times (ra_1 + sa_2)$, where p, q, r, s are some integers.
+<p>
+  Suppose first that the ratio of the sides of the brick is rational. Then the ratio of the sides of the rectangle P $($and hence of the rectangle B similar to it$)$ is also rational. But then from the rectangles equal to B, it is possible to add a square, and from such squares there is a rectangle similar to A.
+<p>
+  Now let the ratio $a_1/a_2$ of the sides of the brick be irrational.
+<p>
+  Note that if any number is representable in the form $za_1 + ta_2$, where z and t are integers, then the numbers z and t are uniquely determined $($if $za_1 + ta_2 = Za_1 + Ta_2$, then $(z - Z) a_1$ = $(t - T) a_2$, and for z ≠ Z the ratio $a_1/a_2$ is rational, which contradicts the assumption$)$.
+<p>
+  We can assume that a horizontal brick $($ with width $a_1$$)$ is adjacent to the lower left corner. We can continue the right side of the brick to the length of the maximum length that runs along the sides of the bricks. It is adjoined $($in view of the uniqueness of the representation of length$)$ by an equal number of horizontal bricks on the left and on the right hand sides. On the left there is such a brick, so on the right hand side, there is one too $($for now, we have not said that it is adjacent to the bottom of the rectangle, although it will follow from now on). We extend the right side of this horizontal brick to the maximum segment, then find a horizontal brick adjacent to this segment, and so on, until we reach the right side of P. Hence, the horizontal side of P is a multiple of $a_1$. Similarly, the vertical side is a multiple of $a_2$.
+<p>
+  But then the ratio $b_1/b_2$ of the sides of the rectangle B is equal to $za_1/ta_2$, where z and t are integers. Hence, $tb_1/zb_2 = a_1/a_2$, and we can get a rectangle similar to A by placing the rectangles equal to B horizontally $($width b_1$)$ in z rows of t pieces in each row.
+
+</p> <h1>Remarks</h1> <p> 
+Points: years 8 and 9 – 8 points, years 10 and 11 – 7 points.

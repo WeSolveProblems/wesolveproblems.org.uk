@@ -1,0 +1,46 @@
+---
+problem_id: 78244
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78244</h1>
+<p>
+Condition
+Two people play a game; one of them guesses a set of integers $(x_1, x_2, ..., x_n)$ which are single-valued and both positive and negative. The second person is allowed to ask what is the sum $a_1x_1 + ... + a_nx_n$, where $(a_1 ... a_n)$ is any set. What is the smallest number of questions for which the guesser recognises the intended set?
+
+</p> <h1>Solution</h1> <p> 
+We will show that the conceived set can be determined by asking only one question. Namely, it suffices to take
+<p>
+$a_1 = 100, a_2 = 100^2, ..., a_n = 100^n$.
+<p>
+Then the amount reported to us is equal to
+<p>
+$S_1 = 100x_1 + 100^2x_2 + ... + 100^nx_n$.
+<p>
+We now consider the relation
+<p>
+$ \frac {S_ 1} {100^{n}} = \frac{100x_1 + 100^2x_2 + … + 100^{n-1}x_{n-1}}{100^n} + x_n$
+<p>
+And we can show that
+<p>
+$\vert \frac{100x_1 + 100^2x_2 + … + 100^{n-1}x_{n-1}}{100^n} + x_n \vert < \frac {1} {10}} $.
+<p>
+It is true that,
+<p>
+$\vert 100x_ {1} + 100^{2} x_ {2} + \dots + 100^{n-1}x_ {n-1} \vert \leq 100 \times \vert x_1 \vert + 100^2 \times \vert x_2 \vert + \dots + 100^{n-1} \times \vert x_{n-1} \vert \leq 9 \times (100+100^2+ \dots + 100^{n-1}),$
+<p>
+since $x_1, x_2, ..., x_{n – 1}$ are single-digit numbers. The number $9 (100 + 100^2 + ... + 100^{n – 1})$ is easily seen to have 2n - 1 decimal places and consists of zeros and nines, that is, it is less than $ \underbrace {99 \dots 999} _ {\mbox {$ 2n-1 $ \ digit}} ^ {} \, $, and even less than $10^{2n-1}$. Thus, the ratio we are interested in is less than <img src="78244.gif">
+ 
+<p>
+We have shown that the ratio $\frac{S_1}{100^n}$ differs from the integer $x_n$ by less than 1/10 which obviously allows one to uniquely determine $x_n$. Knowing $x_n$, we can find the sum
+$S_2 = S_1 – 100^nx_n = 100x_1 + 100^2x_2 + ... + 100^{n – 1}x_{n – 1}$
+and use it to find $x_{n – 1}$ $($dividing by $100^{n – 1}$$)$, etc. Remark. If all of the numbers $x_1, x_2, ..., x_n$ are positive, then $S_1$ is a number that has numeric values $x_i$ at odd places, and zeros on even places, so the solution of the problem in this case is especially simple.
+
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 

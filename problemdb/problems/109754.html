@@ -1,0 +1,51 @@
+---
+problem_id: 109754
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 109754</h1>
+<p>
+Author: V.A. Senderov
+<p>
+Prove that for all $x \in (0;\pi /2)$ for n $>$ m, where n, m are natural, we have the inequality
+$2 | sin^n x-cos^n x | \leq 3 | sin^m x-cos^m x |$;
+
+
+</p> <h1>Solution</h1> <p> 
+The first </p> <h1>Solution</h1> <p> . It suffices to prove this inequality for 0 $<$ x $<$ $\pi /4$ $($for x = $\pi /4$ it is obvious, for $\pi /4 $<$ x $<$ \pi /2$ is obtained by replacing y = $\pi /2 -x$ $)$. For $k \geq 2$ we have
+$cos^kx-sink^x = (cos^kx-sin^kx) (sin^2x + cos^2x) = (cos^{k + 2}x-sin^{k + 2}x) + sin^2x cos^2x (cos^{k-2}x-sin^{k-2}x) cos^{k + 2}x-sin^{k + 2}x.$
+<p>
+
+Therefore, the inequality reduces to the case n = m + 1, with the exception of n = 3. In addition, 
+Image 1 desktop
+<p>
+for $n \geq k$ $>$ 1. Indeed, if we reduce to the common denominator, we obtain the inequality
+$sin^{k-1}x cos^{k-1}x (cos^{n-k}x-sin^{n-k}x) (cos x-sin x) \geq 0$,
+
+which is obvious. Therefore, the inequality reduces to the cases n = 3, m = 1 and n = 2, m = 1. Let us prove them:
+$cos3x-sin3x = (cos x-sin x) (1 + sin x cos x) \leq 3/2 (cos x-sin x)$,
+<p>
+since cos x sin x = ½ sin2x $\leq$ ½;
+<p> 
+$cos^2x-sin^2x = (cos x-sin x) (cos x + sin x) \leq 3/2 (cos x-sin x)$,
+<p>
+for sin x + cos x =$ \sqrt{2}$, $sin (x + \pi/4) \leq 3/2$.
+<p>
+The second solution. Again, it suffices to prove the inequality for 0 $<$x $<$ $\pi/4$. Consider f $($y$)$ = $cos^yx-sin^yx$, where 0 $<$x $<$ $\pi/4$, $y \geq 0$. We have that: $f (0) = 0, f (y)> 0$ for y $>$ 0, $f (y) \rightarrow 0$ for $y \rightarrow \infty$. Further,
+$f '(y) = cos^yxln cos x-sin^yln sin x = cos^yx (ln cos x-tan^yxln sin x),
+<p>
+
+therefore $f '(y)$ has a unique root for y $>$ 0, since the function $g (y) = tan^yx$ is monotonic. It follows from $f (2) = f (2) (cos^2x + sin^2x) = f (4)$ that $f '(2)> 0, f' (4) $<$ 0$. Hence, for n $>$ m $\geq$ 3 we obtain the inequality
+$| | sin^nx-cos^nx |\leq | sin^mx-cos^mx |.$
+<p>
+
+If $m \leq 2$, then it is clear from the relations $f (1) \leq f (2) \leq f (3) \geq f (n)$ for n $>$ 3 that it suffices to prove the inequality $3 f(1) \geq 2f (3)$, which follows from $sin x cos x = \frac{sin2x}{2} \leq ½$, since $f (3) = f (1) (1+ sin x cos x) \leq 3/2f (1)$.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
+

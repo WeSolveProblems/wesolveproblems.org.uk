@@ -1,0 +1,36 @@
+---
+problem_id: 65760
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65760</h1>
+<p>
+Author: A. Glazyrin
+<p>
+In the coordinate space, all planes with the equations x ± y ± z = n $($for all integers n$)$ were carried out. They divided the space into tetrahedra and octahedra. Suppose that the point $(x_0, y_0, z_0)$ with rational coordinates does not lie in any plane. Prove that there is a positive integer k such that the point $(kx_0, ky_0, kz_0)$ lies strictly inside some octahedron from the partition.
+
+</p> <h1>Solution</h1> <p> 
+  Lemma. Let the rational numbers a, b, c and a + b + c be non-integers. Then there exists a natural number k such that the numbers ka, kb and kc are non-integers, and
+1 $<$ {ka} + {kb} + {kc} $<$ 2.
+<p>
+  Proof. Replacing the numbers a, b and c by their fractional parts, we can assume that they lie in the interval $(0, 1)$. Denote by f (t) = {ta} + {tb} + {tc}. Note that for 1 $<$ a + b + c $<$ 2 we can set k = 1.
+<p>
+  Let a + b + c $<$ 1. Choose a natural number m such that ma, mb and mc are integers. Then $f (m - 1) = f (-1) = 3 - (a + b + c)$ $>$ 2. Hence, there is a smallest positive integer k such that $f (k)$ $>$ 1 $($then $f (k - 1)$ ≤ 1$)$. We show that this k satisfies all of the requirements.
+<p>
+  From the inequality ${ka} ≤ {(k - 1) a} + a$ and analogous ones, we obtain $f (k) ≤ f (k - 1) + (a + b + c) $<$ f (k - 1) + 1 $<$ 2 . (*)$ It remains to show that the numbers ka, kb and kc are non-integers. Suppose that ka is an integer. Then ${ka} = {(k - 1) a} + a – 1$, therefore the estimate $(*)$ can be strengthened: $f (k) ≤ f (k - 1) + (a + b + c) - 1 $<$ f ( k - 1) ≤ 1$. But this contradicts the choice of k.
+<p>
+  If a + b + c $>$ 2, it suffices to apply the already proved statement to the numbers a '= 1 - a, b' = 1 - b and c '= 1 - c: the number k, suitable for these numbers, is suitable for the initial ones.
+<p>
+  Let us pass to the solution of the problem. In addition to this coordinate space Oxyz, we introduce a new space Oabc. To the point $($x, y, z$)$ from the old space we associate the point $($a, b, c$)$ from the new one with the coordinates a = y + z - x, b = x - y + z, c = x + y - z; then $x = (b + c)/2, y = (a + c)/2, z = (a + b)/2$. Note that x + y + z = a + b + c. Then the partition of the old space corresponds to the partitioning of the new planes of the form a = n, b = n, c = n and a + b + c = n. We set $a_0 = y_0 + z_0 – x_0, b_0 = x_0 – y_0 + z_0, c = x_0 + y_0 – z_0$; by assumption, the numbers $a_0, b_0, c_0$ and $a_0 + b_0 + c_0$ are non-integers.
+<p>
+  Consider a point $($u, v, w$)$ of a new space with non-integer coordinates. It falls into some cube of the form A ≤ a ≤ A + 1, B ≤ b ≤ B + 1,
+C ≤ c ≤ C + 1. This cube intersects two "inclined" planes a + b + c = A + B + C + 1 and a + b + c = A + B + C + 2 that split it into two tetrahedra and into one $($irregular$)$ octahedron. In this case, the point $($u, v, w$)$ gets inside the octahedron if it is in the strip between the indicated planes, that is, if
+1 $<$ {u} + {v} + {w} $<$ 2. Hence, applying the lemma to the numbers $a_0, b_0, c_0$, we find the value of k that satisfies the requirements of the problem.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 

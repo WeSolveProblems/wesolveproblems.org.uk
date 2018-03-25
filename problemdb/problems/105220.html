@@ -1,0 +1,64 @@
+---
+problem_id: 105220
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 105220</h1>
+<p>
+All of the sweets of different sorts in stock are arranged in n boxes, for which prices are set at 1, 2, ..., n, respectively. It is required to buy such k of these boxes of the least total value, which contain at least k/n of the mass of all of the sweets. It is known that the mass of sweets in each box does not exceed the mass of sweets in any more expensive box.
+<p>
+a)	What boxes should I buy when n = 10 and k = 3?
+<p>
+  b) The same question for arbitrary natural numbers n ≥ k.
+
+</p> <h1>Solution</h1> <p> 
+   Let $a_1 ≤ a_2 ≤ ... ≤ a_n$ be the mass of the sweets in the boxes costing 1, 2, ..., n, respectively, and $n_1 $<$ n_2 $<$... $<$ n_k$ be the numbers of those boxes that need to be purchased.
+<p>
+1.	We denote $m_j = jn / k (j = 1, ..., k)$ and prove that the required set of numbers must satisfy the inequalities $n_j ≥ m_j. (*)$
+<p>
+   Indeed, suppose that $n_j $<$m_j$ for some j.
+<p>
+   Then, for example, in the case $a_1 = ... = a_n_j = n_j $<$a_{n_j + 1} = ... = a_n = n + n_j$
+we get
+<p>
+      $a_1 + ... + a_n = n_j^2 + (n-n_j) (n + n_j) = n_2$,
+<p>
+      $an_1 + ... + an_k = (k - j) (n + n_j) + jn_j <(k - j) n + nj = kn$,
+<p>
+that is, the requirement of the task is violated.
+<p>
+2.	Suppose now that all of the inequalities $(*)$ are true. Let us prove that the requirement of the problem is satisfied.
+<p>
+   a) For n = 10, k = 3, we have $n_1 ≥ 10/3, n_2 ≥ 20/3, n_1 ≥ 10$, i.e. it is enough to take the 4th, 7th and 10th boxes. And really:
+<p>
+<img src="105220 1.gif">
+<p>
+$($adding to the group of numbers a number less than all of them, we reduce the arithmetic mean$)$.
+<p>
+b)	Let’s set $n_0 = m_0 = a_0 = 0$ and take the integers $n_j = m_j + ε_j$, where 0 ≤ ε $<$1. Consider the step function given by the equalities $f (x) = a_j$ for j - 1 $<$x ≤ j. Since the function does not decrease, its average value on the gap decreases when both ends of the gap are shifted to the left $($even with a change in the length of the gap$)$. $($The average value is the area under the graph of the function at a given interval, divided by the length of this interval$)$. In particular,
+<p>
+<img src="105220 2.gif">
+<p>
+   therefore
+      <p>
+<img src="105220 3.gif">
+<p>
+since all denominators are equal to n/k, $n_k = m_k = n, ε_k = 0$.
+<p>
+   Thus, the cost of a set of k boxes satisfying the requirement of the problem will be the smallest for the smallest integers $n_j$ satisfying the inequalities $(*)$.
+
+</p> <h1>Answer</h1> <p> 
+Boxes costing a) 4, 7 and 10 respectively. b) <img src="105220 4.gif">
+
+
+</p> <h1>Remarks</h1> <p> 
+   The task goes back to the television game "One Hundred To One", where in the final stage two players are asked on 5 questions. For each of them, the most popular answers $($according to the results of the survey$)$ are prepared, the total cost of which is 100 points. Neither these answers themselves, nor especially their values, corresponding to their popularity, are not known to the players.
+<p>
+   If the players, for all questions, give a pair of the most popular answer from 5, then earn for each question at least 100 · 2/5 = 40 points, and for all 5 questions - at least 200 points, which is just required to score for the win, that is, the game, in general, is honest.
+   Proceeding from the solution of the problem, it can be argued that with any distribution of scores on the answers, players are allowed to make a little mistake: they obviously will not lose, if for each question paired with the most popular answer they do not guess the next most popular answer but the one with average popularity. 
+

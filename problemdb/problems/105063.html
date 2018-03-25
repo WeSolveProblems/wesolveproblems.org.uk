@@ -1,0 +1,26 @@
+---
+problem_id: 105063
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 105063</h1>
+<p>
+Author: A.I. Bufetov 
+<p>
+The grasshopper jumps on the interval [0,1]. On one jump, he can get from the point x either to the point $x/3^{1/2}$, or to the point $x/3^{1/2} + (1- (1/3^{1/2}))$. On the interval [0,1] the point a is chosen.
+Prove that starting from any point, the grasshopper can be, after a few jumps, at a distance less than 1/100 from point a.
+
+</p> <h1>Solution</h1> <p> 
+Let f: [0; 1] -> [0; 1], $f (x) = x/3^{1/2}$, and let g: [0; 1] -> [0; 1], $g (x) ((1-x))/3^{1/2}$ are the functions corresponding to the hopping of the grasshopper. The range of values of f is the interval $[0; 1/3^{1/2}]$, the range of values of g is the interval $[1- (1/3^{1/2}); 1]$. Each of these segments has a length of $1/3^{1/2}$, and together they cover the interval [0; 1].
+<p>
+Let n be a natural number. We consider all of the possible functions $h_1 (h_2 (... (h_n (x)) ...))$: [0; 1] -> [0; 1], where each function $h_i$ is either f or g. It is easy to see that the range of each of these functions is a segment of length $(1/3^{1/2})^n$. We prove by induction on n that these segments cover the interval [0; 1]. For n = 1 this assertion has already been verified. Suppose that the ranges of all possible functions $h_1 (h_2 (... (h_{k-1} (x)) ...))$ cover the interval [0; 1]. We fix any of the functions $h_1 (h_2 (... (h_{k-1} (x)) ...))$. The range of this function is covered by the ranges of the functions $h_1 (h_2 (... (h_{k-1} (f (x))) ...))$ and $h_1 (h_2 (... (h_{k-1} (g (x))) ...)). This completes the proof of the assertion.
+<p>
+Now, let a be chosen on the interval [0; 1]. Consider the interval $(a-0.01, a + 0.01)$ and show that the grasshopper can get into it. We choose n so large that the inequality $(1/3^{1/2})$ n $<$ 0.01 is satisfied. By what has been proved, we can choose a function $h_1 (h_2 (... (h_n (x)) ...))$ such that a lies in the range of its values. Then the entire range of the function in question $($a segment of length (1/3^{1/2})^n)$ lies inside the interval $(a-0.01, a + 0.01)$. This means that from any point of the interval [0; 1] the grasshopper will fall inside the interval $(a-0.01, a + 0.01)$, performing successive jumps corresponding to the functions $h_n, h_{n-1}, ..., h_1$.
+
+</p> <h1>Answer</h1> <p> 
+See the solution above. 
