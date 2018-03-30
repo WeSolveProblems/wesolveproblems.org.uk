@@ -1,0 +1,21 @@
+---
+problem_id: 102997
+category_ids: 204 104
+difficulty: 3-
+classes: 5 6 7
+source_id: 198902
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 102997</h1>
+<p>
+Michael thinks of a number no less than 1 and no greater than 1000. Victoria is only allowed to ask questions to which Michael can answer "yes" or "no" (Michael always tells the truth). Can Victoria figure out which number Michael thought of by asking 10 questions?
+
+</p>
+
+
+<h1>Solution</h1>
+<p>
+Victoria will first ask: "Is the number greater than 500?". Then she will ask if the number is greater than 730 or less than 250, depending on Michael's answer to the first question, and so on (with each question the difference between the number in the previous question and the number in the new question is halved). An example: suppose Michael thought of the number 183. Then Victoria's questions are: 1) is the number $>500$? 2) $< 250$? 3) $< 125$? 4) $>187?$ 5) $< 155$? 6) $>171$? 7) $>179$? 8) $> 183$? 9) $< 181$? 10) $>182$?, and the answers to these questions determine that the number is 183.
+</p>
