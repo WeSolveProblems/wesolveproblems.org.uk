@@ -1,0 +1,33 @@
+---
+problem_id: 35733
+category_ids: 207 116
+difficulty: 3-
+classes: 7 8 9
+source_id: 120601
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35733</h1>
+<p>
+A broken calculator carries out only one operation "asterisk": $a*b = 1 - a/b$. Prove that using this calculator it is possible to carry out all four arithmetic operations (addition, subtraction, multiplication, division).
+
+</p>
+
+
+<h1>Hint</h1>
+<p>
+Begin with division.
+</p>
+
+
+<h1>Solution</h1>
+<p>
+For division: $(a*b)*1=1-(a*b)/1=1-(1-a/b)=a/b$.
+<br>
+For multiplication: $a \times b = a/(1/b) = (a*((1*b)*1))*1$.
+<br>
+For subtraction: $a - b = (b*a) \times a = ((b*a)*((1*a)*1))*1$.
+<br>
+For addition: $a+b = a - (0-b) = a - ((b*0)*((1*0)*1))*1$.
+</p>
