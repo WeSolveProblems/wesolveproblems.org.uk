@@ -1,0 +1,39 @@
+---
+problem_id: 103873
+category_ids: 257
+difficulty: 3-
+classes: 6 7 
+source_id: 199565
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 103873</h1>
+<p>
+Jessica, Nicole and Alex received 6 coins between them: 3 gold coins and 3 silver coins. Each of them received 2 coins. Jessica doesn't know which coins the others received but only which coins she has. Think of a question which Jessica can answer with either "yes", "no" or "I don't know" such that from the answer you can know which coins Jessica has.
+</p>
+
+
+<h1>Solution</h1>
+<p>
+Let us check if the question "Is it true that you have more gold coins than Alex?" fits the conditions.
+<br>
+If Jessica has 2 gold coins then she can answer "yes" since Alex cannot have more than 1 gold coin. If Jessica has 2 silver coins then Alex must have at least 1 gold coin and so Jessica would answer "no". If Jessica received 1 gold coin and 1 silver coin then she would answer "I don't know", since Alex might have either 2 gold coins or 2 silver coins. 
+<br>
+Of course, other questions can also fit the requirements, such as:
+<br>
+"Is it true that one of the others received 2 silver coins?"
+<br>
+"Is it true that the others each received at least 1 gold coin?"
+<br>
+"If I take 1 coin from you and give you a gold coin instead, would you have more gold coins now?"
+<br>
+(Notice that in the last question we do not refer to the coins received by Nicole and Alex, but only to those received by Jessica.)
+</p>
+
+<h1>Answer</h1>
+<p>
+For example: "Is it true that you have more gold coins than Alex?".
+
+</p>
+
