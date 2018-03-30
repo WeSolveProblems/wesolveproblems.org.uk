@@ -1,0 +1,22 @@
+---
+problem_id: 86556
+category_ids: 264 613
+difficulty: 3-
+classes: 6 7 8
+source_id: 164901
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 86556</h1>
+<p>
+<b>A game with three piles of rocks.</b>
+There are three piles of rocks: in the first pile there are 10 rocks, 15 in the second pile and 20 in the third pile. In this game (with two players), in one turn a player is allowed to divide one of the piles into two smaller piles. The loser is the one who cannot make a move. Which player would be the winner?
+
+</p>
+
+
+<h1>Solution</h1>
+<p>
+In total there are 45 rocks. In the end we get 45 piles with 1 rock each. In order to divide the first pile into piles with 1 rock each, we need 9 moves. To do the same for the second pile we need 14 moves, and for the third pile we need 19 moves. (Note: the number of moves does not depend on whether we take one rock out of the pile per move, or a few rocks per move.) Thus the total number of moves is $9+14+19=42$ and this number does not depend on which moves the players make. The last, even, move is by the second player, and so the second player wins.
+</p>

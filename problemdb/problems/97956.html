@@ -1,0 +1,39 @@
+---
+problem_id: 97956
+category_ids: 241 437 496
+difficulty: 3-
+classes: 7 8 9
+source_id: 193584
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 97956</h1>
+<p>
+a) The vertices (corners) in a regular polygon with 10 sides are coloured black and white in an alternating fashion (i.e. one vertice is black, the next is white, etc). Two people play the following game. Each player in turn draws a line connecting two vertices of the same colour. These lines must not have common vertices (i.e. must not begin or end on the same dot as another line) with the lines already drawn. The winner of the game is the player who made the final move. Which player, the first or the second, would win if the right strategy is used?
+<br>
+b) The same problem, but for a regular polygon with 12 sides.
+
+</p>
+
+
+<h1>Solution</h1>
+<p>
+a) The second player can use a symmetric strategy as follows: every turn draw a line which is centrally symmetric to the line drawn by the first player in the previous turn. Using this strategy, the second player will always be able to make a move and so cannot lose.
+<br>
+b) In this case the first player can use a symmetric strategy: first draw a line connecting vertices opposite each other, and then for the rest of the turns use the strategy described in b).
+</p>
+
+<h1>Answer</h1>
+<p>
+a) The second player. b) The first player.
+
+</p>
+
+
+<h1>Remark</h1>
+<p>
+1. In a) the first player couldn't have acted in this way since vertices opposite each other have different colours.
+<br>
+2. In b) instead of the central symmetry one can use the axial symmetry (with respect to the first diagonal line drawn).
+</p>
