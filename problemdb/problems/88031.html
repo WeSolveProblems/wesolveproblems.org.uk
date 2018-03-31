@@ -1,0 +1,33 @@
+---
+problem_id: 88031
+category_ids: 207 681
+difficulty: 3-
+classes: 5 6 7 8
+source_id: 179841
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88031</h1>
+<p>
+There are 6 locked suitcases and 6 keys for them. It is not known which keys are for which suitcase. What is the smallest number of attempts do you need in order to open all the suitcases? How many attempts would you need if there are 10 suitcases and keys instead of 6?
+
+</p>
+
+
+<h1>Hint</h1>
+<p>
+Using five attempts, try to figure out to which of the six suitcases the first key belongs to.
+</p>
+
+<h1>Solution</h1>
+<p>
+A common incorrect solution is: "Try to open each of the six suitcases with each of the six keys, and so the total number of attempts is $6\times 6 = 36$". It is possible to find which key corresponds to which suitcase using less than 36 attempts. We take the first key and try to open each of the suitcases (one at a time). If a suitcase opens this is great and we set that suitcase aside with that key. However, if the key doesn't open the first 5 suitcases then this means it must open the 6th suitcase. So what happened? We used no more than 5 attempts and we are left with 5 unmatched keys and suitcases. Now we take another key and try to open each of these 5 suitcases in turn. Only 4 attempts are needed in order to determine which suitcase this key belongs to. Then we repeat this with the next key and so on. Therefore we need $5+4+3+2+1=15$ attempts. If there were 10 suitcases instead of 6, then the number of attempts needed would be $9+8+\cdots + 2+1 =45$.
+</p>
+
+<h1>Answer</h1>
+<p>
+15 attempts; 45 attempts.
+
+</p>
+
