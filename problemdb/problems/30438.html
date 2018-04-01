@@ -1,0 +1,22 @@
+---
+problem_id: 30438
+category_ids: 239
+difficulty: 3
+classes: 7 8 9
+source_id: 104371
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30438</h1>
+<p>
+The numbers 25 and 36 are written on a blackboard. Consider the game with two players where: in one turn, a player is allowed to write another natural number on the board. This number must be the difference between any two of the numbers already written, such that this number does not already appear on the blackboard. The loser is the player who cannot make a move. 
+
+</p>
+
+
+<h1>Solution</h1>
+<p>
+In the process of the game (compare with the Euclidean algorithm) the greatest common divisor of the two initial numbers will definitely be written on the board. It follows that all the numbers between the greatest common divisor and the largest of the two initial numbers will be on the board. In our case the greatest common divisor of 25 and 36 is 1. Then the numbers on the board will be all the numbers from 1 to 36. In this way the game will be 34 turns long (since 2 of the numbers from 1 to 36 were already written on the board). Thus the second player wins.
+</p>
+

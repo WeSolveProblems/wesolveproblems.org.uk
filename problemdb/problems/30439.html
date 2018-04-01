@@ -1,0 +1,26 @@
+---
+problem_id: 30439
+category_ids: 239
+difficulty: 3
+classes: 7 8 9
+source_id: 104371
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30439</h1>
+<p>
+Consider a chessboard of size (number of rows $\times$ number of columns):
+<br>
+a) $9\times 10$; b) $10\times 12$; c) $9x11$.
+<br>
+Two people are playing a game where: in one turn a player is allowed  to cross out any row or column as long as there it contains at least one square that is not crossed out. The loser is the player who cannot make a move. Which player will win?
+</p>
+
+
+<h1>Solution</h1>
+<p>
+This game is not quite a joke. If the player who should win makes a certain mistake then they can lose. This mistake is: after their turn, the player leaves squares not crossed out in only one column or only one row, which lets their opponent win the game. So the loser of this game will be the one who makes this mistake. We notice that the part of the board of size $m\times n$ left after crossing out one row can be thought of as a board of size $(m-1)\times n$. Similarly, after crossing out one column we are left with a board of size $m\times (n-1)$. The situation in which every turn leads to the mistake mentioned earlier is if we have a $2 \times 2$ board. In this way, the winner is the player after whose turn the board became $2 \times 2$. However, as we saw, after each turn the sum of the number of rows and columns on the board decreases by 1. Thus the winner of the game is determined at the start by whether the sum of the number of rows and columns is odd or even. Then, if the board has size a) the first player wins, and if the board has size b) or c) then the second player wins. Notice that in part b) another deciding factor could be the symmetric strategy of the second player.
+
+</p>
+
