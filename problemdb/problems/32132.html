@@ -1,0 +1,48 @@
+---
+problem_id: 32132
+category_ids: 83 361 682 1059
+difficulty: 3
+classes: 8 9 10
+source_id: 111453
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32132</h1>
+<p>
+The order of books on a shelf is called <i> wrong </i> if no three adjacent books are arranged in order of height (either increasing or decreasing). How many wrong orders is it possible to construct from $n$ books of different heights, if:
+<br>
+a) $n = 4$;
+<br>
+b) $n = 5$?
+
+</p>
+
+
+<h1>Solution</h1>
+<p>
+Let us place a "+" between adjacent books if the right book is taller than the left, or a "-" if the left book is taller than the right. Then, for books in a wrong order we must have alternating "+" and "-" signs. It is clear that the number of orders beginning with a plus is equal to the number of orders beginning with a minus. 
+<br>
+a) We shall find the number of orders of the type *+*-*+* (where * stands for books). Let us call the books $A$, $B$, $C$ and $D$ in order of decreasing height. In an order of the type *+*-*+*, $A$ can stand in the second or fourth places (i.e. after a plus sign). 
+<br>
+In the order *+$A$-*+*, the book $B$ can be in the first or fourth place. In the first case we have one order, BADC, and in the second case two orders, since $C$ and $D$ can stand in any of the places left.
+<br>
+In the order *+*-*+$A$, the book $B$ can only be in the second place. Then we have two orders of this type.
+<br>
+This means that in total we have 5 possible orders of the type *+*-*+*. Since we need to take account of the orders beginning with a minus sign, so we have 10 wrong orders for part a).
+</p>
+
+<p>
+b) We shall find the number of orders of the type *+*-*+*-*. Let us call the books $A$, $B$, $C$, $D$ and $E$ in order of decreasing height. Here book $A$ can stand in the second or fourth place. However these cases are symmetric, so it is sufficient to only count the number of orders for the first case (*+$A$-*+*-*) and then to multiply this number by 2. In this case, $B$ can stand in the first or fourth place. In the first case, i.e. $B$+$A$-*+*-*, $C$ can only be in the fourth place and $D$ and $E$ can be in either of the places left (so this gives 2 orders).
+<br>
+In the second case (*+$A$-*+$B$-*) we have 6 possible orders since $C$, $D$ and $E$ can occupy any of the places left.
+<br>
+Then we have 8 orders of the type *+$A$-*+*-*, so 16 orders of the type *+*-*+*-*. Therefore there are 32 wrong orders for part b).
+</p>
+
+
+<h1>Answer</h1>
+<p>
+a) 10 wrong orders; b) 32 wrong orders.
+
+</p>

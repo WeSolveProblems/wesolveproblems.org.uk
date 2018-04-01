@@ -1,0 +1,31 @@
+---
+problem_id: 32820
+category_ids: 206
+difficulty: 3
+classes: 7 8 9
+source_id: 151346
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32820</h1>
+<p>
+There are some coins on a table. One of these coins is fake (has a different weight than a real coin). By weighing them twice using balance scales, determine whether the fake coin is lighter or heavier than a real coin (you don't need to find the fake coin) if the number of coins is:
+<br>
+a) 100;
+<br>
+b) 99;
+<br>
+c) 98?
+</p>
+
+
+<h1>Solution</h1>
+<p>
+a) We shall place 50 coins in each of the cups of the balance scales. Then we will take the contents of the heavier cup and divide them into piles with 25 coins each and place them in the cups. If the cups weigh the same then the fake coin weighs less than the real ones. Otherwise, the fake coin weighs more.
+<br>
+b) We divide the coins into 3 piles of 33 coins, and weigh 2 of these piles. If the 2 piles weigh the same, then we weigh one of these piles with the third pile. If the third pile weighs less, then the fake coin is lighter. Otherwise the fake coin is heavier.
+However, if the 2 piles don't weigh the same, them we weigh the heavier pile with the third. If they weigh the same then the fake coin is lighter but if the third pile is heavier then the fake coin is heavier.
+<br>
+c) We first put two of the coins aside, then divide the rest into 2 piles with 48 coins each and weigh them. If they weigh the same, then we weigh the two coins that were put aside with any two other coins. If the coins that were put aside weigh less then the fake coin is lighter. Otherwise the fake coin is heavier. If the 2 piles with 48 coins each do not weigh the same, then similarly to part a) we divide the heavier pile into 2 piles with 24 coins each and weigh them. If they weigh the same then the fake coin weighs less. Otherwise, the fake coin is heavier.
+</p>
