@@ -1,0 +1,47 @@
+---
+problem_id: 88016
+category_ids: 86
+difficulty: 3-
+classes: 5 6 7 8
+source_id: 179826
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 88016</h1>
+<p>
+Decode this rebus: replace the asterisks with numbers such that the equalities in each row are true and such that each number in the bottom row is equal to the sum of the numbers in the column above it.
+<br>
+<img src="88016 1.gif">
+<br>
+</p>
+
+
+<h1>Solution</h1>
+<p>
+We shall replace all the asterisks in the rebus with different letters. Note that different letters could stand for the same number. Also note that the letter O is not used since it can cause confusion with the number zero. Thus the rebus takes the following form. 
+<br>
+<img src="88016 2.gif">
+<br>
+
+We can determine the value of some of the letters straight away. C = 0 &#40;otherwise the result of the first row cannot end with 0&#41;; D = 1 &#40;otherwise the result of the third column cannot begin with 1&#41;; A = B = 1 &#40;if A$>1$ or B$>1$ then D$\neq 1$&#41;; F = 1 &#40;since we know A, B, C&#41;; L = N = 1; M = P = 0 &#40;otherwise the equality in the third row cannot hold&#41;; Q = 1 &#40;otherwise the equality in the fourth row cannot hold&#41;; T = 1 &#40;otherwise the equality in the fifth row cannot hold&#41;.
+<br>
+Now we will write out the rebus again with these letters replaced by the corresponding numbers, as shown below.
+<br>
+<img src="88016 3.gif">
+<br>
+Then: G = 7, 8 or 9 &#40;otherwise the sum of the first column will be less than 100&#41;. In fact, G = 8 &#40;since 67 and 69 are not divisible by any number ending with 7, while 68 is&#41;. Then H = 1, K = 4, U = 0, V = 1. If we rewrite the numbers WX and 1YZ from the fifth row as sums of the third and fourth columns, the fifth row becomes: 101 + &#40;10 + 17 + 10 + R&#41; = &#40;110 + 4 + 20 + S&#41;, or S = R + 4. But S + R = 12 &#40;from the fourth row&#41;. It follows that R = 4, S = 8. Then W = 4, X = 1, Y = 4, Z = 2. The final solution is below.
+
+<br>
+<img src="88016 4.gif">
+
+</p>
+
+<h1>Answer</h1>
+<p>
+See the following image. 
+<br>
+<img src="88016 4.gif">
+
+</p>
+
