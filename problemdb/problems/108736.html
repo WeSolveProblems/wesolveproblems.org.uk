@@ -10,14 +10,14 @@ use_math: true
 
 <h1>Problem ID 108736</h1>
 <p>
-There were some natural numbers written on the blackboard. The difference between any two adjacent numbers is the same. Kieran replaces different numbers on the board with different letters, and the same numbers with the same letter. Find which numbers where originally on the blackboard if the letters written on the board are: <b>T, EL, EK, LA, CC</b>.
+There were some natural numbers written on the blackboard. The difference between any two adjacent numbers is the same. Kieran replaces different numbers on the board with different letters, and the same numbers with the same letter. Find which numbers where originally on the blackboard if the letters written on the board are: <b>$T$, $EL$, $EK$, $LA$, $CC$</b>.
 
 </p>
 
 
 <h1>Solution</h1>
 <p>
-We notice that we can determine all of the numbers if we know the first number, represented by T, and the difference, $d$, between two adjacent numbers. We can only say that the first number has 1 digit. What can we say about the difference, $d$? Looking at the first and second numbers we can only say that $d < 90$. Since the second and third numbers have the same first digit, their difference must be no greater than 9. This means that, having added 9 to the first number, we can only get a number with two digits which has its first digit as 1. Then E=1. Similarly, L=2, C=3. So now we can fill the numbers in for these letters and we get: T, 12, 1K, 2A, 33. We notice that $1K - 12 = 2A - 1K = 33 - 2A = d$, and from this we get that $33 - 12 = 3d$ so $d=17$. We have thus found the difference and the last number. From this it is simple to determine the rest of the numbers: 5, 12, 19, 26, 33.
+We notice that we can determine all of the numbers if we know the first number, represented by $T$, and the difference, $d$, between two adjacent numbers. We can only say that the first number has 1 digit. What can we say about the difference, $d$? Looking at the first and second numbers we can only say that $d < 90$. Since the second and third numbers have the same first digit, their difference must be no greater than 9. This means that, having added 9 to the first number, we can only get a number with two digits which has its first digit as 1. Then $E=1$. Similarly, $L=2$, $C=3$. So now we can fill the numbers in for these letters and we get: $T$, $12$, $1K$, $2A$, $33$. We notice that $1K - 12 = 2A - 1K = 33 - 2A = d$, and from this we get that $33 - 12 = 3d$ so $d=17$. We have thus found the difference and the last number. From this it is simple to determine the rest of the numbers: 5, 12, 19, 26, 33.
 </p>
 
 <h1>Answer</h1>

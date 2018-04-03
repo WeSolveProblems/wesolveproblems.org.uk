@@ -10,7 +10,7 @@ use_math: true
 
 <h1>Problem ID 35733</h1>
 <p>
-A broken calculator carries out only one operation "asterisk": $a*b = 1 - a/b$. Prove that using this calculator it is possible to carry out all four arithmetic operations (addition, subtraction, multiplication, division).
+A broken calculator carries out only one operation "asterisk": $a*b = 1 - a/b$. Prove that using this calculator it is possible to carry out all four arithmetic operations &#40;addition, subtraction, multiplication, division&#41;.
 
 </p>
 
@@ -23,11 +23,11 @@ Begin with division.
 
 <h1>Solution</h1>
 <p>
-For division: $(a*b)*1=1-(a*b)/1=1-(1-a/b)=a/b$.
+For division: $&#40;a*b&#41;*1=1-&#40;a*b&#41;/1=1-&#40;1-a/b&#41;=a/b$.
 <br>
-For multiplication: $a \times b = a/(1/b) = (a*((1*b)*1))*1$.
+For multiplication: $a \times b = a/&#40;1/b&#41; = &#40;a*&#40;&#40;1*b&#41;*1&#41;&#41;*1$.
 <br>
-For subtraction: $a - b = (b*a) \times a = ((b*a)*((1*a)*1))*1$.
+For subtraction: $a - b = &#40;b*a&#41; \times a = &#40;&#40;b*a&#41;*&#40;&#40;1*a&#41;*1&#41;&#41;*1$.
 <br>
-For addition: $a+b = a - (0-b) = a - ((b*0)*((1*0)*1))*1$.
+For addition: $a+b = a - &#40;0-b&#41; = a - &#40;&#40;b*0&#41;*&#40;&#40;1*0&#41;*1&#41;&#41;*1$.
 </p>
