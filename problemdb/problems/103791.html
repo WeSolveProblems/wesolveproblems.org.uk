@@ -1,0 +1,55 @@
+---
+problem_id: 103791
+category_ids: 86 103
+difficulty: 3-
+classes: 7
+source_id: 199463
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 103791</h1>
+<p>
+In the rebus below, replace the letters with numbers such that the same numbers are represented with the same letter. The asterisks can be replaced with any numbers such that the equations hold. 
+<br>
+<img src="103791 1.gif">
+<br>
+An explanation of the notation used: the unknown numbers in the third and fourth rows are the results of multiplying 1995 by each digit of the number in the second row, respectively. These third and fourth rows are added together to get the total result of the multiplication $1995 \times ***$, which is the number in the fifth row. This is an example of a "long multiplication table".
+</p>
+
+
+<h1>Solution</h1>
+<p>
+Let us call the unknown number in the second row X, the number in the third row Y.
+<br>
+It is clear that the 2nd digit of X is zero &#40;otherwise the long multiplication table would have a 4 or 5 digit number with the last digit in the same columns as $H$&#41;. Let us consider what the 1st and third digits could be. 
+
+From the diagram, we can see that if we multiply 1995 by the 3rd digit &#40;from left to right&#41; of X then we get a 5 digit number, i.e. Y. Similarly, if we multiply 1995 by the 1st digit we get a 4 digit number, i.e. *ABC.
+<br>
+We shall write out the products of 1995 with all of the numbers from 1 to 9: $1995 \times 1 = 1995$, $1995 \times 2 = 3990$, $1995 \times 3 = 5985$, $1995 \times 4 = 7980$, $1995 \times 5 = 9975$, $1995 \times 6 = 11970$, $1995 \times 7 = 13965$, $1995 \times 8 = 15960$, $1995 \times 9 = 17955$.
+<br>
+We get that the last digit of X could either be 6, 7, 8 or 9 and that the 1st digit must be 1, 2, 3, 4 or 5. Now it is simple to try all the possible cases for the choice of the 1st and last digits of X. &#40;Note: there are 20 cases in total, explain why.&#41;
+<br>
+A better method would be to think about it and thus decrease the amount of work in trying each of the cases.
+<br>
+We notice that, when multiplying 1995 by the 1st digit of X, we get a 4 digit number &#40;*ABC&#41;, in which the last 3 digits are distinct &#40;this is from the condition that different letters stand for different numbers&#41;. So *ABC cannot be equal to 1995 or 3990. This means that for the 1st digit of X we only have three cases left: 3, 4 or 5. Thus the total number of cases for the choice of the 1st and 3rd digits of X is 12 &#40;exercise: why?&#41;.
+<br>
+Now we shall consider Y, which is the result of multiplying 1995 by the last digit of X. It is clear that the last two digits of Y must be distinct &#40;since these digits are HF&#41; and so Y cannot be equal to 17955. This means that the last digit of X is not 9.
+<br>
+Therefore we only have 3 cases left for the 1st digit of X &#40;3, 4, 5&#41; and three cases for the last digit &#40;6, 7, 8&#41;. This means that we have 9 cases left for the choice of 1st and 3rd digits of X.
+<br>
+Now we notice that the four numbers B, C, H, F are distinct. From this it follows that we have only 4 possibilities left for what X could be: 308, 306, 407 and 508.
+<br>
+There are now few enough cases that we can quickly try each case and find the correct answer. &#40;In principle, we could have also noticed that if the 1st digit of X is 5, the *ABC = 9950 but then we would get a 7 digit number in the 5th row, rather than a 6-digit one. Then we only have 2 options for the 1st digit of X: 3 or 4. Then we only have 3 options for X: 308, 306, 407.&#41;
+
+
+<br>
+<img src="103791 2.gif">
+</p>
+
+<h1>Answer</h1>
+<p>
+<img src="103791 2.gif">
+
+</p>
+
