@@ -1,0 +1,26 @@
+---
+problem_id: 34972
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 34972</h1>
+<p>
+For which n $>$ 3, can a set of weights with masses of 1, 2, 3, ..., n grams be divided into three groups of equal mass?
+
+</p> <h1>Hint</h1> <p>
+Six weights, the masses of which are six consecutive numbers, can easily be divided into three equal by mass piles.
+
+</p> <h1>Solution</h1> <p> 
+We call the number n good if a set of weights with masses 1, 2, 3, ..., n can be divided into three equal by mass groups. For a good n, the total weight of the weights, equal to 1/2 n $(n + 1)$, is a multiple of 3. Therefore, n can only give the remainder 0 or 2 when divided by 3.
+If the number n is good, then the number n + 6 is also good, since the weights of masses n + 1, n + 2, ..., n + 6 can be easily divided into three equal by mass groups.
+It is easy to verify that the numbers 5, 8, and 9 are good: 1 + 4 = 2 + 3 = 5; 1 + 2 + 3 + 6 = 4 + 8 = 5 + 7; 1 + 2 + 3 + 4 + 5 = 6 + 9 = 7 + 8. The fact that 6 is a good number is shown above. Hence, all numbers of the form 3k $(k ≥ 3)$ and 3k + 2 $(k ≥ 1)$ are good.
+
+</p> <h1>Answer</h1> <p>
+For an n which is divisible by 3 or which gives the remainder 2 when divided by 3.
+</p>
+

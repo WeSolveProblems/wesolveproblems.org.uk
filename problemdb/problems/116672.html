@@ -1,0 +1,30 @@
+---
+problem_id: 116672
+category_ids: 207
+difficulty: 2-
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116672</h1>
+<p>
+On a board there are written four three-digit numbers, totaling 2012. To write them all, only two different digits were used.
+Give an example of such numbers.
+
+</p> <h1>Solution</h1> <p>
+The first method. 2012 = 503 + 503 + 503 + 503. Replacing the zero with five, we will increase the total by 200; for compensation, we replace one of the fives in the hundreds digit with a three: 2012 = 353 + 553 + 553 + 553.
+The second method. Let's try to find two numbers that are written with two digits and in their sum they give 2012/ 2 = 1006. Of the tens digit, there must be a digit carried forward, so the sum of the digits in the hundreds digit without this transfer should be 9. Hence, in this digit there are two unknown numbers which have a sum of 9. On the other hand, the sum of the digits in the units column ends with a 6. Therefore, either this sum is 6 and is obtained by 3 + 3 with a second digit of 6 $($ but then we can not get the sum of 10 in the tens column $)$ or it is equal to 16 and is obtained by 8 + 8 with the second digit being a 1. Hence we obtain the representation
+1006 = 118 + 888 = 188 + 818; 2012 = 118 + 888 + 118 + 888 = 188 + 818 + 188 + 818 = 118 + 888 + 188 + 818.
+The complete solution. Let the numbers a and b be used in the record of our numbers, and a $<$ b. We subtract from each of our numbers the number $111 \times a$. The resulting numbers will also consist of only two digits - 0 and c = b - a. Thus, they can be represented as a product of c by a number written only with the digits 0 and 1. The sum of the resulting numbers is 2012 - $444 \times a$; dividing this sum by c, we see that each digit of the quotient 
+<img src="116672.png">
+ 
+does not exceed 4. Now the solution can be found by a search: only the pairs a = 3, c = 2 $($ q = 340, b = 5 $)$ and a = 1, c = 7 $($ q = 224, b = 8 $)$ fit. By various ways of arranging the digits found in the given number q, we arrive at the four possibilities indicated in the answer.
+
+</p> <h1>Answer</h1> <p>
+2012 = 353 + 553 + 553 + 553 = 118 + 118 + 888 + 888 = 118 + 188 + 818 + 888 = 188 + 188 + 818 + 818.
+</p>
+
+
+

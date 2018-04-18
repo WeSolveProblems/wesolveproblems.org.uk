@@ -1,0 +1,22 @@
+---
+problem_id: 35199
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35199</h1>
+<p>
+There are several cities $($ more than one $)$ in a country; some pairs of cities are connected by roads. It is known that you can get from every city to any other city by driving along several roads. In addition, the roads do not form cycles, that is, if you leave a certain city on some road and then move so as not to pass along one road twice, it is impossible to return to the initial city. Prove that in this country there are at least two cities, each of which is connected by a road with exactly one city.
+
+</p> <h1>Hint</h1> <p>
+Consider the longest chain of roads, the ends of this chain are the desired cities.
+
+</p> <h1>Solution</h1> <p>
+The first method. Consider the longest chain of roads, that is, take the longest sequence of pairwise different cities $A_1$, $A_2$, ..., $A_k$, in which every two neighboring cities in this sequence are connected by a road. Let us prove that exactly one road leaves the cities $A_1$ and $A_k$ $($ respectively, into $A_2$ and $A_{k-1}$ 4)$. Let there be, for example, from $A_1$ a road to a certain city B, different from $A_2$. If B is one of the cities $A_3$, ..., $A_k$, then a cycle of roads arises, which contradicts the condition. Thus, city B is different from the cities $A_1$, $A_2$, ..., $A_k$. Consequently, in the sequence of cities B, $A_1$, $A_2$, ..., $A_k$, the cities are pairwise different and the neighboring cities are connected by a road. But this sequence contains more than k cities in spite of the choice of the sequence of $A_1$, $A_2$, ..., $A_k$.
+The second method. See problem number 31098 c$)$.
+</p>
+

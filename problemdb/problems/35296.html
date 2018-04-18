@@ -1,0 +1,29 @@
+---
+problem_id: 35296
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35296</h1>
+<p>
+In the TV series "The Secret of Santa Barbara" there are 20 characters. Each episode contains one of the events: some character discovers the Mystery, some character discovers that someone knows the Mystery, some character discovers that someone does not know the Mystery. What is the maximum number of episodes that this tv series can last?
+
+</p> <h1>Hint</h1> <p>
+Calculate the largest number of times an event can occur for each of the three types specified in the condition.
+
+</p> <h1>Solution</h1> <p>
+Each hero can discover something in no more than 39 episodes $($ in one they discover the Secret, in 19 they learn about each of the others that they do not know the Mystery, and in 19 they learn that each of the others do know the Mystery. $)$ Therefore, the tv series has no more than $20 \times 39$ = 780 episodes.
+Let's build an example of a series of 780 episodes. Let it be that at first no one knows the Mystery. In the first 380 episodes for each ordered pair of characters, let the first of them discover that the second does not know the Mystery. In the next 20 episodes, let all the characters consistently discover the Mystery. In the last 380 episodes for each ordered pair of characters, let the first of them discover that the second knows the Mystery.
+
+</p> <h1>Answer</h1> <p>
+780 series.
+
+</p> <h1>Remarks</h1> <p>
+A similar problem was at the VI All-Russian Festival of Young Mathematicians $(1995)$.
+</p>
+
+

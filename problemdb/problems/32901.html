@@ -1,0 +1,61 @@
+---
+problem_id: 32901
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32901</h1>
+<p>
+Find a natural number greater than one that occurs in the Pascal triangle
+<p>
+a$)$ more than three times.
+<p>
+b$)$ more than four times.
+
+</p> <h1>Solution</h1> <p>
+a$)$ This is any number of the form
+<img src="32901 1.png">
+ 
+where 1 $<$ k $<$ n / 2. It occurs twice in the n-th row and twice in the m-th line. The smallest of these numbers is 
+<img src="32901 2.png">
+ 
+
+b$)$ The first method. Looking at the first lines of the Pascal triangle we can note that
+ <img src="32901 3.png">
+
+This number is found twice in the 10th, 16th and 120th lines.
+The second method. We will look for a number that is represented both in the form 
+ <img src="32901 4.png">
+
+and in the form
+ <img src="32901 5.png">
+
+. Then 12n $(n - 1)$ = $(m² - 1)$ $(m² - 2m)$. Assuming that 3n = m² - 2m and 4 $(n - 1)$ = m² - 1. Subtracting, we obtain n = 2m + 3. Substituting in the first equation, we get m² - 8m + 9 = 0, that is, m = 9, n = 21. Hence, 
+ <img src="32901 6.png">
+
+Thus, the number 210 is found twice in the 10th, 21st and 210th rows.
+The third method. We will look for three numbers of the form m, 2m, 3m, standing consecutively in some row $($ then the number 3m = m + 2m will also be found in the next line $)$. If 
+ <img src="32901 7.png">
+
+ then 
+ <img src="32901 8.png">
+
+ but
+ <img src="32901 9.png">
+
+So, 2k + 2 = n - k, 3k + 6 = 2n - 2k - 2. Solving the equation system, we find k = 4, n = 14. So, the number
+ <img src="32901 10.png">
+
+ is found twice in the 14th, 15th $($ as
+ <img src="32901 11.png">
+
+$)$ and 3003rd lines.
+
+</p> <h1>Answer</h1> <p>
+a$)$ For example, 10, 15, 21. b$)$ For example, 120, 210, 3003.
+</p>
+

@@ -1,0 +1,27 @@
+---
+problem_id: 65603
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65603</h1>
+<p>
+At a contest named "Ah well, monsters!", 15 dragons stand in a row. Between neighbouring dragons the number of heads differs by 1. If the dragon has more heads than both of his two neighbors, he is considered cunning, if he has less than both of his neighbors - strong, the rest $($ including those standing at the edges $)$ are considered ordinary. In the row there are exactly four cunning dragons - with 4, 6, 7 and 7 heads and exactly three strong ones - with 3, 3 and 6 heads. The first and last dragons have the same number of heads.
+<p>
+a$)$ Give an example of how this could occur.
+<p>
+b$)$ Prove that the number of heads of the first dragon in all potential examples is the same.
+
+</p> <h1>Solution</h1> <p>
+It is convenient to depict a row of dragons in the form of a graph: instead of each dragon, draw a point at the height corresponding to the number of heads that the dragon has, and connect these points.
+<p>
+a$)$ See the figure.
+<p>
+b$)$ Note, firstly, that somewhere in the interval between every two cunning dragons there is a strong one. Indeed, if we go along a series of dragons, then after we pass a cunning dragon, the number of heads begins to decrease. At some point it should start to increase - this is the position where there is a strong dragon. Likewise, further increases at some point will end with another cunning dragon.
+The first method. Let's see in what order can the strong and cunning dragons be arranged. A strong dragon with six heads can only stand between two cunning dragons with seven heads. There are three such cases: the two remaining strong dragons stand either on one side of this trinity in one of two orders, or on opposite sides.
+
+

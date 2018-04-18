@@ -1,0 +1,27 @@
+---
+problem_id: 30713
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30713</h1>
+<p>
+Prove that every number a in Pascal’s triangle is equal to
+<p>
+a$)$ the sum of the numbers of the previous right diagonal, starting from the leftmost number up until the one to the right above the number a.
+<p>
+b$)$ the sum of the numbers of the previous left diagonal, starting from the leftmost number to the one to left of the number which is above a.
+
+</p> <h1>Solution</h1> <p>
+a$)$ The number a is equal to the number of paths leading from the vertex O of Pascal’s triangle to the place A, where the number a stands $($ see problem number 30710$)$. Each such path passes through the indicated right diagonal. Suppose that there are the numbers $b_0$, $b_1$, ..., $b_k$ at the points $B_0$, $B_1$, ..., $B_k$ above the point A. The points O and $B_i$ are connected by $b_i$ paths. Each of them can be led to A in only one way: go to the next diagonal and descend along it to the point A. Therefore
+a = $b_0$ + $b_1$ + ... + $b_k$.
+
+</p> <h1>Remarks</h1> <p>
+1. You can also get to the solution by induction on the number of numbers on the diagonal.
+<p>
+2. Point $(b)$ is proved similarly. See also various proofs of the equality d$)$ in Problem number 60413.
+</p>

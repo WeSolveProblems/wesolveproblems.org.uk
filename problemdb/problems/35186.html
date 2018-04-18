@@ -1,0 +1,26 @@
+---
+problem_id: 35186
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35186</h1>
+<p>
+You are given a table of size $m \times n$ $(m, n > 1)$. In it, the centers of all cells are marked. What is the largest number of marked centers that can be chosen so that no three of them are the vertices of a right triangle?
+
+</p> <h1>Hint</h1> <p>
+You can reduce the table by deleting the row in which more than two selected points are located.
+
+</p> <h1>Solution</h1> <p>
+We select, in the table, the centers of all the cells of the bottom row and the right-hand column, with the exception of the right lower corner cell. In total, m + n - 2 points are chosen, and each triple of marked points forms an obtuse triangle.
+Let us prove that more than m + n - 2 cell centers can not be chosen. For each marked center, either in its row or in its column, there are no other marked centres. Let us note this series. If all the rows are marked, then no more than m $≤$ m + n - 2 centers are selected. The situation is similar when all the columns are marked.
+If, however, not all the rows and not all the columns are marked, then the total number of marked rows $($ and hence of marked centres $)$ is no greater than $(m-1)$ + $(n-1)$ = m + n-2. .
+
+</p> <h1>Answer</h1> <p>
+m + n - 2.
+</p>
+

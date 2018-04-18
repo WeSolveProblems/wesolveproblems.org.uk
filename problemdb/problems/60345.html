@@ -1,0 +1,30 @@
+---
+problem_id: 60345
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 60345</h1>
+<p>
+A passenger left his things in an automatic storage room, and when he came to get his things, it turned out that he had forgotten the code. He only remembers that in the code there were the numbers 23 and 37. To open the room, you need to correctly type a five-digit number. What is the least number of codes you need to sort through in order to open the room for sure?
+
+</p> <h1>Solution</h1> <p>
+We will analyze several cases.
+<p>
+1$)$ The number contains a combination of 237. It can be arranged in the code in three ways: ** 237, * 237 *, 237 **. In each of them, each of the remaining numbers can be selected in 10 ways. In total we get $3 \times 10$² = 300 numbers.
+<p>
+2$)$ The number contains combinations of 23 and 37, and 23 is located to the left. The remaining figure can be selected in 10 ways and you can insert it into one of three places. This gives only 30 combinations.
+<p>
+3$)$ The number contains combinations of 23 and 37, and 23 is located to the right. This gives 30 more combinations.
+It remains to note that we counted the numbers 23723, 23237, 23737 and 37237 twice.
+
+</p> <h1>Answer</h1> <p>
+356 combinations.
+</p>
+
+
+

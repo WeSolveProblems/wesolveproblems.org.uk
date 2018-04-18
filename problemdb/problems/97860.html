@@ -1,0 +1,26 @@
+---
+problem_id: 97860
+category_ids: 207
+difficulty: 2-
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 97860</h1>
+<p>
+There are 68 coins, and it is known that any two coins differ in weight. With 100 weighings on a two-scales balance without weights, find the heaviest and lightest coin.
+ 
+</p> <h1>Solution</h1> <p>
+We divide the coins into 34 pairs. With 34 weighings we will compare the coins inside the pairs and the heavier ones will be put in one pile, and the lighter ones in the other.
+From the "heavy" heap for 33 weighings, we select the heaviest coin $($ for each weighing we compare two coins, the lighter one is discarded, and the heavier one is compared with the next one ...$)$. Similarly, for the next 33 weighings from the "light" heap we select the lightest coin. 34 + 33 + 33 = 100.
+ 
+</p> <h1>Remarks</h1> <p>
+1. 5 points.
+<p> 
+2. The problem was also proposed at the 51st Leningrad Mathematical Olympiad $($ 1985, 6 cells, back 5 $)$.
+<p> 
+3. Compare with the task number M936 from the Quarantine.
+</p>
+ 

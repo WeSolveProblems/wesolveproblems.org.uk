@@ -1,0 +1,21 @@
+---
+problem_id: 35146
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35146</h1>
+<p>
+In the secret service, there are n agents - 001, 002, ..., 007, ..., n. The first agent monitors the one who monitors the second, the second monitors the one who monitors the third, etc., the nth monitors the one who monitors the first. Prove that n is an odd number.
+
+</p> <h1>Hint</h1> <p>
+Assuming that the first agent monitors the k-th agent, restore the entire surveillance scheme.
+
+</p> <h1>Solution</h1> <p>
+Denote agents by dots and draw an arrow from agent A to agent B when A monitors B. Since each agent monitors exactly one other, we get a cycle $($ or several cycles $)$ from the arrows. According to the condition, if we start the movement along the arrows, starting with the first agent and passing at the same time along the two arrows, we will meet all the agents with the numbers 2, 3, ..., n, in a row and at the end we will again come back to the first agent $($ this, in particular, means that there is only one cycle $)$. But in the case of an even number of agents  we will go around only half the cycle in this way.
+</p>
+

@@ -1,0 +1,44 @@
+---
+problem_id: 98299
+category_ids: 207
+difficulty: 2-
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98299</h1>
+<p>
+a$)$ Could an additional 6 digits be added to any 6-digit number starting with a 5, so that the 12-digit number obtained is a complete square?
+<p>
+b$)$ The same question but for a number starting with a 1.
+<p>
+c$)$ Find for each n the smallest k = k $(n)$ such that to each n-digit number you can assign k more digits so that the resulting $(n + k)$ - digit number is a complete square.
+
+</p> <h1>Solution</h1> <p>
+a$)$ We take an arbitrary number ending in zeros, the square of which is a 12-digit number starting with 5, for example A = 750000 $(A^2 = 5625 \times 10^8)$. Since $(A - 1)^2$ = $A^2$ - 2A + 1, the preceding square is 562500000000 - $2 \times 750000$ + 1 = 562498500001. Therefore, there is no 12-digit square starting with the digits 562499.
+<p>
+b$)$ Let $A^2$ be a 12-digit number starting with 1, that is, 1011 $≤$ $A^2$ $<$ $2 \times 10^11$. Neighbouring squares differ from $A^2$ by 2A - 1 and 2A + 1, and 
+<img src="98299.png">
+ 
+therefore the difference between adjacent squares is less than one million, so that in the series of consecutive squares between $10^11$ and $2 \times 10^11$ there will be numbers beginning with each set of 6 digits.
+<p>
+c$)$ You can assign n + 1 digits to any n digit number so that the resulting number which has 2n + 1 digits is a complete square. Indeed, in the section from $10^{2n}$ to $10^{2n + 1}$ the difference between neighboring squares does not exceed
+<img src="98299 1.png">
+ 
+
+Let us prove that k $(n)$ $≥$ n + 1. Consider the square preceded by $10^{2n}$: 
+<img src="98299 2.png">
+ 
+Thus, one can not assign n digits to a number so that a square is obtained. It is also clear that n - 2, n - 4, ... numbers can not be assigned to it: the corresponding number is too close to $(10^{n-1})^2$, $(10^{n-2})^2$, ... Therefore k $(n)$ ≠ n $($ and also n - 2, n - 4, ...$)$.
+We also consider the square preceded by $(2 \times 10^{n-1})^2$:
+<img src="98299 3.png">
+ 
+Thus, we can not assign to a number n - 1 $($ and also n - 3, n - 5, ...$)$ digits to get a square, so that k $(n)$ ≠ n - 1 $(n - 3, n - 5, ...)$.
+
+</p> <h1>Answer</h1> <p>
+a$)$ Not to any number; b$)$ to any number; c$)$ k $(n)$ = n + 1.
+</p>
+
+

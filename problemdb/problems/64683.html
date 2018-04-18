@@ -1,0 +1,25 @@
+---
+problem_id: 64683
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64683</h1>
+<p>
+A group of several friends was in correspondence in such a way that each letter was received by everyone except for the sender. Each person wrote the same number of letters, as a result of which all together the friends received 440 letters. How many people could be in this group of friends?
+
+</p> <h1>Solution</h1> <p>
+Let there be n people in the group, and everyone sent k letters each. Then from one person to the rest there were k $(n - 1)$ letters sent, and from all the writers in total k $(n - 1)$n letters were sent. Hence, the number 440 is the product of three factors, two of which differ by 1.
+Since 440 = $2^3$ \times 5 \times 11$, then it is possible to carry out a search with the following restrictions:
+1$)$ n $<$ 22 $($ since $22 \times 21$ $>$ 440 $)$;
+2$)$ the numbers n and n - 1 do not contain any prime factors except 2, 5, and 11.
+As a result, we obtain three variants: 440 = $2 \times 10 \times 11$ = $22 \times 4 \times 5$ = $220 \times 1 \times 2$.
+
+</p> <h1>Answer</h1> <p>
+2, 5, or 11.
+</p>
+

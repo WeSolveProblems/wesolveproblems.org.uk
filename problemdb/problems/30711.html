@@ -1,0 +1,24 @@
+---
+problem_id: 30711
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30711</h1>
+<p>
+Prove that out of n objects an even number of objects can be chosen in $2^{n-1}$ ways.
+
+</p> <h1>Solution 1</h1> <p>
+Fix one of the items - a. We divide all possible subsets of objects into pairs: in each pair one of the subsets contains a, and the second one does not; but in all other cases they coincide. In each pair, one of the subsets is "even", and the second is "odd". Therefore, the number of "even" subsets is half of the number of all subsets, and of them there are $2^n$ $($ see problem 30708 $)$.
+
+</p> <h1>Solution 2</h1> <p>
+The sum of the numbers standing on the even places in the nth row of Pascal's triangle is equal to the sum of the numbers on odd places in the same row $($ see solution 2 of problem 30712 $)$.
+</p>
+
+
+
+

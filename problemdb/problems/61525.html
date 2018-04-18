@@ -1,0 +1,33 @@
+---
+problem_id: 61525
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 61525</h1>
+<p>
+We denote by $P_{k, l}$ $(n)$ the number of partitions of the number n into at most k terms, each of which does not exceed l.
+Prove the equalities:
+<p>
+a$)$ $P_{k, l}$ $(n)$ - $P_{k, l-1}$ $(n)$ = $P_{k-1, l}$ $(n-l)$;
+<p>
+b$)$ $P_{k, l}$ $(n)$ - $P_{k-1, l}$ $(n)$ = $P_{k, l-1}$ $(n-k)$;
+<p>
+c$)$ $P_{k, l}$ $(n)$ = $P_{l, k}$ $(n)$;
+<p>
+d$)$ $P_{k, l}$ $(n)$ = $P_{k, l}$ $(kl - n)$.
+
+</p> <h1>Hint</h1> <p>
+c$)$ Consider a symmetric Young diagram.
+
+</p> <h1>Solution</h1> <p>
+a$)$ From each partition n - l = $a_1$ + $a_2$ + ... + $a_m$ of the number n - 1 into terms not exceeding l, we can obtain a partition n = $a_1$ + $a_2$ + ... + $a_{m + 1}$ of the number n. But this is not the case for all the partitions of interest to us $($ which are $P_{k, l}$ $(n)$)$, but only those that contain a term equal to l. The number of partitions not containing such summands is equal to $P_{k, l-1}$ $(n)$.
+b$)$ It can be proved similarly to a$)$, but it is easier to see that b$)$ immediately follows from a$)$ and c$)$.
+c$)$ With a partition possessing these properties, we can construct the corresponding Young diagram. A symmetric Young diagram corresponds exactly to the division of the number n by no more than l terms, each of which does not exceed k.
+d$)$ The partition n = $a_1$ + $a_2$ + ... + $a_m$ $(m ≤ k, a_i ≤ l)$ of the number n is comparable to the partition kl - n = $(l - a_1)$ + $(l - a_2)$ + ... + $(l - a_m)$ + l + ... + l of the number kl - n, where the term l - $a_i$ is discarded if it is a zero, and the number of summands of l is k - m.
+</p>
+

@@ -1,0 +1,22 @@
+---
+problem_id: 35598
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35598</h1>
+<p>
+In a communication system consisting of 2001 subscribers, each subscriber is connected with exactly n others. Determine all the possible values of n.
+
+</p> <h1>Hint</h1> <p>
+Count the number of pairs of connected subscribers and show that n is even.
+
+</p> <h1>Solution</h1> <p>
+Since each of the 2001 subscribers is connected with exactly n others, the total number of directions of communication is equal to 2001n. Hence the total number of connected pairs of subscribers is equal to 2001n/ 2, since each associated pair has exactly two directions of communication. Since this number must be an integer, the number n must be even.
+Let us prove that for every n = 2t $(t = 0, 1, ..., 1000)$ there exists a communication system from 2001 subscribers, in which each is connected with exactly n others. In fact, by placing all the subscribers on a circle and connecting each of them with t closest to it subscribers in a clockwise direction and with t nearest to it subscribers counterclockwise, we get an example of such a communication network.
+</p>
+

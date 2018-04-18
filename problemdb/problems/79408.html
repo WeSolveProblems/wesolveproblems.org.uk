@@ -1,0 +1,23 @@
+---
+problem_id: 79408
+category_ids: 207
+difficulty: 2-
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 79408</h1>
+<p>
+Peter bought an automatic machine at the store, which for 5 pence multiplies any number entered into it by 3, and for 2 pence adds 4 to any number. Peter wants, starting with a unit that can be entered free of charge to get the number 1981 on the machine number whilst spending the smallest amount of money. How much will the calculations cost him? What happens if he wants to get the number 1982?
+ 
+</p> <h1>Solution</h1> <p>
+Note first that you can not get an even number on the machine. Consequently, Peter will not be able to get the number 1982.
+<p> 
+Lemma. After the first multiplication by 3, it is unprofitable to add 4 more than twice in a row.
+Proof of the lemma. By replacing the sequence of actions $ \times 3$, + 4, + 4, + 4 with +4,$ \times 3$, we will reduce costs.
+Now it is possible to restore the sequence of Peter’s actions starting from the last one: if the number is not divisible by 3, then it was obtained by adding a 4, and if it is divisible, then it was obtained either by a multiplication by 3 or only four additions were used. Thus, we obtain the sequence of actions optimal for Peter and it has the form:
++4, + 4, + 4, + 4, + 4, × 3, + 4, + 4, × 3, + 4, × 3, + 4, + 4, × 3, + 4.
+</p>
+

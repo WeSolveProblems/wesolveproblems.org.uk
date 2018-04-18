@@ -1,0 +1,24 @@
+---
+problem_id: 60449
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 60449</h1>
+<p>
+Consider a chess board of size $n \times n$. It is required to move a rook from the bottom left corner to the upper right corner. You can move only up and to the right, without going into the cells of the main diagonal and the one below it. $($ The rook is on the main diagonal only initially and in the final moment in time. $)$ How many possible routes does the rook have?
+
+</p> <h1>Hint</h1> <p>
+Match all such rook routes with the sequence numbers from task number 60447.
+
+</p> <h1>Solution</h1> <p>
+Let the rook make at first a move upwards, then the last one is a move to the right. In addition, it must make n - 1 moves up and the same number - to the right. Each move upward is put in correspondence with a unit, and a move to the right with a minus one. We will obtain a sequence of 2n - 2 numbers satisfying the conditions of the problem number 60447. Conversely, for each such sequence it is possible to construct a rook's route in the top part of the board.
+
+</p> <h1>Answer</h1> <p>
+2$C_{n-1}$.
+</p>
+

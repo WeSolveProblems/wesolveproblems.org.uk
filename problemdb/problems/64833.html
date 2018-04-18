@@ -1,0 +1,26 @@
+---
+problem_id: 64883
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64833</h1>
+<p>
+In a line 40 signs are written out: 20 crosses and 20 zeros. In one move, you can swap any two adjacent signs. What is the least number of moves in which it is guaranteed that you can ensure that some 20 consecutive signs are crosses?
+
+</p> <h1>Solution</h1> <p>
+In order for 20 crosses to stand in a row, it is necessary and sufficient to have all the zeros stand at the edges $($ perhaps all on one side $)$.
+Evaluation. Let there be a string with an arbitrary arrangement of crosses and zeros. We will make the permitted moves, moving the noughts to the right or to the left, so that there are no crosses to the right or left of them.
+To do this, we first select the rightmost and leftmost zeros. In order for one of them to be on the edge, it takes no more than 10 moves, since either to the left of the leftmost one, or to the right of the rightmost zero, there are no more than 10 crosses.
+Next, take the rightmost and leftmost noughts of the remaining 19. In the same way, we get that to move this nought in the same way no more than 10 moves are needed, and so on. Thus, to obtain the required arrangement, no more than $20 \times 10$ = 200 moves are required.
+Let's give an example of the initial arrangement for the case when there are not enough moves. Let the arrangement be 10 crosses, then 20 zeros, and then 10 more crosses. In this case, to move each nought to the edge it takes exactly 10 moves.
+
+</p> <h1>Answer</h1> <p>
+In 200 moves.
+</p>
+
+

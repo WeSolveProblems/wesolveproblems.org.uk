@@ -1,0 +1,26 @@
+---
+problem_id: 30781
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 30781</h1>
+<p>
+Prove that there exists a graph with 2n vertices whose degrees are 1, 1, 2, 2, ..., n, n.
+
+</p> <h1>Hint</h1> <p>
+Use induction on n.
+
+</p> <h1>Solution</h1> <p>
+We will construct the graph by induction. 
+Base case. For n = 1, such a graph exists: two vertices connected by an edge.
+Inductive step. Suppose that a graph with 2n vertices and the indicated powers is already constructed. Add two vertices A and B to it. We join the vertex A with n old vertices with powers of 1, ..., n, and also with the vertex B. As a result, the degrees of half of the old vertices do not change, whilst the remaining ones will increase by 1, the degree of A will be equal to n + 1, and the degree of B will be 1. This is the required graph with 2n + 2 vertices.
+</p>
+
+
+
+

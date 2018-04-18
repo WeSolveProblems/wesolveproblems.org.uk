@@ -1,0 +1,22 @@
+---
+problem_id: 116490
+category_ids: 207
+difficulty: 2-
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 116490</h1>
+<p>
+There are 100 boxes numbered from 1 to 100. In one box there is a prize and the presenter knows where the prize is. The spectator can send the presented a pack of notes with questions that require a "yes" or "no" answer. The presenter mixes the notes in a bag and, without reading out the questions aloud, honestly answers all of them. What is the smallest number of notes you need to send to know for sure where the prize is?
+
+</p> <h1>Solution</h1> <p>
+Since the order of reading the answers to the questions to the spectator is unknown, he must make an unmistakable choice, knowing only the number of answers which are "no." If N notes are sent, then the number of "no" answers can take any integer values from 0 to N, that is, N + 1 variants are possible. This number must determine the number of the prize box, so its value should be no less than the number of boxes, that is, N $≥$ 99.
+Here is an example of a set of 99 notes that satisfies the condition. Let the viewer give the presenter notes with the same phrase: "Is it true that the box number with the prize does not exceed the number K?" for all K from 1 to 99. Suppose that the prize is in the box with the number m. Then the viewer will hear m - 1 "no" answers. Adding 1 to the number of "no" answers, he will determine the number of the prize box.
+
+</p> <h1>Answer</h1> <p>
+99 notes.
+</p>
+

@@ -1,0 +1,30 @@
+---
+problem_id: 61507
+category_ids: 821
+difficulty: 2
+classes: 6 7 8
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 61507</h1>
+<p>
+Find the generating functions of the sequences of Chebyshev polynomials of the first and second kind:
+ <img src="61507 1.png">
+
+
+Definitions of Chebyshev polynomials can be found in the handbook.
+
+</p> <h1>Solution</h1> <p>
+According to the problem number 61471, $T_n$ $(x)$ = 1/2 $(-i)^n$ $L_n$ $(2ix)$, $U_n$ $(x)$ = $(-i)^n$ $F_{n + 1}$ $(2ix)$, where $L_n$ $(x)$ and $F_n$ $(x)$ are the Lucas and Fibonacci polynomials. Therefore
+ <img src="61507 2.png">
+
+<img src="61507 3.png">
+ 
+$($ The generating functions L $(x, z)$ and F $(x, z)$ of the Lucas and Fibonacci polynomials are computed in problem number 61506. $)$
+
+</p> <h1>Answer</h1> <p>
+$F_T$ $(x, z)$ = $(1 - xz)$ $(1 - 2xz + z²)^{-1}$, $F_U$ $(x, z)$ = $(1 - 2xz + z²)^{-1}$.
+</p>
+
