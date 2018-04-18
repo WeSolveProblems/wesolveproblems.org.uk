@@ -22,6 +22,23 @@ It is convenient to depict a row of dragons in the form of a graph: instead of e
 a$)$ See the figure.
 <p>
 b$)$ Note, firstly, that somewhere in the interval between every two cunning dragons there is a strong one. Indeed, if we go along a series of dragons, then after we pass a cunning dragon, the number of heads begins to decrease. At some point it should start to increase - this is the position where there is a strong dragon. Likewise, further increases at some point will end with another cunning dragon.
+<p>
 The first method. Let's see in what order can the strong and cunning dragons be arranged. A strong dragon with six heads can only stand between two cunning dragons with seven heads. There are three such cases: the two remaining strong dragons stand either on one side of this trinity in one of two orders, or on opposite sides.
+<p>
+<IMG SRC="65603 1.png">
+<p>
+In the first case, the position of 14 dragons has already been determined unequivocally, and the only way to get the first and last dragon heads to be equal, is to add another dragon with five heads to the right of the right edge.
+The second and third arrangements are impossible, since they require more than 15 dragons $($ even without considering the condition of the same number of heads on the dragons at the edges $)$.
+<p>
+The second method $($ sketch $)$. You can do without trials. Choose a plot of the graph between some strong dragon and the cunning dragons nearest to it and "straighten it out", replacing a "dip" with a "hill" $($ see the picture $)$.
+<p>
+<IMG SRC="65603 b.png">
+<p>
+
+The number of heads that the dragons have  will change, and instead of two cunning dragons and one strong one this plot, there will be just one cunning dragon. Note that the number of heads that the new cunning dragon will have will be equal to the sum of the number of heads that the initial two cunning dragons had minus the number of heads that the former strong dragon had. This means that with such a procedure, the amount $($ the sum of the number of heads of all the cunning dragons minus the sum of the number of heads of all the strong dragons $)$ does not change.
+Note also that the number of heads that the dragons at the edges of the row have from such an operation is not known to change. Let us repeat this operation until all the strong dragons disappear. We will have one cunning dragon, which, for reasons of symmetry, will be exactly in the middle of the row. Let's count how many heads he will have. We know that initially the sum of the numbers of cunning dragon heads minus the sum of the number of heads of strong dragons is
+4 + 6 + 7 + 7 - 3 - 3 - 6 = 12. But now this amount is the number of heads of just the cunning dragon!
+Knowing that he has 12 heads, we can further easily restore that the edge dragons $($ separated by seven positions in the row $)$ have five heads.
+</p>
 
 
