@@ -1,0 +1,22 @@
+---
+problem_id: 35584
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35584</h1>
+<p>
+There are 18 sweets in one piles, and 23 in another. Two play a game: in one go one can eat one pile of sweets, and the other can be divided into two piles. The loser is one who cannot make a move, i.e. before this player’s turn there are two piles of sweets with one sweet in each. Who wins with a regular game?
+
+</p> <h1>Hint</h1> <p> 
+It is necessary to force the opponent to divide a pile with an odd number of sweets every time.
+
+</p> <h1>Solution</h1> <p> 
+In her first move, the first player has to eat the pile of 23 sweets and divide the 18 sweets into two piles with an odd number of sweets in each pile. After that, the second will eat one of the piles, and the other pile will be divided into two piles, one of which has an even number of sweets, and the other has an odd number of sweets. Now, the first player is in a similar situation as she was in the very first round - there are two piles, one of which has an even number of sweets, and the other an odd one. The first should again eat the "odd" pile and divide the "even" pile into two odd ones, and so on. No matter how the second goes, after his turn there are two piles, one of which has an even $($and, consequently, a greater one$)$ number of sweets. Therefore, after the second move, the first player can make her move. Thus, if the former adheres to the strategy described above, she will win.
+
+</p> <h1>Answer</h1> <p> 
+The first player wins. 

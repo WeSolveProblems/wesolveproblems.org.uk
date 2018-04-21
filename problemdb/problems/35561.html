@@ -1,0 +1,22 @@
+---
+problem_id: 35561
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35561</h1>
+<p>
+Someone arranged a 10-volume collection of works in an arbitrary order. We call a “disturbance” a situation where there are two volumes for which a volume with a large number is located to the left. For this volume arrangement, we call the number S the number of all of the disturbances. What values can S take?
+
+</p> <h1>Hint</h1> <p> 
+If you swap two adjacent volumes, the number of disturbances will change $($i.e., either decrease or increase$)$ by 1.
+
+</p> <h1>Solution</h1> <p> 
+It is clear that the number S of disturbances is not less than 0 and is not more than the number of all possible pairs of 10 volumes $($the number of such pairs is 10 * 9/2 = 45$)$. Let us show that any of the values from 0 to 45 can be achieved with some arrangement of volumes. First, place the volumes in reverse order. In this case, each pair of volumes will be a disturbance, and the total number of disturbances S = 45. Further, suppose that we already have a setting for which S = i $>$ 0; then we find in it two adjacent volumes that form a disturbance $($there are two such volumes, since otherwise the order of volumes will be correct, and S will be 0$)$. We will swap these two volumes, while in the new arrangement, obviously, there is exactly one more disorder, i.e. S becomes equal to i-1. Thus, starting with the arrangement of volumes for which S = 45, we can successively obtain arrangements for which S = 44, 43, ..., 1, 0. Thus, the statement of the problem is completely proved.
+
+</p> <h1>Answer</h1> <p> 
+S can take any integer value from 0 to 45.

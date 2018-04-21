@@ -1,0 +1,18 @@
+---
+problem_id: 32807
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 32807</h1>
+<p>
+In the lower left corner of an 8 by 8 chessboard is a chip. Two in turn move it one cell up, right or right-up diagonally. The one who puts the chip in the upper right corner wins. Who will win in a regular game?
+
+</p> <h1>Answer</h1> <p> 
+We call a cell of the board a winning one, if the player who leaves this cell wins the game. The remaining cells will be called losing cells.
+<p>
+  We will denote the winning cells by a "+" and the losing ones by a "-". We begin to fill the board. The cells g7, g8, and h7 are obviously winning ones, since they can be reached by h8 on the first go. Next, the cells f8 and h6 are losing cells, because from them you can only get to winning cells. Continuing to fill the board in this way, we see that in cell a1 there is a "+". Hence, in a regular game, the first player wins.

@@ -1,0 +1,17 @@
+---
+problem_id: 60437
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 60437</h1>
+<p>
+Each side in the triangle ABC is divided into 8 equal segments. How many different triangles exist with the vertices at the points of division $($the points A, B, C cannot be the vertices of triangles$)$ in which neither side is parallel to either side of the triangle ABC?
+
+</p> <h1>Solution</h1> <p> 
+Let $N_a$ be the number of triangles in which one side is parallel to the side BC of the original triangle. Similarly, we define the numbers $N_b, N_c, N_{a, b}, N_{b, c}, N_{a, c}$ and $N_{a, b, c}$. Let N denote the total number of triangles. Then $N = 7^3, N_a = N_b = N_c = 7^2, N_{a, b} = N_{b, c} = N_{a, c} = 7, N_{a, b, c} = 1$. The desired number is found by the formula of inclusions and exceptions:
+$7^3 – 3 \times 7^2 + 3 \times 7 - 1 = 6^3$.
