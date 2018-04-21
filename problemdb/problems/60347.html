@@ -1,0 +1,18 @@
+---
+problem_id: 60347
+category_ids: 905 1280
+difficulty: 2
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 60347</h1> <p>
+How many nine-digit numbers exist, the sum of the digits of which is even?
+
+</p> <h1>Solution</h1> <p> 
+We divide the nine-digit numbers into pairs of consecutive ones: $(100000000, 100000001), (100000000, 100000001), ...$ In each pair the sum of the digits of the second number is 1 more than the sum of the digits of the first, so exactly one of them is even. Therefore, numbers with an even sum of digits make up exactly half of the number of all nine-digit numbers, and $9 \times 10^8$ $($see the solution to problem number 60336$)$.
+
+</p> <h1>Answer</h1> <p> 
+$45 \times 10^7$ numbers.

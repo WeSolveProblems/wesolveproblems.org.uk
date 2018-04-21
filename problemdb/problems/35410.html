@@ -1,0 +1,25 @@
+---
+problem_id: 35410
+category_ids: 905 1280
+difficulty: 2
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35410</h1> <p>
+10 numbers are written around the circle, the sum of which is equal to 100. It is known that the sum of every three numbers standing side by side is not less than 29.
+Specify the smallest number A such that in any such set of numbers each of the numbers does not exceed A.
+
+</p> <h1>Hint</h1> <p> 
+Each number from a given set of numbers is summed up to 100 with three triples of "neighbours".
+
+</p> <h1>Solution</h1> <p> 
+  Let X be the largest of the numbers. The remaining numbers are divided into three triples of "neighbours". The sum of the numbers in each such triple is not less than 29, therefore,
+$X ≤ 100 - 3 \times 29 = 13$.
+<p>
+  An example of a set with a maximum number of 13: 13, 9, 10, 10, 9, 10, 10, 9, 10, 10.
+
+</p> <h1>Answer</h1> <p> 
+A = 13.

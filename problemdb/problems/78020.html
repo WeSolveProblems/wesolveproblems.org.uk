@@ -1,0 +1,18 @@
+---
+problem_id: 78020
+category_ids: 905 1280
+difficulty: 2
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78020</h1> <p>
+	The segment OA is given. From the end of the segment A there are 5 segments $AB_1, AB_2, AB_3, AB_4, AB_5$. From each point $B_i$ there can be five more new segments or not a single new segment, etc. Can the number of free ends of the constructed segments be 1001? By the free end of a segment we mean a point belonging to only one segment $($except point O$)$.
+
+</p> <h1>Solution</h1> <p> 
+When five segments are drawn from the end of the segment, 5 new free ends appear and one old one disappears. As a result, the number of free ends increases by 4. Therefore, if five of the segments are drawn k times, then the number of free ends is 4k + 1. For k = 250, we get the required number of free ends.
+
+</p> <h1>Answer</h1> <p> 
+Yes.

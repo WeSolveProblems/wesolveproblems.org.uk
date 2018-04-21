@@ -1,0 +1,24 @@
+---
+problem_id: 35558
+category_ids: 905 1280
+difficulty: 2
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 35558</h1> <p>
+Let M be a finite set of numbers. It is known that among any three of its elements there are two, the sum of which belongs to M.
+What is the largest number of elements in M?
+
+</p> <h1>Hint</h1> <p> 
+Consider either the four largest or the four smallest numbers.
+
+</p> <h1>Solution</h1> <p> 
+  An example of a set of 7 elements: {-3, -2, -1, 0, 1, 2, 3}.
+<p>
+  We prove that the set $M = {a_1, a_1, ..., a_n}$ for n $>$ 7 numbers does not possess the required property. We can assume that $a_1> a_2> a_3> ...> a_n$ and $a_4> 0$ $($our property does not change the signs of all elements$)$. Then $a_1 + a_2> a_1 + a_3> a_1 + a_4> a_1$, that is, none of the sums $a_1 + a_2, a_1 + a_3$ and $a_1 + a_4$ belongs to the set M. In addition, the sums $a_2 + a_3$ and $a_2 + a_4$ cannot simultaneously belong to M, since $a_2 + a_3> a_2 + a_4> a_2$. It turns out that for at least one of the triples $(a_1, a_2, a_3)$ and $(a_1, a_2, a_4)$, the sum of any two of its elements does not belong to the set M.
+
+</p> <h1>Answer</h1> <p> 
+7 elements.

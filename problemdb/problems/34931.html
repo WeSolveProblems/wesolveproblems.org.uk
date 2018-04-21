@@ -1,0 +1,22 @@
+---
+problem_id: 34931
+category_ids: 905 1280
+difficulty: 2
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 34931</h1> <p>
+On the dining room table, there is a choice of six dishes. Every day Valentina takes a certain set of dishes $($perhaps, she does not take a single dish$)$, and this set of dishes should be different from all of the sets that she took in the previous days. What is the maximum number of days that Valentina will be able to eat according to such rules and how many meals will she eat on average during the day?
+
+</p> <h1>Hint</h1> <p> 
+Each set of dishes can be compared to the opposite set, consisting precisely of those dishes that are not in the original set.
+
+</p> <h1>Solution</h1> <p> 
+  The number of days is obviously equal to the number of different sets of six dishes. For each dish there are two possibilities - chosen or not chosen. Therefore, the number of days is 26.
+  Each set of dishes can be compared to the opposite set, consisting precisely of those dishes that are not in the original set. Together in the original and in the opposite set there are six dishes, then, on average, there are three dishes per set. Since all 64 sets are broken up into pairs of opposite ones, on average, for these 64 days, Valentia ate three dishes.
+
+</p> <h1>Answer</h1> <p> 
+64 days and an average of 3 meals a day.

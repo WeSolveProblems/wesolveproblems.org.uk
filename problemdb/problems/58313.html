@@ -1,0 +1,18 @@
+---
+problem_id: 58313
+category_ids: 905 1280
+difficulty: 2
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 58313</h1> <p>
+Ten circles are marked on the circle. How many non-closed non-self-intersecting nine-point broken lines exist with vertices at these points?
+
+</p> <h1>Solution</h1> <p> 
+The first point can be selected in ten ways. Each of the following eight points can be selected in two ways: it must be adjacent to one of the previously selected points $($otherwise a self-intersecting polyline will be obtained$)$. Since the beginning and the end differ in this calculation, but this does not happen with the polyline, the result must be divisible by 2. Consequently, there are $10 \times 2^8 \div 2 = 1280$ broken lines.
+
+</p> <h1>Answer</h1> <p> 
+1280 broken lines.
