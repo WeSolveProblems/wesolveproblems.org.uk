@@ -15,7 +15,7 @@ How many ways can it get from A to A in n jumps?
 </p> <h1>Solution</h1> <p> 
   Let $a_n$ be the number of ways to return in n jumps to the original vertex, and $b_n$ to get in n jumps to the neighbouring vertex. It is easy to see that $a_{n + 1} = 2b_n, b_{n + 1} = a_n + b_n$. Hence it is not difficult to deduce that $b_{n + 2} = b_{n + 1} + 2b_n, a_{n + 2} = a_{n + 1} + 2a_n$.
 <p>
-  From the initial </p> <h1>Problem</h1> <p> s $a_0 = 1, a_1 = 0$, we obtain $a_n = \frac{2^n + 2 \times (-1)^n}{3}$ $($this is easy to prove by induction$)$.
+  From the initial conditions $a_0 = 1, a_1 = 0$, we obtain $a_n = \frac{2^n + 2 \times (-1)^n}{3}$ $($this is easy to prove by induction$)$.
 
 </p> <h1>Answer</h1> <p> 
  $\frac{2^n + 2 \times (-1)^n}{3}$ ways.
