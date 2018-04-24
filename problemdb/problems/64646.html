@@ -1,0 +1,32 @@
+---
+problem_id: 64646
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64646</h1>
+<p>
+Ali Baba followed by 40 robbers lined up on the crossing across the Bosporus Strait. There is only one boat and in it there can be either two or three people (there cannot be one person in the boat). Among those in the boat there should not be people who are not friends with each other. Will all of them be able to cross, if every two people standing next to each other in the queue are friends, while Ali Baba is also friends with the robber standing behind the person next to him?
+
+</p> <h1>Solution</h1> <p> 
+  We number all of the robbers in the order of the queue. <p>
+
+  The first way. First, Ali Baba and the first two robbers are transferred in the boat, the second remains, and Ali Baba returns with the 1st. Then the 3rd robber moves across with the 4th and returns with the 2nd (there was a substitution of the 2nd for the 4th). Then the 5th changes the 4th to the 6th, and so on. Finally, on that shore will be the 40th, and the rest with the boat will be on this side. <p>
+
+  Let's forget about the 40th robber and with the help of the same procedure (with the change of evenness and oddness) we will transfer the 39th to that shore, etc. <p>
+
+  The second way. In five crossings you can transfer the main four (Ali Baba and the first three robbers): first Ali Baba and the first two robbers are transferred, then the 1st and 2nd return, then the 2nd and 3rd robbers are transferred, and finally Ali Baba returns with the 2nd and take the 1st. <p>
+
+  After that, the 2nd and the 3rd return, 39th and 40th are transferred, and Ali Baba returns with the first. So, the last two robbers are transferred in 8 crossings. The next 8 crossings similarly transfer the 37th and 38th, and so on. When Ali Baba and the first four robbers remain on the original shore (this is again the main four), the 2nd and the 3rd return, the 3rd and 4th are transferred, and Ali Baba returns with the 1st for the 2nd.
+
+</p> <h1>Answer</h1> <p> 
+Yes, they can.
+
+</p> <h1>Remarks</h1> <p> 
+1. The second method is much more profitable: it takes only 153 crossings, and the first method takes more than 800. <p>
+
+2. Years 8-9, 6 marks, years 10-11, 5 marks.

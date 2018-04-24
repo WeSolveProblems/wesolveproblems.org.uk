@@ -1,0 +1,28 @@
+---
+problem_id: 64576
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64576</h1>
+<p>
+Author: A.V. Khachaturyan<p>
+
+Replace the letters of the word MATEMATIKA with numbers and signs of addition and subtraction so that a numeric expression equal to 2014 is obtained.
+(The same letters denote the same numbers or signs, different letters denote different numbers or signs. Note that it is enough to give an example.)
+
+</p> <h1>Answer</h1> <p> 
+183 + 1839 - 8.
+</p> <h1>Remarks</h1> <p> 
+  1. To find a solution (and also to prove its uniqueness), it is useful to think about which of the letters are signs of action. <p>
+
+  Clearly, this can not be A $($as the last character of the expression$)$. Then there must be at least one sign between the first two digits of A. The T sign can not be a minus or a plus $($even MA + EMA + IKA is known to be less than 99 + 999 + 899 $<$2000$)$. A small search shows that $($even if we assume that an expression can begin with a plus or minus sign$)$ M also can not be a sign. <p>
+
+  There remains the case when plus is E, and somewhere else there is a minus. The expression MAT + MAT - IKA is known to be less than 2000, so the minus is not I, but K. The expression MAT + MATI - A is equal to MAT · 11 + (I - A), so MAT · 11 = 2013 $($other numbers divisible by 11 are too  far from 2014$)$ - this leads to a single answer. <p>
+
+  2. 6 points.
+

@@ -1,0 +1,26 @@
+---
+problem_id: 64630
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64630</h1>
+<p>
+Author: N.K. Agakhanov<p>
+
+On the board, the equation xp3 + * x² + * x + * = 0 is written. Peter and Vlad take turns to replace the asterisks with rational numbers: first, Peter replaces any of the asterisks, then Vlad - any of the two remaining ones, and then Peter replaces the remaining asterisk. Is it true that for any of Vlad’s actions, Peter can get an equation in which the difference of some two roots is equal to 2014?
+
+</p> <h1>Solution</h1> <p> 
+  The first way. Let Peter set the constant of the equation to zero in his first move. Then the resulting equation will have a root of 0; then it is enough for Peter to make sure that the other root is the number t = 2014. This can always be done: if after Vlad’s move we get the equation
+x³ + ax² + * x = 0, then Peter can replace the remaining asterisk with - t (t + a), and if after Vlad’s move we get xφ + * x² + bx = 0, then Peter can replace the asterisk with a number - t-1 ( t² + b). Obviously, all of the numbers that Peter puts are rational. <p>
+
+  The second way. Let Peter replace the asterisk with the first move at x by -s², where s = 1007. After Vlad’s move, we get the following equations
+x³ + ax² - s²x + * = 0 or x³ + * x² - s²x + c = 0. In the first case, Peter can replace the remaining asterisk with - as², and in the second - with - cs-2.
+  In any case, the resulting equation will have the form x³ + ax² - s²x - as² = 0, that is, the numbers s and - s will be its roots; the difference between these numbers is 2014.
+
+</p> <h1>Answer</h1> <p> 
+Yes, it is.

@@ -1,0 +1,20 @@
+---
+problem_id: 64427
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64427</h1>
+<p>
+The island has 100 knights and 100 liars. Each of them has at least one friend. Once exactly 100 people said: "All my friends are knights," and exactly 100 people said: "All my friends are liars." What is the smallest possible number of pairs of friends, one of whom is a knight and the other a liar?
+
+</p> <h1>Solution</h1> <p> 
+  Consider a random inhabitant A of the island, who says: "All my friends are liars." If A is a knight, then his friend is a liar. If A is a liar, then his friend is a knight. In any case, A is included in a couple of friends of "different" sorts. Since such a statement was made by 100 people, the number of such pairs cannot be less than 100/2 = 50.
+  Example: let 50 knights be friends among themselves, 50 liars are friends among themselves, and there are 50 pairs of friends of the kind "knight - liar", and there are no other friends among the inhabitants of these pairs. Then each of the first two groups has the right to say: "All my friends are knights," and each of the third group: "All my friends are liars."
+
+</p> <h1>Answer</h1> <p> 
+50 pairs.

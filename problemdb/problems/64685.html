@@ -1,0 +1,36 @@
+---
+problem_id: 64685
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64685</h1>
+<p>
+Author: A.V. Shapovalov<p>
+
+To the cabin of the cable car leading up to the mountain, four people arrived who weigh 50, 60, 70 and 90 kg. A supervisor does not exist, but the cable car travels back and forth in automatic mode only with a load from 100 to 250 kg (in particular, it does not go anywhere when the cable car is empty), provided that passengers can be seated on two benches so that the weights on the benches differ by no more than 25 kg. How can they all climb the mountain?
+
+</p> <h1>Solution</h1> <p> 
+  We will denote people as numbers corresponding to their weight. Then the following algorithm of actions is possible: <p>
+
+    1) go up 50 + 60 and 90; <p>
+
+    2) go down 50 and 60; <p>
+
+    3) go up 60 and 70; <p>
+
+    4) go down 70 and 90; <p>
+
+    5) go up 50 and 70; <p>
+
+    6) go down 50 and 60; <p>
+
+    7) go up 50 + 60 and 90.
+
+</p> <h1>Remarks</h1> <p> 
+It follows from the condition that the three of them can only go 50, 60 and 90. And not less than two should descend. Hence, both the first and last ascents must be performed by 50, 60 and 90.
+

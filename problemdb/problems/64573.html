@@ -1,0 +1,31 @@
+---
+problem_id: 64573
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 64573</h1>
+<p>
+Author: A.V. Khachaturyan<p>
+
+The mum baked some pies - three with peach, three with kiwi and one with blackberries - and laid them on the dish in a circle (see the picture). Then she put the dish in a microwave to warm it up. All of the pies look the same. Maria knows how they lie on the dish but does not know how the dish turned in the microwave. She wants to eat a pie with blackberries, but she doesn’t want any of the others because she doesn’t like their taste. How can Maria surely achieve this by biting as few tasteless pies as possible?
+
+
+</p> <h1>Solution</h1> <p> 
+  It is clear that for one bite Maria cannot cope with the task. If Maria, for example, tasted a pie with kiwi, then she is not able to determine which of the three she got, and therefore cannot with confidence find the pie with blackberries. Let's show how Maria can cope with the task with two bites.
+  Let Maria bite the pie and suppose that it is not with blackberries but with kiwi. Then she can try the pie, lying one from this one in the clockwise direction. If this is a pie with blackberries, then Maria has achieved her goal and if it is with peaches then the desired pie between the bitten ones and if it is again with kiwi then we must take the next clockwise pie, and this will definitely be the blackberry pie. <p>
+
+  If the first pie is with peaches, Maria can act similarly, but move anticlockwise. <p>
+
+</p> <h1>Remarks</h1> <p> 
+
+1. Similarly, Maria can act and with a large number of "tasteless" pies. Let N pies with kiwi lie on the dish, then one pie with blackberries and then again N pies with kiwi. Maria can notice the average pie with kiwi (and if N is even, then any of the two averages) and remember how many pies from this one have to be counted clockwise to take the pie with blackberries. When the pies are warmed, Maria tries one pie. Let her not be lucky, and this pie turned out to be with kiwi. Maria then can imagine that she tried that middle pie, and count from this one as much as necessary. If she guessed correctly, she would get a blackberry pie, if not, then she would understand if she was now closer to the preferred pie than the chosen middle one, or further from it. In any case, the uncertainty decreases by half: after one test, Maria had no more than half of the kiwi pies left "under suspicion”. <p>
+
+2. A lot of interesting things about problems discussing the amount of information can be found in the book by K.A. Knop "Weighing and algorithms: from puzzles to problems" (M., MCNMO, 2011). <p>
+
+3. 7 points.
+

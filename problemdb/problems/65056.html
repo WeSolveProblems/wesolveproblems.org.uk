@@ -1,0 +1,25 @@
+---
+problem_id: 65056
+category_ids: 257
+difficulty: 2
+classes: 6 7
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65056</h1>
+<p>
+Author: I.S. Rubanov<p>
+
+On the table, there are 7 cards with numbers from 0 to 6. Two take turns in taking one card. The winner is the one is the first person who can, from his cards, make up a natural number that is divisible by 17. Who will win in a regular game the person who goes first or second? 
+
+</p> <h1>Solution</h1> <p> 
+Denote the players A (the player who goes first) and B (the player who goes second). Let's give a strategy that allows A to win. Let him take the number 3 in the first round; then B is forced to take 4 (otherwise A will take it in the second turn and win, making the number 34). Note that then B will not win with her second move, because the only two-digit number containing 4 in its record and dividing by 17 is 34. Next, A takes 1, threatening to make the next number 51 or the number 136. As shown above, B immediately cannot win. Let’s look at these two threats simultaneously, B also cannot win and therefore, A’s next move will be the winning one. 
+
+</p> <h1>Answer</h1> <p> 
+The first player.
+
+</p> <h1>Remarks</h1> <p> 
+There are other winning strategies for A.
+	
