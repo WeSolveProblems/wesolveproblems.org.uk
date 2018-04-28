@@ -1,0 +1,26 @@
+---
+problem_id: 65563
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65563</h1>
+<p>
+Two play the following game. There is a pile of stones. The first takes either 1 stone or 10 stones with each turn. The second takes either m or n stones with every turn. They take turns, beginning with the first player. He who can not make a move, loses. It is known that for any initial quantity of stones, the first one can always play in such a way as to win $($ for any strategy of the second player $)$. What values can m and n take?
+
+</p> <h1>Solution</h1> <p>
+Let at least one of the numbers m and n be less than 9 $($ for example, m $)$. From an original heap of m + 1 stones, the first one will be forced to take 1 stone $($ m + 1 $<$ 10 $)$ first, after which the second will take m stones and win. This gives a contradiction.
+Let m = n + 9. Again, with an original heap of m + 1 = n + 10 stones, the first loses.
+Let us prove that for the remaining values of m and n, the first wins. To do this, it is sufficient to show that for any number of stones in the heap, the first one can make a move so that there is a number of stones left in the heap, different from both m and n. Let there be k stones in the pile and the first player goes first. If k $≤$ 10, then the first wins in one move $($ subtracting 10 if k = 10, or 1 if k $≤$ 9 $)$.
+Let k $>$ 10. The first one can leave one stone in the heap, or k - 1 stones, or k - 10 stones. If in one case m was obtained, and in the other case where n stones were obtained, the number | m - n | would equal 9. This gives a contradiction. The number of stones in the heap will decrease, and eventually the first player will win.
+
+</p> <h1>Answer</h1> <p>
+m, n $≥$ 9, and | m - n | $≤$ 9.
+
+</p> <h1>Remarks</h1> <p>
+5 points
+</p>

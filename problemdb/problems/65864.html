@@ -1,0 +1,27 @@
+---
+problem_id: 65864
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65864</h1>
+<p>
+One hundred cubs found berries in the forest: the youngest managed to grab 1 berry, the next bear in age - 2 berries, the next - 4 berries, and so on, until the oldest bear which found $2^{99}$ berries. The fox suggested that they share the berries in terms of “fairness." She can approach two cubs and distribute their berries evenly between them, and if this leaves an extra berry, then the fox eats it. With such actions, she continues, until all the cubs have an equal number of berries. What is the smallest number of berries that the fox can leave with the bear cubs?
+
+</p> <h1>Solution</h1> <p>
+Note that at each step, if both participating cubs had at least one berry, then at least one berry remains with each of them. Therefore at the end each bear will have at least one berry.
+Let us prove that the fox can leave each bear cub with exactly one berry, that is, move from the position $(1, 2, ..., 2^{99})$ to the position $(1, 1, ..., 1)$. To do this, we prove by induction that in the case where there are n bear cubs, the fox from the position $(1, 2, ..., 2^{n-1})$ can go to the position $(1, 1, ..., 1, 2^{n-1})$, and from the last - to the position $(1, 1, ..., 1)$.
+Base. For n = 1, all three positions coincide.
+Inductive step. From the position $(1, 2, ..., 2^{n-1}, 2^n)$, forgetting about the last bear cub, we can proceed by induction first to $(1, 1, ..., 1, 2^{n-1}, 2^n)$, and then to $(1, 1, ..., 1, 2^n)$. Using the last two cubs, the fox moves to the position $(1, 1, ..., 1, 2^{n-1}, 2^{n-1})$. Now, again forgetting about the last bear cub, you can go to the position $(1, 1, ..., 1, 2^{n-1})$, and from it, forgetting about the first one, to the position $(1, 1, ..., 1)$ .
+
+</p> <h1>Answer</h1> <p>
+100 berries.
+
+</p> <h1>Remarks</h1> <p>
+5 points
+</p>
+

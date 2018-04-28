@@ -1,0 +1,24 @@
+---
+problem_id: 98605
+category_ids: 377
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98605</h1>
+<p>
+Two players in turn paint the sides of an n-gon. The first one can paint the side that borders either zero or two colored sides, the second - the side that borders one painted side. The player who can not make a move loses. At what n can the second player win, no matter how the first player plays?
+
+</p> <h1>Solution</h1> <p>
+For n = 3, the first clearly wins, and for n = 4, the second player wins. We show how the first player wins for n $>$ 4. After the first move of the second player, two adjacent sides are painted. The first one can paint the side "one away" from them, forming an unpainted "hole" out of one side. This is his reserve, which the second can not paint. The reserve is the first players to use only if it has no other possible moves. If such a moment occurs $($ the second may lose before that even happens $)$, then $($ after the "closure" of the reserve $)$ the unpainted part will consist of pairs of adjacent sides. Then the first player can always follow a move of the second player, painting a side of the same pair.
+
+</p> <h1>Answer</h1> <p>
+Only for n = 4.
+
+</p> <h1>Remarks</h1> <p>
+4 points
+</p>
+

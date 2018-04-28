@@ -1,0 +1,28 @@
+---
+problem_id: 98400
+category_ids: 377
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98400</h1>
+<p>
+A cube with side length of 20 is divided into 8000 unit cubes, and on each cube a number is written. It is known that in each column of 20 cubes parallel to the edge of the cube, the sum of the numbers is equal to 1 $($ the columns in all three directions are considered $)$. On some cubes a number 10 is written. Through this cube there are three layers of 1 × 20 × 20 cubes, parallel to the faces of the cube. Find the sum of all the numbers outside of these layers.
+
+</p> <h1>Solution</h1> <p>
+A single horizontal layer G and two vertical layers pass through the given cube K. The sum of all the numbers in 361 vertical bars that do not belong to the last two layers is 361. From the sum obtained, we subtract the sum of S numbers lying on the cubes at the intersection of these columns with G $($ there are 361 such cubes $)$. These cubes are completely covered by 19 columns lying in G. The sum of all the numbers in these columns $($ it is equal to 19 $)$ exceeds S by the sum of 19 numbers lying in the perpendicular column containing K. The last sum is obviously 1-10 = -9. Hence S = 19 - $(-9)$ = 28. Finally we have: 361 - 28 = 333.
+
+</p> <h1>Answer</h1> <p>
+333.
+
+</p> <h1>Remarks</h1> <p>
+1. Those who know the inclusion-exception formula can easily find the answer with its help: 400 - $3 \times 20$ + $3 \times 1$ - 10 = 333.
+<p>
+2. 3 points.
+<p>
+3. Compare with the task number 107636.
+</p>
+

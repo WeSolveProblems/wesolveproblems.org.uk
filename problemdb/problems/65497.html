@@ -1,0 +1,27 @@
+---
+problem_id: 65497
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65497</h1>
+<p>
+301 schoolchildren came to the school’s New Year's party in the city of Moscow. Some of them always tell the truth, and the rest always lie. Each of some 200 students said: "If I leave the hall, then among the remaining students, the majority will be liars." Each of the other schoolchildren said: "If I leave the room, then among the remaining students, there will be twice as many liars as those who speak the truth." How many liars were at the party?
+
+</p> <h1>Solution</h1> <p>
+Let's call those who speak the truth, knights. The statement of the first few of the two hundred students will be considered as being the first phrase, and the statement of the remaining - the second.
+<p> 
+The first method. Note that not all schoolchildren are liars, otherwise the first phrase would be said by no one.
+If the second phrase was spoken by a knight, then at the party there are 200 liars and 101 knights. Then among those who uttered the first phrase some are liars. But in this case a liar could not say that if he leaves the hall, then among the remaining students, the majority will be liars. Hence, among those who uttered the second phrase, there are no knights.
+If the first phrase was spoken by a knight, then there are no more than 150 knights. Hence, there is a liar who said the first phrase. But then there are no more than 151 liars. Since there are 301 students, there are exactly 150 knights and 151 liars among them.
+<p> 
+The second method. Among those who uttered the first phrase there should be both knights and liars. Indeed, if they were all knights, this statement would be false, since 199 $>$ 101, and if they were all liars, it would turn out that they told the truth. Hence, the first phrase was pronounced by both liars and knights. If the first phrase was stated by a liar, then there are no more than 151 liars. If the first phrase was spoken by a knight, then there are no fewer than 151 liars. Hence, at the party there are 151 liars.
+
+</p> <h1>Answer</h1> <p>
+151 liars.
+</p>
+

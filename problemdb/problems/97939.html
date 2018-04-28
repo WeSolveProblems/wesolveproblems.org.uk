@@ -1,0 +1,29 @@
+---
+problem_id: 97939
+category_ids: 377
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 97939</h1>
+<p>
+Two play a game on a chessboard 8 × 8. The player who makes the first move puts a knight on the board. Then they take turns moving it $($ according to the usual rules $)$, whilst you can not put the knight on a cell which he already visited. The loser is one who has nowhere to go. Who wins with the right strategy - the first player or his partner?
+
+</p> <h1>Solution</h1> <p>
+We divide all the squares into 32 pairs so that the squares of one pair are connected by the course of the knight $($ Figure 1 $)$.
+<p>
+<img src="97939.png"><p>
+ 
+Wherever the first player puts his knight somewhere for his turn, the second player moves it to the cell in its pair. Therefore, the second player will always have a move to make, and he can not lose.
+
+</p> <h1>Answer</h1> <p>
+His partner.
+
+</p> <h1>Remarks</h1> <p>
+1. 6 points.
+<p>
+2. For the general case, see the solutions of the Quanta Quiz $($ task M1048 $)$.
+</p>

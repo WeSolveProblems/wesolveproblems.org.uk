@@ -1,0 +1,28 @@
+---
+problem_id: 98295
+category_ids: 377
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98295</h1>
+<p>
+Two play tic-tac-toe on a 10 × 10 board according to the following rules. First they fill the whole board with noughts and crosses, putting them in turn $($ the first player puts crosses, its partner - noughts $)$. Then two numbers are counted: K is the number of five consecutively standing crosses and H is the number of five consecutively standing zeros. $($ Five, standing horizontally, vertically and parallel to the diagonal are counted, if there are six crosses in a row, this gives two fives, if there are seven, then three, etc.$)$. The number K-H is considered to be the winnings of the first player $($ the losses of the second $)$.
+<p>
+a$)$ Does the first player have a winning strategy?
+<p>
+b$)$ Does the second player have a winning strategy?
+  
+</p> <h1>Solution</h1> <p>
+b$)$ The second player has a winning strategy. It consists of the fact that for each turn of the first it is necessary to place a zero in a cell symmetrical about the center of the board to the cell into which the cross was just placed. Then, by the end of the game, the number of consecutively standing crosses will be exactly equal to the number of fives of consecutive noughts.
+a$)$ Here is the first player's winning strategy. The first move is arbitrary. Next, if the second player moves symmetrically $($ puts a zero into the cell, symmetric to the cell into which the cross has just been placed$)$, the first player again places the cross in an arbitrary cell. If the second player does not move symmetrically $($ we designate the cell that is symmetric to the last cross placed through A $)$, the first player intercepts the "symmetric" strategy and places the crosses in cells symmetrical to those in which the second places the nought, until the second player places the zero in cell A.
+
+</p> <h1>Answer</h1> <p>
+a$)$ There does exist such a strategy; b$)$ there does not exist such a strategy.
+
+</p> <h1>Remarks</h1> <p>
+Points: 3 + 3
+</p>

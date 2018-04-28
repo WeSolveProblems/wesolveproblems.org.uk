@@ -1,0 +1,29 @@
+---
+problem_id: 66063
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 66063</h1>
+<p>
+Four outwardly identical coins weigh 1, 2, 3 and 4 grams respectively.
+Is it possible to find out in four weighings on a set of scales without weights, which one weighs how much?
+
+</p> <h1>Solution</h1> <p>
+Put two coins on the scales and weigh them. We consider two cases.
+<p>
+1$)$ One of the bowls outweighs the other. Therefore on the heavier bowl lie the coins of 4 g and 2 g or of 4 g and 3 g, and on the lighter bowl - the coins which weigh 1 g and 3 g or those which weigh 1 g and 2 g. For the next two weighings, let us compare the coins on each bowl with each other and determine which coins weigh 1 g and 4 g. With the fourth weighing we compare the remaining two coins, determining which one weighs 2 g, and which one weighs 3 g.
+<p>
+2$)$ The scales are in balance. Therefore on one bowl there are the coins which weigh 2 g and 3 g, and on the other the coins which weigh 1 g and 4 g. In the next two weighings we compare the coins on each bowl with each other, and then compare the two coins that turned out to be heavier, determining which one weighs 4 g, and which one weighs 3 g. By comparing the two coins, we automatically find out which one turned out to be lighter using the results of the second and third weighings.
+
+</p> <h1>Answer</h1> <p>
+Yes you can.
+
+</p> <h1>Remarks</h1> <p>
+Note that four weighings are not sufficient to perform the standard sorting algorithm for four objects.
+</p>
+

@@ -1,0 +1,25 @@
+---
+problem_id: 98583
+category_ids: 377
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98583</h1>
+<p>
+On a table there are 2002 cards with the numbers 1, 2, 3, ..., 2002. Two players take one card in turn. After all the cards are taken, the winner is the one who has a greater last digit of the sum of the numbers on the cards taken. Find out which of the players can always win regardless of the opponent's strategy, and also explain how he should go about playing.
+
+</p> <h1>Solution</h1> <p>
+It is clear that the result is influenced only by the last digits of the numbers written on the cards. Therefore, we can assume that there are 200 cards with the numbers 3, ..., 9, 0 and 201 cards with the numbers 1 and 2. The first player can first take a card with the number 2, and then repeat the moves of the second player for as long as possible. At the moment when he can not repeat the move of the second $($ after the second takes the last card with the number 1 $)$, the first takes any of the remaining cards, and then again repeats the moves of the second. And so on. As a result, at the end both cards of each type will be equally divided, except for the cards with the numbers 1 and 2: the first will have one extra card with a deuce and one less card with a one.
+Since the sum $100 \times $(0 + 1 + ... + 9)$ ends in a zero, the sum of the first players ends in a two, and the sum of the second ends in a one.
+
+</p> <h1>Answer</h1> <p>
+The first player.
+
+</p> <h1>Remarks</h1> <p>
+5 points
+</p>
+

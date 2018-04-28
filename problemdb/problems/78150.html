@@ -1,0 +1,19 @@
+---
+problem_id: 78150
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 78150</h1>
+<p>
+There are two sets of numbers made up of 1s and -1s, and in each there are 1958 numbers. Prove that in some number of steps it is possible to turn the first set into the second one if for each step you are allowed to simultaneously change the sign of any 11 numbers of the first set. $($ Two sets are considered the same if they have the same numbers on the same places.$)$
+
+</p> <h1>Solution</h1> <p> 
+First note that any pair of numbers $(a_i, a_j)$ $(i ≠ j)$ in the set can be changed by changing their signs. For this we take some arbitrary ten numbers different from $a_i$ and $a_j$. Then, changing the signs first in the tens, supplemented by $a_i$, and then in the same tens, to which $a_j$ has been added, we get that the signs have changed only for $a_i$ and $a_j$.
+Now we show how to change the sign of any number $a_k$ from the set. Consider some arbitrary ten numbers $b_1$, $b_2$, ..., $b_{10}$, other than $a_i$, first change the signs of $b_1$, $b_2$, ..., $b_10}$, $a_i$, and then in the pairs $(b_1, b_2)$, $(b_3, b_4)$, ..., $(b_9, b_{10})$. Thus, in the end, the sign changes only for $a_i$.
+By changing the signs of all the non-coinciding numbers in this way, any other set can be obtained from any set in a finite number of steps.
+</p>

@@ -1,0 +1,24 @@
+---
+problem_id: 98434
+category_ids: 377
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 98434</h1>
+<p>
+Two people are playing. The first player writes out numbers from left to right, randomly alternating between 0 and 1, until there are 1999 numbers in total. Each time after the first one writes out the next digit, the second changes two numbers from the already written row $($ when only one digit is written, the second misses its move $)$. Is the second player always able to ensure that, after his last move, the arrangement of the numbers is symmetrical relative to the middle number?
+
+</p> <h1>Solution</h1> <p>
+The second, for example, can act like this. Up to the 1000th digit, he goes arbitrarily. When the first writes the 1001th digit, the second compares it with the 999th $($ symmetrical relative to the 1000th digit $)$. If these numbers are the same, the second switches them around. If the 1001st and 999th numbers are different, then one of them does not coincide with the 1000th digit. Then the second player switches this number with the 1000th. In any case, after a move of the second player, the 1001th digit coincides with the 999th. Similarly, the second acts further, achieving the coincidence of the 1002nd and 998th, ..., 1999th and first digits.
+
+</p> <h1>Answer</h1> <p>
+Yes it is always possible.
+
+</p> <h1>Remarks</h1> <p>
+4 points
+</p>
+

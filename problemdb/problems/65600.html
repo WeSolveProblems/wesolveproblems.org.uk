@@ -1,0 +1,26 @@
+---
+problem_id: 65600
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65600</h1>
+<p>
+A robot came up with a cipher for writing words: he replaced some letters of the alphabet with single-digit or two-digit numbers, using only the digits 1, 2 and 3 $($ different letters it replaces with different numbers $)$. First, he wrote down, using the cipher: ROBOT = 3112131233. Having encrypted the words CROCODIL and BEGEMOT, he was surprised to note that the numbers were completely identical! Then the Robot ciphered the word MATHEMATICS. Write down the number that he got.
+
+</p> <h1>Solution</h1> <p>
+Consider the word ROBOT = 3112131233. It has 5 letters and 10 digits, so that all codes are two-digit and can be determined without difficulty. Let's write down all twelve possible codes and the letters that we know for sure.
+Now we'll think about how the word CROCODIL = BEGEMOT will be written down. It begins with B = 13, that is, C = 1. Now we can write down the beginning of the word:
+CROCO ... = 13112112 ...
+We begin to read it as the word BEGEMOT: B = 13, E ≠ 1, that is, E = 11, and then T = 2, otherwise the second E does not work. Well, M starts with a 2, that is, M = 2 *. Now look at the end of the word, there is ... OT, that is ... 1233. This means that A = 3 and A = 23, and A ends in 1, that is, A = * 1. The asterisk is the only remaining unsolved figure.
+Solving it is not difficult: 31 = P, 11 = E, so A = * 1 = 21. Then M = 22, and we have recovered almost the entire cipher. Now we know all the letters, that is those needed to write down the word MATHEMATICS with the cipher, except for one - how the letter A is encrypted. But since the Robot could write this word, it means that for A there must be a code. And this code is 32, because all the rest are used.
+
+</p> <h1>Answer</h1> <p>
+2232331122323323132.
+</p>
+
+

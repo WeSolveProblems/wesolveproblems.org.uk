@@ -1,0 +1,24 @@
+---
+problem_id: 97942
+category_ids: 377
+difficulty: 2
+classes: 5 6 7
+source_id: 179741
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 97942</h1>
+<p>
+Two players in turn increase a natural number in such a way that at each increase the difference between the new and old values of the number is greater than zero, but less than the old value. The initial value of the number is 2. The winner is the one who can create the number 1987. Who wins with the correct strategy: the first player or his partner?
+
+</p> <h1>Solution</h1> <p>
+In the sequence 1987, 993, 496, 248, 124, 62, 31, 15, 7, 3, each consecutive number is an incomplete quotient left after dividing the previous number by 2 with a remainder. Let us prove that this is a sequence of winning numbers $($ that is, a player who creates one of these numbers has a winning strategy $)$. The number 1987 is a winning number by the condition. Let the number 2k or 2k + 1 $( k > 2)$ be a winning number. Therefore k is also a winning number. Indeed, if one player creates the number k, then the other can only name a number from the interval [k + 1, 2k - 1], after which the first one can name both 2k and 2k + 1. The starting player must name the number 3 and, following this strategy, will win.
+
+</p> <h1>Answer</h1> <p>
+The first player.
+
+</p> <h1>Remarks</h1> <p>
+5 points
+</p>
+

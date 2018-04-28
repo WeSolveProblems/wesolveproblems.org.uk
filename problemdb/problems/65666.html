@@ -1,0 +1,22 @@
+---
+problem_id: 65666
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65666</h1>
+<p>
+Catherine laid out 2016 matches on a table and invited Anna and Natasha to play a game which involves taking turns to remove matches from a table: Anna can take 5 matches or 26 matches in her turn, and Natasha can take either 9 or 23. Without waiting for the start of the game, Catherine left, and when she returned, the game was already over. On the table there are two matches, and the one who can not make another turn loses. After a good reflection, Catherine realised which person went first and who won. Figure it out for yourself now.
+
+</p> <h1>Solution</h1> <p>
+Note that when dividing by 7, the number of matches taken by Anna gives a remainder of 5, and the number of matches taken by Natasha gives a remainder of 2. The number 2016 is a multiple of 7, so after each turn of the player who went second, the number of remaining matches will also be a multiple of 7.
+Since there were two matches left on the table, for the last move the number of matches which gives a remainder of 5 on dividing by 7 was taken from the table. This means that the last move was made by the Anna and she won.
+All moves, except for the last, are divided into pairs, in which the total number of matches taken is a multiple of 7, so the first move was also made by Anna.
+
+</p> <h1>Answer</h1> <p>
+The first was made by Anna, and she won.
+</p>

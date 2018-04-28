@@ -1,0 +1,32 @@
+---
+problem_id: 65402
+category_ids: 1258 355 202 251
+difficulty: 3+
+classes: 7 8 9
+source_id: 164899
+layout: problemdb_problem
+use_math: true
+---
+
+<h1>Problem ID 65402</h1>
+<p>
+a$)$ There are three identical large vessels. In one there are 3 litres of syrup, in the other - 20 litres of water, and the third is empty. You can pour all the liquid from one vessel into another or into a sink. You can choose two vessels and pour into one of them liquid from the third, until the liquid levels in the selected vessels are equal. How can you get 10 litres of diluted 30% syrup?
+<p> 
+b$)$ The same, but there is N l of water. At what integer values of N can you get 10 liters of diluted 30% syrup?
+
+</p> <h1>Solution</h1> <p>
+We denote the vessels with the syrup, with water and the one that’s empty, respectively as A, B and C.
+<p> 
+a$)$ We will transfer 3 litres of water from B into C, and then pour these 3 litres into the sink; repeat this operation several times until 5 litres of water remain in B, and on the last time we will pour water from C not into the sink, but into A. Now in A there is 6 L of the mixture, and C is again empty. We will pour 5 litres from A into C. Now you can pour 4 litres of water from B into A, and pour the remaining litre in B into the sink. It remains to return 5 litres of the mixture from C into A, where 10 litres of the mixture is formed: 3 litres of syrup and 7 liters of water, that is, a 30 percent syrup.
+<p> 
+b$)$ The algorithm indicated in a$)$ is suitable for all N ≡ 2 $($ mod 3 $)$. If N ≡ 1 $($ mod 3 $)$, at which point the algorithm is even simpler: using C, we pour from B 3 litres into the sink until 7 litres remain in B; after which we pour them into A.
+If N is a multiple of 3, then in the beginning the volume of liquid in each vessel is a multiple of 3. The permitted operations can not spoil this property, therefore it is impossible to get 10 litres of liquid $($ regardless of its composition $)$ in one vessel.
+
+</p> <h1>Answer</h1> <p>
+b$)$ For any N, not a multiple of 3 and greater than 6.
+
+</p> <h1>Remarks</h1> <p>
+points: 3 + 2
+</p>
+
+
