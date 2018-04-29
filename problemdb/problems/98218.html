@@ -1,5 +1,5 @@
 ---
-problem_id: 98238
+problem_id: 98218
 category_ids: 377
 difficulty: 2
 classes: 5 6 7
@@ -8,17 +8,15 @@ layout: problemdb_problem
 use_math: true
 ---
 
-<h1>Problem ID 98238</h1>
+<h1>Problem ID 98218</h1>
 <p>
-During the ball every young man danced the waltz with a girl, who was either more beautiful than the one he danced with during the previous dance, or more intelligent, but most of the men $($ at least 80% $)$ - with a girl who was at the same time more beautiful and more intelligent. Could this happen? $($ There was an equal number of boys and girls at the ball.$)$
-  
+There is a chocolate bar with five longitudinal and eight transverse grooves, along which it can be broken $($ in total into 9 * 6 = 54 squares $)$. Two players take part, in turns. A player in his turn breaks off the chocolate bar a strip of width 1 and eats it. Another player who plays in his turn does the same with the part that is left, etc. The one who breaks a strip of width 2 into two strips of width 1 eats one of them, and the other is eaten by his partner. Prove that the first player can act in such a way that he will get at least 6 more chocolate squares than the second player.
+  
 </p> <h1>Solution</h1> <p>
-Here is one possible example. At the ball there were 10 girls and 10 boys $($ we'll give them numbers from 1, 2, ..., 10 $)$. Larger numbers signify greater beauty of the girls. The girl with the number 10 was the least intelligent of all, and the rest had increasing intelligence from the first to the ninth. In the first dance, the pairs were made up of girls and boys with the same numbers. In the second dance, the young man # 1 danced with the girl # 2, the young man # 2 - with the girl # 3, ..., the young man # 9 - with the girl # 10, the young man # 10 - with the girl # 1.
-Thus, each young man from the first to the eighth danced the second dance with a girl who was at the same time more intelligent and more beautiful than the one with which he danced the first dance, the ninth young man got a girl more beautiful, and the tenth - a girl more intelligent than the one from the first dance.
-
-</p> <h1>Answer</h1> <p>
-Yes it could.
+The first player first breaks off a 1 × 6 strip and eats it. There remains a chocolate bar with an even number of longitudinal and transverse strips. Next further moves of the first player are repeats of the moves of the second: he breaks the strips in the same direction as the second. Therefore after the move of the second player in one direction there remains an odd number of strips, and after the turn of the first player - in both directions there is an even number of strips. Thus the first eats as many squares as the second. The game ends when the second player breaks off a strip of width 2 into two equal slices, which are taken by the players, so that they again eat an equal amount of chocolate. And so overall, the first player eats exactly six pieces more.
 
 </p> <h1>Remarks</h1> <p>
-3 points
+1. 4 points.
+<p>
+2. See also the problem number 74569.
 </p>
