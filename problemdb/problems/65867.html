@@ -16,10 +16,10 @@ One hundred cubs found berries in the forest: the youngest managed to grab 1 ber
 Note that at each step, if both participating cubs had at least one berry, then at least one berry remains with each of them. Therefore at the end each bear will have at least one berry.
 Let us prove that the fox can leave each bear cub with exactly one berry, that is, move from the position $(1, 2, ..., 2^{99})$ to the position $(1, 1, ..., 1)$. To do this, we prove by induction that in the case where there are n bear cubs, the fox from the position $(1, 2, ..., 2^{n-1})$ can go to the position $(1, 1, ..., 1, 2^{n-1})$, and from the last - to the position $(1, 1, ..., 1)$.
 Base. For n = 1, all three positions coincide.
-Inductive step. From the position $(1, 2, ..., 2^{n-1}, 2^n)$, forgetting about the last bear cub, we can proceed by induction first to $(1, 1, ..., 1, 2^{n-1}, 2^n)$, and then to $(1, 1, ..., 1, 2^n)$. Using the last two cubs, the fox moves to the position $(1, 1, ..., 1, 2^{n-1}, 2^{n-1})$. Now, again forgetting about the last bear cub, you can go to the position $(1, 1, ..., 1, 2^{n-1})$, and from it, forgetting about the first one, to the position $(1, 1, ..., 1)$ . For the case where there are 100 cubs, this means that the fox has eaten $2^{99}$ + $2^{98}$ + ... + 2 + 1 - 100 berries which equals $2^100$ - 101.
+Inductive step. From the position $(1, 2, ..., 2^{n-1}, 2^n)$, forgetting about the last bear cub, we can proceed by induction first to $(1, 1, ..., 1, 2^{n-1}, 2^n)$, and then to $(1, 1, ..., 1, 2^n)$. Using the last two cubs, the fox moves to the position $(1, 1, ..., 1, 2^{n-1}, 2^{n-1})$. Now, again forgetting about the last bear cub, you can go to the position $(1, 1, ..., 1, 2^{n-1})$, and from it, forgetting about the first one, to the position $(1, 1, ..., 1)$ . For the case where there are 100 cubs, this means that the fox has eaten $2^{99}$ + $2^{98}$ + ... + 2 + 1 - 100 berries which equals $2^{100}$ - 101.
 
 </p> <h1>Answer</h1> <p>
-$2^100$ - 101.
+$2^{100}$ - 101.
 
 </p> <h1>Remarks</h1> <p>
 5 points

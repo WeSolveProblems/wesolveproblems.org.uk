@@ -10,13 +10,16 @@ use_math: true
 
 <h1>Problem ID 65666</h1>
 <p>
-Catherine laid out 2016 matches on a table and invited Anna and Natasha to play a game which involves taking turns to remove matches from a table: Anna can take 5 matches or 26 matches in her turn, and Natasha can take either 9 or 23. Without waiting for the start of the game, Catherine left, and when she returned, the game was already over. On the table there are two matches, and the one who can not make another turn loses. After a good reflection, Catherine realised which person went first and who won. Figure it out for yourself now.
+At a round table, there are 10 people, each of whom is either a knight who always speaks the truth, or a liar who always lies. Two of them said: "Both my neighbors are liars," and the remaining eight stated: "Both my neighbors are knights." How many knights could there be among these 10 people?
 
 </p> <h1>Solution</h1> <p>
-Note that when dividing by 7, the number of matches taken by Anna gives a remainder of 5, and the number of matches taken by Natasha gives a remainder of 2. The number 2016 is a multiple of 7, so after each turn of the player who went second, the number of remaining matches will also be a multiple of 7.
-Since there were two matches left on the table, for the last move the number of matches which gives a remainder of 5 on dividing by 7 was taken from the table. This means that the last move was made by the Anna and she won.
-All moves, except for the last, are divided into pairs, in which the total number of matches taken is a multiple of 7, so the first move was also made by Anna.
+Clearly, not all those present are knights and not all are liars: in these cases, none of them could say the first phrase.
+If we take one knight, one of the liars next to him can say the first phrase, and the remaining liars can say the second. This gives an example of the case when there is a single knight.
+If we take two knights on opposite places around the table, then all the liars will be able to say the second phrase. This gives an example of the case when there are two knights.
+The fact that there are no more than two knights can be proved in different ways.  
+The first method. Suppose there are two knights sitting next to each other. Let's move from them in a circle until we reach the first liar. Then we find a combination of KKL; But in this case the knight in the middle cannot pronounce any of the phrases. This gives a contradiction. Therefore, every knight is surrounded by liars. But in such conditions each knight will utter the first phrase. Therefore, there are no more than two knights.
+The second method. Suppose a knight said the second phrase. Then both his neighbors are knights. Consider his neighbor on the right. He is a knight, and to the left of him is a knight. He cannot lie, he speaks the first phrase, and he must say that both his neighbors are knights. Then consider his neighbor on the right; and so on. It turns out that all those present at the table are knights, which can not be the case. Hence, all the knights present are obliged to speak the first phrase, and there are only two such phrases. Therefore, there are no more than two knights.
 
 </p> <h1>Answer</h1> <p>
-The first was made by Anna, and she won.
+Either one or two.
 </p>
