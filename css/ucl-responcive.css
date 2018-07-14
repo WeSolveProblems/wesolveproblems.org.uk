@@ -1,0 +1,110 @@
+
+
+@media only screen and (max-width:1500px) {
+	.wesolvesearchdiv { padding: 80px 15px; }
+}
+
+@media only screen and (max-width:1200px) {
+	.wesolveedit h4{font-size:30px;}
+	/* .wesolvetext{width:47%;} */
+	.wesolvelogo img{max-width:180px;}
+	.wesolveimg img { width: 100%;}
+	.wesolvesecure { padding-top: 20px; padding-bottom: 20px;}
+	/* .wesolvedivtext{padding: 5% 0px;} */
+	.wesolvesearchdiv { padding: 70px 15px; }
+}
+
+
+@media only screen and (max-width:991px) {
+	.wesolvedivtext{width:100%;}
+	/* .wesolvesearchdiv2{padding: 40px 15px;} */
+	/* .wesolvehome{padding: 25px 0px 25px 0px;} */
+	.wesolvesearchdiv { padding: 50px 15px;}
+	.wesolvepage{margin-top: 50px;}
+	.wesolvesetting{padding-bottom: 0px !important;}
+	.wesolveedit h4{font-size: 35px;}
+	.wesolverundivimg img{position:relative;}
+	.wesolvemacro{min-height: 0px; padding: 40px 0px 30px 0px;}
+	.wesolveboxtab{position:relative; bottom:0px;  width: 100%; margin-top: 40px;}
+	.wesolvemacroshift{padding: 0px 15px 0px 15px;}
+	.wesolvefile {padding:10px 0px;}
+	.wesolvefilebutton{padding:25px;float: right;}
+	.wesolvefile li{width: 100%; padding: 5px 15px;}
+	.wesolvefileright {background-color: #fff; position: absolute; top: 115px; z-index: 99;}
+	.wesolvefile li a{color: #353535;}
+	.wesolvefilebutton:focus{outline:none;}
+	.wesolvefile li a:hover{color: #6d6969;}
+	.wesolvectrl{padding:20px 0px;}
+	.wesolveimg{text-align:center;}
+	.wesolvesecure{text-align: center;}
+	.wesolverundivimg {text-align: center;}
+	.mainContentText { min-height:0px; }
+	.wesolveproblems { height:auto; }
+}	
+
+
+@media only screen and (max-width:767px) {
+	.footerlinksbox img {float: none;}
+	.footerlinksbox p{float: none;}
+	.footerlinksdiv2{padding: 0px 0px 10px 0px;}
+	.footerlinks{padding: 15px 0px; width: 100%;}
+	.footerlinkstab{padding: 20px 15px;}
+	.wesolvesearchdiv2{width:100%;}
+	.wesolvefileright{width: 100%;}
+	.wesolvediv{float: left;}
+	.wesolvefile{padding: 10px 0px;}
+	.wesolvedivtext{padding: 40px 0px;}
+	.wesolveboxtab h5{font-size:18px;}
+	.wesolveedit h4{font-size:30px;}
+	.wesolveedit h2{font-size:40px;}
+	.footerlink{padding-bottom:20px;}
+	.footerlinktab{max-width:100%;}
+	.footer-logo{ max-width: 100%; width: 100%; text-align: center; padding-bottom: 0px; font-size: 13px; }
+	.footerbottom{padding: 30px 0px;}	
+	.wesolvelockdiv{padding:20px 10px;}
+	.wesolvepage{margin-top:20px; background-position: left !important; background-size: 400% !important; }
+	.wesolvetext{width:100%; text-align: center;}
+	.wesolvesearchdiv2 { padding: 60px; }
+	.quicklink ul li a { font-size: 15px; }
+	.footerbottom h3 { font-size: 18px; }
+	.footer-logo img { margin-bottom:15px; }
+	.mainContentText { padding: 120px 0 30px 0; }
+}
+
+
+@media only screen and (max-width:567px) {
+	.footerlinksbox p{font-size: 13px;}
+	.wesolverundivimg img{width:100%;}
+	.wesolvehomebox2 i{top: 20px;}
+	.wesolvehomebox2 p{padding-left: 60px;}
+	.wesolvelogo img{max-width: 150px;}
+	.wesolvefilebutton{padding:20px 0px;}
+	.wesolveedit h4 {font-size: 25px;}
+	.wesolvedivtext {padding: 10px 0px;}
+	.wesolveimg img{width:100%;}
+	.footerbottom h3{margin: 0 0 10px;}
+	.sociallink{padding-top: 10px;}
+	.wesolvesearchdiv2 { padding: 30px; }
+	.wesolvehome { padding: 20px 0px 0px 0px; }
+	.wesolvectrl { padding: 00px 0px 20px 0px; }
+	.wesolvefileright { top: 80px; }
+	
+}
+
+
+@media only screen and (max-width:467px) {
+	.wesolvesearchdiv h4 { font-size: 25px; padding-bottom: 10px; text-align:center; }
+	.wesolveboxtab{padding: 20px 15px;}
+	.wesolveedit h2 {font-size: 25px;}
+	.wesolveedit h4 {font-size: 18px;}
+	.wesolvemacro h4{font-size: 25px; text-align:center; }
+	.wesolverun p { margin-bottom: 5px; }
+}
+
+
+@media only screen and (max-width:367px) {
+	
+}
+
+
+
