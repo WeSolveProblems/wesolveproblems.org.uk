@@ -37,6 +37,13 @@
     src="https://www.facebook.com/tr?id=1645355285594879&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
+  
+  <script>
+    function enrol() {
+      fbq('track', 'CompleteRegistration');
+      window.open("https://docs.google.com/forms/d/e/1FAIpQLScItXTeNXkXidaSZ4_oxA2Vzm_4cLpWL8q-Dnt3TSfr2HtaTA/viewform?usp=sf_link");
+    };
+  </script>
 </head>
   
 <body>
@@ -71,7 +78,8 @@
 							<h2>VERBALL MATHS CHALLENGE @ UCL</h2>
 						</div>
 						<p>WeSolveProblems hosts the second verbal maths challenge at UCL for Year 7-9 students on September 28th at 2:00pm. The winners will be invited to the UCL Maths Club.</p>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLScItXTeNXkXidaSZ4_oxA2Vzm_4cLpWL8q-Dnt3TSfr2HtaTA/viewform?usp=sf_link" class="wesolveview">Enroll NOW!</a>
+<!--				<a href="https://docs.google.com/forms/d/e/1FAIpQLScItXTeNXkXidaSZ4_oxA2Vzm_4cLpWL8q-Dnt3TSfr2HtaTA/viewform?usp=sf_link" class="wesolveview">Enroll NOW!</a> -->
+            <button onClick="enrol()">Enrol NOW!</button>
 					</div>
 				</div>
 			</div>
@@ -192,6 +200,13 @@
 						</div>
 						<div class="col-sm-12">
 							<div class="wesolvesecure">
+                <button id="submitButton">Complete Registration</button>
+                <script type="text/javascript">
+                  document.getElementById('submitButton').addEventListener('click', function() {
+                  insert_event_code_here;
+                  ...
+                  }, false);
+                </script>
 								<a href="https://docs.google.com/forms/d/e/1FAIpQLScItXTeNXkXidaSZ4_oxA2Vzm_4cLpWL8q-Dnt3TSfr2HtaTA/viewform?usp=sf_link" class="wesolveenrol">ENROLL NOW TO SECURE A PLACE</a>
 							</div>
 						</div>
